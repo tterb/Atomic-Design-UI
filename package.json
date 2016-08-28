@@ -1,0 +1,26 @@
+{
+  "name": "atomic-design-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A complimentary Atomic UI theme for Atomic Monokai syntax",
+  "keywords": [
+    "atomic",
+    "monokai",
+    "sublime",
+    "text",
+    "syntax",
+    "ui",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonSn0w/Atomic-Design-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonSn0w/Atomic-Design-UI/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

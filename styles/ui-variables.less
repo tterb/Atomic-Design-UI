@@ -1,0 +1,109 @@
+// Colors
+
+@lightest-gray: #E3E9E6;
+@lighter-gray: #93A1A1;
+@light-gray: #969896;
+@gray: #6C6C6C;
+@dark-gray: #393939;
+@darker-gray: #2B2D2B;
+
+@red: #D82323;
+@orange: #FD971F;
+@light-orange: #F0C674;
+@yellow: #E6DB74;
+@light-green: #CBEC6D;
+@green: #A6E22E;
+@cyan: #8ABEB7;
+@blue: #52E3F6;
+@purple: #AE81FF;
+@magenta: #F92672;
+
+@text-color: @lighter-gray;
+@text-color-subtle: #555;
+@text-color-highlight: #fff;
+@text-color-selected: @text-color-highlight;
+
+@text-color-info: @blue;
+@text-color-success: @green;
+@text-color-warning: @orange;
+@text-color-error: @red;
+
+@text-color-ignored: @text-color-subtle;
+@text-color-added: @text-color-success;
+@text-color-renamed: @text-color-info;
+@text-color-modified: @text-color-warning;
+@text-color-removed: @text-color-error;
+
+@background-color-info: @blue;
+@background-color-success: @green;
+@background-color-warning: @orange;
+@background-color-error: @red;
+@background-color-highlight: rgba(255, 255, 255, 0.07);
+@background-color-selected: @blue;
+
+@app-background-color: @dark-gray;
+
+@base-background-color: lighten(@tool-panel-background-color, 5%);
+@base-border-color: rgba(0, 0, 0, 0.5);
+
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: rgba(0, 0, 0, 0.5);
+
+@input-background-color: #212224;
+@input-border-color: @base-border-color;
+
+@tool-panel-background-color: #1d1f21;
+@tool-panel-border-color: @base-border-color;
+
+@inset-panel-background-color: #161719;
+@inset-panel-border-color: @base-border-color;
+
+@panel-heading-background-color: #43484d;
+@panel-heading-border-color: fadein(@base-border-color, 10%);
+
+@overlay-background-color: #202123;
+@overlay-border-color: @background-color-highlight;
+
+@button-background-color: #43484d;
+@button-background-color-hover: lighten(@button-background-color, 5%);
+@button-background-color-selected: #5c6064;
+@button-border-color: @base-border-color;
+
+@tab-bar-background-color: #222;
+@tab-bar-border-color: darken(@tab-background-color-active, 10%);
+@tab-background-color: #333;
+@tab-background-color-active: #222;
+@tab-border-color: #484848;
+
+@tree-view-background-color: #303030;
+@tree-view-border-color: @tool-panel-border-color;
+
+@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: rgba(92, 92, 92, 0.5);
+
+@ui-site-color-1: @background-color-success; // green
+@ui-site-color-2: @background-color-info; // blue
+@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-4: @magenta; // magenta
+@ui-site-color-5: @yellow; // yellow
+
+
+// Sizes
+
+@font-size: 12px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+@component-border-radius: 2px;
+
+@tab-height: 30px;
+
+
+// Other
+
+@font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
