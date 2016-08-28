@@ -1,4 +1,4 @@
-<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/17991224/87b7c67e-6af1-11e6-9956-f7960d1a3f13.png" height="68"/>
+<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036897/9f3ce2a2-6d2b-11e6-801d-f103a381402c.png" height="68"/>
 ------------------------------------------------------------------------------------------------------------------------
 ####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI theme for Atomic Monokai syntax
 <p align="right">
