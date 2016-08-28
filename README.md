@@ -1,10 +1,17 @@
-# Atom Dark UI theme
+<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/17991224/87b7c67e-6af1-11e6-9956-f7960d1a3f13.png" height="68"/>
 ------------------------------------------------------------------------------------------------------------------------
 ####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI theme for Atomic Monokai syntax
+<p align="right">
+    <img src="https://img.shields.io/github/tag/jonsn0w/atomic-design-ui.svg?maxAge=2592000" width="73" title="version">&nbsp;&nbsp;
+    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000" width="95" title="apm download">&nbsp;&nbsp;
+</p>
 
 This UI theme was forked from [Atom Dark UI](https://github.com/atom/atom-dark-ui) and modified to compliment the [**Atomic Monokai**](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
 
-![](https://f.cloud.github.com/assets/671378/2265086/c6897dba-9e7b-11e3-945d-551cac610717.png)
+<br>
+    <p align="center">
+    <img src="https://cloud.githubusercontent.com/assets/16360374/17991247/af222646-6af1-11e6-9f00-61c81f9984e6.png" width="950" title="Screenshot">
+    </p>
 <br>
 
 ## Install:
