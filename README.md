@@ -1,4 +1,4 @@
-<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036897/9f3ce2a2-6d2b-11e6-801d-f103a381402c.png" height="68"/>
+<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036928/5fbcbcdc-6d2c-11e6-9b40-3aad67379241.png" height="68"/>
 ------------------------------------------------------------------------------------------------------------------------
 ####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI theme for Atomic Monokai syntax
 <p align="right">
@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000" width="95" title="apm download">&nbsp;&nbsp;
 </p>
 
-This UI theme was forked from [Atom Dark UI](https://github.com/atom/atom-dark-ui) and modified to compliment the [**Atomic Monokai**](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
+This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui) to improve UX and better compliment the [**Atomic Monokai**](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
 
 <br>
     <p align="center">
@@ -25,10 +25,10 @@ This UI theme was forked from [Atom Dark UI](https://github.com/atom/atom-dark-u
 __________________________________________________________________________________________________________________
 ## In Progress:
 
-  * Still making minor modifications to improve UI.
+  * Still making modifications to improve UI.
 
 <br>
-*Keep in mind, this is my first attempt at creating a syntax theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
+*Keep in mind, this is my first attempt at creating a UI theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
 __________________________________________________________________________________________________________________
 <br>
 
