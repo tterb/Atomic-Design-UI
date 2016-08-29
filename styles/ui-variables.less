@@ -2,12 +2,12 @@
 
 // Colors ---------------------------------------------------------------------
 
-// @lightest-gray: #E3E9E6;
-// @lighter-gray: #93A1A1;
-// @light-gray: #969896;
-// @gray: #6C6C6C;
-// @dark-gray: #393939;
-// @darker-gray: #2B2D2B;
+@lightest-gray: #E3E9E6;
+@lighter-gray: #93A1A1;
+@light-gray: #969896;
+@gray: #6C6C6C;
+@dark-gray: #393939;
+@darker-gray: #2B2D2B;
 
 // @red: #D82323;
 // @orange: #FD971F;
@@ -95,7 +95,6 @@
 @pane-item-background-color: @theme-background-color-light;
 @pane-item-border-color: @base-border-color;;
 
-
 // Site Colors ----------------------------------------------------------------
 
 @ui-site-color-1: @background-color-success;
@@ -131,7 +130,9 @@
 @tool-panel-background-color: @theme-background-color-dark;
 @tool-panel-border-color: @base-border-color;
 
-@tree-view-background-color: @tool-panel-background-color;
+// @tree-view-background-color: @tool-panel-background-color;
+@tree-view-background-color: #303030;
+@tree-view-selection-color: lighten(@tree-view-background-color, 6%);
 @tree-view-border-color: @base-border-color;
 
 @overlay-background-color: @tool-panel-background-color;
