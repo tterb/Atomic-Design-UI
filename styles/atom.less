@@ -7,21 +7,22 @@
 
 atom-workspace {
   background-color: @app-background-color;
+  box-shadow: inset 0 -5px 15px rgba(0,0,0,.5);
 }
 
 status-bar {
   .text(subtle);
-  background: @base-border-color;
+  background: darken(@base-border-color, 9%);
   height: @input-height;
   line-height: @component-line-height;
-  font-size: 11px;
+  font-size: 12px;
 
   & > .flexbox-repaint-hack {
     padding-top: 3px;
   }
 
   span {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -41,7 +42,7 @@ status-bar {
 	background-clip: content-box;
     border-radius: 5px;
 	border: 1px solid @scrollbar-border-color;
-    box-shadow: 0 0 1px black inset;
+    box-shadow: inset 3px -3px 10px rgba(0,0,0, .3);
 
 	&:active,
     &:hover {
