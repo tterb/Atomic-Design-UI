@@ -21,11 +21,12 @@ This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom
   $ apm install atomic-design-ui
 ```
 
-  After installation, the theme can be easily activated by going to the **Themes** section in the *Settings* view (`cmd-,`) and selecting it from the _UI Themes_ drop-down menu.
+  After installation, the theme can be easily activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Themes* drop-down menu.
 __________________________________________________________________________________________________________________
 ## In Progress:
 
   * Still making minor modifications to improve UI.
+  * Experimenting with new functionalities to allow the UI to automatically modify it's color pallete to better fit the current syntax-theme.
 
 <br>
 *Keep in mind, this is my first attempt at creating a syntax theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
