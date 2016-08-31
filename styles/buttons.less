@@ -4,21 +4,21 @@
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   background-color: lighten(@app-background-color, 15%);
-  background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
-
+  background-image: -webkit-linear-gradient(lighten(@color,5%), darken(@color, 5%));
+  box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
   &:focus {
-    color: @text-color;
+    color: @button-text-color;
   }
   &:hover {
     color: @text-color-highlight;
-    background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 5%));
+    background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 7%));
   }
   &.selected,
   &.selected:hover {
     color: @text-color-highlight;
-    background-image: -webkit-linear-gradient(darken(@selected-color, 5%), @selected-color);
+    background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 20%), darken(@hover-color, 2%));
     &:hover {
-      background-image: -webkit-linear-gradient(@selected-color, darken(@selected-color, 5%));
+      background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 20%), darken(@hover-color, 5%));
     }
   }
 }

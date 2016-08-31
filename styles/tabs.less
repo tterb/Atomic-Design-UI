@@ -51,7 +51,7 @@
     // border: none;
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#393838, 8%), #393838);
+      background-image: -webkit-linear-gradient(top, lighten(#393838, 8%), darken(#393838, 3%));
       height: @tab-height;
     }
 
@@ -71,7 +71,6 @@
       -webkit-transform: skewX(-@tab-skew);
     }
 
-    // right angled edge
     &:after {
       right: -14px;
       border-top-right-radius: @tab-radius;
@@ -127,7 +126,7 @@
 
   .tab.active {
     z-index: 1;
-    color: darken(@text-color-highlight, 6%);
+    color: darken(@text-color-highlight, 4%);
     box-shadow: inset -1px 1px 0 @tab-border-color, 12px -4px 4px rgba(0,0,0,100);
 
     .close-icon {
@@ -141,16 +140,16 @@
     }
 
     &:before {
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.3);
     }
 
     &:after {
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+      box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.3);
     }
   }
 
   .tab:hover {
-    color: darken(@text-color-highlight, 4%);
+    color: darken(@text-color-highlight, 2%);
   }
 
   .tab.active:hover .close-icon {
