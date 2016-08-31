@@ -85,10 +85,10 @@
 @base-background-color: @theme-background-color;
 @base-border-color: @theme-background-color-light;
 
-@gutter-background-color:          transparent;
+@gutter-background-color: transparent;
 @gutter-background-color-selected: transparent;
-@gutter-text-color:                @text-color-subtle;
-@gutter-text-color-selected:       @text-color-selected;
+@gutter-text-color: @text-color-subtle;
+@gutter-text-color-selected: @text-color-selected;
 @indent-guide-color: @syntax-indent-guide-color;
 @invisibles-color: @syntax-invisible-character-color;
 
@@ -114,7 +114,7 @@
 @tab-background-color-hover: @base-border-color;
 @tab-border-color: @base-border-color;
 
-@button-background-color: transparent;
+@button-background-color: #303030;
 @button-background-color-hover: lighten(@button-background-color, 5%);
 @button-background-color-selected: @input-border-color;;
 @button-border-color: @base-border-color;
@@ -132,7 +132,7 @@
 
 // @tree-view-background-color: @tool-panel-background-color;
 @tree-view-background-color: #303030;
-@tree-view-selection-color: lighten(@tree-view-background-color, 6%);
+@tree-view-selection-color: #393838;
 @tree-view-border-color: @base-border-color;
 
 @overlay-background-color: @tool-panel-background-color;
@@ -146,10 +146,10 @@
 
 @progress-background-color: @background-color-info;
 
-@scrollbar-color: @theme-background-color-light;
+@scrollbar-color: lighten(@theme-background-color-light, 1%);
 @scrollbar-color-active: @theme-background-color-light;
 @scrollbar-border-color: @theme-background-color-dark;
-@scrollbar-track-color: transparent;
+@scrollbar-track-color: darken(@theme-background-color-light, 7.5%);
 
 @tooltip-text-color: @base-background-color;
 @tooltip-background-color: @text-color;
