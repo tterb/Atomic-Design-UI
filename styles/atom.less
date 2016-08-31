@@ -1,52 +1,51 @@
 @import "ui-variables";
 @import "ui-mixins.less";
-@import "octicon-mixins";
-// * {
+@import "octicon-mixins"; // * {
 // 	box-sizing: border-box;
 // }
 
 atom-workspace {
-  background-color: @app-background-color;
+    background-color: @app-background-color;
 }
 
 status-bar {
-  .text(subtle);
-  background: darken(@base-border-color, 9%);
-  height: @input-height;
-  line-height: @component-line-height;
-  font-size: 12px;
-
-  & > .flexbox-repaint-hack {
-    padding-top: 3px;
-  }
-
-  span {
+    .text(subtle);
+    background: darken(@base-border-color, 9%);
+    height: @input-height;
+    line-height: @component-line-height;
     font-size: 12px;
-  }
+
+    & > .flexbox-repaint-hack {
+        padding-top: 3px;
+    }
+
+    span {
+        font-size: 12px;
+    }
 }
 
 .scrollbars-visible-always {
-  /deep/ ::-webkit-scrollbar {
-    width: 15px;
-    height: 10px;
-  }
-
-  /deep/ ::-webkit-scrollbar-track,
-  /deep/ ::-webkit-scrollbar-corner {
-    background: @scrollbar-track-color;
-  }
-
-  /deep/ ::-webkit-scrollbar-thumb {
-    background: @scrollbar-color;
-	background-clip: content-box;
-    border-radius: 5px;
-	border: 1px solid @scrollbar-border-color;
-    box-shadow: inset 3px -3px 10px rgba(0,0,0,.3);
-
-	&:active,
-    &:hover {
-      border: 1px solid darken(@scrollbar-border-color, 3%);
-      box-shadow: inset 5px -5px 15px rgba(0,0,0,.3);
+    /deep/::-webkit-scrollbar {
+        width: 15px;
+        height: 10px;
     }
-  }
+
+    /deep/ ::-webkit-scrollbar-corner,
+    /deep/::-webkit-scrollbar-track {
+        background: @scrollbar-track-color;
+    }
+
+    /deep/::-webkit-scrollbar-thumb {
+        background: @scrollbar-color;
+        background-clip: content-box;
+        border-radius: 5px;
+        border: 1px solid @scrollbar-border-color;
+        box-shadow: inset 3px -3px 10px rgba(0,0,0,.3);
+
+        &:active,
+        &:hover {
+            border: 1px solid darken(@scrollbar-border-color, 3%);
+            box-shadow: inset 5px -5px 15px rgba(0,0,0,.3);
+        }
+    }
 }
