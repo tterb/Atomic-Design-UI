@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000" width="95" title="apm download">&nbsp;&nbsp;
 </p>
 
-This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui) to improve UX and better compliment the [**Atomic Monokai**](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
+This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui) to improve user experience and better compliment the [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
 
 <br>
     <p align="center">
@@ -25,10 +25,10 @@ This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom
 __________________________________________________________________________________________________________________
 ## In Progress:
 
-  * Still making modifications to improve UI.
+  * Still making minor modifications to improve UI.
 
 <br>
-*Keep in mind, this is my first attempt at creating a UI theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
+*Keep in mind, this is my first attempt at creating a syntax theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
 __________________________________________________________________________________________________________________
 <br>
 
