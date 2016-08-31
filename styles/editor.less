@@ -1,26 +1,46 @@
 @import "ui-variables";
 @import "ui-mixins";
 
-atom-text-editor[mini], atom-text-editor[mini]::shadow {
-  color: @text-color-highlight;
-  background-color: @input-background-color;
-  border: 1px solid @input-border-color;
-  box-shadow: inset 0 -2px 1px rgba(0, 0, 0,.075);
-  border-radius: @component-border-radius;
-  padding-left: @component-padding/2;
+atom-text-editor[mini],
+atom-text-editor[mini]::shadow {
+    color: @text-color-highlight;
+    background-color: @input-background-color;
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0,.075);
+    border-radius: @component-border-radius;
+    padding-left: @component-padding/2;
 
-  .cursor { border-color: #FFF; }
-  .selection .region { background-color: lighten(@input-background-color, 10%); }
+    .cursor {
+        border-color: #FFF;
+    }
+
+    .selection .region {
+        background-color: lighten(@input-background-color, 10%);
+    }
 }
 
-atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
-  background-color: lighten(@input-background-color, 5%);
-  .selection .region { background-color: desaturate(@background-color-info, 50%); }
+atom-text-editor[mini].is-focused,
+atom-text-editor[mini].is-focused::shadow {
+    background-color: lighten(@input-background-color, 5%);
+
+    .selection .region {
+        background-color: desaturate(@background-color-info, 50%);
+    }
 }
+
+atom-text-editor.editor.mini {
+    background-color: darken(@background-color-selected, 2%);
+    border: 1px solid darken(@input-border-color, 25%);
+}
+atom-text-editor.editor.mini.is-focused {
+    background-color: darken(@background-color-selected, 4%);
+    border: 1px solid darken(@input-border-color, 5%);
+}
+
 
 // FIXME: these should go in syntax themes?
-atom-text-editor, atom-text-editor::shadow {
-  .gutter.drop-shadow {
-    -webkit-box-shadow: -2px 0 10px 2px #222;
-  }
+atom-text-editor,
+atom-text-editor::shadow {
+    .gutter.drop-shadow {
+        -webkit-box-shadow: -2px 0 10px 2px #222;
+    }
 }
