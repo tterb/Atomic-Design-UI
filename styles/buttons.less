@@ -3,7 +3,7 @@
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
-  background-color: transparent;
+  background-color: lighten(@app-background-color, 15%);
   background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
 
   &:focus {
