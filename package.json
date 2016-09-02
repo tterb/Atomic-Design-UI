@@ -1,7 +1,7 @@
 {
   "name": "Atomic-Design-UI",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A complimentary UI theme for Atomic Monokai or any other \"monokai\"-inspired syntax theme",
   "keywords": [
     "atomic",
