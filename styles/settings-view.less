@@ -56,7 +56,8 @@
   .setting-title,
   .setting-title.themes-label {
     .text(normal);
-    color: lighten(@text-color, 50%);
+    font-size: 20px;
+    color: lighten(@text-color, 30%);
   }
 
   .setting-description,
@@ -64,11 +65,11 @@
       color: darken(@text-color, 20%);
   }
 
-  // select {
-  //     .form-control {
-  //         background-color: lighten(@theme-purple, 20%);
-  //     }
-  // }
+  select {
+      .form-control {
+          background-color: lighten(@theme-purple, 20%);
+      }
+  }
 
   label {
     .text(normal);
@@ -85,8 +86,9 @@
 
     .section-heading {
       .text(heading);
-      font-size: 24px;
-      color: lighten(@text-color, 50%);
+      font-size: 36px;
+      font-family: @font-family-light;
+      color: #FFF;
     }
 
     .sub-section-heading {
