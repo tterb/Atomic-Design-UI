@@ -65,9 +65,7 @@
   &.mark-active{
     @active-icon-size: 14px;
 
-    // pad in front of the text where the icon would be We'll pad the non-
-    // active items with a 'fake' icon so other classes can pad the item
-    // without worrying about the icon padding.
+    // pad in front of the text where the icon would be
     li:before {
       content: '';
       background-color: transparent;
@@ -81,7 +79,7 @@
       margin-right: @component-icon-padding;
     }
     li.active {
-      .octicon(check, @active-icon-size);
+      .octicon(check, @active-icon-size + 5px);
       &:before {
         margin-right: @component-icon-padding;
         color: @text-color-success;

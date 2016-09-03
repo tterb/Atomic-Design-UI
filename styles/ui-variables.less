@@ -6,7 +6,7 @@
 @lighter-gray: #93A1A1;
 @light-gray: #969896;
 @gray: #6C6C6C;
-@dark-gray: #393939;
+@dark-gray: #474545;
 @darker-gray: #2B2D2B;
 
 @theme-red: @syntax-color-removed;
@@ -90,8 +90,8 @@
 @ui-site-color-1: @background-color-success;
 @ui-site-color-2: @background-color-info;
 @ui-site-color-3: @background-color-warning;
-@ui-site-color-4: @magenta; // magenta
-@ui-site-color-5: @yellow; // yellow
+@ui-site-color-4: @theme-magenta; // magenta
+@ui-site-color-5: @theme-yellow; // yellow
 
 // Component colors -----------------------------------------------------------
 
@@ -106,12 +106,12 @@
 
 @button-background-color: #303030;
 @button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: @input-border-color;;
+@button-background-color-selected: @text-color;
 @button-text-color: lighten(@text-color, 7%);
 @button-border-color: @base-border-color;
 
 @input-background-color: @theme-background-color-light;
-@input-border-color: @text-color;
+@input-border-color: darken(@text-color, 21%);
 @input-background-color-active: @text-color;
 @input-text-color-active: @base-background-color;
 
@@ -121,10 +121,9 @@
 @tool-panel-background-color: @theme-background-color-dark;
 @tool-panel-border-color: @base-border-color;
 
-// @tree-view-background-color: @tool-panel-background-color;
-@tree-view-background-color: #303030;
-@tree-view-selection-color: #393838;
-@tree-view-border-color: @base-border-color;
+@tree-background-color: #303030;
+@tree-selection-color: #393838;
+@tree-border-color: @base-border-color;
 
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
@@ -156,10 +155,11 @@
 @font-size: 13px;
 @input-font-size: 14px;
 @input-height: 32px;
+@tree-font-size: @font-size + 2px;
 
 @component-padding: 10px;
-@component-icon-padding: 5px;
-@component-icon-size: 16px;
+@component-icon-padding: 10px;
+@component-icon-size: 32px;
 @component-line-height: 25px;
 @component-border-radius: 3px;
 

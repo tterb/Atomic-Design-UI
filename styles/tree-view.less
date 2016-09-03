@@ -1,13 +1,47 @@
 @import "ui-variables";
-@tree-font-size: @font-size + 2px;
+
 .tree-view {
     font-size: @tree-font-size;
     padding-top: 8px;
-    background: @tree-view-background-color;
+    background: @tree-background-color;
 
     .selected:before {
-        background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 8%), @tree-view-selection-color);
+        background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 8%), @tree-selection-color);
         box-shadow: inset -2px 0 4px rgba(0,0,0,.3);
+    }
+
+    .header.list-item {
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        color: @lightest-gray;
+    }
+    .pseudo:before {
+        height: 50px;
+    }
+    .list-nested-item > .header {
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: @tree-font-size;
+        color: @lightest-gray;
+    }
+
+    .project-root > .header.list-item {
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: @tree-font-size;
+        color: @lightest-gray;
+        border-bottom: @tree-background-color solid @tree-border-color;
+        background: darken(@tree-background-color, 1%);
+
+        &::before {
+            visibility: hidden;
+        }
+    }
+    .project-root > .entries.list-tree {
+        margin: 10px 0;
     }
 }
 
@@ -22,10 +56,10 @@
     box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
 
     &:focus {
-        background: @tree-view-background-color;
+        background: @tree-background-color;
 
         .selected:before {
-            background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
+            background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 9%), @tree-selection-color);
         }
     }
 }
