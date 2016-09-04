@@ -10,7 +10,7 @@ This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom
 
 <br>
     <p align="center">
-    <img src="https://cloud.githubusercontent.com/assets/16360374/17991247/af222646-6af1-11e6-9f00-61c81f9984e6.png" width="950" title="Screenshot">
+    <img src="https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png" width="950" title="Markdown Screenshot">
     </p>
 <br>
 
@@ -30,6 +30,14 @@ ________________________________________________________________________________
 
 <br>
 *Keep in mind, this is my first attempt at creating a syntax theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
+__________________________________________________________________________________________________________________
+## Screenshots:
+
+  * [Java](https://cloud.githubusercontent.com/assets/16360374/18231369/234c6126-726d-11e6-8858-d9ed8df8e7e3.png)
+  * [Markdown](https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png)
+  * [Settings](https://cloud.githubusercontent.com/assets/16360374/18231373/3048eb88-726d-11e6-9ae8-a87e24c11f67.png)
+
+
 __________________________________________________________________________________________________________________
 <br>
 
