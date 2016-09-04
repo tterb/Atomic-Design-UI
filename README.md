@@ -34,6 +34,7 @@ ________________________________________________________________________________
 ## Screenshots:
 
   * [Java](https://cloud.githubusercontent.com/assets/16360374/18231369/234c6126-726d-11e6-8858-d9ed8df8e7e3.png)
+  * [HTML](https://cloud.githubusercontent.com/assets/16360374/18231558/6cba7498-7271-11e6-9575-d4448e5910d5.png)
   * [Markdown](https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png)
   * [Settings](https://cloud.githubusercontent.com/assets/16360374/18231373/3048eb88-726d-11e6-9ae8-a87e24c11f67.png)
 
