@@ -1,5 +1,11 @@
 @import "ui-variables";
 
 .markdown-preview.markdown-preview {
-  background-color: darken(@background-color-selected, 5%);
+    background-color: @markdown-preview-background-color;
+    color: @markdown-preview-text-color;
+    border: @markdown-preview-background-color solid @markdown-preview-border-color;
+    .markdown-body {
+        color: @markdown-preview-text-color;
+        word-wrap: normal;
+    }
 }
