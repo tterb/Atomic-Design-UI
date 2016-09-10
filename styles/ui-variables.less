@@ -136,8 +136,8 @@
 
 @progress-background-color: @background-color-info;
 
-@scrollbar-color: lighten(@theme-background-color-light, 1%);
-@scrollbar-color-active: @theme-background-color-light;
+@scrollbar-color: lighten(@theme-background-color-light, 3%);
+@scrollbar-color-active: lighten(@theme-background-color-light, 3%);
 @scrollbar-border-color: @theme-background-color-dark;
 @scrollbar-track-color: darken(@theme-background-color-light, 7.5%);
 
@@ -146,9 +146,6 @@
 @tooltip-key-text-color: @background-color-info;
 @tooltip-key-background-color: @base-background-color;
 
-@markdown-preview-color: @syntax-text-color;
-@markdown-preview-background-color: @syntax-background-color;
-@markdown-preview-border-color: mix(@syntax-text-color, @syntax-background-color, 20%);
 
 // Sizes ----------------------------------------------------------------------
 
@@ -170,6 +167,13 @@
 @font-family: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
 @font-family-bold: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
 @font-family-light: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+
+
+// Plugins --------------------------------------------------------------------
+
+@markdown-preview-text-color: darken(@darker-gray, 15%);
+@markdown-preview-background-color: lighten(@tree-background-color,75%);
+@markdown-preview-border-color: mix(@syntax-text-color, @syntax-background-color, 20%);
 
 // Other ----------------------------------------------------------------------
 
