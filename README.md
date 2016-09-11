@@ -2,8 +2,8 @@
 ------------------------------------------------------------------------------------------------------------------------
 ####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI theme for Atomic Monokai syntax
 <p align="right">
-    <img src="https://img.shields.io/github/tag/jonsn0w/atomic-design-ui.svg?maxAge=2592000" width="73" title="version">&nbsp;&nbsp;
-    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000" width="95" title="apm download">&nbsp;&nbsp;
+    <img src="https://img.shields.io/github/tag/jonsn0w/atomic-design-ui.svg?maxAge=2592000?" height="21" title="version">&nbsp;&nbsp;
+    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="apm download">&nbsp;&nbsp;
 </p>
 
 This UI theme was modified from a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui) to improve user experience and better compliment the [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) syntax-highlighting package.
