@@ -3,8 +3,25 @@
   "theme": "ui",
   "version": "1.0.2",
   "description": "A dark UI-theme for Atomic Monokai or any other \"monokai\"-inspired syntax theme",
-  "keywords": [ "atomic", "monokai", "sublime", "text", "syntax", "design", "ui", "theme", "dark",
-                "modern", "graphic", "icons", "tool", "plugins", "git", "github", "atom" ],
+  "keywords": [
+    "atomic",
+    "monokai",
+    "sublime",
+    "text",
+    "syntax",
+    "design",
+    "ui",
+    "theme",
+    "dark",
+    "modern",
+    "graphic",
+    "icons",
+    "tool",
+    "plugins",
+    "git",
+    "github",
+    "atom"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/JonSn0w/Atomic-Design-UI.git"
