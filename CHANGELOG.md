@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.0.3
+
+  * Fixed issue with tree-view status
+  * Minor modifications to tree-view style
+
+------------------------------------------------------------------------------------------------------------------------
+
 ## Version 1.0.2
 
   * Fixed deprecation errors
