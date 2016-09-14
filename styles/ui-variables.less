@@ -9,11 +9,11 @@
 @dark-gray: #474545;
 @darker-gray: #2B2D2B;
 
-@theme-red: @syntax-color-removed;
-@theme-orange: @syntax-color-modified;
+@theme-red: #D82323;
+@theme-orange: #FD971F;
 @theme-yellow: #E6DB74;
-@theme-green: @syntax-color-added;
-@theme-blue: @syntax-color-renamed;
+@theme-green: #A6E22E;
+@theme-blue: #52E3F6;
 @theme-purple: #AE81FF;
 @theme-magenta: #F92672;
 
@@ -66,7 +66,7 @@
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
-@text-color-renamed: @text-color-info;
+@text-color-renamed: @theme-purple;
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
@@ -83,15 +83,15 @@
 @invisibles-color: @syntax-invisible-character-color;
 
 @pane-item-background-color: @theme-background-color-light;
-@pane-item-border-color: @base-border-color;;
+@pane-item-border-color: darken(@base-border-color, 5%);
 
 // Site Colors ----------------------------------------------------------------
 
 @ui-site-color-1: @background-color-success;
 @ui-site-color-2: @background-color-info;
 @ui-site-color-3: @background-color-warning;
-@ui-site-color-4: @theme-magenta; // magenta
-@ui-site-color-5: @theme-yellow; // yellow
+@ui-site-color-4: @theme-magenta;
+@ui-site-color-5: @theme-yellow;
 
 // Component colors -----------------------------------------------------------
 
