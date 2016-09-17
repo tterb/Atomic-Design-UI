@@ -4,9 +4,12 @@
 <p align="right">
     <img src="https://img.shields.io/github/tag/jonsn0w/atomic-design-ui.svg?maxAge=2592000?" height="21" title="version">&nbsp;&nbsp;
     <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="apm download">&nbsp;&nbsp;
+	<a href="https://gitter.im/Atomic-Design-UI/Lobby">
+        <img src="https://badges.gitter.im/Atomic-Design-UI/Lobby.svg" height="21" title="Gitter">
+    </a>
 </p>
 
-This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimied to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) or other similar syntax-highlighting packages.
+This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimied to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) and other similar syntax-highlighting packages.
 
 <br>
     <p align="center">
@@ -31,7 +34,7 @@ ________________________________________________________________________________
   * Experimenting with new functionalities to allow the UI to automatically modify it's color pallete to better fit the current syntax-theme.
 
 <br>
-*Keep in mind, this is my first attempt at creating a syntax theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
+*Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
 
 __________________________________________________________________________________________________________________
 ## Screenshots:
@@ -46,4 +49,4 @@ ________________________________________________________________________________
 *For even more useful packages, check out my list of* [***Essential Atom Packages***](https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html), *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
 
 __________________________________________________________________________________________________________________
-  [License](https://github.com/JonSn0w/Atomic-Design-UI/blob/master/LICENSE.md)
+&nbsp;&nbsp;&nbsp;&nbsp;[*License*](https://github.com/JonSn0w/Atomic-Design-UI/blob/master/LICENSE.md)
