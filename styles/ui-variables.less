@@ -7,7 +7,8 @@
 @light-gray: #969896;
 @gray: #6C6C6C;
 @dark-gray: #474545;
-@darker-gray: #2B2D2B;
+@darker-gray: #303030;
+@darkest-gray: #2B2D2B;
 
 @theme-red: #D82323;
 @theme-orange: #FD971F;
@@ -104,7 +105,7 @@
 @tab-background-color-hover: @base-border-color;
 @tab-border-color: @base-border-color;
 
-@button-background-color: #303030;
+@button-background-color: @darker-gray;
 @button-background-color-hover: lighten(@button-background-color, 5%);
 @button-background-color-selected: @text-color;
 @button-text-color: lighten(@text-color, 7%);
@@ -121,7 +122,7 @@
 @tool-panel-background-color: @theme-background-color-dark;
 @tool-panel-border-color: @base-border-color;
 
-@tree-background-color: #303030;
+@tree-background-color: lighten(@app-background-color, 2%);
 @tree-selection-color: #393838;
 @tree-border-color: @base-border-color;
 
@@ -171,7 +172,7 @@
 
 // Plugins --------------------------------------------------------------------
 
-@markdown-preview-text-color: darken(@darker-gray, 15%);
+@markdown-preview-text-color: darken(@darkest-gray, 15%);
 @markdown-preview-background-color: lighten(@tree-background-color,75%);
 @markdown-preview-border-color: mix(@syntax-text-color, @syntax-background-color, 20%);
 
