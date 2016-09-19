@@ -1,11 +1,11 @@
 @import "ui-variables";
 
 @tab-radius: 12px;
-@tab-height: 37px;
+@tab-height: 40px;
 @modified-icon-width: 15px;
-@tab-skew: 15deg;
+@tab-skew: 12deg;
 @tab-top-padding: 12px;
-@tab-bottom-border-height: 5px;
+@tab-bottom-border-height: 3px;
 @tab-border: 4px solid #222;
 @tab-bar-bottom-border-color: #111;
 @tab-max-width: 160px;
@@ -66,14 +66,14 @@
         }
         // left angled edge
         &:before {
-            left: -14px;
+            left: -16px;
             border-top-left-radius: @tab-radius;
             box-shadow: inset 1px 1px 0 @tab-border-color, -4px -1px 8px rgba(0,0,0,.2);
             -webkit-transform: skewX(-@tab-skew);
         }
 
         &:after {
-            right: -14px;
+            right: -16px;
             border-top-right-radius: @tab-radius;
             box-shadow: inset -1px 1px 0 @tab-border-color, 4px -1px 6px rgba(0,0,0,.2);
             -webkit-transform: skewX(@tab-skew);
@@ -117,7 +117,7 @@
             font-size: 14px;
             margin-top: -@tab-top-padding;
             padding-top: @tab-top-padding;
-            padding-right: 10px;
+            padding-right: 7px;
         }
     }
 
@@ -134,7 +134,7 @@
         &,
         &:after,
         &:before {
-            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 5%), #2B2D2B);
+            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 6%), darken(@syntax-background-color, 1%));
             height: @tab-height + 1px;
         }
 

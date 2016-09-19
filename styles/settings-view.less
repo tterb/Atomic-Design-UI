@@ -67,14 +67,36 @@
 	}
 
 	select {
-		.form-control {
-			background-color: lighten(@theme-purple, 20%);
+		&.form-control {
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: darken(@input-border-color, 15%);
 		}
+		&.form-control:active {
+			color: lighten(@syntax-text-color, 5%);
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: lighten(@input-border-color, 8%);
+		}
+		&.form-control:hover {
+			color: lighten(@syntax-text-color, 5%);
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: lighten(@input-border-color, 8%);
+		}
+		&.form-control:not(:hover) {
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: darken(@input-border-color, 15%);
+		}
+	}
+
+	.select-container {
+		// background-color: @theme-magenta;
 	}
 
 	label {
 		.text(normal);
-
 		&.control-label {
 			.theme-description {
 				min-height: 36px;
@@ -153,7 +175,7 @@
 
 	.package-card:hover,
 	.package-detail .package-card:hover {
-		background-image: radial-gradient(lighten(@background-color-highlight, 5%), lighten(@background-color-highlight, 5%));
+		background-image: radial-gradient(darken(@background-color-selected, 1%), darken(@background-color-selected, 8%));
 	}
 
 	.package-container .row:not(:first-child) .package-card,
