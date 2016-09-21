@@ -9,7 +9,7 @@
     </a>
 </p>
 
-This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimied to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) and other similar syntax-highlighting packages.
+This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://github.com/JonSn0w/Atomic-Monokai-Syntax) and other similar dark syntax-highlighting packages.
 
 <br>
     <p align="center">
