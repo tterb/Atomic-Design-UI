@@ -2,7 +2,8 @@
 
 .tree-view {
     font-size: @tree-font-size;
-    padding-top: 8px;
+    padding-top: 10px;
+    margin: -2px -12px;
     background: @tree-background-color;
 
     .selected:before {
@@ -41,7 +42,7 @@
         }
     }
     .project-root > .entries.list-tree {
-        margin: 10px 0;
+        margin: 5px 15px;
     }
 }
 
@@ -72,6 +73,8 @@
 }
 
 span.name.icon {
+    // color: darken(@syntax-text-color, 17%);
+    // font-weight: lighter;
     &.icon-file-directory {
         font-size: 16px;
         font-weight: 600;

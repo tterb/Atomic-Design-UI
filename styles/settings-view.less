@@ -68,26 +68,28 @@
 
 	select {
 		&.form-control {
+			font-size: 15px;
+			padding-top: 3px;
 			background-color: lighten(@tool-panel-background-color, 4%);
 			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 15%);
+			border-color: darken(@input-border-color, 5%);
 		}
 		&.form-control:active {
 			color: lighten(@syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 4%);
 			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 8%);
+			border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:hover {
 			color: lighten(@syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 4%);
 			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 8%);
+			border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:not(:hover) {
 			background-color: lighten(@tool-panel-background-color, 4%);
 			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 15%);
+			border-color: darken(@input-border-color, 5%);
 		}
 	}
 
