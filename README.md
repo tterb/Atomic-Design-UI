@@ -2,8 +2,13 @@
 ------------------------------------------------------------------------------------------------------------------------
 ####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI theme for Atomic Monokai syntax
 <p align="right">
-    <img src="https://img.shields.io/github/tag/jonsn0w/atomic-design-ui.svg?maxAge=2592000?" height="21" title="version">&nbsp;&nbsp;
-    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="apm download">&nbsp;&nbsp;
+	<a href="https://opensource.org/licenses/MIT">
+		<img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" height="21" title="License">&nbsp;&nbsp;
+	</a>
+	<a href="https://atom.io/themes/atomic-design-ui">
+		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;&nbsp;
+	</a>
+    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="Downloads">&nbsp;&nbsp;
 	<a href="https://gitter.im/Atomic-Design-UI/Lobby">
         <img src="https://badges.gitter.im/Atomic-Design-UI/Lobby.svg" height="21" title="Gitter">
     </a>
