@@ -1,10 +1,11 @@
 # Change Log
-------------------------------------------------------------------------------------------------------------------------  
-<br>
+<br>  
 
 ## Version 1.0.4
 
   * Improved theme adaptability with a larger variety of syntax themes
+  * Added support for more commonly-used packages  
+  * Added custom styling for badges and notifications  
 
 ------------------------------------------------------------------------------------------------------------------------
 
