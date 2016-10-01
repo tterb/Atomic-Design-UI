@@ -9,3 +9,16 @@
         word-wrap: normal;
     }
 }
+
+.markdown-preview:not([data-use-github-style]) {
+    strong {
+        color: @markdown-preview-text-color;
+    }
+    a {
+        color: darken(@theme-blue, 40%);
+        font-weight: 600;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: @markdown-preview-text-color;
+    }
+}
