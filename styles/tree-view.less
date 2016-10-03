@@ -1,9 +1,9 @@
 @import "ui-variables";
 
 .tree-view {
-    font-size: @tree-font-size;
     padding-top: 10px;
-    margin: -2px -12px;
+    margin: -6px -15px;
+    font-size: @tree-font-size;
     background: @tree-background-color;
 
     .selected:before {
@@ -20,29 +20,54 @@
     .pseudo:before {
         height: 50px;
     }
-    .list-nested-item > .header {
-        text-align: left;
-        vertical-align: middle;
-        font-weight: bold;
-        font-size: @tree-font-size;
-        color: @lightest-gray;
-    }
 
+    // Project root directory
     .project-root > .header.list-item {
         text-align: left;
         vertical-align: middle;
-        font-weight: bold;
-        font-size: @tree-font-size;
-        color: @lightest-gray;
-        border-bottom: @tree-background-color solid @tree-border-color;
-        background: darken(@tree-background-color, 1%);
+        font-weight: bolder;
+        font-size: @tree-font-size + 2px;
+        color: darken(@lightest-gray, 4%);
+        margin: 5px 2px;
+        // border-top: 2px solid @tree-border-color;
+        // border-bottom: 2px solid @tree-border-color;
+        // background: darken(@tree-background-color, .25%);
 
         &::before {
             visibility: hidden;
         }
     }
+
+    // Internal directories
+    .list-nested-item > .header {
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: @tree-font-size + 2px;
+        margin-bottom: 3px;
+        border-bottom: 1px solid @tool-panel-border-color;
+        color: @lightest-gray;
+        &::before {
+            visibility: visible;
+        }
+    }
+
+    // List items
     .project-root > .entries.list-tree {
-        margin: 5px 15px;
+        text-align: left;
+        vertical-align: middle;
+        font-size: @tree-font-size + 1px;
+        border-bottom: 1px solid @tab-bar-border-color;
+        color: @lightest-gray;
+        margin: 5px 10px;
+    }
+
+    li.file.entry.list-item {
+
+    }
+
+    ol.entries.list-tree {
+
     }
 }
 
@@ -60,6 +85,7 @@
         background: @tree-background-color;
 
         .selected:before {
+            transition: color @transition-time ease;
             background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 9%), @tree-selection-color);
         }
     }
@@ -73,14 +99,12 @@
 }
 
 span.name.icon ::before {
-    // color: darken(@syntax-text-color, 17%);
-    // font-weight: lighter;
     &.icon-file-directory {
         font-size: 16px;
         font-weight: 600;
     }
     &.icon-repo {
-        font-size: 17px;
+        font-size: 19px;
         font-weight: 800;
         text-transform: capitalize;
     }

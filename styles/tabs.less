@@ -1,19 +1,17 @@
 @import "ui-variables";
 
-@tab-radius: 12px;
+@tab-radius: 11px;
 @tab-height: 40px;
-@modified-icon-width: 15px;
+@modified-icon-width: 12px;
 @tab-skew: 12deg;
 @tab-top-padding: 12px;
 @tab-bottom-border-height: 3px;
-@tab-border: 4px solid #222;
-@tab-bar-bottom-border-color: #111;
-@tab-max-width: 160px;
+@tab-max-width: 120px;
 
 .tab-bar {
-    height: @tab-height + (@tab-radius);
+    height: @tab-height + (@tab-radius) + 1px;
     width: 100%;
-    background: darken(@tab-bar-background-color, 4%);
+    background: @tab-bar-background-color;
     box-shadow: inset 0 -8px 8px -4px rgba(0,0,0,.25);
     padding: 0 10px 0 25px;
     overflow-x: auto;
@@ -25,19 +23,19 @@
 
     &:after {
         content: "";
-        position: absolute;
+        position: relative;
         bottom: 0;
         height: @tab-bottom-border-height;
         left: 0;
         right: 0;
         background-color: @tab-background-color-active;
         border-top: 1px solid @tab-border-color;
-        border-bottom: 1px dotted @tab-bar-bottom-border-color;
+        border-bottom: 1px dotted @tab-border-color;
         pointer-events: none;
     }
 
     .tab {
-        font-size: 8px;
+        font-size: 12px;
         position: relative;
         top: @tab-top-padding;
         height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
@@ -46,14 +44,14 @@
         line-height: @tab-height;
         padding: 0;
         margin: 0 12px 0 5px;
-        color: lighten(@text-color, 10%);
+        color: lighten(@text-color, 2%);
         padding-right: 5px !important;
-        transition: color 0.1s ease-in;
+        transition: color @transition-time/4 ease;
 
         &,
         &:after,
         &:before {
-            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 8%), darken(@tab-background-color, 4%));
+            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 11%), darken(@tab-background-color, 2%));
             height: @tab-height;
         }
 
@@ -85,7 +83,7 @@
             z-index: 3;
             text-align: right;
             padding-right: 5px !important;
-            line-height: @tab-height;
+            line-height: @tab-height - 2;
             color: darken(@theme-text-color, 10%);
 
             &:hover {
@@ -96,7 +94,7 @@
 
         &.modified:not(:hover) {
             color: @theme-orange;
-            font-style: italic;
+            // font-style: italic;
         }
 
         &.modified:not(:hover) .close-icon {
@@ -117,26 +115,37 @@
             text-align: center;
             z-index: 1;
             font-size: 16px;
-            margin-top: -@tab-top-padding;
+            margin-top: -@tab-top-padding - 1px;
             padding-top: @tab-top-padding;
-            padding-right: 7px;
+            padding-right: 12px;
         }
     }
 
     .tab.active {
         z-index: 1;
-        color: darken(@text-color-highlight, 8%);
+        color: darken(@text-color-highlight, 5%);
         box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
 
         .close-icon {
             line-height: @tab-height - 1px;
-            color: darken(@text-color-highlight, 7%);
+            color: darken(@text-color-highlight, 20%);
+        }
+
+        .title {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            font-kerning: auto;
+            margin-top: -@tab-top-padding;
+            padding-top: @tab-top-padding;
+            padding-right: 18px;
         }
 
         &,
         &:after,
         &:before {
-            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 6%), darken(@syntax-background-color, 1%));
+            line-height: 40px;
+            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 3%), @syntax-background-color);
             height: @tab-height + 1px;
         }
 
@@ -150,11 +159,11 @@
     }
 
     .tab:hover {
-        color: darken(@text-color-highlight, 2%);
+        color: darken(@text-color-highlight, 5%);
     }
 
     .tab.active:hover .close-icon {
-        color: @text-color-highlight;
+        color: darken(@text-color-highlight, 10%);
 
         &:hover {
             color: @text-color-info;
