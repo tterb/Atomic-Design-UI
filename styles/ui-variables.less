@@ -8,7 +8,7 @@
 @gray: #6C6C6C;
 @dark-gray: #474545;
 @darker-gray: #303030;
-@darkest-gray: #2B2D2B;
+@darkest-gray: #2C2D2A;
 
 @theme-red: #D82323;
 @theme-orange: #FD971F;
@@ -74,7 +74,7 @@
 // Editor ---------------------------------------------------------------------
 
 @base-background-color: @theme-background-color;
-@base-border-color: @theme-background-color-light;
+@base-border-color: @theme-background-color-dark;
 
 @gutter-background-color: transparent;
 @gutter-background-color-selected: transparent;
@@ -98,12 +98,12 @@
 
 @app-background-color: @theme-background-color;
 
-@tab-bar-background-color: @app-background-color;
-@tab-bar-border-color: @base-border-color;
-@tab-background-color: darken(@background-color-selected,2%);
+@tab-background-color: darken(@background-color-selected, 2%);
 @tab-background-color-active: @app-background-color;
 @tab-background-color-hover: @base-border-color;
 @tab-border-color: @base-border-color;
+@tab-bar-background-color: darken(@app-background-color, 4%);
+@tab-bar-border-color: @base-border-color;
 
 @button-background-color: @darker-gray;
 @button-background-color-hover: lighten(@button-background-color, 5%);
@@ -119,12 +119,12 @@
 @pane-item-background-color: @theme-background-color-light;
 @pane-item-border-color: @base-border-color;
 
-@tool-panel-background-color: @theme-background-color-dark;
-@tool-panel-border-color: @base-border-color;
+@tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
+@tool-panel-border-color: darken(@theme-background-color-light, 2%);
 
-@tree-background-color: lighten(@app-background-color, 2%);
-@tree-selection-color: #393838;
-@tree-border-color: @base-border-color;
+@tree-background-color: darken(#262824, .75%);//darken(@app-background-color, 2.5%); //darken(@app-background-color, 2.5%);
+@tree-selection-color: darken(#393838, 5%);
+@tree-border-color: @theme-background-color-light;
 
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
@@ -137,10 +137,10 @@
 
 @progress-background-color: @background-color-info;
 
-@scrollbar-color: lighten(@theme-background-color-light, 3%);
+@scrollbar-color: lighten(@background-color-selected, 2%);//lighten(@theme-background-color-light, 2.5%);
+@scrollbar-border-color: darken(@theme-background-color-dark, 5%);
 @scrollbar-color-active: lighten(@theme-background-color-light, 3%);
-@scrollbar-border-color: @theme-background-color-dark;
-@scrollbar-track-color: darken(@theme-background-color-light, 7.5%);
+@scrollbar-track-color: darken(@app-background-color, 2%);
 
 @tooltip-text-color: @base-background-color;
 @tooltip-background-color: @text-color;
@@ -156,12 +156,12 @@
 @tree-font-size: @font-size + 2px;
 
 @component-padding: 10px;
-@component-icon-padding: 10px;
-@component-icon-size: 24px;
-@component-line-height: 25px;
+@component-icon-padding: 8px;
+@component-icon-size: @tree-font-size + 5px;
+@component-line-height: @component-icon-size + @component-icon-padding;
 @component-border-radius: 3px;
 
-@disclosure-arrow-size: 12px;
+@disclosure-arrow-size: 13px;
 
 // Fonts ----------------------------------------------------------------------
 
