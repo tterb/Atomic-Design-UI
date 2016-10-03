@@ -8,7 +8,7 @@ atom-workspace {
 
 status-bar {
     .text(subtle);
-    background: darken(@base-border-color, 9%);
+    background: darken(@base-border-color, 10%);
     height: @input-height;
     line-height: @component-line-height;
     font-size: 14px;
@@ -25,12 +25,13 @@ status-bar {
 .scrollbars-visible-always {
     /deep/::-webkit-scrollbar {
         width: 15px;
-        height: 10px;
+        height: 12px;
     }
 
     /deep/ ::-webkit-scrollbar-corner,
     /deep/::-webkit-scrollbar-track {
         background: @scrollbar-track-color;
+        border: 1px solid @scrollbar-border-color;
     }
 
     /deep/::-webkit-scrollbar-thumb {
