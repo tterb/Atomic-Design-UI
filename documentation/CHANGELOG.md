@@ -3,9 +3,13 @@
 
 ## Version 1.0.4
 
+  * Minor modifications to gray palette  
   * Improved theme adaptability with a larger variety of syntax themes
-  * Added support for more commonly-used packages  
-  * Added custom styling for badges and notifications  
+  * Added support for commonly-used packages
+  * Improved styling of the tab, tree-view, scrollbar, and settings-view components
+  * Added custom styling for badges and notifications
+  * Restructured package documentation
+  * Fixed issue within *package.json*   
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -29,14 +33,14 @@
 
 ## Version 1.0.1
 
-  * Improved icon formatting.
-  * Modified 'Markdown Preview' style.
-  * Fixed issue with UI variable.
+  * Improved icon formatting
+  * Modified 'Markdown Preview' style
+  * Fixed issue with UI variable
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Version 1.0.0
 
-  * Package published.
+  * Package published
 
 ------------------------------------------------------------------------------------------------------------------------
