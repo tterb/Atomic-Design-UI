@@ -107,7 +107,7 @@
 	}
 
 	.section {
-		background-color: @background-color-selected;
+		background-color: lighten(@background-color-selected, 0.25%);
 
 		.section-heading {
 			.text(heading);
@@ -151,7 +151,7 @@
 		}
 
 		.nav > li.active > a:hover {
-			background: darken(@base-border-color, 1%);
+			background: lighten(@background-color-selected, 3%);
 		}
 	}
 
