@@ -1,7 +1,7 @@
 atom-notifications {
     display: flex;
-    align-items: flex-end;
-    flex-flow: column-reverse;
+    align-items: flex-start;
+    flex-flow: column;
     padding: 2rem 0.5rem;
     z-index: 9999;
 }
@@ -41,7 +41,7 @@ atom-notification {
     }
 
     .detail {
-        background: none;
+        background-color: @tree-background-color;
     }
 
     .item {
@@ -68,7 +68,7 @@ atom-notification {
     &.success, &.error, &.info, &.warning, &.fatal {
         border-left: 0.125rem solid transparent;
         .content {
-            background-color: darken(@app-background-color, 5%);
+            background-color: @tree-background-color;
             color: @text-color;
         }
         .close-all.btn, .close-all.btn:hover {
@@ -78,12 +78,12 @@ atom-notification {
             line-height: 1.65rem;
 
             &:hover {
-                .z-depth-1;
+                // .z-depth-1;
             }
         }
 
         code {
-            background-color: lighten(@md-red, 5%);
+            background-color: darken(@theme-red, 8%);
             color: #FFF;
             font-size: 0.75rem;
         }
@@ -135,9 +135,9 @@ atom-notification {
             }
         }
     }
-    
+
     &.has-stack .stack-toggle {
-        color: @text-color-error;
+        color: lighten(@text-color-error, 8%);
         .icon {
             position: relative;
             top: 1px;
