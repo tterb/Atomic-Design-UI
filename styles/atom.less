@@ -8,7 +8,7 @@ atom-workspace {
 
 status-bar {
     .text(subtle);
-    background: darken(@base-border-color, 10%);
+    background: @status-bar-color;
     height: @input-height;
     line-height: @component-line-height;
     font-size: 14px;
@@ -19,6 +19,10 @@ status-bar {
 
     span {
         font-size: 12px;
+        &.inline-block.icon.icon-color-mode {
+
+            color: @theme-purple;
+        }
     }
 }
 
