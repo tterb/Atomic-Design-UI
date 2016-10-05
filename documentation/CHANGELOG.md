@@ -1,6 +1,13 @@
 # Change Log
 <br>  
 
+## Version 1.0.5
+
+  * Fixed issue with status bar and icon styling
+  * Minor modifications to improve tab contrast
+
+------------------------------------------------------------------------------------------------------------------------
+
 ## Version 1.0.4
 
   * Minor modifications to gray palette  
@@ -12,7 +19,6 @@
   * Fixed issue within *package.json*   
 
 ------------------------------------------------------------------------------------------------------------------------
-
 
 ## Version 1.0.3
 
