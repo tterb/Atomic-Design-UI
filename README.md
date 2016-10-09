@@ -25,8 +25,9 @@
 **In Progress**
   * Still making minor modifications to improve UI.
   * Adding improved integration for an increasing collection of common packages.
-  * Experimenting with functionalities to allow the UI to conform it's color pallete to the current syntax-theme.  
-  
+  * Experimenting with functionalities to allow the UI to conform it's color pallete to the current syntax-theme.
+
+<br>  
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
 __________________________________________________________________________________________________________________  
 ## Install:  
