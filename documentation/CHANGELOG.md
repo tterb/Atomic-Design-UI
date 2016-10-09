@@ -3,6 +3,7 @@
 
 ## Version 1.0.5
 
+  * Added custom notification styling
   * Fixed issue with status bar and icon styling
   * Minor modifications to improve tab contrast
 
