@@ -23,7 +23,6 @@
   This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages. Similarly, this theme also includes improved integration of some of the most common [Atom packages](https://atom.io/packages).  
   
 **In Progress**
-  * Still making minor modifications to improve UI.
   * Adding improved integration for an increasing collection of common packages.
   * Experimenting with functionalities to allow the UI to conform it's color pallete to the current syntax-theme.
 
