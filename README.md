@@ -13,14 +13,22 @@
 		<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" height="21" title="Open Source">&nbsp;&nbsp;
 	</a>
 </p>
-
-This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages.
-
 <br>
     <p align="center">
         <img src="https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png" width="950" title="Screenshot">
     </p>
+	
 <br>  
+__________________________________________________________________________________________________________________  
+## Description:
+  This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages.  
+  
+**In Progress**
+  * Still making minor modifications to improve UI.
+  * Experimenting with new functionalities to allow the UI to automatically modify it's color pallete to better fit the current syntax-theme.
+
+<br>  
+*Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
 __________________________________________________________________________________________________________________  
 ## Install:  
   This repository is distributed with [*apm*](https://atom.io/themes). After [installing apm](https://github.com/atom/apm#installing), you can install the syntax theme with this command.  
@@ -30,19 +38,9 @@ ________________________________________________________________________________
 ```
 
   After installation, the theme can be easily activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Themes* drop-down menu.  
-  <br>  
-
-__________________________________________________________________________________________________________________
-## In Progress:
-
-  * Still making minor modifications to improve UI.
-  * Experimenting with new functionalities to allow the UI to automatically modify it's color pallete to better fit the current syntax-theme.
-
-<br>
-*Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*
-
-__________________________________________________________________________________________________________________
-## Screenshots:
+<br>  
+__________________________________________________________________________________________________________________  
+## Screenshots:  
 
   * [Java](https://cloud.githubusercontent.com/assets/16360374/18231369/234c6126-726d-11e6-8858-d9ed8df8e7e3.png)
   * [HTML](https://cloud.githubusercontent.com/assets/16360374/18231558/6cba7498-7271-11e6-9575-d4448e5910d5.png)
