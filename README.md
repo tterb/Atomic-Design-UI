@@ -19,15 +19,14 @@
     </p>
 	
 <br>  
-__________________________________________________________________________________________________________________  
 ## Description:
-  This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages.  
+  This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages. Similarly, this theme also includes improved integration of some of the most common [Atom packages](https://atom.io/packages).  
   
 **In Progress**
   * Still making minor modifications to improve UI.
-  * Experimenting with new functionalities to allow the UI to automatically modify it's color pallete to better fit the current syntax-theme.
-
-<br>  
+  * Adding improved integration for an increasing collection of common packages.
+  * Experimenting with functionalities to allow the UI to conform it's color pallete to the current syntax-theme.  
+  
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
 __________________________________________________________________________________________________________________  
 ## Install:  
@@ -48,9 +47,20 @@ ________________________________________________________________________________
   * [Settings-View](https://cloud.githubusercontent.com/assets/16360374/18231373/3048eb88-726d-11e6-9ae8-a87e24c11f67.png)
 
 <br>
-*For even more useful packages, check out my list of* [***Essential Atom Packages***](https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html), *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
+__________________________________________________________________________________________________________________
 
-__________________________________________________________________________________________________________________  
+## Other Packages:
+
+  * [**Minimap**](https://atom.io/packages/minimap) - featured in the above screenshot, *Minimap* applies a "*Sublime-esque*" view to the right-side of the frame.
+  * [**Project Manager**](https://atom.io/packages/project-manager) - delivers a familiar workflow for navigating multiple projects and project-specific settings.
+  * [**Highlight Selected**](https://atom.io/packages/highlight-selected) - highlights all instances of the currently selected element within the open file.
+  * [***More...***](https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html)
+
+<br>
+*For more useful packages, check out my list of* [***Essential Atom Packages***](https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html), *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
+<br>
+__________________________________________________________________________________________________________________
+
 <p align="right">
      <span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6RKPR34SH6CU" title="Donate to this project using Paypal">
  <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" height="21" title="Donate"></a></span>&nbsp;&nbsp;
