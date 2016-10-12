@@ -122,7 +122,7 @@
 @tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
 @tool-panel-border-color: darken(@theme-background-color-light, 2%);
 
-@tree-background-color: darken(#262824, .75%);
+@tree-background-color: lighten(#262624, .75%); 
 @tree-selection-color: darken(#393838, 5%);
 @tree-border-color: @theme-background-color-light;
 
@@ -137,10 +137,9 @@
 
 @progress-background-color: @background-color-info;
 
-@scrollbar-color: lighten(@background-color-selected, 2%);
-@scrollbar-border-color: darken(@theme-background-color-dark, 5%);
+@scrollbar-color: -webkit-radial-gradient(lighten(@background-color-selected, 2%), darken(@background-color-selected, 3%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 3%);
-@scrollbar-track-color: darken(@app-background-color, 2%);
+@scrollbar-track-color: mix(@tree-background-color, darken(@app-background-color, 2%), 40%);
 
 @status-bar-color: @base-border-color;
 
@@ -180,4 +179,4 @@
 
 // Other ----------------------------------------------------------------------
 
-@transition-time: 400ms;
+@transition-time: 500ms;

@@ -26,12 +26,10 @@
         text-align: left;
         vertical-align: middle;
         font-weight: bolder;
-        font-size: @tree-font-size + 2px;
+        text-transform: capitalize;
+        font-size: @tree-font-size + 3px;
         color: darken(@lightest-gray, 4%);
         margin: 5px 2px;
-        // border-top: 2px solid @tree-border-color;
-        // border-bottom: 2px solid @tree-border-color;
-        // background: darken(@tree-background-color, .25%);
 
         &::before {
             visibility: hidden;
@@ -43,7 +41,7 @@
         text-align: left;
         vertical-align: middle;
         font-weight: bold;
-        font-size: @tree-font-size + 1px;
+        font-size: @tree-font-size + 2px;
         margin-bottom: 3px;
         border-bottom: 1px solid @tool-panel-border-color;
         color: @lightest-gray;
@@ -56,7 +54,7 @@
     .project-root > .entries.list-tree {
         text-align: left;
         vertical-align: middle;
-        font-size: @tree-font-size + 1px;
+        font-size: @tree-font-size + 2px;
         border-bottom: 1px solid @tab-bar-border-color;
         color: @lightest-gray;
         margin: 5px 10px;
