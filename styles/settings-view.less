@@ -57,13 +57,14 @@
 	.setting-title,
 	.setting-title.themes-label {
 		.text(normal);
-		font-size: 20px;
+		font-size: 22px;
 		color: lighten(@text-color, 30%);
 	}
 
 	.setting-description,
 	.setting-description.themes-label {
-		color: darken(@text-color, 20%);
+		font-size: 14.5px;
+		color: darken(@text-color, 8%);
 	}
 
 	select {
@@ -93,10 +94,6 @@
 		}
 	}
 
-	.select-container {
-		// background-color: @theme-magenta;
-	}
-
 	label {
 		.text(normal);
 		&.control-label {
@@ -113,10 +110,11 @@
 			.text(heading);
 			font-size: 36px;
 			font-family: @font-family-light;
-			color: #FFF;
+			color: @white;
 
 			&:before {
-				font-size: 32px;
+				font-size: 36px;
+				// margin-top: 15px;
 				height: 32px;
 				width: 36px;
 			}
@@ -124,8 +122,13 @@
 
 		.sub-section-heading {
 			.text(heading);
-			font-size: 18px;
+			font-size: 22px;
 			color: lighten(@text-color, 5%);
+
+			&:before {
+				font-size: 24px;
+				margin-right: 13px;
+			}
 		}
 	}
 
@@ -143,15 +146,19 @@
 
 		.nav > li > a:hover {
 			background: transparent;
+			border: 1px inset @background-color-selected;
 		}
 
 		.nav > li.active {
+			background: -webkit-radial-gradient(darken(@background-color-selected, 7%), darken(@background-color-selected, 4%));
 			border: 2px solid @theme-background-color-dark;
-			border-right: 0;
+			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
+			border-right: 1.5px outset @theme-blue;
 		}
 
 		.nav > li.active > a:hover {
-			background: lighten(@background-color-selected, 3%);
+			background: lighten(@background-color-selected, 1%);
+			border: 1px inset @background-color-selected;
 		}
 	}
 
@@ -162,13 +169,14 @@
 	.package-card {
 		.text(normal);
 		background-image: linear-gradient(darken(@background-color-selected, 4%), darken(@background-color-selected, 6%));
-		border-color: @theme-background-color-dark;
-		border-style: outset;
-		border-width: thin;
-		border: -8px;
-		border-radius: 20px;
-		margin-top: 8px;
-		padding-top: 8px;
+		// border-color: @theme-background-color-dark;
+		// border-style: outset;
+		// border-width: thin;
+		border: 2px solid @theme-background-color-dark;
+		border-radius: 25px;
+		margin-top: 12px;
+		padding-top: 12px;
+		width: 500px;
 		// padding: @component-padding 0 @component-padding 0;
 		.card-name {
 			.text(highlight);
@@ -178,6 +186,9 @@
 	.package-card:hover,
 	.package-detail .package-card:hover {
 		background-image: radial-gradient(darken(@background-color-selected, 3%), darken(@background-color-selected, 8%));
+		border-color: fade(@theme-blue, 40%);
+		// transition-delay: 100ms;
+		transition-duration: 500ms;
 	}
 
 	.package-container .row:not(:first-child) .package-card,
