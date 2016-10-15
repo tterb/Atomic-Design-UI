@@ -2,20 +2,20 @@ atom-notifications {
     display: flex;
     align-items: flex-start;
     flex-flow: column;
-    padding: 2rem 0.5rem;
+    padding: 28px 7px;
     z-index: 9999;
 }
 
 atom-notification {
     padding: 0;
-    border-radius: 0 0.125rem 0.125rem 0;
+    border-radius: 0 2px 2px 0;
 
     .content {
-        border-radius: 0.125rem;
+        border-radius: 2px;
         width: 100%;
 
         > div {
-            padding: 1.25rem 2rem;
+            padding: 18px 28px;
             line-height: 2;
         }
         .message + .detail {
@@ -27,16 +27,16 @@ atom-notification {
     }
 
     .btn-toolbar {
-        line-height: 3rem;
+        line-height: 42px;
 
         .btn {
-            margin-right: 2rem;
+            margin-right: 28px;
         }
         .btn-copy-report {
             color: @text-color;
             line-height: 1;
             position: relative;
-            top: -0.25rem;
+            top: -4px;
         }
     }
 
@@ -49,11 +49,11 @@ atom-notification {
     }
 
     .close-all.btn {
-        height: 1.75rem;
-        line-height: 1.75rem;
+        height: 25px;
+        line-height: 25px;
         border: none;
         color: @text-color;
-        padding: 0 0.5rem;
+        padding: 0 7px;
     }
 
     &.icon::before {
@@ -66,7 +66,7 @@ atom-notification {
     }
 
     &.success, &.error, &.info, &.warning, &.fatal {
-        border-left: 0.125rem solid transparent;
+        border-left: 2px solid transparent;
         .content {
             background-color: @tree-background-color;
             color: @text-color;
@@ -75,16 +75,16 @@ atom-notification {
             border-color: transparent;
             color: fade(@text-color, 50%);
             box-shadow: none;
-            line-height: 1.65rem;
+            line-height: 23px;
         }
 
         code {
             background-color: darken(@theme-red, 8%);
-            color: #FFF;
-            font-size: 0.75rem;
+            color: @white;
+            font-size: 11px;
         }
         .btn {
-            max-width: 18rem;
+            max-width: 252px;
             overflow: hidden;
             text-overflow: ellipsis;
             color: @text-color;
@@ -118,16 +118,16 @@ atom-notification {
 
     &.has-close {
         .content > div {
-            padding-right: 4rem;
+            padding-right: 56px;
         }
         &:only-child {
             .content > div {
-                padding-right: 4rem;
+                padding-right: 56px;
             }
         }
         &:first-child:not(:only-child) {
             .content > div {
-                padding-right: 12rem;
+                padding-right: 128px;
             }
         }
     }
