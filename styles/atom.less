@@ -2,8 +2,20 @@
 @import "ui-mixins.less";
 @import "octicon-mixins";
 
+:root {
+    font-size: @font-size + 2px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 atom-workspace {
     background-color: @app-background-color;
+}
+
+background-tips {
+    color: @background-color-selected;
 }
 
 status-bar {
@@ -25,31 +37,16 @@ status-bar {
     }
 }
 
-.scrollbars-visible-always {
-    /deep/::-webkit-scrollbar {
-        width: 15px;
-        height: 12px;
-        transition: all @transition-time*20 ease;
+kbd {
+    background: fade(@text-color, 50%);
+    color: @app-background-color;
+    letter-spacing: 2px;
+
+    .selected & {
+        background: fade(@theme-magenta, 70%);
+        color: @theme-blue;
     }
-
-    /deep/ ::-webkit-scrollbar-corner,
-    /deep/::-webkit-scrollbar-track {
-        background: @scrollbar-track-color;
-    }
-
-    /deep/::-webkit-scrollbar-thumb {
-        background: @scrollbar-color;
-        background-clip: content-box;
-        border: .5px outset @background-color-selected;
-        border-radius: 5px;
-        box-shadow: inset 3px -3px 10px rgba(0,0,0,.3);
-        transition: all @transition-time*5 ease;
-
-        &:active,
-        &:hover {
-            box-shadow: inset 5px -5px 15px rgba(0,0,0,.3);
-            border: .5px outset @background-color-selected;
-            transition:  @transition-time*30 border;
-        }
+    + kbd {
+        margin-left: 7px;
     }
 }
