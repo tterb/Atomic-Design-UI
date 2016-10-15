@@ -4,8 +4,12 @@
 ## Version 1.0.5
 
   * Added custom notification styling
-  * Fixed issue with status bar and icon styling
-  * Minor modifications to improve tab contrast
+  * Fixed issue with status bar and icon coloring
+  * Fixed outside alignment of tabs
+  * Minor modifications to improve tab and scrollbar contrast
+  * Fixed issue with tree-view entry git status color
+  * Improved settings-view styling
+  * Added Deprecation & Time-Cop styling
 
 ------------------------------------------------------------------------------------------------------------------------
 
