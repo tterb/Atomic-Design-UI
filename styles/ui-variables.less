@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 // Colors ---------------------------------------------------------------------
-
+@white: #FFF;
 @lightest-gray: #E3E9E6;
 @lighter-gray: #93A1A1;
 @light-gray: #969896;
@@ -18,7 +18,7 @@
 @theme-purple: #AE81FF;
 @theme-magenta: #F92672;
 
-@theme-text-color-highlight: #FFF;
+@theme-text-color-highlight: @white;
 @theme-text-color-accent: mix(@syntax-text-color, @theme-text-color-highlight, 50%);
 @theme-text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
 @theme-text-color-subtle: mix(@syntax-background-color, @theme-text-color-accent, 72%);
@@ -137,7 +137,7 @@
 
 @progress-background-color: @background-color-info;
 
-@scrollbar-color: -webkit-radial-gradient(lighten(@background-color-selected, 2%), darken(@background-color-selected, 3%));
+@scrollbar-color: -webkit-radial-gradient(lighten(@background-color-selected, 3%), darken(@background-color-selected, 2%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 3%);
 @scrollbar-track-color: mix(@tree-background-color, darken(@app-background-color, 2.5%), 40%);
 
