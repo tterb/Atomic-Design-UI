@@ -6,10 +6,6 @@
 	font-size: @font-size;
 	background: @theme-text-color-highlight;
 
-	.breadcrumb {
-		.text(light);
-	}
-
 	.alert {
 		border: 0;
 
@@ -54,86 +50,14 @@
 	}
 	.text(normal);
 
-	.setting-title,
-	.setting-title.themes-label {
-		.text(normal);
-		font-size: 22px;
-		color: lighten(@text-color, 30%);
-	}
-
-	.setting-description,
-	.setting-description.themes-label {
-		font-size: 14.5px;
-		color: darken(@text-color, 8%);
-	}
-
-	select {
-		&.form-control {
-			font-size: 15px;
-			padding-top: 3px;
-			background-color: lighten(@tool-panel-background-color, 4%);
-			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 5%);
-		}
-		&.form-control:active {
-			color: lighten(@syntax-text-color, 5%);
-			background-color: lighten(@tool-panel-background-color, 4%);
-			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 5%);
-		}
-		&.form-control:hover {
-			color: lighten(@syntax-text-color, 5%);
-			background-color: lighten(@tool-panel-background-color, 4%);
-			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 5%);
-		}
-		&.form-control:not(:hover) {
-			background-color: lighten(@tool-panel-background-color, 4%);
-			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 5%);
+	.block.section-heading.icon.icon-device-desktop {
+		&:before {
+			margin-right: 12px;
 		}
 	}
 
-	label {
-		.text(normal);
-		&.control-label {
-			.theme-description {
-				min-height: 36px;
-			}
-		}
-	}
-
-	.section {
-		background-color: lighten(@background-color-selected, 0.25%);
-
-		.section-heading {
-			.text(heading);
-			font-size: 36px;
-			font-family: @font-family-light;
-			color: @white;
-
-			&:before {
-				font-size: 36px;
-				// margin-top: 15px;
-				height: 32px;
-				width: 36px;
-			}
-		}
-
-		.sub-section-heading {
-			.text(heading);
-			font-size: 22px;
-			color: lighten(@text-color, 5%);
-
-			&:before {
-				font-size: 24px;
-				margin-right: 13px;
-			}
-		}
-	}
-
-	.section:first-of-type {
-		border-top: 0;
+	.breadcrumb {
+		.text(light);
 	}
 
 	.config-menu {
@@ -162,8 +86,14 @@
 		}
 	}
 
-	.sub-section .row div {
-		background-color: transparent;
+	label {
+		.text(normal);
+		&.control-label {
+			.theme-description {
+				margin-top: 4px;
+				min-height: 36px;
+			}
+		}
 	}
 
 	.package-card {
@@ -224,4 +154,95 @@
 			.text(heading);
 		}
 	}
+
+	.setting-title,
+	.setting-title.themes-label {
+		.text(normal);
+		font-size: 22px;
+		color: lighten(@text-color, 30%);
+	}
+
+	.setting-description,
+	.setting-description.themes-label {
+		font-size: 14.5px;
+		color: darken(@text-color, 8%);
+	}
+
+	select {
+		&.form-control {
+			font-size: 15px;
+			padding-top: 3px;
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: darken(@input-border-color, 5%);
+		}
+		&.form-control:active {
+			color: lighten(@syntax-text-color, 5%);
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: lighten(@input-border-color, 5%);
+		}
+		&.form-control:hover {
+			color: lighten(@syntax-text-color, 5%);
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: lighten(@input-border-color, 5%);
+		}
+		&.form-control:not(:hover) {
+			background-color: lighten(@tool-panel-background-color, 4%);
+			border-radius: @component-border-radius + 5px;
+			border-color: darken(@input-border-color, 5%);
+		}
+	}
+
+	.section {
+		background-color: lighten(@background-color-selected, 0.25%);
+
+		.section-heading {
+			.text(heading);
+			font-size: 36px;
+			font-family: @font-family-light;
+			color: @white;
+
+			&:before {
+				font-size: 36px;
+				height: 32px;
+				width: 36px;
+			}
+		}
+		.section-heading-count.badge {
+			background: fade(@theme-blue, 70%);
+		}
+		.sub-section-heading {
+			.text(heading);
+			font-size: 22px;
+			color: lighten(@text-color, 5%);
+
+			&:before {
+				font-size: 24px;
+				margin-right: 13px;
+			}
+		}
+	}
+
+	.section:first-of-type {
+		border-top: 0;
+	}
+
+	.sub-section .row div {
+		background-color: transparent;
+	}
+
+	.text.icon.icon-question {
+		padding-bottom: 14px;
+		padding-left: 8px;
+		&:before {
+			padding-right: 8px;
+			color: @theme-blue;
+		}
+	}
+}
+
+.settings-view input[type="checkbox"] {
+	margin-top: 10px;
 }
