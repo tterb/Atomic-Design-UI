@@ -2,7 +2,7 @@
 
 .tree-view {
     padding-top: 10px;
-    margin: -6px -15px;
+    margin: -5px -15px;
     font-size: @tree-font-size;
     background: @tree-background-color;
 
@@ -29,7 +29,7 @@
         text-transform: capitalize;
         font-size: @tree-font-size + 3px;
         color: darken(@lightest-gray, 4%);
-        margin: 5px 2px;
+        margin: 5px 0px;
 
         &::before {
             visibility: hidden;
@@ -42,8 +42,10 @@
         vertical-align: middle;
         font-weight: bold;
         font-size: @tree-font-size + 2px;
+        margin: 4px 0px;
         margin-bottom: 3px;
-        border-bottom: 1px solid @tool-panel-border-color;
+        padding-bottom: 3px;
+        // border-bottom: 1px solid @tool-panel-border-color;
         color: @lightest-gray;
         &::before {
             visibility: visible;
@@ -55,9 +57,22 @@
         text-align: left;
         vertical-align: middle;
         font-size: @tree-font-size + 2px;
-        border-bottom: 1px solid @tab-bar-border-color;
+        // border-bottom: 1px solid @tab-bar-border-color;
         color: @lightest-gray;
-        margin: 5px 10px;
+        margin: 5px 5px;
+
+        &::before {
+            visibility: visible;
+        }
+    }
+}
+
+li.directory.entry.list-nested-item {
+    border: none;
+    &.expanded {
+        background-color: -webkit-linear-gradient(top, lighten(@background-color-selected, 4%), darken(@tree-background-color, 2%)) !important;
+        padding-bottom: 8px !important;
+        border-bottom: 1px inset @background-color-selected;
     }
 }
 
@@ -76,7 +91,7 @@
 
         .selected:before {
             transition: color @transition-time ease;
-            background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 9%), @tree-selection-color);
+            // background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 9%), @tree-selection-color);
         }
     }
 }
