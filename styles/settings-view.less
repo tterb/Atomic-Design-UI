@@ -75,14 +75,16 @@
 
 		.nav > li.active {
 			background: -webkit-radial-gradient(darken(@background-color-selected, 7%), darken(@background-color-selected, 4%));
-			border: 2px solid @theme-background-color-dark;
+			border-top: 2px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
 			border-right: 1.5px outset @theme-blue;
 		}
 
 		.nav > li.active > a:hover {
 			background: lighten(@background-color-selected, 1%);
-			border: 1px inset @background-color-selected;
+			border-top: 2px solid @theme-background-color-dark;
+			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
+			border-right: 1.5px outset @theme-blue;
 		}
 	}
 
@@ -90,7 +92,7 @@
 		.text(normal);
 		&.control-label {
 			.theme-description {
-				margin-top: 4px;
+				// margin-top: 4px;
 				min-height: 36px;
 			}
 		}
