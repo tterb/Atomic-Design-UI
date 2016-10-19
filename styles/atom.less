@@ -1,0 +1,52 @@
+@import "ui-variables";
+@import "ui-mixins.less";
+@import "octicon-mixins";
+
+:root {
+    font-size: @font-size + 2px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+atom-workspace {
+    background-color: @app-background-color;
+}
+
+background-tips {
+    color: @background-color-selected;
+}
+
+status-bar {
+    .text(subtle);
+    background: @status-bar-color;
+    height: @input-height;
+    line-height: @component-line-height;
+    font-size: @font-size + 1px;
+
+    & > .flexbox-repaint-hack {
+        padding-top: 3px;
+    }
+
+    span {
+        font-size: @font-size - 1px;
+        &.inline-block.icon.icon-color-mode {
+            color: @theme-purple;
+        }
+    }
+}
+
+kbd {
+    background: fade(@text-color, 50%);
+    color: @app-background-color;
+    letter-spacing: 2px;
+
+    .selected & {
+        background: fade(@theme-magenta, 70%);
+        color: @theme-blue;
+    }
+    + kbd {
+        margin-left: 7px;
+    }
+}
