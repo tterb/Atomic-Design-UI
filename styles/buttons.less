@@ -16,13 +16,13 @@
 
     &:hover {
         color: @text-color-highlight;
-        background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 7%));
+        background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 8%));
     }
 
     &.selected,
     &.selected:hover {
-        color: @text-color-highlight;
-        background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 20%), darken(@hover-color, 2%));
+        color: fade(@theme-blue, 70%);;
+        background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 18%), darken(@hover-color, 4%));
 
         &:hover {
             background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 20%), darken(@hover-color, 5%));
