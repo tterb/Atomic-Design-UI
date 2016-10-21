@@ -92,7 +92,6 @@
 		.text(normal);
 		&.control-label {
 			.theme-description {
-				// margin-top: 4px;
 				min-height: 36px;
 			}
 		}
@@ -101,15 +100,11 @@
 	.package-card {
 		.text(normal);
 		background-image: linear-gradient(darken(@background-color-selected, 4%), darken(@background-color-selected, 6%));
-		// border-color: @theme-background-color-dark;
-		// border-style: outset;
-		// border-width: thin;
 		border: 2px solid @theme-background-color-dark;
 		border-radius: 25px;
 		margin-top: 12px;
 		padding-top: 12px;
 		width: 500px;
-		// padding: @component-padding 0 @component-padding 0;
 		.card-name {
 			.text(highlight);
 		}
@@ -119,7 +114,6 @@
 	.package-detail .package-card:hover {
 		background-image: radial-gradient(darken(@background-color-selected, 3%), darken(@background-color-selected, 8%));
 		border-color: fade(@theme-blue, 40%);
-		// transition-delay: 100ms;
 		transition-duration: 500ms;
 	}
 
@@ -147,7 +141,7 @@
 	}
 
 	.package-readme {
-		font-size: @font-size + 3px;
+		font-size: 1em;
 
 		h1,
 		h2,
@@ -160,19 +154,19 @@
 	.setting-title,
 	.setting-title.themes-label {
 		.text(normal);
-		font-size: @font-size + 9;
+		font-size: 22px;
 		color: lighten(@text-color, 30%);
 	}
 
 	.setting-description,
 	.setting-description.themes-label {
-		font-size: @font-size + 1.5px;
+		font-size: 14.5px;
 		color: darken(@text-color, 8%);
 	}
 
 	select {
 		&.form-control {
-			font-size: @font-size + 2px;
+			font-size: 15px;
 			padding-top: 3px;
 			background-color: lighten(@tool-panel-background-color, 4%);
 			border-radius: @component-border-radius + 5px;
@@ -202,12 +196,12 @@
 
 		.section-heading {
 			.text(heading);
-			font-size: @font-size * 2.75;
+			font-size: 36px;
 			font-family: @font-family-light;
 			color: @white;
 
 			&:before {
-				font-size: @font-size * 2.75;
+				font-size: 36px;
 				height: 32px;
 				width: 36px;
 			}
@@ -217,11 +211,11 @@
 		}
 		.sub-section-heading {
 			.text(heading);
-			font-size: @font-size + 9;
+			font-size: 22px;
 			color: lighten(@text-color, 5%);
 
 			&:before {
-				font-size: @font-size + 11px;
+				font-size: 24px;
 				margin-right: 13px;
 			}
 		}

@@ -3,7 +3,7 @@
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
     color: @text-color;
-    font-size: @font-size;
+    font-size: 12px;
     font-weight: 400;
     transition: all @transition-time ease;
     background-color: lighten(@app-background-color, 15%);
@@ -21,7 +21,7 @@
 
     &.selected,
     &.selected:hover {
-        color: fade(@theme-blue, 70%);;
+        // color: fade(@theme-blue, 70%);;
         background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 18%), darken(@hover-color, 4%));
 
         &:hover {

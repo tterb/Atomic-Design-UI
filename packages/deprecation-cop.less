@@ -1,12 +1,11 @@
 .deprecation-cop {
-    // padding: 42px;
 
     .deprecation-overview {
         float: right;
         padding-top: 4px;
         padding-right: 14px;
         .btn-primary {
-            font-size: @font-size + 1px;
+            font-size: 14px;
             background-color: -webkit-linear-gradient(darken(@theme-blue, 0%), darken(@theme-blue, 30%));
             background: -webkit-radial-gradient(darken(@theme-blue, 8%), darken(@theme-blue, 25%));
             color: lighten(@text-color-highlight, 5%);
@@ -30,7 +29,7 @@
     .deprecation {
         padding: 0 28px;
         .panel-heading {
-            font-size: @font-size + 3px;
+            font-size: 16px;
         }
         > .deprecation-info, > .list-item {
             padding: 0 28px;
@@ -90,7 +89,7 @@
 
     .deprecation-detail.list-item {
         .deprecation-message {
-            font-size: @font-size + 3px;;
+            font-size: 16px;
             line-height: 30px;
             margin: -22px 0px 0px;
             padding: 0px;
@@ -103,7 +102,7 @@
         .stack-trace {
             background: transparent;
             margin: 42px 0px 0px;
-            font-size: @font-size;
+            font-size: 12px;
             > * {
                 line-height: 25px;
                 font-family: monospace;
@@ -129,11 +128,11 @@
     }
     ul + .panel-heading {
         margin-top: 64px;
-        font-size: @font-size + 7px;
+        font-size: 20px;
     }
     .panel-heading {
         margin-top: 20px;
-        font-size: @font-size + 7px;
+        font-size: 20px;
         color: lighten(@text-color, 15%);
     }
 }
