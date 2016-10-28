@@ -9,7 +9,6 @@
     background-color: lighten(@app-background-color, 15%);
     background-image: -webkit-linear-gradient(lighten(@color,5%), darken(@color, 5%));
     box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
-
     &:focus {
         color: @button-text-color;
     }
@@ -21,9 +20,7 @@
 
     &.selected,
     &.selected:hover {
-        // color: fade(@theme-blue, 70%);;
         background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 18%), darken(@hover-color, 4%));
-
         &:hover {
             background-image: -webkit-radial-gradient(lighten(@button-background-color-hover, 20%), darken(@hover-color, 5%));
         }
