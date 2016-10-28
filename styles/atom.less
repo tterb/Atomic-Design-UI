@@ -18,24 +18,6 @@ background-tips {
     color: @background-color-selected;
 }
 
-status-bar {
-    .text(subtle);
-    background: @status-bar-color;
-    height: @input-height;
-    line-height: @component-line-height;
-    font-size: 14px;
-
-    & > .flexbox-repaint-hack {
-        padding-top: 3px;
-    }
-
-    span {
-        font-size: 12px;
-        &.inline-block.icon.icon-color-mode {
-            color: @theme-purple;
-        }
-    }
-}
 
 kbd {
     background: fade(@text-color, 50%);
