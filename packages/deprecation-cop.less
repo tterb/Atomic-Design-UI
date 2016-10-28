@@ -1,4 +1,9 @@
 .deprecation-cop {
+    background: darken(@theme-background-color, 2%) !important;
+
+    .panel {
+        padding-top: 30px;
+    }
 
     .deprecation-overview {
         float: right;
@@ -6,18 +11,22 @@
         padding-right: 14px;
         .btn-primary {
             font-size: 14px;
-            background-color: -webkit-linear-gradient(darken(@theme-blue, 0%), darken(@theme-blue, 30%));
-            background: -webkit-radial-gradient(darken(@theme-blue, 8%), darken(@theme-blue, 25%));
+            background-color: -webkit-linear-gradient(@theme-blue, darken(@theme-blue, 30%));
             color: lighten(@text-color-highlight, 5%);
             height: 32px;
-            border-radius: 5px;
-            margin: -2px -4px -4px;
+            border: -4px 2px 0px outset lighten(@theme-blue, 15%);
+            border-radius: 4px;
+            margin: -27px -4px -4px;
             padding-left: 4px;
             padding-right: 4px;
             text-shadow: 2px 2px 0px rgba(0,0,0,.5);
             box-shadow: outset -2px -2px 0px rgba(0,0,0,.6);
             &:hover {
-                background: -webkit-radial-gradient(darken(@theme-blue, 10%), darken(@theme-blue, 35%));
+                background: -webkit-radial-gradient(darken(@theme-blue, 1%), darken(@theme-blue, 15%));
+                transition-duration: 200ms;
+            }
+            &:active {
+                background: -webkit-radial-gradient(darken(@theme-blue, 10%), darken(@theme-blue, 25%));
                 transition-duration: 200ms;
             }
         }
@@ -30,13 +39,19 @@
         padding: 0 28px;
         .panel-heading {
             font-size: 16px;
+            border: 3px outset rgba(200,200,200,200);
         }
         > .deprecation-info, > .list-item {
             padding: 0 28px;
             margin: 0 -28px;
             background: darken(@theme-background-color, 2%);
-            // border: 1px inset transparent;
             &:hover {
+                background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
+                box-shadow: 40px 80px 80px inset rgba(200,200,200,7);
+                border: 1px inset rgba(0,0,0,.5);
+                border-left: 1px inset @theme-blue;
+            }
+            &:active {
                 background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
                 box-shadow: 40px 80px 80px inset rgba(200,200,200,7);
                 border: 1px inset rgba(0,0,0,.5);
@@ -47,14 +62,20 @@
             background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 3%), lighten(@theme-background-color, 1%)) !important;
             border-left: 1px inset @theme-blue;
             box-shadow: 40px 40px 40px inset rgba(0,0,0,7);
+            &.collapsed {
+                border-left: transparent !important;
+            }
             &.deprecation-info.list-item {
                 border-left: 1px inset @theme-blue !important;
-                background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 2%), lighten(@theme-background-color, 1%)) !important;
+                background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 1%), lighten(@theme-background-color, 2%)) !important;
                 border: 2px inset darken(@theme-background-color-dark, 4%);
             }
-            &.collapsed {
-                border-left: transparent;
-            }
+			&.list {
+				padding-bottom: 25px;
+                &.list-item deprecation-detail {
+                    border-left: 1px inset @theme-blue;
+                }
+			}
         }
     }
     .btn-group {
@@ -111,25 +132,16 @@
                 color: lighten(@text-color, 15%);
             }
             .stack-line-location {
-                color: mix(@theme-blue, @text-color-highlight);
+                color: mix(@theme-purple, @text-color-highlight);
             }
         }
     }
 
-    .selectors {
-
-        li.list-tree.has-collapsable-children {
-            margin: 0;
-
-            :hover {
-                background: darken(@theme-background-color, 10%);
-            }
-        }
-    }
     ul + .panel-heading {
-        margin-top: 64px;
+        margin-top: 30px;
         font-size: 20px;
     }
+    
     .panel-heading {
         margin-top: 20px;
         font-size: 20px;
