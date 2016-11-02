@@ -1,0 +1,48 @@
+
+.tool-bar {
+    background: lighten(@tab-bar-background-color, 3%);
+    @button-margin-size: 2px;
+    @button-border-size: 1px;
+    border: 1px solid @base-border-color;
+    color: @text-color;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 5000;
+
+    button.tool-bar-btn {
+        background-color: @base-background-color;
+        background-image: inherit;
+        cursor: pointer;
+        flex: 0 0 auto;
+        margin: @button-margin-size;
+        padding: 0;
+
+        &:before {
+            display: inline;
+        }
+        &:focus,
+        &:hover {
+            color: lighten(@text-color, 25%);
+            border: 1px outset lighten(@base-border-color, 12%);
+        }
+    }
+
+    .tool-bar(@size) {
+        line-height: @size;
+        .tool-bar-btn {
+            height: @size + (@button-border-size * 2);
+            width: @size + (@button-border-size * 2);
+            background: -webkit-linear-gradient(top, lighten(@base-background-color, 3.5%), darken(@base-background-color, .75%));
+            &:before {
+                font-size: @size / 2;
+                line-height: @size;
+            }
+        }
+        &.tool-bar-horizontal .tool-bar-spacer {
+            height: @size - 4;
+        }
+        &.tool-bar-vertical .tool-bar-spacer {
+            width: @size - 4;
+        }
+    }
+}
