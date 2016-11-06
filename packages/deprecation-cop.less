@@ -11,12 +11,12 @@
         padding-right: 14px;
         .btn-primary {
             font-size: 13px;
-            background-color: -webkit-linear-gradient(@theme-blue, darken(@theme-blue, 30%));
+            // background-color: -webkit-linear-gradient(@theme-blue, darken(@theme-blue, 30%));
             color: lighten(@text-color-highlight, 5%);
             height: 28px;
             border: -4px 2px 0px outset lighten(@theme-blue, 15%);
             border-radius: 4px;
-            margin: -27px -4px -4px;
+            margin: -25px -4px -4px;
             padding-left: 4px;
             padding-right: 4px;
             text-shadow: 2px 1px 0px rgba(0,0,0,.5);
@@ -36,14 +36,12 @@
     }
 
     .deprecation {
-        padding: 0 28px;
         .panel-heading {
             font-size: 16px;
             border: 3px outset rgba(200,200,200,200);
         }
         > .deprecation-info, > .list-item {
             padding: 0 28px;
-            margin: 0 -28px;
             background: darken(@theme-background-color, 2%);
             &:hover {
                 background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
@@ -59,34 +57,44 @@
             }
         }
         &.list-nested-item {
-            background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 3%), lighten(@theme-background-color, 1%)) !important;
+            // background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 3%), lighten(@theme-background-color, 1%)) !important;
+            background: lighten(@theme-background-color, 1%);
             border-left: 1px inset @theme-blue;
             box-shadow: 40px 40px 40px inset rgba(0,0,0,7);
             &.collapsed {
                 border-left: transparent !important;
             }
             &.deprecation-info.list-item {
+                padding: 0 -28px;
                 border-left: 1px inset @theme-blue !important;
                 background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 1%), lighten(@theme-background-color, 2%)) !important;
                 border: 2px inset darken(@theme-background-color-dark, 4%);
             }
-			&.list {
-				padding-bottom: 25px;
-                &.list-item deprecation-detail {
+			.list {
+                margin-bottom: 10px;
+                padding-bottom: 15px;
+                .list-item deprecation-detail {
+                    margin-top: 10px;
                     border-left: 1px inset @theme-blue;
                 }
 			}
         }
     }
+
     .btn-group {
         float: right;
         margin: 0px 0px 4px 2px;
 
-        .btn:not(.btn-primary) {
+        .btn.disable-package {
+            &:hover {
+                color: @text-color-warning;
+            }
+        }
 
+        .btn:not(.btn-primary) {
             &:hover {
                 border-radius: 5px;
-                border: 1px outset fade(@theme-blue, 55%);
+                // border: 1px outset fade(@theme-blue, 55%);
                 transition-duration: 200ms;
             }
             + .btn {
@@ -98,13 +106,11 @@
     // Report issue button
     .btn-toolbar {
         float: right;
-        margin: 0px 20px 0px;
-        padding: 8px;
+        padding-right: 8px;
         .issue-url {
         &:hover {
             border-radius: 5px;
-            border: 1px outset fade(@theme-blue, 55%);
-            transition-duration: 200ms;
+            color: @text-color-info;
         }}
     }
 
@@ -112,17 +118,20 @@
         .deprecation-message {
             font-size: 16px;
             line-height: 30px;
-            margin: -22px 0px 0px;
+            margin: 10px 0px 0px;
             padding: 0px;
         }
 
         .icon-alert {
-            margin: 0px;
+            margin-top: -1px;
+            margin-right: 2px;
         }
 
         .stack-trace {
             background: transparent;
-            margin: 42px 0px 0px;
+            margin-top: 28px;
+            margin-left: 10px;
+            padding-top: 20px;
             font-size: 12px;
             > * {
                 line-height: 25px;
