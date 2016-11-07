@@ -17,14 +17,14 @@
     <p align="center">
         <img src="https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png" width="950" title="Screenshot">
     </p>
-	
+
 <br>  
 ## Description:
   This UI theme is a fork of [Atom Dark UI](https://github.com/atom/atom-dark-ui), featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***](https://atom.io/themes/atomic-monokai-syntax) and similar dark syntax-highlighting packages. Similarly, this theme also includes improved integration of some of the most common [Atom packages](https://atom.io/packages).  
-  
+
 **In Progress**
   * Adding improved integration for an increasing collection of common packages.
-  * Experimenting with functionalities to allow the UI to conform it's color pallete to the current syntax-theme.
+  * Experimenting with functionalities to allow the UI to conform it's color palette to the current syntax-theme.
 
 <br>  
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
@@ -51,7 +51,7 @@ ________________________________________________________________________________
 
 ## Other Packages:
 
-  * [**Minimap**](https://atom.io/packages/minimap) - featured in the above screenshot, *Minimap* applies a "*Sublime-esque*" view to the right-side of the frame.
+  * [**Minimap**](https://atom.io/packages/minimap) - featured in the above screenshot, *Mini-map* applies a "*Sublime-esque*" view to the right-side of the frame.
   * [**Project Manager**](https://atom.io/packages/project-manager) - delivers a familiar workflow for navigating multiple projects and project-specific settings.
   * [**Highlight Selected**](https://atom.io/packages/highlight-selected) - highlights all instances of the currently selected element within the open file.
   * [***More...***](https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html)
@@ -62,7 +62,7 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________
 
 <p align="right">
-     <span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6RKPR34SH6CU" title="Donate to this project using Paypal">
+     <span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6RKPR34SH6CU" title="Donate to this project using PayPal">
  <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" height="21" title="Donate"></a></span>&nbsp;&nbsp;
    	<a href="https://gitter.im/Atomic-Design-UI/Lobby">
         <img src="https://badges.gitter.im/Atomic-Design-UI/Lobby.svg" height="21" title="Gitter">
