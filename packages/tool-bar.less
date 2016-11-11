@@ -1,36 +1,43 @@
 
+@toolbar-background-color: lighten(@tree-background-color, 1%);
+@toolbar-icon-color: mix(@syntax-background-color, @text-color-accent, 60%);
+
 .tool-bar {
-    background: lighten(@tab-bar-background-color, 2%);
+    background: @toolbar-background-color;
     @button-margin-size: 2px;
     @button-border-size: 1px;
-    border: 1px solid @base-border-color;
-    color: @text-color;
+    border: 1px outset lighten(@base-border-color, 0%);
     display: flex;
     justify-content: flex-start;
     z-index: 5000;
 
     button.tool-bar-btn {
-        background: @base-background-color;
+        background: lighten(@theme-background-color, 1%);
+        color: @toolbar-icon-color;
         background-image: inherit;
         cursor: pointer;
         flex: 0 0 auto;
-        margin: @button-margin-size;
-        padding: 0;
+        margin: @button-margin-size + 2px;
+        padding: 2px;
 
         &:before {
             display: inline;
         }
         &:focus,
         &:hover {
-            color: lighten(@text-color, 20%);
-            border: 1px outset lighten(@base-border-color, 12%);
+            color: lighten(@toolbar-icon-color, 22%);
+            border: 1px outset lighten(@base-border-color, 20%);
         }
+    }
+
+    &.tool-bar-vertical .tool-bar-spacer {
+        border-bottom: 2px solid mix(@syntax-background-color, @text-color-accent, 90%);
     }
 
     .tool-bar(@size) {
         line-height: @size;
         .tool-bar-btn {
-            background-color: -webkit-linear-gradient(top, lighten(@base-background-color, 4%), darken(@base-background-color, .75%));
+            background: -webkit-linear-gradient(top, lighten(@theme-background-color, 4%), darken(@theme-background-color, .75%));
             height: @size + (@button-border-size * 2);
             width: @size + (@button-border-size * 2);
             &:before {
