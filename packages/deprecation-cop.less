@@ -9,9 +9,10 @@
         float: right;
         padding-top: 4px;
         padding-right: 14px;
+
+        // 'Check for Updates' button
         .btn-primary {
             font-size: 13px;
-            // background-color: -webkit-linear-gradient(@theme-blue, darken(@theme-blue, 30%));
             color: lighten(@text-color-highlight, 5%);
             height: 28px;
             border: -4px 2px 0px outset lighten(@theme-blue, 15%);
@@ -41,7 +42,7 @@
             border: 3px outset rgba(200,200,200,200);
         }
         > .deprecation-info, > .list-item {
-            padding: 0 28px;
+            padding: 2px 28px 2px;
             background: darken(@theme-background-color, 2%);
             &:hover {
                 background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
@@ -57,15 +58,15 @@
             }
         }
         &.list-nested-item {
-            // background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 3%), lighten(@theme-background-color, 1%)) !important;
-            background: lighten(@theme-background-color, 1%);
+            background: lighten(@theme-background-color, 4%);
             border-left: 1px inset @theme-blue;
-            box-shadow: 40px 40px 40px inset rgba(0,0,0,7);
+            box-shadow: inset 1px 0px 12px 2px rgba(0,0,0,.4);
+
             &.collapsed {
                 border-left: transparent !important;
             }
             &.deprecation-info.list-item {
-                padding: 0 -28px;
+                padding: 0px -28px;
                 border-left: 1px inset @theme-blue !important;
                 background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 1%), lighten(@theme-background-color, 2%)) !important;
                 border: 2px inset darken(@theme-background-color-dark, 4%);
@@ -73,9 +74,11 @@
 			.list {
                 margin-bottom: 10px;
                 padding-bottom: 15px;
-                .list-item deprecation-detail {
+                .list-item {
                     margin-top: 10px;
-                    border-left: 1px inset @theme-blue;
+                    .source-url {
+                        font-size: 16px;
+                    }
                 }
 			}
         }
@@ -94,7 +97,6 @@
         .btn:not(.btn-primary) {
             &:hover {
                 border-radius: 5px;
-                // border: 1px outset fade(@theme-blue, 55%);
                 transition-duration: 200ms;
             }
             + .btn {
@@ -118,7 +120,7 @@
         .deprecation-message {
             font-size: 16px;
             line-height: 30px;
-            margin: 10px 0px 0px;
+            margin: 10px 10px 0px 0px;
             padding: 0px;
         }
 
