@@ -1,6 +1,25 @@
 # Change Log
 <br>  
 
+## Version 1.0.6
+
+  * Modified badge appearance
+  * Modified tree-view spacing and directory styling
+  * Fixed checkbox alignment in views
+  * Improved Deprecation-Cop styling
+  * Modified settings-view styling and organized code
+  * Improved button-variant styling
+  * Added styling for tool-bar package
+  * Moved status-bar styling to separate file
+  * Added top margin to main editor
+  * Fixed package-card styling in settings-view
+  * Added visible editor border
+  * Improved gutter styling
+  * Added reference import to 'index.less'
+  * Removed unnecessary UI-variables
+
+------------------------------------------------------------------------------------------------------------------------
+
 ## Version 1.0.5
 
   * Added custom notification styling
