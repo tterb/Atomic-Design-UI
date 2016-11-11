@@ -32,7 +32,7 @@
 
 	.alert-info {
 		color: @text-color-info;
-		background: mix(@text-color-info, @base-background-color, 32%);
+		background: mix(@text-color-info, @theme-background-color, 32%);
 
 		button.close:before {
 			color: @text-color-info;
@@ -41,7 +41,7 @@
 
 	.alert-danger {
 		color: @text-color-error;
-		background: mix(@text-color-error, @base-background-color, 32%);
+		background: mix(@text-color-error, @theme-background-color, 32%);
 
 		button.close:before {
 			color: @text-color-error;
@@ -60,7 +60,7 @@
 	}
 
 	.config-menu {
-		background-color: darken(@background-color-selected, 7%);
+		background-color: darken(@theme-background-color-selected, 8%);
 		z-index: +1;
 
 		.nav > li > a {
@@ -69,19 +69,20 @@
 
 		.nav > li > a:hover {
 			background: transparent;
-			border: 1px inset @background-color-selected;
+			border: 1px inset @theme-background-color-selected;
 		}
 
 		.nav > li.active {
-			background: -webkit-radial-gradient(darken(@background-color-selected, 7%), darken(@background-color-selected, 4%));
-			border-top: 2px solid @theme-background-color-dark;
+			border: 1px inset @theme-background-color-selected;
+			background: lighten(@theme-background-color-selected, 3%);
+			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
 			border-right: 1.5px outset @theme-blue;
 		}
 
 		.nav > li.active > a:hover {
-			background: lighten(@background-color-selected, 1%);
-			border-top: 2px solid @theme-background-color-dark;
+			background: lighten(@theme-background-color-selected, 1%);
+			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
 			border-right: 1.5px outset @theme-blue;
 		}
@@ -98,7 +99,7 @@
 
 	.package-card {
 		.text(normal);
-		background-image: linear-gradient(darken(@background-color-selected, 4%), darken(@background-color-selected, 6%));
+		background-image: linear-gradient(darken(@theme-background-color-selected, 4%), darken(@theme-background-color-selected, 6%));
 		border: 2px solid @theme-background-color-dark;
 		border-radius: 25px;
 		margin-top: 12px;
@@ -116,7 +117,7 @@
 
 	.package-card:hover,
 	.package-detail .package-card:hover {
-		background-image: radial-gradient(darken(@background-color-selected, 3%), darken(@background-color-selected, 8%));
+		background-image: radial-gradient(darken(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 8%));
 		border-color: fade(@theme-blue, 40%);
 		transition-duration: 500ms;
 	}
@@ -171,31 +172,31 @@
 		&.form-control {
 			font-size: 15px;
 			padding-top: 3px;
-			background-color: lighten(@tool-panel-background-color, 4%);
+			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: darken(@input-border-color, 5%);
 		}
 		&.form-control:active {
 			color: lighten(@syntax-text-color, 5%);
-			background-color: lighten(@tool-panel-background-color, 4%);
+			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:hover {
 			color: lighten(@syntax-text-color, 5%);
-			background-color: lighten(@tool-panel-background-color, 4%);
+			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:not(:hover) {
-			background-color: lighten(@tool-panel-background-color, 4%);
+			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: darken(@input-border-color, 5%);
 		}
 	}
 
 	.section {
-		background-color: lighten(@background-color-selected, 0.25%);
+		background-color: lighten(@theme-background-color-selected, 0.25%);
 		.section-heading {
 			.text(heading);
 			font-size: 36px;

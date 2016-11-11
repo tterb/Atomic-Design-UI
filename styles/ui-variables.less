@@ -18,47 +18,41 @@
 @theme-purple: #AE81FF;
 @theme-magenta: #F92672;
 
-@theme-text-color-highlight: @white;
-@theme-text-color-accent: mix(@syntax-text-color, @theme-text-color-highlight, 50%);
+@theme-text-color-accent: mix(@syntax-text-color, @white, 50%);
 @theme-text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
 @theme-text-color-subtle: mix(@syntax-background-color, @theme-text-color-accent, 72%);
+@theme-text-color-highlight: @white;
 
-@theme-background-color: @syntax-background-color;
-@theme-background-color-dark: desaturate(darken(@syntax-background-color, 4%), 2%);
-@theme-background-color-light: desaturate(lighten(@syntax-background-color, 6%), 2%);
-@theme-background-selection: @syntax-selection-color;
 
-// Editor colors --------------------------------------------------------------
+// Syntax-Theme Colors --------------------------------------------------------------
 
 @theme-syntax-text-color: @syntax-text-color;
 @theme-syntax-cursor-color: @syntax-text-color;
 @theme-syntax-selection-color: lighten(@syntax-background-color, 10%);
 @theme-syntax-background-color: @syntax-background-color;
 
-@theme-syntax-wrap-guide-color: @theme-background-color-light;
-@theme-syntax-indent-guide-color: @theme-background-color-light;
-@theme-syntax-invisible-character-color: @theme-background-color-light;
-
-@theme-syntax-gutter-text-color: @theme-text-color-subtle;
-@theme-syntax-gutter-text-color-selected: @theme-text-color-highlight;
-@theme-syntax-gutter-background-color: @theme-background-color;
-@theme-syntax-gutter-background-color-selected: fade(@theme-background-color-light, 10%);
 
 // Background Colors ----------------------------------------------------------
+
+@theme-background-color: @syntax-background-color;
+@theme-background-color-dark: desaturate(darken(@syntax-background-color, 4%), 2%);
+@theme-background-color-light: desaturate(lighten(@syntax-background-color, 6%), 2%);
+@theme-background-color-highlight: @theme-background-color-light;
+@theme-background-color-selected: @theme-background-color-light;
 
 @background-color-info: @theme-blue;
 @background-color-success: @theme-green;
 @background-color-warning: @theme-orange;
 @background-color-error: @theme-red;
-@background-color-highlight: @theme-background-color-light;
-@background-color-selected: @theme-background-color-light;
+
 
 // Text Colors ----------------------------------------------------------------
 
-@text-color: @theme-text-color;
-@text-color-subtle: @theme-text-color-subtle;
+@text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
+@text-color-subtle: mix(@syntax-background-color, @theme-text-color-accent, 72%);
 @text-color-highlight: @theme-text-color-highlight;
 @text-color-selected: @theme-text-color-highlight;
+@text-color-accent: mix(@theme-syntax-text-color, @white, 50%);
 
 @text-color-info: @theme-blue;
 @text-color-success: @theme-green;
@@ -71,9 +65,9 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
+
 // Editor ---------------------------------------------------------------------
 
-@base-background-color: @theme-background-color;
 @base-border-color: @theme-background-color-dark;
 
 @gutter-background-color: transparent;
@@ -86,6 +80,7 @@
 @pane-item-background-color: @theme-background-color-light;
 @pane-item-border-color: darken(@base-border-color, 5%);
 
+
 // Site Colors ----------------------------------------------------------------
 
 @ui-site-color-1: @background-color-success;
@@ -94,59 +89,54 @@
 @ui-site-color-4: @theme-magenta;
 @ui-site-color-5: @theme-yellow;
 
+
 // Component colors -----------------------------------------------------------
-
-@app-background-color: @theme-background-color;
-
-@tab-background-color: darken(@background-color-selected, 2%);
-@tab-background-color-active: @app-background-color;
+/// Tabs
+@tab-background-color: darken(@theme-background-color-selected, 2%);
+@tab-background-color-active: @theme-background-color;
 @tab-background-color-hover: @base-border-color;
 @tab-border-color: @base-border-color;
-@tab-bar-background-color: darken(@app-background-color, 4%);
+@tab-bar-background-color: darken(@theme-background-color, 4%);
 @tab-bar-border-color: @base-border-color;
-
+// Buttons
 @button-background-color: @darker-gray;
 @button-background-color-hover: lighten(@button-background-color, 5%);
 @button-background-color-selected: @text-color;
 @button-text-color: lighten(@text-color, 7%);
 @button-border-color: @base-border-color;
-
+// Input-fields
 @input-background-color: @theme-background-color-light;
 @input-border-color: darken(@text-color, 21%);
 @input-background-color-active: @text-color;
-@input-text-color-active: @base-background-color;
-
+@input-text-color-active: @theme-background-color;
+// Panes
 @pane-item-background-color: @theme-background-color-light;
 @pane-item-border-color: @base-border-color;
-
-@tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
-@tool-panel-border-color: darken(@theme-background-color-light, 2%);
-
-@tree-background-color: lighten(#242524, .2%);
-@tree-selection-color: darken(#393838, 5%);
-@tree-border-color: @theme-background-color-light;
-
-@overlay-background-color: @tool-panel-background-color;
-@overlay-border-color: @base-border-color;
-
-@inset-panel-background-color: @theme-background-color-light;
-@inset-panel-border-color: @base-border-color;
-
+// Panels
 @panel-heading-background-color: @theme-background-color-light;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
-
-@progress-background-color: @background-color-info;
-
-@scrollbar-color: -webkit-radial-gradient(lighten(@background-color-selected, 3%), darken(@background-color-selected, 2%));
-@scrollbar-color-active: lighten(@theme-background-color-light, 3%);
-@scrollbar-track-color: mix(@tree-background-color, darken(@app-background-color, .7%), 40%);
-
+@inset-panel-background-color: @theme-background-color-light;
+@inset-panel-border-color: @base-border-color;
+@tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
+@tool-panel-border-color: darken(@theme-background-color-light, 2%);
+// Tree-view
+@tree-background-color: lighten(#242524, .1%);
+@tree-selection-color: darken(#393838, 5%);
+@tree-border-color: @theme-background-color-light;
+// Overlays
+@overlay-background-color: @tool-panel-background-color;
+@overlay-border-color: @base-border-color;
+// Scrollbar
+@scrollbar-color: -webkit-radial-gradient(lighten(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 2%));
+@scrollbar-color-active: lighten(@theme-background-color-light, 0%);
+@scrollbar-track-color: mix(@tree-background-color, darken(@theme-background-color, .7%), 40%);
+// Status Bar
 @status-bar-color: darken(@base-border-color, 2%);
-
-@tooltip-text-color: @base-background-color;
+// Tooltips
+@tooltip-text-color: @theme-background-color;
 @tooltip-background-color: @text-color;
 @tooltip-key-text-color: @background-color-info;
-@tooltip-key-background-color: @base-background-color;
+@tooltip-key-background-color: @theme-background-color;
 
 
 // Sizes ----------------------------------------------------------------------
@@ -164,6 +154,7 @@
 
 @disclosure-arrow-size: 13px;
 
+
 // Fonts ----------------------------------------------------------------------
 
 @font-family:  'Open Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
@@ -176,6 +167,7 @@
 @markdown-preview-text-color: darken(@darkest-gray, 15%);
 @markdown-preview-background-color: lighten(@tree-background-color,75%);
 @markdown-preview-border-color: mix(@syntax-text-color, @syntax-background-color, 20%);
+
 
 // Other ----------------------------------------------------------------------
 
