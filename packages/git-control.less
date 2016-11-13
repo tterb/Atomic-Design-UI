@@ -1,0 +1,87 @@
+.git-control {
+	background:lighten(@theme-background-color-selected, 0.25%);
+	.diff {
+		background-color: @theme-syntax-background-color;
+		font-size: 14px;
+		float: right;
+		.line {
+			color: @theme-syntax-text-color;
+		}
+	}
+    .menu {
+		background-color: @theme-syntax-background-color;
+		border-bottomm: 3px solid @tab-bar-background-color;
+		box-shadow: 0px 7px 5px rgba(0,0,0,.5);
+        .item {
+            position: relative;
+			margin: 10px;
+            color: darken(@theme-background-color-selected, 8%);
+
+            div {
+                min-width: 48px;
+            }
+            &.inactive {
+                color: @tab-bar-background-color;//fade(@text-color, 25%);
+
+                div {
+					color: @tab-bar-background-color;
+                    cursor: not-allowed;
+                }
+            }
+        }
+        .icon::before {
+            font-size: 24px;
+        }
+        .icon {
+            + div {
+				font-size: 12px;
+                line-height: 24px;
+                // padding: 0 0.5rem;
+                // border-radius: @component-border-radius;
+                // background-color: @tip-background-color;
+				// background-color: lighten(@theme-background-color-selected, 0.25%);
+                color: @text-color-highlight;
+                max-width: 320px;
+                word-wrap: break-word;
+                word-break: keep-all;
+                // display: none;
+                // position: absolute;
+                // top: 100%;
+                // left: 50%;
+                width: auto;
+                // transform: translateX(-50%);
+                z-index: 9999;
+            }
+            // &:hover + div {
+            //     display: block;
+            // }
+        }
+    }
+    .files {
+        .file {
+            .clickable.text {
+                margin-top: 0;
+                margin-left: 64px;
+				&::before {
+					margin-right: 0px;
+				}
+            }
+        }
+    }
+    .icon::before {
+        font-size: 16px;
+    }
+    .logger {
+		background-color: darken(@theme-syntax-background-color, 2%);
+		color: @theme-syntax-text-color;
+		font-size: 11px;
+    }
+	pre {
+		font-size: 14px;
+	}
+	.sidebar {
+		// float: left;
+		// width: auto;
+		// padding-right: 20px;
+	}
+}
