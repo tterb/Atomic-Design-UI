@@ -1,3 +1,6 @@
+
+@menu-icon-color: mix(@syntax-background-color, @text-color-accent, 55%);
+
 .git-control {
 	background:lighten(@theme-background-color-selected, 0.25%);
 	.diff {
@@ -9,20 +12,20 @@
 		}
 	}
     .menu {
-		background-color: @theme-syntax-background-color;
-		border-bottomm: 3px solid @tab-bar-background-color;
+		background-image: -webkit-linear-gradient(top, @theme-syntax-background-color, darken(@theme-syntax-background-color, 4%));
+		border-bottomm: 3px solid @text-color-highlight;
 		box-shadow: 0px 7px 5px rgba(0,0,0,.5);
         .item {
             position: relative;
-			margin: 10px;
-            color: darken(@theme-background-color-selected, 8%);
-
+			margin-top: 8px;
+            color: darken(@theme-background-color-selected, 10%);
             div {
                 min-width: 48px;
             }
             &.inactive {
-                color: @tab-bar-background-color;//fade(@text-color, 25%);
-
+				.icon::before {
+                	color: darken(@menu-icon-color, 8%);//fade(@text-color, 25%);
+				}
                 div {
 					color: @tab-bar-background-color;
                     cursor: not-allowed;
@@ -30,38 +33,40 @@
             }
         }
         .icon::before {
-            font-size: 24px;
+			text-shadow: inset 3px 3px 5px rgba(0,0,0,.5);
+			color: @menu-icon-color;
         }
         .icon {
             + div {
 				font-size: 12px;
-                line-height: 24px;
+                line-height: 20px;
                 // padding: 0 0.5rem;
-                // border-radius: @component-border-radius;
+				// padding-left: 28px;
+                border-radius: @component-border-radius;
                 // background-color: @tip-background-color;
 				// background-color: lighten(@theme-background-color-selected, 0.25%);
-                color: @text-color-highlight;
+                color: darken(@text-color-highlight, 3%);
                 max-width: 320px;
                 word-wrap: break-word;
                 word-break: keep-all;
-                // display: none;
-                // position: absolute;
-                // top: 100%;
-                // left: 50%;
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 50%;
                 width: auto;
-                // transform: translateX(-50%);
+                transform: translateX(-50%);
                 z-index: 9999;
             }
-            // &:hover + div {
-            //     display: block;
-            // }
+            &:hover + div {
+                display: block;
+            }
         }
     }
     .files {
         .file {
             .clickable.text {
                 margin-top: 0;
-                margin-left: 64px;
+                margin-left: 50px;
 				&::before {
 					margin-right: 0px;
 				}
@@ -72,7 +77,7 @@
         font-size: 16px;
     }
     .logger {
-		background-color: darken(@theme-syntax-background-color, 2%);
+		background-color: darken(@theme-syntax-background-color, 3%);
 		color: @theme-syntax-text-color;
 		font-size: 11px;
     }
@@ -80,8 +85,9 @@
 		font-size: 14px;
 	}
 	.sidebar {
-		// float: left;
-		// width: auto;
-		// padding-right: 20px;
+		// width: 30%;
+		background-color: darken(@theme-syntax-selection-color, 3%);
+		box-shadow: inset 0px 0px 20px rgba(0,0,0,.5);
+		min-width: 200px;
 	}
 }
