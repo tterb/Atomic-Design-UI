@@ -14,7 +14,6 @@
         .btn-primary {
             font-size: 13px;
             color: lighten(@text-color-highlight, 5%);
-            height: 28px;
             border: -4px 2px 0px outset lighten(@theme-blue, 15%);
             border-radius: 4px;
             margin: -25px -4px -4px;
@@ -45,6 +44,7 @@
             padding: 2px 28px 2px;
             background: darken(@theme-background-color, 2%);
             &:hover {
+                transition: ease;
                 background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
                 box-shadow: 40px 80px 80px inset rgba(200,200,200,7);
                 border: 1px inset rgba(0,0,0,.5);
@@ -72,12 +72,12 @@
                 border: 2px inset darken(@theme-background-color-dark, 4%);
             }
 			.list {
-                margin-bottom: 10px;
-                padding-bottom: 15px;
+                padding-top: 10px;
+                padding-bottom: 25px;
                 .list-item {
-                    margin-top: 10px;
                     .source-url {
-                        font-size: 16px;
+                        margin-bottom: 8px;
+                        font-size: 17px;
                     }
                 }
 			}
@@ -108,7 +108,8 @@
     // Report issue button
     .btn-toolbar {
         float: right;
-        padding-right: 8px;
+        padding-right: 10px;
+        padding-bottom: 12px;
         .issue-url {
         &:hover {
             border-radius: 5px;
