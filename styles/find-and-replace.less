@@ -1,0 +1,32 @@
+
+.find-and-replace .options-label .options, .project-find .options-label .options {
+	color: desaturate(@text-color-info, 30%);
+}
+
+// Directories
+.results-view .path-details.list-item {
+	font-size: 16px;
+	color: @text-color-highlight !important;
+	padding: 3px !important;
+	border-top: 1px solid @tool-panel-border-color;
+}
+
+.preview-pane .results-view {
+	background-color: mix(@theme-background-color, @theme-syntax-background-color, 90%) !important;
+	.path-match-number {
+		color: @text-color-success;
+	}
+}
+.search-result.list-item.selected {
+	color: @text-color-highlight !important;
+	font-weight: normal !important;
+}
+
+.panel-heading {
+	font-size: 14px;
+}
+
+// Results - previews
+.preview-pane .results-view .search-result {
+	font-size: 13px;
+}
