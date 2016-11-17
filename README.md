@@ -1,13 +1,13 @@
-<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036928/5fbcbcdc-6d2c-11e6-9b40-3aad67379241.png" height="68"/>
+<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036928/5fbcbcdc-6d2c-11e6-9b40-3aad67379241.png" height="70"/>
 --------------------------------------------------------------------------------  
-####&nbsp;&nbsp;&nbsp; A complimentary Atomic UI-theme for Atomic Monokai syntax
+####&nbsp;&nbsp;&nbsp; A complimentary **Atomic** UI-theme for [Atomic Monokai]
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
-		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;&nbsp;
-	</a>  
+		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;&nbsp;  
+	</a>
 	<a href="https://opensource.org/licenses/MIT">
 		<img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" height="21" title="License">&nbsp;&nbsp;
-	</a>  
+	</a>
     <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="Downloads">&nbsp;&nbsp;
 	<a href="https://atom.io/themes/atomic-design-ui">
 		<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" height="21" title="Open Source">&nbsp;&nbsp;
@@ -15,7 +15,7 @@
 </p>
 <br>
     <p align="center">
-        <img src="https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png" width="950" title="Screenshot">
+        <img src="https://cloud.githubusercontent.com/assets/16360374/20373798/2159b06c-ac29-11e6-8fb4-6d77aae7a9bd.png" width="950" title="Screenshot">
     </p>
 
 <br>  
