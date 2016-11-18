@@ -1,4 +1,4 @@
- 
+
 
 .markdown-preview.markdown-preview {
     background-color: @markdown-preview-background-color;
@@ -11,14 +11,34 @@
 }
 
 .markdown-preview:not([data-use-github-style]) {
-    strong {
+	strong {
         color: @markdown-preview-text-color;
     }
     a {
-        color: darken(@theme-blue, 40%);
+        color: #3392C9;
         font-weight: 600;
     }
     h1, h2, h3, h4, h5, h6 {
         color: @markdown-preview-text-color;
-    }
+    };
+	h1, h2 {
+		border-bottom: 1px solid @lighter-gray !important;
+		margin-top: 20px !important;
+	}
+	h4 {
+		font-size: 17px;
+		margin-top: 16px;
+	}
+	hr {
+		margin: 0 10px;
+		border: 2px solid @lighter-gray;
+	}
+	atom-text-editor {
+		background: @theme-background-color;
+		color: @lighter-gray;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 18px;
+	}
 }
