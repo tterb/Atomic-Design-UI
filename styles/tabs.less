@@ -131,7 +131,7 @@
     }
 
     .tab.active {
-        background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+        background: @tab-background-color-active !important;
         color: darken(@text-color-highlight, 5%);
         box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
         z-index: 1;
@@ -155,7 +155,7 @@
         &:after,
         &:before {
             line-height: @tab-height + 1px;
-            background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+            background: @tab-background-color-active !important;
             height: @tab-height + 1px;
         }
 

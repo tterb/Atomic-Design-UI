@@ -64,12 +64,17 @@
 		z-index: +1;
 
 		.nav > li > a {
+			font-size: 16px;
 			transition: color @transition-time ease;
+			&::before {
+				font-size: 20px;
+				margin-right: 16px;
+			}
 		}
 
 		.nav > li > a:hover {
 			background: transparent;
-			border: 1px inset @theme-background-color-selected;
+			border: 1.5px inset @theme-background-color-selected;
 		}
 
 		.nav > li.active {
@@ -84,7 +89,7 @@
 			background: lighten(@theme-background-color-selected, 1%);
 			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
-			border-right: 1.5px outset @theme-blue;
+			// border-right: 1.5px outset @theme-blue;
 		}
 	}
 

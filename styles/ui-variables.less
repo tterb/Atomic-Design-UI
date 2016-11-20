@@ -120,15 +120,15 @@
 @tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
 @tool-panel-border-color: darken(@theme-background-color-light, 2%);
 // Tree-view
-@tree-background-color: lighten(#242524, .1%);
-@tree-selection-color: darken(#393838, 5%);
+@tree-background-color: darken(@tab-bar-background-color, 1%);//lighten(#242524, .1%);
+@tree-selection-color: darken(@theme-background-color, 3%);//darken(#393838, 5%);
 @tree-border-color: @theme-background-color-light;
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
 // Scrollbar
 @scrollbar-color: -webkit-radial-gradient(lighten(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 2%));
-@scrollbar-color-active: lighten(@theme-background-color-light, 0%);
+@scrollbar-color-active: @theme-background-color-light;
 @scrollbar-track-color: mix(@tree-background-color, darken(@theme-background-color, .7%), 40%);
 // Status Bar
 @status-bar-color: darken(@base-border-color, 2%);
