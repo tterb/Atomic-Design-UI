@@ -5,6 +5,10 @@
         padding-top: 30px;
     }
 
+	ul + .panel-heading {
+		margin-bottom: 8px;
+	}
+
     .deprecation-overview {
         float: right;
         padding-top: 4px;
@@ -38,6 +42,7 @@
     .deprecation {
         .panel-heading {
             font-size: 16px;
+			margin-bottom: 8px;
             border: 3px outset rgba(200,200,200,200);
         }
         > .deprecation-info, > .list-item {
@@ -45,13 +50,16 @@
             background: darken(@theme-background-color, 2%);
             &:hover {
                 transition: ease;
-                background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
+                // background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
+				// background: transparent;
+				border: 1.5px inset @theme-background-color-selected;
                 box-shadow: 40px 80px 80px inset rgba(200,200,200,7);
-                border: 1px inset rgba(0,0,0,.5);
+                // border: 1px inset rgba(0,0,0,.5);
                 border-left: 1px inset @theme-blue;
             }
             &:active {
-                background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
+				background: transparent;
+                // background: -webkit-radial-gradient( lighten(@theme-background-color, 4%), darken(@theme-background-color, 2%)) !important;
                 box-shadow: 40px 80px 80px inset rgba(200,200,200,7);
                 border: 1px inset rgba(0,0,0,.5);
                 border-left: 1px inset @theme-blue;
