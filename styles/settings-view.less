@@ -5,6 +5,10 @@
 	font-size: @font-size;
 	background: @theme-text-color-highlight;
 
+	.panels .panels-item {
+		background-color: lighten(@theme-background-color-selected, 0.25%);
+	}
+
 	.alert {
 		border: 0;
 
@@ -47,7 +51,6 @@
 			color: @text-color-error;
 		}
 	}
-	.text(normal);
 
 	.block.section-heading.icon.icon-device-desktop {
 		&:before {
@@ -57,14 +60,23 @@
 
 	.breadcrumb {
 		.text(light);
+		font-size: 16px;
+		.active {
+			font-size: 17px;
+			font-weight: bold;
+		}
 	}
 
 	.config-menu {
+		.text(normal);
+		color: @theme-text-color;
 		background-color: darken(@theme-background-color-selected, 8%);
 		z-index: +1;
 
 		.nav > li > a {
 			font-size: 16px;
+			// line-height: 18px;
+			padding: 12px 15px;
 			transition: color @transition-time ease;
 			&::before {
 				font-size: 20px;
@@ -104,14 +116,32 @@
 
 	.package-card {
 		.text(normal);
-		background-image: linear-gradient(darken(@theme-background-color-selected, 4%), darken(@theme-background-color-selected, 6%));
+		background-image: linear-gradient(darken(@theme-background-color-selected, 5%), darken(@theme-background-color-selected, 7%));
 		border: 2px solid @theme-background-color-dark;
 		border-radius: 25px;
 		margin-top: 12px;
 		padding-top: 12px;
+		margin-bottom: 16px;
 		width: 500px;
+		.body {
+			margin-bottom: 10px;
+		}
 		.card-name {
 			.text(highlight);
+			color: darken(@white, 5%);
+			font-size: 21px;
+			font-weight: 300;
+			text-shadow: -2px 3px 5px rgba(0,0,0,.8);
+			margin-bottom: 10px;
+			.package-version {
+				color: lighten(@dark-gray, 30%);
+				font-size: 14px;
+				font-weight: light;
+				padding-left: 3px;
+			}
+		}
+		.package-description {
+			padding-bottom: 10px;
 		}
 		&.package-card .meta-controls {
 			.btn-toolbar > .btn-group {
@@ -122,15 +152,28 @@
 
 	.package-card:hover,
 	.package-detail .package-card:hover {
+		transition-duration: 300ms;
 		background-image: radial-gradient(darken(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 8%));
 		border-color: fade(@theme-blue, 40%);
-		transition-duration: 500ms;
 	}
 	.package-container {
+		margin-top: 30px;
 		margin-left: 10px;
 		padding-left: 15px;
+		.meta-user .author{
+			color: @lightest-gray;
+		}
+		.stats .stats-item {
+			margin-right: 8px;
+			margin-bottom: 5px;
+			.icon {
+				color: lighten(@gray, 18%);
+			}
+		}
 	}
-
+	.package-detail-view .link, .package-detail-view .link {
+		margin-top: 40px;
+	}
 	.collapsed .package-container .row {
 		border: 0;
 	}
@@ -204,28 +247,34 @@
 		background-color: lighten(@theme-background-color-selected, 0.25%);
 		.section-heading {
 			.text(heading);
-			font-size: 36px;
+			font-size: 40px;
 			font-family: @font-family-light;
 			color: @white;
 			margin-bottom: 35px;
 
 			&:before {
-				font-size: 36px;
-				height: 32px;
-				width: 36px;
+				font-size: 42px;
+				color: darken(@white, 8%);
+				width: 42px;
 			}
 		}
 		.section-heading-count.badge {
 			background: fade(@theme-blue, 70%);
+			margin: 5px 4px 5px 12px;
 		}
 		.sub-section-heading {
 			.text(heading);
-			font-size: 22px;
-			color: lighten(@text-color, 5%);
-
+			font-size: 24px;
+			color: lighten(@text-color, 6%);
+			text-shadow: -1px 1px 3px rgba(0,0,0,.5);
+			margin: 50px 10px 15px;
 			&:before {
-				font-size: 24px;
-				margin-right: 13px;
+				font-size: 26px;
+				width: 24px;
+			}
+			&:after {
+				color: @theme-background-color;
+				margin-top: 10px;
 			}
 		}
 	}
@@ -234,9 +283,17 @@
 		border-top: 0;
 	}
 
+	.section-container.package-detail-view {
+		.container {
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
 	.sub-section .row div {
 		background-color: transparent;
 	}
+
 
 	.text.icon.icon-question {
 		padding-bottom: 14px;
