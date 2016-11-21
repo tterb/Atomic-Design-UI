@@ -30,7 +30,7 @@
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
 ________________________________________________________________________________
 ## Install:  
-  This repository is distributed with [*apm*]. After [installing apm], you can install the syntax theme with this command.  
+  This repository is distributed with [*apm*]. After [installing apm], you can install the UI-theme with this command.  
 
 ```
   $ apm install atomic-design-ui
