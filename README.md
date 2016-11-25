@@ -1,6 +1,6 @@
 <img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036928/5fbcbcdc-6d2c-11e6-9b40-3aad67379241.png" height="70"/>
 --------------------------------------------------------------------------------  
-####&nbsp;&nbsp;&nbsp; A complimentary **Atomic** UI-theme for [Atomic Monokai]
+####&nbsp;&nbsp;&nbsp; A modern and refined interface for any dark syntax-theme.
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
 		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;&nbsp;  
@@ -20,11 +20,13 @@
 
 <br>  
 ## Description:
-  This UI theme is a fork of [Atom Dark UI], featuring modifications aimed to improve user experience, package appearance, and to better compliment [***Atomic Monokai***] and similar dark syntax-highlighting packages. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
+  **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring many modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
+  Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.
+
 
 **In Progress**
   * Adding improved integration for an increasing collection of common packages.
-  * Experimenting with functionalities to allow the UI to conform it's color palette to the current syntax-theme.
+  * Experimenting with functionalities to improve syntax-theme adaptability.
 
 <br>  
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
