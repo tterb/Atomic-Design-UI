@@ -1,0 +1,29 @@
+@unchecked-color: darken(@lightest-gray, 5%);
+
+.input-radio {
+	background: @unchecked-color;
+	&:checked {
+		background: @text-color-success;
+		text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+	}
+}
+
+//TODO: How to change check inside checkbox?
+.input-checkbox {
+	background: @unchecked-color;
+	&:checked {
+		background: @text-color-success;
+		color: @theme-background-color;
+		text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+	}
+}
+
+.input-toggle {
+	background: @unchecked-color;
+	color: gray;
+	&:checked {}
+}
+
+.input-range {
+	background: @light-gray;
+}
