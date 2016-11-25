@@ -63,7 +63,7 @@
 		font-size: 16px;
 		.active {
 			font-size: 17px;
-			font-weight: bold;
+			font-weight: normal;
 		}
 	}
 
@@ -75,7 +75,6 @@
 
 		.nav > li > a {
 			font-size: 16px;
-			// line-height: 18px;
 			padding: 12px 15px;
 			transition: color @transition-time ease;
 			&::before {
@@ -101,8 +100,15 @@
 			background: lighten(@theme-background-color-selected, 1%);
 			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
-			// border-right: 1.5px outset @theme-blue;
 		}
+
+		.button-area > .btn	{
+			margin-top: 5px;
+		}
+	}
+
+	input[type="checkbox"]:checked {
+		color: @theme-background-color !important;
 	}
 
 	label {
@@ -117,7 +123,7 @@
 	.package-card {
 		.text(normal);
 		background-image: linear-gradient(darken(@theme-background-color-selected, 5%), darken(@theme-background-color-selected, 7%));
-		border: 2px solid @theme-background-color-dark;
+		border: 1px solid @theme-background-color-dark;
 		border-radius: 25px;
 		margin-top: 12px;
 		padding-top: 12px;
@@ -172,7 +178,7 @@
 		}
 	}
 	.package-detail-view .link, .package-detail-view .link {
-		margin-top: 40px;
+		margin: 40px 5px 20px;
 	}
 	.collapsed .package-container .row {
 		border: 0;
@@ -200,6 +206,15 @@
 		h3,
 		h4 {
 			.text(heading);
+		}
+	}
+
+	.table {
+		th {
+			background: darken(@theme-background-color-selected, 8%);
+			color: darken(@lightest-gray, 5%);
+			font-size: 16px;
+			border: 2px solid transparent;
 		}
 	}
 
@@ -245,6 +260,7 @@
 
 	.section {
 		background-color: lighten(@theme-background-color-selected, 0.25%);
+		padding-top: 0px;
 		.section-heading {
 			.text(heading);
 			font-size: 40px;
@@ -256,25 +272,32 @@
 				font-size: 42px;
 				color: darken(@white, 8%);
 				width: 42px;
+				margin-right: 10px;
 			}
 		}
 		.section-heading-count.badge {
 			background: fade(@theme-blue, 70%);
-			margin: 5px 4px 5px 12px;
+			margin: 5px 15px;
+			padding: .3em;
 		}
 		.sub-section-heading {
 			.text(heading);
-			font-size: 24px;
+			font-size: 26px;
 			color: lighten(@text-color, 6%);
 			text-shadow: -1px 1px 3px rgba(0,0,0,.5);
-			margin: 50px 10px 15px;
+			margin: 50px 10px 0px;
 			&:before {
 				font-size: 26px;
 				width: 24px;
+				margin-right: 12px;
 			}
-			&:after {
-				color: @theme-background-color;
-				margin-top: 10px;
+			&.has-items::after {
+				color: lighten(@text-color, 0%);
+				margin: 12px 12px 0 0;
+				text-shadow: -3px 3px 5px rgba(0,0,0,.5);
+				&:hover {
+					color: @theme-background-color;
+				}
 			}
 		}
 	}
@@ -293,7 +316,6 @@
 	.sub-section .row div {
 		background-color: transparent;
 	}
-
 
 	.text.icon.icon-question {
 		padding-bottom: 14px;

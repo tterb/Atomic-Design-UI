@@ -8,11 +8,9 @@
 @tab-max-width: 110px;
 
 .tab-bar {
-    background: @tab-bar-background-color;
-	border: 1px solid transparent;
-	border-bottom: 1px solid @tab-border-color;
-	height: @tab-height + (@tab-radius) + 1px;
+    height: @tab-height + (@tab-radius) + 1px;
     width: 100%;
+    background: @tab-bar-background-color;
     box-shadow: inset 0 -8px 8px -4px rgba(0,0,0,.25);
     padding: 0 10px 0 25px;
     overflow-x: auto;
@@ -26,7 +24,7 @@
         position: relative;
         background-color: @tab-background-color-active;
         border-top: 1px solid @tab-border-color;
-        border-bottom: 1px solid @tab-border-color;
+        border-bottom: 1px dotted @tab-border-color;
         height: @tab-bottom-border-height;
         left: 0;
         right: 0;
@@ -37,7 +35,7 @@
     .tab {
         font-size: 12px;
         position: relative;
-        color: darken(@text-color, 10%);
+        color: darken(@text-color, 5%);
         top: @tab-top-padding;
         height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
         max-width: @tab-max-width;
@@ -51,7 +49,7 @@
         &,
         &:after,
         &:before {
-            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 9%), darken(@tab-background-color, 3%));
+            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
             height: @tab-height;
         }
 
@@ -79,7 +77,7 @@
             box-shadow: inset -1px 1px 0 @tab-border-color, 4px -1px 6px rgba(0,0,0,.2);
             -webkit-transform: skewX(@tab-skew + 2deg);
         }
-        // .title {text-overflow: ellipsis !important;}
+
         .close-icon {
             right: 0;
             z-index: 3;
@@ -90,7 +88,7 @@
 
             &:before {
                 font-size: 14px;
-                font-weight: 100;
+                font-weight:100;
             }
 
             &:hover {
@@ -121,18 +119,19 @@
         }
 
         .title {
-			font-size: 16px;
             position: relative;
             text-align: center;
+            font-size: 16px;
             font-kerning: auto;
             z-index: 1;
             margin-top: -@tab-top-padding;
             padding-top: @tab-top-padding;
+            padding-right: 18px;
         }
     }
 
     .tab.active {
-        background: @tab-background-color-active !important;
+        background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
         color: darken(@text-color-highlight, 5%);
         box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
         z-index: 1;
@@ -143,19 +142,20 @@
         }
 
         .title {
-			font-size: 17px;
             position: relative;
             text-align: center;
+            font-size: 18px;
             font-kerning: auto;
             margin-top: -@tab-top-padding;
-            padding-top: @tab-top-padding - 1px;
+            padding-top: @tab-top-padding;
+            padding-right: 18px;
         }
 
         &,
         &:after,
         &:before {
             line-height: @tab-height + 1px;
-            background: @tab-background-color-active !important;
+            background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
             height: @tab-height + 1px;
         }
 
