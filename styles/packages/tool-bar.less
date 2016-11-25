@@ -19,15 +19,22 @@
         flex: 0 0 auto;
         margin: @button-margin-size + 2px;
         padding: 2px;
+		border: 1px outset lighten(@base-border-color, 11%);
+		text-shadow: 2px 2px 5px rgba(0,0,0,.9);
 
         &:before {
             display: inline;
         }
         &:focus,
         &:hover {
-            color: lighten(@toolbar-icon-color, 22%);
-            border: 1px outset lighten(@base-border-color, 20%);
+			transition-duration: 60ms;
+            color: lighten(@toolbar-icon-color, 28%);
+			text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+            border: 2px outset lighten(@base-border-color, 14%);
         }
+		&:focus {
+			border: 2px inset lighten(@base-border-color, 10%);
+		}
     }
 
     &.tool-bar-vertical .tool-bar-spacer {
