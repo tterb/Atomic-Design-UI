@@ -1,0 +1,45 @@
+//TODO: improve Todo-Show styling
+//FIXME
+//NOTE
+
+a {
+	color: desaturate(@text-color-info, 25%);
+}
+
+.show-todo-preview {
+	background: lighten(@theme-background-color-selected, .5%) !important;
+	padding: 10px;
+	box-shadow: inset 5px -10px 6px rgba(0,0,0,.4);
+
+	.input-block {
+		margin-top: 20px;
+	}
+
+	.todo-table {
+		margin: 30px 10px;
+		padding: 10px;
+		th {
+			background: darken(@theme-background-color-selected, 8%);
+			color: darken(@text-color-highlight, 3%);
+			font-size: 20px;
+			font-weight: lighter;
+			border: 2px inset @theme-background-color-selected;
+			padding-left: 10px;
+		}
+ 		tr:nth-child(n), td:nth-child(n) {
+			background: lighten(@theme-background-color, 1%);
+			color: @text-color;
+			border: 2px solid @theme-background-color-selected;
+			padding-left: 15px;
+			max-width: 20%;
+		}
+		td:nth-child(2) {
+			text-align: center;
+			padding-left: 0px;
+		}
+		td:nth-child(3) {
+			color: desaturate(@text-color-info, 10%) !important;
+			font-size: 14px;
+		}
+	}
+}
