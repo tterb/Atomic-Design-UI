@@ -1,6 +1,21 @@
 # Change Log
 <br>  
 
+## Version 1.0.7
+
+  * Fixed issue #3
+  * Add styling for 'find-and-replace' pane
+  * Improved theme adaptability
+  * Added support for 'Todo-show' package
+  * Improved Settings-view formatting
+  * Improved keybinding visibility  
+  * Added input components styling
+  * Improved styling for 'Tool-bar' packages
+  * Improved 'Markdown Preview' rendering to more closely resemble GitHub's.
+  * Minor changes made to component color palette
+
+--------------------------------------------------------------------------------
+
 ## Version 1.0.6
 
   * Modified badge appearance
@@ -18,7 +33,7 @@
   * Added reference import to 'index.less'
   * Removed unnecessary UI-variables
 
-------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Version 1.0.5
 
@@ -30,7 +45,7 @@
   * Improved settings-view styling
   * Added Deprecation & Time-Cop styling
 
-------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Version 1.0.4
 
@@ -42,15 +57,13 @@
   * Restructured package documentation
   * Fixed issue within *package.json*   
 
-------------------------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
 ## Version 1.0.3
 
   * Fixed issue with tree-view status
   * Minor modifications to tree-view style
 
-------------------------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
 ## Version 1.0.2
 
   * Fixed deprecation errors
@@ -58,8 +71,7 @@
   * Improvements to markdown-preview styling
   * Minor changes to documentation
 
-------------------------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
 
 ## Version 1.0.1
 
@@ -67,10 +79,9 @@
   * Modified 'Markdown Preview' style
   * Fixed issue with UI variable
 
-------------------------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
 ## Version 1.0.0
 
   * Package published
 
-------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

@@ -2,9 +2,9 @@
   "name": "atomic-design-ui",
   "theme": "ui",
   "version": "1.0.6",
-  "description": "A dark UI-theme for Atomic Monokai or similar dark syntax themes, featuring added styling for a variety of popular Atom packages.",
+  "description": "A modern and refined dark UI-theme for any dark syntax theme, featuring custom styling for a variety of popular Atom packages.",
   "keywords": [
-    "atomic","design","ui","theme","monokai","sublime","text","editor","syntax","dark","adaptive","modern","customize","simple","awesome","unique","graphic","darcula","icons","tool","plugins","packages","git","github","atom"
+    "atomic", "atomic design", "design", "ui","theme", "sublime", "text", "editor", "syntax", "dark", "adaptive", "modern", "monokai", "notepad", "solarized", "visual", "studio", "windows", "mac", "material", "afterglow", "agola", "bold", "gray", "grey", "flat", "custom", "simple", "awesome", "darcula", "icons", "tools", "plugins", "packages", "support", "github", "atom"
   ],
   "repository": {
     "type": "git",
