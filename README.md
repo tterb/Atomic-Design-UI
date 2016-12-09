@@ -3,14 +3,14 @@
 ####&nbsp;&nbsp;&nbsp; A modern and refined interface for any dark syntax-theme.
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
-		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;&nbsp;  
+		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;
 	</a>
 	<a href="https://opensource.org/licenses/MIT">
-		<img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" height="21" title="License">&nbsp;&nbsp;
+		<img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" height="21" title="License">&nbsp;
 	</a>
-    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="Downloads">&nbsp;&nbsp;
+    <img src="https://img.shields.io/apm/dm/atomic-design-ui.svg?maxAge=2592000?" height="21" title="Downloads">&nbsp;
 	<a href="https://atom.io/themes/atomic-design-ui">
-		<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" height="21" title="Open Source">&nbsp;&nbsp;
+		<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" height="21" title="Open Source">&nbsp;
 	</a>
 </p>
 <br>
@@ -20,7 +20,7 @@
 
 <br>  
 ## Description:
-  **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring many modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
+  **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
   Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.
 
 
@@ -28,11 +28,11 @@
   * Adding improved integration for an increasing collection of common packages.
   * Experimenting with functionalities to improve syntax-theme adaptability.
 
-<br>  
+<br>
 *Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
 ________________________________________________________________________________
 ## Install:  
-  This repository is distributed with [*apm*]. After [installing apm], you can install the UI-theme with this command.  
+  This package is distributed with *[apm]*. After [installing apm], you can install the UI-theme with this command.  
 
 ```
   $ apm install atomic-design-ui
@@ -53,13 +53,13 @@ ________________________________________________________________________________
 
 ## Other Packages:
 
-  * [**Minimap**] - featured in the above screenshot, *Mini-map* applies a "*Sublime-esque*" view to the right-side of the frame.
-  * [**Project Manager**] - delivers a familiar workflow for navigating multiple projects and project-specific settings.
-  * [**Highlight Selected**] - highlights all instances of the currently selected element within the open file.
-  * [***More...***]
+  * **[Minimap]** - featured in the above screenshot, *Minimap* applies a "*Sublime-esque*" view to the right-side of the frame.
+  * **[Project Manager]** - delivers a familiar workflow for navigating projects and project-specific settings.
+  * **[Highlight Selected]** - highlights all instances of the selected element within the open file.
+  * ***[More...]***
 
 <br>
-*For more useful packages, check out my list of* [***Essential Atom Packages***], *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
+*For more useful packages, check out my list of* ***[Essential Atom Packages]***, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
 <br>
 ________________________________________________________________________________
 
@@ -73,6 +73,7 @@ ________________________________________________________________________________
 
 
 <!-------------------------------- Links -------------------------------------->
+
 [Atom Dark UI]: https://github.com/atom/atom-dark-ui
 [Atomic Monokai]: https://atom.io/themes/atomic-monokai-syntax
 [Atom packages]: https://atom.io/packages
@@ -91,5 +92,4 @@ ________________________________________________________________________________
 [Project Manager]: https://atom.io/packages/project-manager
 [Highlight Selected]: https://atom.io/packages/highlight-selected
 [More...]: https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html
-
 [Essential Atom Packages]: https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html
