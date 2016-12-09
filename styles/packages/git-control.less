@@ -3,12 +3,86 @@
 
 .git-control {
 	background:lighten(@theme-background-color-selected, 0.25%);
+	.dialog {
+		background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color, 0.5%), darken(@theme-syntax-background-color, 3%));
+		border: 2px outset darken(@gray, 12%);
+		border-radius: 12px;
+		float: right;
+		.active {
+			background: -webkit-linear-gradient(top, lighten(@theme-blue, 3%), mix(darken(@theme-blue, 10%), @darker-gray, 60%)) !important;
+			color: @white !important;
+			visibility: visible !important;
+			float: right;
+			border: 1px outset @dark-gray;
+			text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+			margin-right: 5px;
+			padding: 1px 10px 3px 5px;
+			font-weight: 500;
+			i.icon.commit {
+				margin-top: 3px;
+				&::before {
+					color: @white !important;
+					font-size: 18px;
+				}
+			}
+		}
+		.body {
+			margin-bottom: 0px;
+		}
+		button {
+			visibility: hidden;
+			padding-bottom: 8px;
+		}
+		.heading {
+			color: lighten(@lightest-gray, 2%);
+			font-size: 22px;
+			font-weight: 100 !important;
+			i.icon::before {
+				padding-top: 0px;
+				padding-right: 5px;
+				height: 8px;
+			}
+		}
+		textarea {
+			background: @dark-gray !important;
+			color: @lightest-gray !important;
+			border: 1px inset @gray;
+			border-radius: 10px;
+			padding: 12px !important;
+			&:focus, &:active {
+				background-color: darken(@dark-gray, 15%);
+			}
+		}
+	}
 	.diff {
 		background-color: @theme-syntax-background-color;
 		font-size: 14px;
 		float: right;
+		box-shadow: inset 0 0 20px rgba(0,0,0,.5);
 		.line {
 			color: @theme-syntax-text-color;
+		}
+	}
+	.files {
+		.file {
+			margin-left: 8px;
+			.clickable.text {
+				margin-top: 3px;
+				margin-left: 48px;
+				&::before {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+	.icon::before {
+		font-size: 16px;
+	}
+	.logger {
+		background-color: darken(@theme-syntax-background-color, 3%);
+		pre {
+			color: darken(@theme-syntax-text-color, 15%);
+			font-size: 14px;
 		}
 	}
     .menu {
@@ -58,31 +132,12 @@
             }
         }
     }
-    .files {
-        .file {
-            .clickable.text {
-                margin-top: 0;
-                margin-left: 50px;
-				&::before {
-					margin-right: 0px;
-				}
-            }
-        }
-    }
-    .icon::before {
-        font-size: 16px;
-    }
-    .logger {
-		background-color: darken(@theme-syntax-background-color, 3%);
-		color: @theme-syntax-text-color;
-		font-size: 11px;
-    }
 	pre {
 		font-size: 14px;
 	}
 	.sidebar {
-		background-color: darken(@theme-syntax-selection-color, 3%);
-		box-shadow: inset 0px 0px 20px rgba(0,0,0,.5);
-		min-width: 200px;
+		background-color: darken(@theme-syntax-selection-color, 4%);
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,.5);
+		min-width: 250px;
 	}
 }
