@@ -167,8 +167,8 @@
 		border-color: fade(@theme-blue, 40%);
 	}
 	.package-container {
-		margin-top: 30px;
-		margin-left: 10px;
+		margin-top: 0px;
+		margin-left: 5px;
 		padding-left: 15px;
 		.meta-user .author{
 			color: @lightest-gray;
@@ -209,13 +209,35 @@
 	}
 
 	.package-readme {
-		font-size: 1em;
+		font-size: 15px;
 
-		h1,
-		h2,
-		h3,
-		h4 {
+		h1, h2, h3, h4 {
 			.text(heading);
+		}
+		h1 {
+			font-size: 40px;
+			margin-top: 18px;
+		}
+		h2 {
+			font-size: 36px;
+		}
+		h3 {
+			font-size: 28px;
+			margin-top: 28px;
+		}
+		h4 {
+			font-weight: bold;
+		}
+		img {
+			margin-top: 20px;
+		}
+		kbd {
+			background-color: @theme-background-color;
+			color: desaturate(@text-color-info, 40%);
+		}
+		ul {
+			margin-top: 10px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -270,12 +292,13 @@
 
 	.section {
 		background-color: lighten(@theme-background-color-selected, 0.25%);
-		padding-top: 0px;
+		// padding-top: 0px;
 		.section-heading {
 			.text(heading);
 			font-size: 40px;
 			font-family: @font-family-light;
 			color: @white;
+			// margin-top: 32px;34
 			margin-bottom: 35px;
 
 			&:before {
@@ -318,6 +341,7 @@
 
 	.section-container.package-detail-view {
 		.container {
+			// 3margin-top: 0px;
 			margin-left: 20px;
 			margin-bottom: 20px;
 		}
@@ -327,12 +351,15 @@
 		background-color: transparent;
 	}
 
-	.text.icon.icon-question {
-		padding-bottom: 14px;
-		padding-left: 8px;
-		&:before {
-			padding-right: 8px;
-			color: @theme-blue;
+	.text {
+		margin-top: 18px;
+		&.icon.icon-question {
+			padding-bottom: 14px;
+			padding-left: 8px;
+			&:before {
+				padding-right: 8px;
+				color: @theme-blue;
+			}
 		}
 	}
 }
