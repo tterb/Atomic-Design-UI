@@ -1,6 +1,7 @@
 {
   "name": "atomic-design-ui",
   "theme": "ui",
+  "main": "lib/atomic-design-ui",
   "version": "1.0.7",
   "description": "A modern and refined dark UI-theme for any dark syntax theme, featuring custom styling for a variety of popular Atom packages.",
   "keywords": [

@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 // Colors ---------------------------------------------------------------------
-@white: #FFF;
+@white: #FEFEFE;
 @lightest-gray: #E3E9E6;
 @lighter-gray: #93A1A1;
 @light-gray: #969896;
@@ -18,10 +18,10 @@
 @theme-purple: #AE81FF;
 @theme-magenta: #F92672;
 
-@theme-text-color-accent: mix(@syntax-text-color, @white, 50%);
-@theme-text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
-@theme-text-color-subtle: mix(@syntax-background-color, @theme-text-color-accent, 72%);
 @theme-text-color-highlight: @white;
+@theme-text-color-accent: mix(@syntax-text-color, @theme-text-color-highlight, 50%);
+@theme-text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
+@theme-text-color-subtle: fade(@theme-text-color, 45%);
 
 
 // Syntax-Theme Colors --------------------------------------------------------------
@@ -48,11 +48,11 @@
 
 // Text Colors ----------------------------------------------------------------
 
-@text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
-@text-color-subtle: mix(@syntax-background-color, @theme-text-color-accent, 72%);
+@text-color: @theme-text-color;
+@text-color-selected: mix(@theme-text-color-highlight, @theme-text-color, 90%);
+@text-color-subtle: @theme-text-color-subtle;
 @text-color-highlight: @theme-text-color-highlight;
-@text-color-selected: @theme-text-color-highlight;
-@text-color-accent: mix(@theme-syntax-text-color, @white, 50%);
+@text-color-accent: @theme-text-color-accent;
 
 @text-color-info: @theme-blue;
 @text-color-success: @theme-green;
@@ -120,16 +120,20 @@
 @tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
 @tool-panel-border-color: darken(@theme-background-color-light, 2%);
 // Tree-view
-@tree-background-color: lighten(#242524, .1%);
-@tree-selection-color: darken(#393838, 5%);
-@tree-border-color: @theme-background-color-light;
+@tree-view-background-color: lighten(#242524, .1%);
+@tree-view-text-color: fade(@text-color, 70%);
+@tree-view-selection-color: darken(#393838, 5%);
+@tree-view-border-color: @theme-background-color-light;
+// Tree-view - Light
+@tree-view-background-color-light: #DDDCDD;
+@tree-view-text-color-light: @syntax-background-color;
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
 // Scrollbar
 @scrollbar-color: -webkit-radial-gradient(lighten(@theme-background-color-selected, 2%), darken(@theme-background-color-selected, 2%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
-@scrollbar-track-color: mix(@tree-background-color, darken(@theme-background-color, .7%), 40%);
+@scrollbar-track-color: mix(@tree-view-background-color, darken(@theme-background-color, .7%), 40%);
 // Status Bar
 @status-bar-color: darken(@base-border-color, 2%);
 // Tooltips
@@ -144,11 +148,11 @@
 @font-size: 13px;
 @input-font-size: 14px;
 @input-height: 32px;
-@tree-font-size: @font-size;
+@tree-view-font-size: @font-size;
 
 @component-padding: 10px;
 @component-icon-padding: 8px;
-@component-icon-size: @tree-font-size + 5px;
+@component-icon-size: @tree-view-font-size + 5px;
 @component-line-height: @component-icon-size + @component-icon-padding;
 @component-border-radius: 3px;
 
@@ -165,7 +169,7 @@
 // Plugins --------------------------------------------------------------------
 
 @markdown-preview-text-color: darken(@darkest-gray, 15%);
-@markdown-preview-background-color: lighten(@tree-background-color,75%);
+@markdown-preview-background-color: lighten(@tree-view-background-color,75%);
 @markdown-preview-border-color: mix(@syntax-text-color, @syntax-background-color, 20%);
 
 

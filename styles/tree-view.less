@@ -2,11 +2,13 @@
 .tree-view {
     padding-top: 10px;
     margin: -5px -15px;
-    font-size: @tree-font-size;
-    background: @tree-background-color;
-
+    font-size: @tree-view-font-size;
+    background: @tree-view-background-color;
+	[data-atomic-delight-ui-light-tree-view="true"] {
+		background: @tree-view-text-color-light;
+	}
     .selected:before {
-        background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 8%), @tree-selection-color);
+        background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 8%), @tree-view-selection-color);
         box-shadow: inset -2px 0 4px rgba(0,0,0,.3);
     }
 
@@ -15,6 +17,9 @@
         vertical-align: middle;
         font-weight: bold;
         color: @lightest-gray;
+		[data-atomic-delight-ui-light-tree-view="true"] {
+			color: @tree-view-text-color-light;
+		}
     }
     .pseudo:before {
         height: 50px;
@@ -26,9 +31,13 @@
         vertical-align: middle;
         font-weight: bolder;
         text-transform: capitalize;
-        font-size: @tree-font-size + 3px;
-        background-color: lighten(@tree-background-color, 2%);
+        font-size: @tree-view-font-size + 3px;
+        background-color: lighten(@tree-view-background-color, 2%);
         color: darken(@lightest-gray, 4%);
+		[data-atomic-delight-ui-light-tree-view="true"] {
+			background-color: darken(@tree-view-background-color-light, 2%);
+			color: @tree-view-text-color-light;
+		}
         margin: 5px 0px;
 
         &::before {
@@ -41,12 +50,15 @@
         text-align: left;
         vertical-align: middle;
         font-weight: bold;
-        font-size: @tree-font-size + 2px;
+        font-size: @tree-view-font-size + 2px;
         margin: 4px 0px;
         margin-bottom: 3px;
         padding-bottom: 3px;
         // border-bottom: 1px solid @tool-panel-border-color;
         color: @lightest-gray;
+		[data-atomic-delight-ui-light-tree-view="true"] {
+			color: @tree-view-text-color-light;
+		}
         &::before {
             visibility: visible;
         }
@@ -56,21 +68,28 @@
     .project-root > .entries.list-tree {
         text-align: left;
         vertical-align: middle;
-        font-size: @tree-font-size + 2px;
+        font-size: @tree-view-font-size + 2px;
         // border-bottom: 1px solid @tab-bar-border-color;
-        color: @lightest-gray;
+        color: @tree-view-text-color;
+		[data-atomic-delight-ui-light-tree-view="true"] {
+			color: @tree-view-text-color-light;
+		}
         margin: 5px 5px;
 
         &::before {
             visibility: visible;
         }
     }
+
+	.list-tree li:not(.list-nested-item).selected {
+		color: @text-color;
+	}
 }
 
 li.directory.entry.list-nested-item {
     border: none;
     &.expanded {
-        background-color: -webkit-linear-gradient(top, lighten(@theme-background-color-selected, 4%), darken(@tree-background-color, 2%)) !important;
+        background-color: -webkit-linear-gradient(top, lighten(@theme-background-color-selected, 4%), darken(@tree-view-background-color, 2%)) !important;
         padding-bottom: 8px !important;
         border-bottom: 1px inset @theme-background-color-selected;
     }
@@ -87,8 +106,10 @@ li.directory.entry.list-nested-item {
     box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
 
     &:focus {
-        background: @tree-background-color;
-
+        background: @tree-view-background-color;
+		[data-atomic-delight-ui-light-tree-view="true"] {
+			color: @tree-view-background-color-light;
+		}
         .selected:before {
             transition: color @transition-time ease;
         }
