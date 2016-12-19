@@ -1,8 +1,6 @@
-@import "ui-mixins.less";
-@import "octicon-mixins";
 
 .settings-view {
-	font-size: @font-size;
+	font-size: @theme-font-size;
 	background: @theme-text-color-highlight;
 
 	.panels .panels-item {
@@ -60,13 +58,13 @@
 
 	.breadcrumb {
 		.text(light);
-		font-size: 16px;
+		font-size: @theme-font-size + 3px;
 		.active {
-			font-size: 17px;
+			font-size: @theme-font-size + 4px;
 			font-weight: normal;
 		}
 		> li + li:before {
-			font-size: 16px;
+			font-size: @theme-font-size + 3px;
 			padding: 0 2px 0 1px;
 		}
 	}
@@ -78,11 +76,11 @@
 		z-index: +1;
 
 		.nav > li > a {
-			font-size: 16px;
+			font-size: @theme-font-size + 3px;
 			padding: 12px 15px;
 			transition: color @transition-time ease;
 			&::before {
-				font-size: 20px;
+				font-size: @theme-font-size + 7px;
 				margin-right: 16px;
 			}
 		}
@@ -93,8 +91,8 @@
 		}
 
 		.nav > li.active {
-			border: 1.5px inset @theme-background-color-selected;
 			background: lighten(@theme-background-color-selected, 3%);
+			border: 1.5px inset @theme-background-color-selected;
 			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: inset 2px 8px -2px rgba(0,0,0,.5);
 			border-right: 1.5px outset @theme-blue;
@@ -102,6 +100,7 @@
 
 		.nav > li.active > a:hover {
 			background: lighten(@theme-background-color-selected, 1%);
+			border: 1.5px inset @theme-background-color-selected;
 			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: 2px 8px -2px rgba(0,0,0,.5);
 		}
@@ -139,13 +138,13 @@
 		.card-name {
 			.text(highlight);
 			color: darken(@white, 5%);
-			font-size: 21px;
+			font-size: @theme-font-size + 8px;
 			font-weight: 300;
 			text-shadow: -2px 3px 5px rgba(0,0,0,.8);
 			margin-bottom: 10px;
 			.package-version {
 				color: lighten(@dark-gray, 30%);
-				font-size: 14px;
+				font-size: @theme-font-size + 1px;
 				font-weight: light;
 				padding-left: 3px;
 			}
@@ -245,7 +244,7 @@
 		th {
 			background: darken(@theme-background-color-selected, 8%);
 			color: darken(@lightest-gray, 5%);
-			font-size: 16px;
+			font-size: @theme-font-size + 3px;
 			border: 2px solid transparent;
 		}
 	}

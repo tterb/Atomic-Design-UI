@@ -20,7 +20,7 @@
 
         // 'Check for Updates' button
         .btn-primary {
-            font-size: 13px;
+            font-size: @theme-font-size;
             color: lighten(@text-color-highlight, 5%);
             border: -4px 2px 0px outset lighten(@theme-blue, 15%);
             border-radius: 4px;
@@ -45,7 +45,7 @@
 
     .deprecation {
         .panel-heading {
-            font-size: 16px;
+            font-size: @theme-font-size + 3px;
 			margin-bottom: 8px;
             border: 3px outset rgba(200,200,200,200);
         }
@@ -89,7 +89,7 @@
                 .list-item {
                     .source-url {
                         margin-bottom: 8px;
-                        font-size: 17px;
+                        font-size: @theme-font-size + 4px;
                     }
                 }
 			}
@@ -131,7 +131,7 @@
 
     .deprecation-detail.list-item {
         .deprecation-message {
-            font-size: 16px;
+            font-size: @theme-font-size + 3px;
             line-height: 30px;
             margin: 10px 10px 0px 0px;
             padding: 0px;
@@ -147,7 +147,7 @@
             margin-top: 28px;
             margin-left: 10px;
             padding-top: 20px;
-            font-size: 12px;
+            font-size: @theme-font-size - 1px;
             > * {
                 line-height: 25px;
                 font-family: monospace;
@@ -163,12 +163,12 @@
 
     ul + .panel-heading {
         margin-top: 30px;
-        font-size: 20px;
+        font-size: @theme-font-size + 7px;
     }
 
     .panel-heading {
         margin-top: 20px;
-        font-size: 20px;
+        font-size: @theme-font-size + 7px;
         color: lighten(@text-color, 15%);
     }
 }

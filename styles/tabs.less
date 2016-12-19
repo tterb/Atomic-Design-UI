@@ -33,7 +33,7 @@
     }
 
     .tab {
-        font-size: 12px;
+        font-size: @theme-font-size - 1px;
         position: relative;
         color: darken(@text-color, 5%);
         top: @tab-top-padding;
@@ -87,7 +87,7 @@
             color: darken(@theme-text-color, 10%);
 
             &:before {
-                font-size: 14px;
+                font-size: @theme-font-size + 1px;
                 font-weight:100;
             }
 
@@ -121,7 +121,7 @@
         .title {
             position: relative;
             text-align: center;
-            font-size: 16px;
+            font-size: @theme-font-size + 3px;
             font-kerning: auto;
             z-index: 1;
             margin-top: -@tab-top-padding;
@@ -144,7 +144,7 @@
         .title {
             position: relative;
             text-align: center;
-            font-size: 18px;
+            font-size: @theme-font-size + 5px;
             font-kerning: auto;
             margin-top: -@tab-top-padding;
             padding-top: @tab-top-padding;

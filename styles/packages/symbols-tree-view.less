@@ -1,6 +1,6 @@
 
 .symbols-tree-view {
-	background-color: lighten(@tree-background-color, .5%);
+	background-color: lighten(@tree-view-background-color, .5%);
 	border: 2px inset @tab-background-color;
 	margin-top: 10px !important;
 	padding: 0 15px !important;
@@ -16,7 +16,7 @@
 				color: @theme-text-color-highlight !important;
 				font-weight: normal;
 				&::before {
-					background: -webkit-linear-gradient(top, lighten(@tree-selection-color, 7%), lighten(@tree-selection-color, 1%));
+					background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 7%), lighten(@tree-view-selection-color, 1%));
 					color: @theme-green !important;
 				}
 			}
@@ -26,7 +26,7 @@
 
 
 .symbols-context-menu {
-	border: 2px solid @tree-background-color !important;
+	border: 2px solid @tree-view-background-color !important;
 	width: 150px !important;
 	.select-list.popover-list {
 		background: lighten(@tab-bar-background-color, 3.5%) !important;
@@ -37,7 +37,7 @@
             }
             li:hover {
                 background: @theme-background-color-selected !important;
-				color: lighten(@theme-text-color-highlight, 5%) !important;
+				color: @theme-text-color-highlight !important;
             }
         }
     }
@@ -61,7 +61,7 @@
 }
 
 .symbols-tree-view .icon-class {
-	font-size: 17px;
+	font-size: @theme-font-size + 4px;
 	font-weight: normal;
 	color: lighten(@theme-text-color, 20%);
 	&::before {

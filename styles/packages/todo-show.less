@@ -14,7 +14,7 @@
 		th {
 			background: darken(@theme-background-color-selected, 8%);
 			color: darken(@text-color-highlight, 3%);
-			font-size: 20px;
+			font-size: @theme-font-size + 7px;
 			font-weight: lighter;
 			border: 2px inset @theme-background-color-selected;
 			padding-left: 10px;
@@ -32,7 +32,7 @@
 		}
 		td:nth-child(3) {
 			color: desaturate(@text-color-info, 10%) !important;
-			font-size: 14px;
+			font-size: @theme-font-size + 1px;
 		}
 	}
 }

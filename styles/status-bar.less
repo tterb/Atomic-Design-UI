@@ -4,14 +4,14 @@ status-bar {
     background: @status-bar-color;
     height: @input-height;
     line-height: @component-line-height;
-    font-size: 14px;
+    font-size: @theme-font-size + 1px;
 
     & > .flexbox-repaint-hack {
         padding-top: 3px;
     }
 
     span {
-        font-size: 12px;
+        font-size: @theme-font-size - 1px;
         &.inline-block.icon.icon-color-mode {
             color: @theme-purple;
         }

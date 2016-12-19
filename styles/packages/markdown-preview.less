@@ -13,6 +13,7 @@
 .markdown-preview:not([data-use-github-style]) {
 	strong {
         color: @markdown-preview-text-color;
+		font-weight: bold !important;
     }
     a {
         color: #3093EE;
@@ -26,7 +27,7 @@
 		margin-top: 20px !important;
 	}
 	h4 {
-		font-size: 17px;
+		font-size: @theme-font-size + 4px;
 		margin-top: 16px;
 	}
 	hr {
@@ -37,8 +38,11 @@
 		background: @theme-background-color;
 		color: @lighter-gray;
 	}
+	li {
+		font-size: @theme-font-size + 3px;
+	}
 	p {
-		font-size: 16px;
+		font-size: @theme-font-size + 3px;
 		margin-bottom: 18px;
 	}
 }
