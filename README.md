@@ -1,4 +1,3 @@
-<img src="https://cloud.githubusercontent.com/assets/16360374/17991222/82596480-6af1-11e6-9c96-3e2996a8be5a.png" height="60"/>&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/18036928/5fbcbcdc-6d2c-11e6-9b40-3aad67379241.png" height="70"/>
 --------------------------------------------------------------------------------  
 ####&nbsp;&nbsp;&nbsp; A modern and refined interface for any dark syntax-theme.
 <p align="right">
