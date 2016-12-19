@@ -27,7 +27,7 @@
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
         color: lighten(@color, 2%);
-        font-weight: bold;
+        font-weight: 600;
     }
   }
 
@@ -124,8 +124,4 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   padding: 0 @component-padding;
   background: @theme-background-color-highlight;
   box-shadow: 0 0 1px @base-border-color;
-}
-
-.file.entry.list-item.status-modified {
-    color: @theme-orange !important;
 }

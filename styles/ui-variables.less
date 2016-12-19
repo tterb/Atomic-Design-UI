@@ -60,10 +60,10 @@
 @text-color-error: @theme-red;
 
 @text-color-ignored: @text-color-subtle;
-@text-color-added: @text-color-success;
-@text-color-renamed: @theme-purple;
-@text-color-modified: @text-color-warning;
-@text-color-removed: @text-color-error;
+@text-color-added: darken(@text-color-success, 10%);
+@text-color-renamed: darken(@theme-purple, 10%);
+@text-color-modified: darken(@text-color-warning, 10%);
+@text-color-removed: darken(@theme-red, 10%);
 
 
 // Editor ---------------------------------------------------------------------
@@ -124,9 +124,10 @@
 @tree-view-text-color: fade(@text-color, 70%);
 @tree-view-selection-color: darken(#393838, 5%);
 @tree-view-border-color: @theme-background-color-light;
-// Tree-view - Light
-@tree-view-background-color-light: #C0BABE;//#DDDCDD;
-@tree-view-text-color-light: @syntax-background-color;
+// Tree-view - (Light)
+@tree-view-background-color-light: #DBDBDA;//#DDDCDD;
+@tree-view-text-color-light: lighten(@darker-gray, 4%);
+@tree-view-selection-color-light: darken(#595958, 5%);
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
