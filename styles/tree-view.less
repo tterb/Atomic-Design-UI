@@ -37,6 +37,7 @@
 			color: @tree-view-text-color;
 		}
     }
+
     .pseudo:before {
         height: 50px;
     }
@@ -105,6 +106,25 @@
     }
 }
 
+.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+    margin-right: 4px;
+}
+
+// atom-panel-container {
+//     .project-root > .header {
+//         .icon-repo {
+//             &::before {
+//                 background: url('atom://atomic-design-ui/assets/icons.svg') no-repeat;
+//                 content: '';
+//                 height: 30px;
+//                 margin-right: 5px;
+//                 margin-bottom: -10px;
+//                 width: 30px;
+//           }
+//         }
+// 	}
+// }
+
 .list-tree {
 	[data-atomic-design-ui-light-tree-view="true"] & {
 		color: @tree-view-text-color-light;
@@ -113,8 +133,8 @@
 			&.status-added > .list-item {
 				color: darken(@text-color-added, 7%) !important;
 			}
-			&.status-modified {
-				// color: darken(@text-color-modified, 5%) !important;
+			&.status-modified > .list-item{
+				color: darken(@text-color-modified, 1%) !important;
 			}
 			&.status-removed > .list-item {
 				color: darken(@text-color-removed, 5%) !important;
@@ -123,11 +143,11 @@
 				color: darken(@text-color-renamed, 8%) !important;
 			}
 			&.status-ignored > .list-item {
-				color: fade(@tree-view-text-color-light, 42%) !important;
+				color: fade(@tree-view-text-color-light, 45%) !important;
 			}
 			&.selected {
 				color: @lightest-gray;
-				text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.5) !important;
+				text-shadow: none !important;
 			}
 			&.status-added.selected > .list-item {
 				color: @text-color-added !important;
@@ -161,7 +181,7 @@
 			}
 		}
 		&.status-modified {
-			color: darken(@text-color-modified, 5%);
+			color: darken(@text-color-modified, 2%);
 			&.selected {
 				color: @text-color-modified;
 			}
@@ -203,6 +223,10 @@ li.directory.entry.list-nested-item {
 			border-bottom: 1px inset @theme-background-color-selected;
 		}
 	}
+}
+
+.list-tree li.list-nested-item.selected > .list-item {
+    text-shadow: none !important;
 }
 
 .tree-view-resizer {
