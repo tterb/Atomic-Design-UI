@@ -1,4 +1,7 @@
 
+@markdown-preview-text-color: darken(@darkest-gray, 15%);
+@markdown-preview-background-color: lighten(@tree-view-background-color, 80%);
+@markdown-preview-border-color: mix(@theme-syntax-text-color, @theme-syntax-background-color, 20%);
 
 .markdown-preview.markdown-preview {
     background-color: @markdown-preview-background-color;
@@ -16,14 +19,14 @@
 		font-weight: bold !important;
     }
     a {
-        color: #3093EE;
+        color: #2593EE;
         font-weight: normal;
     }
     h1, h2, h3, h4, h5, h6 {
         color: @markdown-preview-text-color;
     };
 	h1, h2 {
-		border-bottom: 1px solid @lighter-gray !important;
+		border-bottom: 1px solid lighten(@light-gray, 15%) !important;
 		margin-top: 20px !important;
 	}
 	h4 {
@@ -31,12 +34,13 @@
 		margin-top: 16px;
 	}
 	hr {
-		margin: 0 10px;
-		border: 2px solid @lighter-gray;
+		margin: 0 0;
+		border: 2px solid lighten(@light-gray, 20%);
 	}
 	atom-text-editor {
 		background: @theme-background-color;
-		color: @lighter-gray;
+		color: lighten(@light-gray, 5%);
+		border-radius: 8px;
 	}
 	li {
 		font-size: @theme-font-size + 3px;
