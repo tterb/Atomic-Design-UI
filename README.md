@@ -1,5 +1,6 @@
+<img src="https://cloud.githubusercontent.com/assets/16360374/21331669/944a6cae-c5f8-11e6-8626-d621476c2088.png" height="80"/>
 --------------------------------------------------------------------------------  
-####&nbsp;&nbsp;&nbsp; A modern and refined interface for any dark syntax-theme.
+#### A modern and refined interface for any dark syntax-theme.
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
 		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;
@@ -13,22 +14,21 @@
 	</a>
 </p>
 <br>
-    <p align="center">
-        <img src="https://cloud.githubusercontent.com/assets/16360374/20373798/2159b06c-ac29-11e6-8fb4-6d77aae7a9bd.png" width="950" title="Screenshot">
-    </p>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/20373798/2159b06c-ac29-11e6-8fb4-6d77aae7a9bd.png" width="950" title="Screenshot">
+</p>
 
-<br>  
-## Description:
+<br>
+## <img src="https://cloud.githubusercontent.com/assets/16360374/21487840/552890b8-cb8a-11e6-9c36-51d255807749.png" width="50" align="absmiddle">&nbsp;Description:
   **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
-  Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.
+  Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.  
 
 
 **In Progress**
   * Adding improved integration for an increasing collection of common packages.
   * Experimenting with functionalities to improve syntax-theme adaptability.
 
-<br>
-*Keep in mind, this is my first attempt at creating a UI-theme for Atom, so if there are any issues please feel free to let me know and I'll do my best to fix them.*  
+<br>  
 ________________________________________________________________________________
 ## Install:  
   This package is distributed with *[apm]*. After [installing apm], you can install the UI-theme with this command.  
@@ -37,17 +37,27 @@ ________________________________________________________________________________
   $ apm install atomic-design-ui
 ```
 
-  After installation, the theme can be easily activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Theme* drop-down menu.  
+  After installation, the theme can be activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Theme* drop-down menu.  
+
+<br>  
+________________________________________________________________________________
+## <img src="https://cloud.githubusercontent.com/assets/16360374/21487849/b3c86986-cb8a-11e6-810c-ac6d76b32ec6.png" width="45">&nbsp;Settings:  
+  This UI-theme also features configurable settings, allowing users to select whether they would like to use a light or dark tree-view.  
+
+  <!-- <p align="center"> -->
+  &nbsp;&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/21487851/ca232202-cb8a-11e6-9913-c34b03eec4ea.png" width="275" title="Settings">
+  <!-- </p> -->
+
 <br>  
 ________________________________________________________________________________
 ## Screenshots:  
 
-  * [Java]
-  * [HTML]
-  * [Markdown]
-  * [Settings-View]
+  * **[Java]**
+  * **[HTML]**
+  * **[Markdown]**
+  * **[Settings-View]**
 
-<br>
+<br>  
 ________________________________________________________________________________
 
 ## Other Packages:
