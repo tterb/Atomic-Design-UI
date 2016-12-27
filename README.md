@@ -19,7 +19,7 @@
 </p>
 
 <br>
-## <img src="https://cloud.githubusercontent.com/assets/16360374/21487840/552890b8-cb8a-11e6-9c36-51d255807749.png" width="50" align="absmiddle">&nbsp;Description:
+## Description:
   **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
   Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.  
 
@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 <br>  
 ________________________________________________________________________________
-## <img src="https://cloud.githubusercontent.com/assets/16360374/21487849/b3c86986-cb8a-11e6-810c-ac6d76b32ec6.png" width="45">&nbsp;Settings:  
+## Settings:  
   This UI-theme also features configurable settings, allowing users to select whether they would like to use a light or dark tree-view.  
 
   <!-- <p align="center"> -->
