@@ -3,7 +3,7 @@
 // Colors ---------------------------------------------------------------------
 @white: #FEFEFE;
 @lightest-gray: #E3E9E6;
-@lighter-gray: #93A1A1;
+@lighter-gray:#DFDFDF;
 @light-gray: #969896;
 @gray: #6C6C6C;
 @dark-gray: #464444;
@@ -18,27 +18,31 @@
 @theme-purple: #AE81FF;
 @theme-magenta: #F92672;
 
-@theme-text-color-highlight: @white;
-@theme-text-color-accent: mix(@syntax-text-color, @theme-text-color-highlight, 50%);
-@theme-text-color: mix(@syntax-background-color, @theme-text-color-accent, 32%);
-@theme-text-color-subtle: fade(@theme-text-color, 45%);
 
+// Syntax Colors --------------------------------------------------------------
 
-// Syntax-Theme Colors --------------------------------------------------------------
+@theme-syntax-text-color: @lightest-gray;
+@theme-syntax-selection-color: lighten(@darkest-gray, 10%);
+@theme-syntax-background-color: @darkest-gray;
 
-@theme-syntax-text-color: @syntax-text-color;
-@theme-syntax-cursor-color: @syntax-text-color;
-@theme-syntax-selection-color: lighten(@syntax-background-color, 10%);
-@theme-syntax-background-color: @syntax-background-color;
+[data-atomic-design-ui-use-syntax-colors="true"] & {
+	@theme-syntax-text-color: @syntax-text-color;
+	@theme-syntax-selection-color: lighten(@syntax-background-color, 10%);
+	@theme-syntax-background-color: @syntax-background-color;
+}
 
+// Theme Colors ---------------------------------------------------------------
 
-// Background Colors ----------------------------------------------------------
-
-@theme-background-color: @syntax-background-color;
-@theme-background-color-dark: desaturate(darken(@syntax-background-color, 4%), 2%);
-@theme-background-color-light: desaturate(lighten(@syntax-background-color, 6%), 2%);
+@theme-background-color: @theme-syntax-background-color;
+@theme-background-color-dark: desaturate(darken(@theme-syntax-background-color, 4%), 2%);
+@theme-background-color-light: desaturate(lighten(@theme-syntax-background-color, 6%), 2%);
 @theme-background-color-highlight: @theme-background-color-light;
 @theme-background-color-selected: @theme-background-color-light;
+
+@theme-text-color-highlight: @white;
+@theme-text-color-accent: mix(@theme-syntax-text-color, @theme-text-color-highlight, 50%);
+@theme-text-color: mix(@theme-syntax-background-color, @theme-text-color-accent, 32%);
+@theme-text-color-subtle: fade(@theme-text-color, 45%);
 
 @background-color-info: @theme-blue;
 @background-color-success: @theme-green;
@@ -125,8 +129,8 @@
 @tree-view-selection-color: darken(#393838, 5%);
 @tree-view-border-color: @theme-background-color-light;
 // Tree-view - (Light)
-@tree-view-background-color-light: #DEDEDD;
-@tree-view-text-color-light: lighten(@darker-gray, 4%);
+@tree-view-background-color-light: @lighter-gray;
+@tree-view-text-color-light: lighten(@darker-gray, 12%);
 @tree-view-selection-color-light: darken(#595958, 5%);
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
