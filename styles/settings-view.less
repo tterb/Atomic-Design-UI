@@ -271,13 +271,13 @@
 			border-color: darken(@input-border-color, 5%);
 		}
 		&.form-control:active {
-			color: lighten(@syntax-text-color, 5%);
+			color: lighten(@theme-syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:hover {
-			color: lighten(@syntax-text-color, 5%);
+			color: lighten(@theme-syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: lighten(@input-border-color, 5%);
@@ -365,4 +365,9 @@
 
 .settings-view input[type="checkbox"] {
 	margin-top: 10px;
+}
+
+
+body > atom-workspace > atom-workspace-axis > atom-workspace-axis > atom-pane-container > atom-pane > div > div > div.panels > div.package-detail.panels-item > section {
+	padding-top: 8px;
 }
