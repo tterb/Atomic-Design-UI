@@ -49,7 +49,7 @@
         font-weight: normal;
         text-transform: capitalize;
         font-size: @tree-view-font-size + 4px;
-		margin: 2px 0px;
+		margin: 0px 0px 2px;
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			background-color: darken(@tree-view-background-color-light, 6%);
 			color: @tree-view-text-color-light;
@@ -72,9 +72,9 @@
         vertical-align: middle;
         font-weight: bold;
         font-size: @tree-view-font-size + 2px;
-        margin: 4px 0px;
-        margin-bottom: 2px;
-        padding-bottom: 3px;
+        margin: 1px 0px;
+        // margin-bottom: 2px;
+        padding-bottom: 1px;
         color: @lightest-gray;
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			color: @tree-view-text-color-light;
@@ -106,9 +106,6 @@
     }
 }
 
-.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
-    margin-right: 4px;
-}
 
 // atom-panel-container {
 //     .project-root > .header {
@@ -131,10 +128,10 @@
 		li:not(.list-nested-item), li.list-nested-item {
 			color: @tree-view-text-color-light;
 			&.status-added > .list-item {
-				color: darken(@text-color-added, 7%) !important;
+				color: mix(@darkest-gray, @text-color-added, 30%) !important;
 			}
 			&.status-modified > .list-item{
-				color: darken(@text-color-modified, 1%) !important;
+				color: darken(@text-color-modified, 2%) !important;
 			}
 			&.status-removed > .list-item {
 				color: darken(@text-color-removed, 5%) !important;
@@ -143,7 +140,7 @@
 				color: darken(@text-color-renamed, 8%) !important;
 			}
 			&.status-ignored > .list-item {
-				color: fade(@tree-view-text-color-light, 45%) !important;
+				color: fade(@tree-view-text-color-light, 40%) !important;
 			}
 			&.selected {
 				color: @lightest-gray;
@@ -154,6 +151,7 @@
 			}
 			&.status-modified.selected > .list-item {
 				color: @text-color-modified !important;
+				font-weight: normal;
 			}
 			&.status-removed.selected > .list-item {
 				color: @text-color-removed !important;
@@ -169,13 +167,33 @@
 	[data-atomic-design-ui-light-tree-view="false"] {
 		color: @tree-view-text-color;
 	}
+	.list-tree li:not(.list-nested-item).selected {
+		margin-left: 9px;
+	}
+    li.list-nested-item.selected > .list-item {
+        text-shadow: none !important;
+    }
+    &.has-collapsable-children {
+        li.list-item {
+            margin-left: 12px;
+        }
+        .list-nested-item > .list-item::before {
+            margin-right: 4px;
+        }
+    }
+}
+
+.tree-view .list-nested-item > .header {
+	[data-atomic-design-ui-light-tree-view="true"] & {
+		color: @tree-view-text-color-light;
+	}
 }
 
 .file.entry.list-item {
 	[data-atomic-design-ui-light-tree-view="true"] & {
 		color: @tree-view-text-color-light;
 		&.status-added {
-			color: darken(@text-color-added, 7%);
+			color: mix(@darkest-gray, @text-color-added, 30%);
 			&.selected {
 				color: @text-color-added;
 			}
@@ -215,9 +233,9 @@ li.directory.entry.list-nested-item {
     &.expanded {
         background-color: -webkit-linear-gradient(top, lighten(@theme-background-color-selected, 4%), darken(@tree-view-background-color, 2%)) !important;
         padding-bottom: 8px !important;
-		margin-bottom: 4px;
+		margin-bottom: 6px;
 		[data-atomic-design-ui-light-tree-view="true"] & {
-			border-bottom: 1px inset fade(@theme-background-color-selected, 25%);
+			box-shadow: inset 0px -4px 6px -6px rgba(0,0,0,.6);
 		}
 		[data-atomic-design-ui-light-tree-view="false"] {
 			border-bottom: 1px inset @theme-background-color-selected;
@@ -225,9 +243,6 @@ li.directory.entry.list-nested-item {
 	}
 }
 
-.list-tree li.list-nested-item.selected > .list-item {
-    text-shadow: none !important;
-}
 
 .tree-view-resizer {
     .tree-view-resize-handle {

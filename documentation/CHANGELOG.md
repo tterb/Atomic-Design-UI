@@ -1,6 +1,20 @@
 # Change Log
 <br>  
 
+## Version 1.0.8  
+
+  * Improved Settings-view component styling
+  * Modified button radius
+  * Improved input field styling
+  * Added styling for 'Symbol Tree View' package
+  * Modified scrollbar for better visibility
+  * Improved link rendering in Markdown Preview
+  * Added styling for 'Linter' overlays
+  * Added configurable light/dark tree-view settings
+  * Improved tree-view readability
+
+--------------------------------------------------------------------------------
+
 ## Version 1.0.7
 
   * Fixed issue #3
@@ -8,7 +22,7 @@
   * Improved theme adaptability
   * Added support for 'Todo-show' package
   * Improved Settings-view formatting
-  * Improved keybinding visibility  
+  * Improved key-binding visibility  
   * Added input components styling
   * Improved styling for 'Tool-bar' packages
   * Improved 'Markdown Preview' rendering to more closely resemble GitHub's.
@@ -30,7 +44,7 @@
   * Fixed package-card styling in settings-view
   * Added visible editor border
   * Improved gutter styling
-  * Added reference import to 'index.less'
+  * Added reference import t 'index
   * Removed unnecessary UI-variables
 
 --------------------------------------------------------------------------------
