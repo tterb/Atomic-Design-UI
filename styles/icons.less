@@ -1,0 +1,153 @@
+
+@font-face {
+	font-family: 'iconFont';
+	src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1');
+	src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?v0.0.1') format('woff'),
+		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?v0.0.1') format('truetype'),
+		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?v0.0.1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.icon-icons_npm:before {
+	content: "\e616";
+}
+.icon-icons_node:before {
+	content: "\e617";
+}
+.icon-icons_yml:before {
+	content: "\e618";
+}
+.icon-icons_xml:before {
+	content: "\e619";
+}
+.icon-icons_bower:before {
+	content: "\e61a";
+}
+.icon-icons_stylus:before {
+	content: "\e600";
+}
+.icon-icons_site:before {
+	content: "\e601";
+}
+.icon-icons_sh:before {
+	content: "\e602";
+}
+.icon-icons_sass:before {
+	content: "\e603";
+}
+.icon-icons_rb:before {
+	content: "\e604";
+}
+.icon-icons_rails:before {
+	content: "\e605";
+}
+.icon-icons_py:before {
+	content: "\e606";
+}
+.icon-icons_procfile:before {
+	content: "\e607";
+}
+.icon-icons_php:before {
+	content: "\e608";
+}
+.icon-icons_md:before {
+	content: "\e609";
+}
+.icon-icons_license:before {
+	content: "\e60a";
+}
+.icon-icons_json:before {
+	content: "\e60b";
+}
+.icon-icons_js:before {
+	content: "\e60c";
+}
+.icon-icons_img:before {
+	content: "\e60d";
+}
+.icon-icons_html:before {
+	content: "\e60e";
+}
+.icon-icons_hbs:before {
+	content: "\e60f";
+}
+.icon-icons_gulp:before {
+	content: "\e610";
+}
+.icon-icons_grunt:before {
+	content: "\e611";
+}
+.icon-icons_file:before {
+	content: "\e612";
+}
+.icon-icons_dir:before {
+	content: "\e613";
+}
+.icon-icons_css:before {
+	content: "\e614";
+}
+.icon-icons_config:before {
+	content: "\e615";
+}
+.icon-icons_coffee:before {
+	content: "\e61b";
+}
+
+.name.icon.icon-repo {
+  // font-weight: bold;
+  // padding: 0px 0px 0px 5px;
+  // position: relative;
+  // display: inline-block;
+  top: -2px;
+  // color: @blue;
+  &:before {
+    // color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
+    // content: '\e601';
+    display: inline-block;
+    // font-family: iconFont;
+    font-size: 20px;
+	top: 1px;
+    left: -1px;
+    position: relative;
+  }
+}
+
+// .name.icon.icon-file-directory {
+  // background: none;
+  // border: none;
+  // color: @tree-view-background-color-light;
+  // display: inline-block;
+  // font-weight: bold;
+  // padding: 0px 0px 0px 2px;
+  // position: relative;
+  // top: -1px;
+//   &:before {
+//     // color: @tree-view-text-color-light;
+//     content: '\e613';
+//     display: inline-block;
+//     font-family: iconFont;
+//     font-size: 13px;
+//     left: -2px;
+//     position: relative;
+//     top: 1px;
+//   }
+// }
+
+.name.icon[data-name*=".less"] {
+	position: relative;
+  	display: inline-block;
+  	top: 1px;
+  	// padding: 0;
+  	&.icon-file-text:before {
+		font-family: iconFont;
+        content: '\e0b6';
+    	font-size: 14px;
+	    position: relative;
+	    top: 0px;
+	    left: 0px;
+	    color: #268AA4;
+	}
+}
