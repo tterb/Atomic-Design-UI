@@ -1,790 +1,723 @@
 
-@font-face {
-	font-family: 'iconFont';
-	src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1');
-	src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1') format('embedded-opentype'),
-		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?v0.0.1') format('woff'),
-		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?v0.0.1') format('truetype'),
-		url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?v0.0.1') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+[data-atomic-design-ui-default-file-icons="false"] {
 
-
-.icon-icons_npm:before {
-	content: "\e616";
-}
-.icon-icons_node:before {
-	content: "\e617";
-}
-.icon-icons_yml:before {
-	content: "\e618";
-}
-.icon-icons_xml:before {
-	content: "\e619";
-}
-.icon-icons_bower:before {
-	content: "\e61a";
-}
-.icon-icons_stylus:before {
-	content: "\e600";
-}
-.icon-icons_site:before {
-	content: "\e601";
-}
-.icon-icons_sh:before {
-	content: "\e602";
-}
-.icon-icons_sass:before {
-	content: "\e603";
-}
-.icon-icons_rb:before {
-	content: "\e604";
-}
-.icon-icons_rails:before {
-	content: "\e605";
-}
-.icon-icons_py:before {
-	content: "\e606";
-}
-.icon-icons_procfile:before {
-	content: "\e607";
-}
-.icon-icons_php:before {
-	content: "\e608";
-}
-.icon-icons_md:before {
-	content: "\e609";
-}
-.icon-icons_license:before {
-	content: "\e60a";
-}
-.icon-icons_json:before {
-	content: "\e60b";
-}
-.icon-icons_js:before {
-	content: "\e60c";
-}
-.icon-icons_img:before {
-	content: "\e60d";
-}
-.icon-icons_html:before {
-	content: "\e60e";
-}
-.icon-icons_hbs:before {
-	content: "\e60f";
-}
-.icon-icons_gulp:before {
-	content: "\e610";
-}
-.icon-icons_grunt:before {
-	content: "\e611";
-}
-.icon-icons_file:before {
-	content: "\e612";
-}
-.icon-icons_dir:before {
-	content: "\e613";
-}
-.icon-icons_css:before {
-	content: "\e614";
-}
-.icon-icons_config:before {
-	content: "\e615";
-}
-.icon-icons_coffee:before {
-	content: "\e61b";
-}
-
-.name.icon.icon-repo {
-  // font-weight: bold;
-  // padding: 0px 0px 0px 5px;
-  // position: relative;
-  // display: inline-block;
-  top: -2px;
-  // color: @blue;
-  &:before {
-    // color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
-    // content: '\e601';
-    display: inline-block;
-    // font-family: iconFont;
-    font-size: 20px;
-	top: 1px;
-    left: -1px;
-    position: relative;
-  }
-}
-
-.name.icon.icon-file-directory {
-  // background: none;
-  // border: none;
-  // color: @tree-view-background-color-light;
-  // display: inline-block;
-  // font-weight: bold;
-  // padding: 0px 0px 0px 2px;
-  // position: relative;
-  // top: -1px;
-  left: -5px;
-  &:before {
-    // color: lighten(@tree-view-text-color-light, 5%);
-	font-family: iconFont;
-    // content: '3';
-	content: '\e193';
-    display: inline-block;
-    font-size: 14px;
-    // left: -2px;
-    position: relative;
-    // top: 1px;
-  }
-}
-
-// .entries.list-tree {
-// 	// set color of ignored file icons
-// 	.file.status-ignored .icon {
-// 	  .icon('ignored', @ignore);
-// 	}
-// }
-
-
-.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
-	.icon-file-text[data-name$=".coffee"]:before, .icon-file-binary[data-name$=".coffee"]:before {
-		font-family: iconFont;
-        content: '\e069';
+	@font-face {
+		font-family: 'iconFont';
+		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1');
+		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1') format('embedded-opentype'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?v0.0.1') format('woff'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?v0.0.1') format('truetype'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?v0.0.1') format('svg');
+		font-weight: normal;
+		font-style: normal;
 	}
-}
 
-
-.name.icon[data-name*=".ai"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e140';
-    	font-size: 17px;
+	.name.icon.icon-repo {
 	    position: relative;
-	    top: 4px;
-	    left: 2px;
-		color: #E57418;
+	    display: inline-block;
+	    top: -2px;
+	    &:before {
+		    // font-family: iconFont;
+		    // content: '\e0b5';
+	      	font-size: 20px;
+		  	top: 2px;
+	      	left: 0px;
+	      	position: relative;
+		  	display: inline-block;
+		  	// color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
+	  	}
 	}
-}
 
-.name.icon[data-name*=".bash"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0d9';
-    	font-size: 17px;
-	    position: relative;
-	    top: 4px;
-	    left: 0px;
-		color: #E95912;
+	.name.icon.icon-file-directory {
+		background: none;
+		position: relative;
+	  	// top: -1px;
+	  	left: -5px;
+	  	&:before {
+			font-family: iconFont;
+	    	// content: '3';
+			content: '\e193';
+	    	display: inline-block;
+	    	font-size: 16px;
+			top: 3px;
+	    	left: 1px;
+	    	position: relative;
+	  	}
 	}
-}
 
-.name.icon[data-name*=".bin"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: 'x';
-    	font-size: 17px;
-	    position: relative;
-	    top: 2px;
-	    left: 1px;
-		color: #606060;
+	// .entries.list-tree {
+	// 	// set color of ignored file icons
+	// 	.file.status-ignored .icon {
+	// 	  .icon('ignored', @ignore);
+	// 	}
+	// }
+
+	.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
+		.icon-file-text[data-name$=".coffee"]:before, .icon-file-binary[data-name$=".coffee"]:before {
+			font-family: iconFont;
+	        content: '\e069';
+		}
 	}
-}
 
-.name.icon[data-name*=".c"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0e2';
-    	font-size: 14px;
-	    position: relative;
-	    top: 3px;
-	    left: 2px;
-		color: #5368C9
+
+	.name.icon[data-name*=".ai"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e140';
+	    	font-size: 17px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+			color: #E57418;
+		}
 	}
-}
 
-.name.icon[data-name*=".coffee"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before, {
-		font-family: iconFont;
-        content: '\e069';
-		// content: '@';
-    	font-size: 18px;
-	    position: relative;
-	    top: 2px;
-	    left: -1px;
-	    color: #7B6548;
+	.name.icon[data-name*=".bash"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0d9';
+	    	font-size: 17px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+			color: #E95912;
+		}
 	}
-}
 
-.name.icon[data-name*=".cpp"] {
-	position: relative;
-  	display: inline-block;
- 	top: 0px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0d8';
-    	font-size: 15px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: #369FBA;
+	.name.icon[data-name*=".bin"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'x';
+	    	font-size: 17px;
+		    position: relative;
+		    top: 2px;
+		    left: 1px;
+			color: #606060;
+		}
 	}
-}
 
-.name.icon[data-name*=".cs"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0d5';
-    	font-size: 15px;
-	    position: relative;
-	    top: 2px;
-	    left: 1px;
-	    color: #268AA4;
+	.name.icon[data-name*=".c"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0e2';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 3px;
+		    left: 2px;
+			color: #5368C9;
+		}
 	}
-}
 
-.name.icon[data-name*=".css"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0b6';
-    	font-size: 14px;
-	    position: relative;
-	    top: 2px;
-	    left: 0px;
-	    color: #2695A4;
+	.name.icon[data-name*=".coffee"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before, {
+			font-family: iconFont;
+	        content: '\e069';
+			// content: '@';
+	    	font-size: 18px;
+		    position: relative;
+		    top: 2px;
+		    left: -1px;
+		    color: #7B6548;
+		}
 	}
-}
 
-.name.icon[data-name*=".db"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: 'J';
-    	font-size: 14px;
-	    position: relative;
-	    top: 1px;
-	    left: 0px;
-	    color: #B27518;
+	.name.icon[data-name*=".cpp"] {
+		position: relative;
+	  	display: inline-block;
+	 	top: 0px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0d8';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 3px;
+		    left: 1px;
+		    color: #369FBA;
+		}
 	}
-}
 
-// ruby on rails
-.name.icon[data-name*=".erb"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e131';
-    	font-size: 15px;
-	    position: relative;
-	    top: 1px;
-	    left: 1px;
-	    color: #B00840;
+	.name.icon[data-name*=".cs"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0d5';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 2px;
+		    left: 1px;
+		    color: #268AA4;
+		}
 	}
-}
 
-.name.icon[data-name*=".gitignore"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e156';
-    	font-size: 14px;
-	    position: relative;
-	    top: 0px;
-	    left: 0px;
-	    color: #268AA4;
+	.name.icon[data-name*=".css"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0b6';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    color: #2695A4;
+		}
 	}
-}
 
-.name.icon[data-name*=".go"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e167';
-    	font-size: 14px;
-	    position: relative;
-	    top: 2px;
-	    left: 0px;
-	    color: #00AAA4;
+	.name.icon[data-name*=".db"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'J';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 1px;
+		    left: 0px;
+		    color: #B27518;
+		}
 	}
-}
 
-.name.icon[data-name*=".h"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0d8';
-    	font-size: 15px;
-	    position: relative;
-	    top: 3px;
-	    left: 2px;
-	    color: #C47422;
+	.name.icon[data-name=".editorconfig"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'h';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    color: #B00840;
+		}
 	}
-}
 
-.name.icon[data-name*=".html"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e088';
-    	font-size: 15px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: #DF5602;
+	// ruby on rails
+	.name.icon[data-name*=".erb"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e131';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 1px;
+		    left: 1px;
+		    color: #B00840;
+		}
 	}
-}
 
-.name.icon[data-name*=".java"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0e8';
-    	font-size: 18px;
-	    position: relative;
-	    top: 3px;
-	    left: 2px;
-	    color: #7830B6;
+	.name.icon[data-name=".gitignore"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e165';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #777777;
+		}
 	}
-}
 
-.name.icon[data-name*=".js"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-	left: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        // content: '\e0e0';
-		content: '\e17e';
-    	font-size: 16px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #DAC04E;
+	.name.icon[data-name*=".go"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e167';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    color: #00AAA4;
+		}
 	}
-}
 
-.name.icon[data-name*=".jpg"],
-.name.icon[data-name*=".jpeg"],
-.name.icon[data-name*=".gif"],
-.name.icon[data-name*=".png"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-	left: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        // content: '\e091';
-		content: '\e066';
-    	font-size: 14px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: @tree-view-text-color-light;
+	.name.icon[data-name*=".h"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0d8';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 3px;
+		    left: 1px;
+		    color: #C47422;
+		}
 	}
-}
 
-.name.icon[data-name*=".json"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0da';
-    	font-size: 18px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: #7830B6;
+	.name.icon[data-name*=".html"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e088';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: 1px;
+		    color: #E35602;
+		}
 	}
-}
 
-.name.icon[data-name*=".less"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        // content: '\e0b6';
-		content: '\e077';
-		content: '\e156';
-    	font-size: 22px;
-	    position: relative;
-	    top: 6px;
-	    left: -2px;
-	    color: #268AA4;
+	.name.icon[data-name*=".ini"] {
+		position: relative;
+	  	display: inline-block;
+	  	&.icon-file-text:before {
+		    position: relative;
+		    color: #D78A06;
+		}
 	}
-}
 
-.name.icon[data-name*="Makefile"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-    	font-size: 20px;
-	    position: relative;
-	    top: 1px;
-	    left: 2px;
-	    color: #5E9F4D;
+	.name.icon[data-name*=".java"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0e8';
+	    	font-size: 18px;
+		    position: relative;
+		    top: 3px;
+		    left: 2px;
+		    color: #7830B6;
+		}
 	}
-}
 
-.name.icon[data-name*=".m"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0cd';
-    	font-size: 16px;
-	    position: relative;
-	    top: 1px;
-	    left: 2px;
-	    color: #369FBA;
+	.name.icon[data-name*=".js"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+		left: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        // content: '\e0e0';
+			content: '\e17e';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: -1px;
+		    color: #E4C04E;
+		}
 	}
-}
 
-.name.icon[data-name*=".md"],
-.name.icon[data-name*=".mdown"],
-.name.icon[data-name*=".markdown"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: 'b';
-    	font-size: 17px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #767AC4;
+	.name.icon[data-name*=".jpg"],
+	.name.icon[data-name*=".jpeg"],
+	.name.icon[data-name*=".gif"],
+	.name.icon[data-name*=".png"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+		left: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        // content: '\e091';
+			content: '\e066';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 3px;
+		    left: 1px;
+		    color: @tree-view-text-color-light;
+		}
 	}
-}
 
-.name.icon[data-name*=".mp3"],
-.name.icon[data-name*=".wav"],
-.name.icon[data-name*=".tiff"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0b0';
-    	font-size: 16px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: #366AB4;
+	.name.icon[data-name*=".json"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e09a';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #6D60F6;
+		}
 	}
-}
 
-.name.icon[data-name*=".mp4"],
-.name.icon[data-name*=".flv"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e078';
-    	font-size: 19px;
-	    position: relative;
-	    top: 4px;
-	    left: 0px;
-	    color: #C67A54;
+	.name.icon[data-name*=".less"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        // content: '\e0b6';
+			// content: '\e077';
+			content: '\e156';
+	    	font-size: 22px;
+		    position: relative;
+		    top: 6px;
+		    left: -2px;
+		    color: #268AA4;
+		}
 	}
-}
 
-.name.icon[data-name*=".node"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0e7';
-    	font-size: 20px;
-	    position: relative;
-	    top: 5px;
-	    left: 1px;
-	    color: #68B866;
+	.name.icon[data-name="Makefile"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+	    	font-size: 20px;
+		    position: relative;
+		    top: 1px;
+		    left: 2px;
+		    color: #5E9F4D;
+		}
 	}
-}
 
-.name.icon[data-name*=".npm"],
-.name.icon[data-name*=".npmignore"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: 'c';
-    	font-size: 20px;
-	    position: relative;
-	    top: 5px;
-	    left: 1px;
-	    color: #DB2826;
+	.name.icon[data-name*=".m"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0cd';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 1px;
+		    left: 2px;
+		    color: #369FBA;
+		}
 	}
-}
 
-.name.icon[data-name*=".out"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e037';
-    	font-size: 14px;
-	    position: relative;
-	    top: 2px;
-	    left: 1px;
-	    // color: #6680BA;
+	.name.icon[data-name*=".md"],
+	.name.icon[data-name*=".mdown"],
+	.name.icon[data-name*=".markdown"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'b';
+	    	font-size: 17px;
+		    position: relative;
+		    top: 4px;
+		    left: 0px;
+		    color: #767AC4;
+		}
 	}
-}
 
-.name.icon[data-name*=".php"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        // content: '\e153';
-		content: '\e120';
-    	font-size: 20px;
-	    position: relative;
-	    top: 5px;
-	    left: -2px;
-	    color: #8680BA;
+	.name.icon[data-name*=".mp3"],
+	.name.icon[data-name*=".wav"],
+	.name.icon[data-name*=".tiff"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0b0';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    // color: #56DFB4;
+			color: #DFA302;
+		}
 	}
-}
 
-.name.icon[data-name*=".pl"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e105';
-    	font-size: 14px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #56BAD4;
+	.name.icon[data-name*=".mp4"],
+	.name.icon[data-name*=".flv"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e078';
+	    	font-size: 18px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #C66A54;
+		}
 	}
-}
 
-.name.icon[data-name*=".psd"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-	left: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e12f';
-    	font-size: 16px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #4DCAF9;
+	.name.icon[data-name*=".node"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0e7';
+	    	font-size: 20px;
+		    position: relative;
+		    top: 5px;
+		    left: 1px;
+		    color: #68B866;
+		}
 	}
-}
 
-.name.icon[data-name*=".py"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e068';
-    	font-size: 19px;
-	    position: relative;
-	    top: 4px;
-	    left: 0px;
+	.name.icon[data-name*=".npm"],
+	.name.icon[data-name=".npmignore"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'c';
+	    	font-size: 22px;
+		    position: relative;
+		    top: 5px;
+		    left: -3px;
+			margin-right: 10px;
+		    color: #B74341;
+		}
 	}
-}
 
-.name.icon[data-name*=".rb"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e051';
-    	font-size: 16px;
-	    position: relative;
-	    top: 3px;
-	    left: 1px;
-	    color: #C01850;
+	.name.icon[data-name*=".out"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e037';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    // color: #6680BA;
+		}
 	}
-}
 
-.name.icon[data-name*=".rmskin"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e18b';
-    	font-size: 14px;
-	    position: relative;
-	    top: 2px;
-	    left: 0px;
-	    color: #369AB4;
+	.name.icon[data-name*=".php"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        // content: '\e153';
+			content: '\e120';
+	    	font-size: 20px;
+		    position: relative;
+		    top: 6px;
+		    left: -2px;
+		    color: #8680BA;
+		}
 	}
-}
 
-.name.icon[data-name*=".sass"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e071';
-    	font-size: 18px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #369AB4;
+	.name.icon[data-name*=".pl"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e105';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #56CAC4;
+		}
 	}
-}
 
-.name.icon[data-name*=".sql"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e10d';
-    	font-size: 15px;
-	    position: relative;
-	    top: 4px;
-	    left: 1px;
-	    color: #369AB4;
+	.name.icon[data-name*=".psd"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e12f';
+	    	font-size: 17px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #2DAAD9;
+		}
 	}
-}
 
-.name.icon[data-name*=".svg"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0ec';
-    	font-size: 16px;
-	    position: relative;
-	    top: 2px;
-	    left: 0px;
-	    color: #763AC4;
+	.name.icon[data-name*=".py"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e068';
+	    	font-size: 19px;
+		    position: relative;
+		    top: 4px;
+		    left: 0px;
+		}
 	}
-}
 
-.name.icon[data-name*=".ttf"],
-.name.icon[data-name*=".eot"],
-.name.icon[data-name*=".woff"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e0c5';
-    	font-size: 18px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: #505050;
+	.name.icon[data-name*=".rb"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e051';
+			// content: 'n';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #C01850;
+		}
 	}
-}
 
-.name.icon[data-name*=".txt"],
-.name.icon[data-name*=".text"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e192';
-    	font-size: 14px;
-	    position: relative;
-	    top: 3px;
-	    left: 0px;
-	    color: @tree-view-text-color-light;
+	.name.icon[data-name*=".rmskin"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e18b';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    color: #369AB4;
+		}
 	}
-}
 
-//gimp
-.name.icon[data-name*=".xcf"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e15a';
-    	font-size: 18px;
-	    position: relative;
-	    top: 4px;
-	    left: 0px;
-	    color: #6B5538;
+	.name.icon[data-name*=".sass"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e071';
+	    	font-size: 18px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #369AB4;
+		}
 	}
-}
 
-.name.icon[data-name*=".xml"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: '\e05d';
-    	font-size: 18px;
-	    position: relative;
-	    top: 4px;
-	    left: -1px;
-	    color: #C722D2;
+	.name.icon[data-name*=".sql"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e10d';
+	    	font-size: 15px;
+		    position: relative;
+		    top: 4px;
+		    left: 1px;
+		    color: #369AB4;
+		}
 	}
-}
 
-.name.icon[data-name*=".zip"] {
-	position: relative;
-  	display: inline-block;
-  	top: 1px;
-  	&.icon-file-text:before {
-		font-family: iconFont;
-        content: 'A';
-    	font-size: 19px;
-	    position: relative;
-	    top: 0px;
-	    left: 0px;
-	    // color: #E752F2;
+	.name.icon[data-name*=".svg"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0ec';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 2px;
+		    left: 0px;
+		    color: #763AC4;
+		}
+	}
+
+	.name.icon[data-name*=".ttf"],
+	.name.icon[data-name*=".eot"],
+	.name.icon[data-name*=".woff"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e0ab';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 1px;
+		    left: 1px;
+		    color: #505050;
+		}
+	}
+
+	.name.icon[data-name*=".txt"],
+	.name.icon[data-name*=".text"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e192';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: @tree-view-text-color-light;
+		}
+	}
+
+	//gimp
+	.name.icon[data-name*=".xcf"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e15a';
+	    	font-size: 18px;
+		    position: relative;
+		    top: 4px;
+		    left: 0px;
+		    color: #6B5538;
+		}
+	}
+
+	.name.icon[data-name*=".xml"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e05d';
+	    	font-size: 19px;
+		    position: relative;
+		    top: 4px;
+		    left: -2px;
+		    color: #A702ED;
+		}
+	}
+
+	.name.icon[data-name*=".zip"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: 'A';
+	    	font-size: 19px;
+		    position: relative;
+		    top: 0px;
+		    left: 0px;
+		    // color: #E752F2;
+		}
 	}
 }
