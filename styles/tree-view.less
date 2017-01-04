@@ -51,7 +51,7 @@
         font-size: @tree-view-font-size + 4px;
 		margin: 0px 0px 2px;
 		[data-atomic-design-ui-light-tree-view="true"] & {
-			background-color: darken(@tree-view-background-color-light, 6%);
+			background-color: darken(@tree-view-background-color-light, 8%);
 			color: @tree-view-text-color-light;
 		}
         [data-atomic-design-ui-light-tree-view="false"] {
@@ -124,9 +124,7 @@
 
 .list-tree {
 	[data-atomic-design-ui-light-tree-view="true"] & {
-		color: @tree-view-text-color-light;
 		li:not(.list-nested-item), li.list-nested-item {
-			color: @tree-view-text-color-light;
 			&.status-added > .list-item {
 				color: mix(@darkest-gray, @text-color-added, 30%) !important;
 			}
