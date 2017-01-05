@@ -20,7 +20,7 @@
 		    // font-family: iconFont;
 		    // content: '\e0b5';
 	      	font-size: 20px;
-		  	top: 2px;
+		  	top: -2px;
 	      	left: 0px;
 	      	position: relative;
 		  	display: inline-block;
@@ -31,16 +31,14 @@
 	.name.icon.icon-file-directory {
 		background: none;
 		position: relative;
-	  	// top: -1px;
-	  	left: -5px;
 	  	&:before {
 			font-family: iconFont;
 	    	// content: '3';
-			content: '\e193';
+			content: '4';
+			// content: '\e0c3';
+			// content: '\e0ad';
 	    	display: inline-block;
-	    	font-size: 16px;
-			top: 3px;
-	    	left: 1px;
+	    	font-size: 15px;
 	    	position: relative;
 	  	}
 	}
@@ -82,11 +80,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0d9';
-	    	font-size: 17px;
+	    	font-size: 16px;
 		    position: relative;
 		    top: 3px;
 		    left: 0px;
-			color: #E95912;
+			color: #EA6942;
 		}
 	}
 
@@ -117,6 +115,22 @@
 		    top: 3px;
 		    left: 2px;
 			color: #5368C9;
+		}
+	}
+
+	.name.icon[data-name*=".config"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before, {
+			font-family: iconFont;
+	        content: '\e0c0';
+			// content: '@';
+	    	font-size: 14px;
+		    position: relative;
+		    top: 1px;
+		    left: 0px;
+		    color: #888588;
 		}
 	}
 
@@ -177,7 +191,7 @@
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
-		    color: #2695A4;
+		    color: #269BA4;
 		}
 	}
 
@@ -196,6 +210,17 @@
 		}
 	}
 
+	.name.icon[data-name*=".dll"] {
+		position: relative;
+	  	display: inline-block;
+	  	&.icon-file-text:before {
+			// font-family: iconFont;
+			// content: '\e030';
+		    position: relative;
+		    color: #BD7A02;
+		}
+	}
+
 	.name.icon[data-name=".editorconfig"] {
 		position: relative;
 	  	display: inline-block;
@@ -207,7 +232,7 @@
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
-		    color: #B00840;
+		    color: #70809A;
 		}
 	}
 
@@ -223,7 +248,7 @@
 		    position: relative;
 		    top: 1px;
 		    left: 1px;
-		    color: #B00840;
+		    color: #B00830;
 		}
 	}
 
@@ -236,7 +261,7 @@
 	        content: '\e165';
 	    	font-size: 15px;
 		    position: relative;
-		    top: 3px;
+		    top: 4px;
 		    left: 0px;
 		    color: #777777;
 		}
@@ -268,7 +293,7 @@
 		    position: relative;
 		    top: 3px;
 		    left: 1px;
-		    color: #C47422;
+		    color: #20B459;
 		}
 	}
 
@@ -283,7 +308,36 @@
 		    position: relative;
 		    top: 3px;
 		    left: 1px;
-		    color: #E35602;
+		    color: #EC5652;
+		}
+	}
+
+	.name.icon[data-name*=".ico"] {
+		position: relative;
+	  	display: inline-block;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e067';
+	    	font-size: 16px;
+		    position: relative;
+		    // top: 3px;
+		    // left: 2px;
+		    color: #7830B6;
+		}
+	}
+
+	.name.icon[data-name*=".inc"] {
+		position: relative;
+	  	display: inline-block;
+		//  	top: 0px;
+	  	&.icon-file-text:before {
+			// font-family: iconFont;
+	        // content: '\e037';
+	    	font-size: 19px;
+		    position: relative;
+		    top: 2px;
+		    left: -1px;
+		    color: #30C015;
 		}
 	}
 
@@ -292,6 +346,7 @@
 	  	display: inline-block;
 	  	&.icon-file-text:before {
 		    position: relative;
+			top: 0px;
 		    color: #D78A06;
 		}
 	}
@@ -303,11 +358,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0e8';
-	    	font-size: 18px;
+	    	font-size: 20px;
 		    position: relative;
-		    top: 3px;
+		    top: 4px;
 		    left: 2px;
-		    color: #7830B6;
+		    color: #7B54B6;
 		}
 	}
 
@@ -344,7 +399,6 @@
 		    position: relative;
 		    top: 3px;
 		    left: 1px;
-		    color: @tree-view-text-color-light;
 		}
 	}
 
@@ -355,11 +409,20 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e09a';
-	    	font-size: 16px;
+	    	font-size: 15px;
 		    position: relative;
 		    top: 3px;
-		    left: 0px;
+		    left: -1px;
 		    color: #6D60F6;
+		}
+	}
+
+	.name.icon[data-name*=".lua"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			color: #70A0CC
 		}
 	}
 
@@ -419,9 +482,9 @@
 	        content: 'b';
 	    	font-size: 17px;
 		    position: relative;
-		    top: 4px;
+		    top: 3px;
 		    left: 0px;
-		    color: #767AC4;
+		    color: #767ACA;
 		}
 	}
 
@@ -434,7 +497,7 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0b0';
-	    	font-size: 16px;
+	    	font-size: 15px;
 		    position: relative;
 		    top: 3px;
 		    left: 0px;
@@ -451,7 +514,8 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e078';
-	    	font-size: 18px;
+			// content: '\e0bd';
+	    	font-size: 17px;
 		    position: relative;
 		    top: 3px;
 		    left: 0px;
@@ -482,12 +546,27 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: 'c';
-	    	font-size: 22px;
+	    	font-size: 20px;
 		    position: relative;
-		    top: 5px;
-		    left: -3px;
+		    top: 4px;
+		    left: -1px;
 			margin-right: 10px;
 		    color: #B74341;
+		}
+	}
+
+	.name.icon[data-name*=".nupkg"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			font-family: iconFont;
+			content: '\'';
+			font-size: 16px;
+			position: relative;
+			top: 2px;
+			left: 1px;
+			color: #50A323;
 		}
 	}
 
@@ -506,6 +585,22 @@
 		}
 	}
 
+	.name.icon[data-name*=".pfx"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			font-family: iconFont;
+			content: '\e079';
+			// content: '\e077';
+			font-size: 18px;
+			position: relative;
+			top: 2px;
+			left: 0px;
+			color: #A140EC;
+		}
+	}
+
 	.name.icon[data-name*=".php"] {
 		position: relative;
 	  	display: inline-block;
@@ -516,9 +611,9 @@
 			content: '\e120';
 	    	font-size: 20px;
 		    position: relative;
-		    top: 6px;
+		    top: 7px;
 		    left: -2px;
-		    color: #8680BA;
+		    color: #8D70BA;
 		}
 	}
 
@@ -589,11 +684,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e18b';
-	    	font-size: 14px;
+	    	font-size: 15px;
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
-		    color: #369AB4;
+		    color: #6ABB28;
 		}
 	}
 
@@ -612,6 +707,17 @@
 		}
 	}
 
+	.name.icon[data-name*=".sln"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+		    position: relative;
+			top: 1px;
+		    color: #465AB4;
+		}
+	}
+
 	.name.icon[data-name*=".sql"] {
 		position: relative;
 	  	display: inline-block;
@@ -619,7 +725,7 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e10d';
-	    	font-size: 15px;
+	    	font-size: 14px;
 		    position: relative;
 		    top: 4px;
 		    left: 1px;
@@ -638,7 +744,7 @@
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
-		    color: #763AC4;
+		    color: #8662E4;
 		}
 	}
 
@@ -655,7 +761,7 @@
 		    position: relative;
 		    top: 1px;
 		    left: 1px;
-		    color: #505050;
+		    // color: #505659;
 		}
 	}
 
@@ -666,14 +772,16 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e192';
-	    	font-size: 14px;
+	        // content: '\e192';
+			content: '\e02d';
+	    	font-size: 17px;
 		    position: relative;
-		    top: 3px;
-		    left: 0px;
-		    color: @tree-view-text-color-light;
+		    top: 2px;
+		    left: 1px;
+			// color: @tree-view-text-color-light;
 		}
 	}
+
 
 	//gimp
 	.name.icon[data-name*=".xcf"] {
@@ -683,11 +791,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e15a';
-	    	font-size: 18px;
+	    	font-size: 19px;
 		    position: relative;
-		    top: 4px;
+		    top: 5px;
 		    left: 0px;
-		    color: #6B5538;
+		    color: #6F5A3D;
 		}
 	}
 
@@ -709,15 +817,49 @@
 	.name.icon[data-name*=".zip"] {
 		position: relative;
 	  	display: inline-block;
-	  	top: 1px;
+	  	top: 2px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: 'A';
 	    	font-size: 19px;
 		    position: relative;
-		    top: 0px;
+		    top: -1px;
 		    left: 0px;
-		    // color: #E752F2;
+		    color: #E752F2;
+		}
+	}
+}
+
+[data-atomic-design-ui-light-tree-view="true"] {
+	.name.icon[data-name*=".ttf"],
+	.name.icon[data-name*=".eot"],
+	.name.icon[data-name*=".woff"] {
+		&.icon-file-text:before {
+			color: @tree-view-text-color-light;
+		}
+	}
+
+	.name.icon[data-name*=".txt"],
+	.name.icon[data-name*=".text"] {
+		&.icon-file-text:before {
+			color: @tree-view-text-color-light;
+		}
+	}
+}
+
+[data-atomic-design-ui-light-tree-view="false"] {
+	.name.icon[data-name*=".ttf"],
+	.name.icon[data-name*=".eot"],
+	.name.icon[data-name*=".woff"] {
+		&.icon-file-text:before {
+			color: lighten(@tree-view-text-color, 15%);
+		}
+	}
+
+	.name.icon[data-name*=".txt"],
+	.name.icon[data-name*=".text"] {
+		&.icon-file-text:before {
+			color: lighten(@tree-view-text-color, 15%);
 		}
 	}
 }
