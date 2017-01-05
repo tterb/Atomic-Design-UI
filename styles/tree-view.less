@@ -141,15 +141,15 @@
 				color: fade(@tree-view-text-color-light, 40%) !important;
 			}
 			&.selected {
+				font-weight: normal;
 				color: @lightest-gray;
 				text-shadow: none !important;
 			}
 			&.status-added.selected > .list-item {
-				color: @text-color-added !important;
+				color: @text-color-added-light !important;
 			}
 			&.status-modified.selected > .list-item {
 				color: @text-color-modified !important;
-				font-weight: normal;
 			}
 			&.status-removed.selected > .list-item {
 				color: @text-color-removed !important;
@@ -191,9 +191,9 @@
 	[data-atomic-design-ui-light-tree-view="true"] & {
 		color: @tree-view-text-color-light;
 		&.status-added {
-			color: mix(@darkest-gray, @text-color-added, 30%);
+			color: @text-color-added-light;
 			&.selected {
-				color: @text-color-added;
+				color: lighten(@text-color-added-light, 5%);
 			}
 		}
 		&.status-modified {
@@ -244,7 +244,8 @@ li.directory.entry.list-nested-item {
 
 .tree-view-resizer {
     .tree-view-resize-handle {
-        width: 8px;
+        width: 14px;
+		background: transparent;
     }
 }
 

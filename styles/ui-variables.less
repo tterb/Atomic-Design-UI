@@ -3,11 +3,11 @@
 // Colors ---------------------------------------------------------------------
 @white: #FEFEFE;
 @lightest-gray: #E3E9E6;
-@lighter-gray:#DFDFDF;
+@lighter-gray:#E3E3E3;
 @light-gray: #969896;
 @gray: #6C6C6C;
 @dark-gray: #464444;
-@darker-gray: #303030;
+@darker-gray: #2B2B2B;
 @darkest-gray: #2D2D2A;
 
 @theme-red: #D82323;
@@ -25,11 +25,11 @@
 @theme-syntax-selection-color: lighten(@darkest-gray, 10%);
 @theme-syntax-background-color: @darkest-gray;
 
-[data-atomic-design-ui-use-syntax-colors="true"] & {
-	@theme-syntax-text-color: @syntax-text-color;
-	@theme-syntax-selection-color: lighten(@syntax-background-color, 10%);
-	@theme-syntax-background-color: @syntax-background-color;
-}
+// [data-atomic-design-ui-use-syntax-colors="true"] & {
+// 	@syntax-text-color: @syntax-text-color;
+// 	@syntax-selection-color: lighten(@syntax-background-color, 10%);
+// 	@syntax-background-color: @syntax-background-color;
+// }
 
 // Theme Colors ---------------------------------------------------------------
 
@@ -68,6 +68,7 @@
 @text-color-renamed: darken(@theme-purple, 10%);
 @text-color-modified: darken(@text-color-warning, 10%);
 @text-color-removed: darken(@theme-red, 10%);
+@text-color-added-light: #35A820;
 
 
 // Editor ---------------------------------------------------------------------
@@ -131,7 +132,7 @@
 @tree-view-border-color: @theme-background-color-light;
 // Tree-view - (Light)
 @tree-view-background-color-light: @lighter-gray;
-@tree-view-text-color-light: lighten(@darker-gray, 12%);
+@tree-view-text-color-light: #393939;
 @tree-view-selection-color-light: darken(#595958, 5%);
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
@@ -139,9 +140,9 @@
 // Scrollbar
 @scrollbar-color: -webkit-radial-gradient(lighten(@theme-background-color-selected, 2%), darken(@theme-background-color-selected, 2%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
-@scrollbar-track-color: fade(@tree-view-background-color, 35%);
+@scrollbar-track-color: fade(@tree-view-background-color, 55%);
 // Status Bar
-@status-bar-color: darken(@base-border-color, 2%);
+@status-bar-color: @base-border-color;
 // Tooltips
 @tooltip-text-color: @theme-background-color;
 @tooltip-background-color: @text-color;
