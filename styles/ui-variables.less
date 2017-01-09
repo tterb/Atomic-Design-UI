@@ -142,7 +142,7 @@
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
 @scrollbar-track-color: fade(@tree-view-background-color, 55%);
 // Status Bar
-@status-bar-color: @base-border-color;
+@status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 90%), @tree-view-background-color);
 // Tooltips
 @tooltip-text-color: @theme-background-color;
 @tooltip-background-color: @text-color;
