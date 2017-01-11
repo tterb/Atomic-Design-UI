@@ -34,11 +34,17 @@
 	  	&:before {
 			font-family: iconFont;
 	    	// content: '3';
-			content: '4';
-			// content: '\e0c3';
-			// content: '\e0ad';
+			content: '_';			// good
+			// content: '\e08d';
+			// content: '\e092';   // good
+			content: '\e0ca';	// good
+			font-size: 20px;
+			top: 3px;
+			left: -2px;
+			// content: '\e0b9';
+			// content: '\e0c8';
+			// font-size: 17px;
 	    	display: inline-block;
-	    	font-size: 15px;
 	    	position: relative;
 	  	}
 	}
@@ -366,23 +372,6 @@
 		}
 	}
 
-	.name.icon[data-name*=".js"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-		left: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e0e0';
-			content: '\e17e';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 3px;
-		    left: -1px;
-		    color: #E4C04E;
-		}
-	}
-
 	.name.icon[data-name*=".jpg"],
 	.name.icon[data-name*=".jpeg"],
 	.name.icon[data-name*=".gif"],
@@ -401,6 +390,27 @@
 		    left: 1px;
 		}
 	}
+
+	.name.icon[data-name*=".js"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+		left: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        // content: '\e0e0';
+			// content: '\e130';
+			content: '\e0d0';
+			// content: '\e0e7';
+			// content: '\e17e';
+	    	font-size: 20px;
+		    position: relative;
+		    top: 4px;
+		    left: -1px;
+		    color: #FBBC0C9;
+		}
+	}
+
 
 	.name.icon[data-name*=".json"] {
 		position: relative;
@@ -482,8 +492,8 @@
 	        content: 'b';
 	    	font-size: 17px;
 		    position: relative;
-		    top: 3px;
-		    left: 0px;
+		    top: 4px;
+		    left: -1px;
 		    color: #767ACA;
 		}
 	}
