@@ -221,8 +221,23 @@
 			}
 		}
 	}
-	[data-atomic-design-ui-light-tree-view="false"] {
+	[data-atomic-design-ui-light-tree-view="false"] & {
 		color: @tree-view-text-color;
+		&.status-added {
+			color: @text-color-added;
+		}
+		&.status-modified {
+			color: darken(@text-color-modified, 2%);
+		}
+		&.status-renamed {
+			color: darken(@text-color-renamed, 8%);
+		}
+		&.status-removed {
+			color: darken(@text-color-removed, 5%);
+		}
+		&.status-ignored {
+			color: fade(@tree-view-text-color, 40%);
+		}
 	}
 }
 
@@ -235,7 +250,7 @@ li.directory.entry.list-nested-item {
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			box-shadow: inset 0px -4px 6px -6px rgba(0,0,0,.6);
 		}
-		[data-atomic-design-ui-light-tree-view="false"] {
+		[data-atomic-design-ui-light-tree-view="false"] & {
 			border-bottom: 1px inset @theme-background-color-selected;
 		}
 	}
@@ -255,13 +270,21 @@ li.directory.entry.list-nested-item {
 
     &:focus {
 		[data-atomic-design-ui-light-tree-view="true"] & {
-			color: @tree-view-background-color-light;
+			background: @tree-view-background-color-light;
+			color: @tree-view-text-color-light;
 		}
-        [data-atomic-design-ui-light-tree-view="false"] {
+        [data-atomic-design-ui-light-tree-view="false"] & {
+			background: @tree-view-background-color;
 			color: @tree-view-text-color;
 		}
-        .selected:before {
-            transition: color @transition-time ease;
+		.selected:before {
+			[data-atomic-design-ui-light-tree-view="true"] & {
+				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
+			}
+			[data-atomic-design-ui-light-tree-view="false"] & {
+				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
+			}
+			transition: color @transition-time ease;
         }
     }
 }
