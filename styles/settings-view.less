@@ -69,6 +69,19 @@
 		}
 	}
 
+	.btn.active-theme-settings {
+		background: -webkit-linear-gradient(top, darken(@theme-background-color-selected, 3%), @theme-background-color);
+		border: 1px outset lighten(@theme-background-color-selected, 5%);
+		height: 35px;
+		width: 35px;
+		margin: -4px 4px;
+		box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+		&::before {
+			margin-left: 1px;
+			margin-right: 1px;
+		}
+	}
+
 	.config-menu {
 		.text(normal);
 		color: @theme-text-color;
