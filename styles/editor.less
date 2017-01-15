@@ -17,8 +17,12 @@ atom-text-editor[mini]::shadow {
 }
 
 atom-text-editor[mini] {
-	background-color: darken(@theme-background-color-selected, 6%);
+	background-color: darken(@theme-background-color, 6%);
 	border: 1px solid @input-border-color;
+}
+
+atom-text-editor[mini], atom-text-editor[mini].editor {
+	background: lighten(@tool-panel-background-color, 2%);//@theme-background-color;
 }
 
 atom-text-editor[mini].is-focused {
