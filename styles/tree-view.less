@@ -164,6 +164,12 @@
 	}
 	[data-atomic-design-ui-light-tree-view="false"] {
 		color: @tree-view-text-color;
+		&.selected {
+			font-weight: normal;
+			background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color) !important;
+			color: @lightest-gray;
+			text-shadow: none !important;
+		}
 	}
 	.list-tree li:not(.list-nested-item).selected {
 		margin-left: 9px;
@@ -269,17 +275,17 @@ li.directory.entry.list-nested-item {
     box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
 
     &:focus {
-		[data-atomic-design-ui-light-tree-view="true"] & {
+		// [data-atomic-design-ui-light-tree-view="true"] & {
 			background: @tree-view-background-color-light;
 			color: @tree-view-text-color-light;
-		}
+		// }
         [data-atomic-design-ui-light-tree-view="false"] & {
 			background: @tree-view-background-color;
 			color: @tree-view-text-color;
 		}
 		.selected:before {
 			[data-atomic-design-ui-light-tree-view="true"] & {
-				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
+				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color-light, 12%), @tree-view-selection-color-light);
 			}
 			[data-atomic-design-ui-light-tree-view="false"] & {
 				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
