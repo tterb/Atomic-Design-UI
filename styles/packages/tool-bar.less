@@ -1,5 +1,5 @@
 
-@toolbar-background-color: lighten(@tree-view-background-color, 1%);
+@toolbar-background-color: @tree-view-background-color;
 @toolbar-icon-color: mix(@theme-syntax-background-color, @text-color-accent, 60%);
 
 .tool-bar {
@@ -13,7 +13,7 @@
 
     button.tool-bar-btn {
         background: lighten(@theme-background-color, 1%);
-        color: @toolbar-icon-color;
+	    color: @toolbar-icon-color;
         background-image: inherit;
         cursor: pointer;
         flex: 0 0 auto;
