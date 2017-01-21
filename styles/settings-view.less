@@ -72,13 +72,15 @@
 	.btn.active-theme-settings {
 		background: -webkit-linear-gradient(top, darken(@theme-background-color-selected, 3%), @theme-background-color);
 		border: 1px outset lighten(@theme-background-color-selected, 5%);
-		height: 35px;
+		height: 32px;
 		width: 35px;
-		margin: -4px 4px;
-		box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+		margin: -3px 5px 1px;
+		box-shadow: 2px 2px 0px rgba(0,0,0,.3);
+		// border-radius: 50px;
 		&::before {
-			margin-left: 1px;
-			margin-right: 1px;
+			margin: 5px 1px 1px;
+			// margin-left: 1px;
+			// margin-right: 1px;
 		}
 	}
 
@@ -123,15 +125,21 @@
 		}
 	}
 
+	.editor-container:last-child {
+		width: 90%;
+		margin: 5px 10px 0 10px !important;
+	}
+
 	input[type="checkbox"]:checked {
-		color: @theme-background-color !important;
+		background: -webkit-radial-gradient(darken(@text-color-success, 20%), @text-color-success) !important;
+		margin-top: 7px;
 	}
 
 	label {
 		.text(normal);
 		&.control-label {
 			.theme-description {
-				min-height: 36px;
+				min-height: 25px;
 			}
 		}
 	}
@@ -139,8 +147,8 @@
 	.package-card {
 		.text(normal);
 		background-image: linear-gradient(darken(@theme-background-color-selected, 5%), darken(@theme-background-color-selected, 7%));
-		border: 1px solid @theme-background-color-dark;
-		border-radius: 25px;
+		border: 2px inset lighten(@theme-background-color, 10%);
+		border-radius: 20px;
 		margin-top: 12px;
 		padding-top: 12px;
 		margin-bottom: 16px;
@@ -175,11 +183,11 @@
 	.package-card:hover,
 	.package-detail .package-card:hover {
 		transition-duration: 300ms;
-		background-image: radial-gradient(darken(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 8%));
-		border-color: fade(@theme-blue, 40%);
+		background-image: radial-gradient(darken(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 7%));
+		border: 2px solid fade(@theme-blue, 40%);
 	}
 	.package-container {
-		margin-top: 0px;
+		margin-top: 14px;
 		margin-left: 5px;
 		padding-left: 15px;
 		.meta-user .author{
@@ -267,6 +275,7 @@
 		.text(normal);
 		font-size: 22px;
 		color: lighten(@text-color, 30%);
+		margin-bottom: 3px;
 	}
 
 	.setting-description,
@@ -279,6 +288,8 @@
 		&.form-control {
 			font-size: 15px;
 			padding-top: 3px;
+			width: 90%;
+			margin-left: 15px;
 			background-color: lighten(@tool-panel-background-color, 2%);
 			border-radius: @component-border-radius + 5px;
 			border-color: darken(@input-border-color, 5%);
@@ -306,20 +317,22 @@
 		background-color: lighten(@theme-background-color-selected, 0.25%);
 		.section-heading {
 			.text(heading);
-			font-size: 40px;
+			font-size: 44px;
 			font-family: @font-family-light;
 			color: @white;
-			margin-bottom: 35px;
+			margin-bottom: 20px;
 
 			&:before {
 				font-size: 42px;
 				color: darken(@white, 8%);
 				width: 42px;
+				margin-left: -10px;
 				margin-right: 10px;
 			}
 		}
 		.section-heading-count.badge {
 			background: fade(@theme-blue, 70%);
+			border: 2px outset fade(darken(@theme-blue, 50%), 80%);
 			margin: 5px 15px;
 			padding: .3em;
 		}
@@ -328,7 +341,7 @@
 			font-size: 26px;
 			color: lighten(@text-color, 6%);
 			text-shadow: -1px 1px 3px rgba(0,0,0,.5);
-			margin: 50px 10px 0px;
+			margin: 50px 10px 0 0;
 			&:before {
 				font-size: 26px;
 				width: 24px;
@@ -361,10 +374,10 @@
 	}
 
 	.text {
-		margin-top: 18px;
+		margin: 0 0 10px 5px;
+		min-height: none;
 		&.icon.icon-question {
-			padding-bottom: 14px;
-			padding-left: 8px;
+			padding-bottom: 18px;
 			&:before {
 				padding-right: 8px;
 				color: @theme-blue;
@@ -373,10 +386,10 @@
 	}
 }
 
-.settings-view input[type="checkbox"] {
-	margin-top: 10px;
-}
 
+.icon-question::before {
+	top: 1.5px;
+}
 
 body > atom-workspace > atom-workspace-axis > atom-workspace-axis > atom-pane-container > atom-pane > div > div > div.panels > div.package-detail.panels-item > section {
 	padding-top: 8px;
