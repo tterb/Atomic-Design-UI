@@ -142,7 +142,7 @@
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
 @scrollbar-track-color: fade(@tree-view-background-color, 55%);
 // Status Bar
-@status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 90%), @tree-view-background-color);
+@status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
 // Tooltips
 @tooltip-text-color: @theme-background-color;
 @tooltip-background-color: @text-color;
@@ -155,11 +155,11 @@
 @theme-font-size: 13px;
 @input-font-size: 14px;
 @input-height: 32px;
-@tree-view-font-size: @theme-font-size;
+@tree-view-font-size: 13px;
 
 @component-padding: 10px;
 @component-icon-padding: 8px;
-@component-icon-size: @tree-view-font-size + 5px;
+@component-icon-size: @theme-font-size + 5px;
 @component-line-height: @component-icon-size + @component-icon-padding;
 @component-border-radius: 3px;
 
