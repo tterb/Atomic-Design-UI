@@ -70,75 +70,31 @@
 
 // Accents --------------------------------------------------------------------
 
-.accent-transform() {
-	[data-atomic-design-ui-accent-color="blue"] & {
-		.transform(@theme-blue);
-	}
-
-	[data-atomic-design-ui-accent-color="purple"] & {
-		.transform(@theme-purple);
-	}
-
-	[data-atomic-design-ui-accent-color="green"] & {
-		.transform(@theme-green);
-	}
-
-	[data-atomic-design-ui-accent-color="magenta"] & {
-		.transform(@theme-magenta);
-	}
-}
-
-.accent(@prop) {
-	[data-atomic-design-ui-accent-color="blue"] & {
-		@{prop}: @theme-blue;
-	}
-
-	[data-atomic-design-ui-accent-color="purple"] & {
-		@{prop}: @theme-purple;
-	}
-
-	[data-atomic-design-ui-accent-color="green"] & {
-		@{prop}: @theme-green;
-	}
-
-	[data-atomic-design-ui-accent-color="magenta"] & {
-		@{prop}: @theme-magenta;
-	}
-}
-
-// .subtle-accent-transform() {
-// 	[data-atomic-design-ui-accent-color="blue"] & {
-// 		.transform(@subtle-accent-color-blue);
+// .accent-transform() {
+// 	[data-atomic-design-ui-use-syntax-colors="blue"] & {
+// 		.transform(@theme-blue);
 // 	}
 //
-// 	[data-atomic-design-ui-accent-color="purple"] & {
-// 		.transform(@subtle-accent-color-purple);
+// 	[data-atomic-design-ui-use-syntax-colors="purple"] & {
+// 		.transform(@theme-purple);
 // 	}
 //
-// 	[data-atomic-design-ui-accent-color="green"] & {
-// 		.transform(@subtle-accent-color-green);
+// 	[data-atomic-design-ui-use-syntax-colors="green"] & {
+// 		.transform(@theme-green);
 // 	}
 //
-// 	[data-atomic-design-ui-accent-color="magenta"] & {
-// 		.transform(@subtle-accent-color-magenta);
+// 	[data-atomic-design-ui-use-syntax-colors="magenta"] & {
+// 		.transform(@theme-magenta);
 // 	}
 // }
 //
-// .subtle-accent(@prop) {
-// 	[data-atomic-design-ui-accent-color="blue"] & {
-// 		@{prop}: @subtle-accent-color-blue;
+// .accent(@prop) {
+// 	[data-atomic-design-ui-use-syntax-colors="false"] & {
+// 		@{prop}: @syntax;
 // 	}
 //
-// 	[data-atomic-design-ui-accent-color="purple"] & {
-// 		@{prop}: @subtle-accent-color-purple;
-// 	}
-//
-// 	[data-atomic-design-ui-accent-color="green"] & {
-// 		@{prop}: @subtle-accent-color-green;
-// 	}
-//
-// 	[data-atomic-design-ui-accent-color="magenta"] & {
-// 		@{prop}: @subtle-accent-color-magenta;
+// 	[data-atomic-design-ui-use-syntax-colors="purple"] & {
+// 		@{prop}: @theme-purple;
 // 	}
 // }
 
