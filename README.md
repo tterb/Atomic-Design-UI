@@ -15,34 +15,36 @@
 </p>
 <br>
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/20373798/2159b06c-ac29-11e6-8fb4-6d77aae7a9bd.png" width="950" title="Screenshot">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/21959599/c6bb6412-da80-11e6-8cae-831a5b15865b.png" width="950" title="Screenshot">
 </p>
 
 <br>
+
 ## Description:
   **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
-  Additionally, you should try pairing this theme with the **[Atomic Monokai]** syntax-theme.  
 
 
 **In Progress**
   * Adding improved integration for an increasing collection of common packages.
-  * Experimenting with functionalities to improve syntax-theme adaptability.
+  * Experimenting with functionalities to improve adaptability.
 
 <br>  
 ________________________________________________________________________________
+
 ## Install:  
-  This package is distributed with *[apm]*. After [installing apm], you can install the UI-theme with this command.  
+  This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
 
 ```
   $ apm install atomic-design-ui
 ```
 
-  After installation, the theme can be activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Theme* drop-down menu.  
+  After installation, the theme can be activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Theme* drop-down menu.
 
 <br>  
 ________________________________________________________________________________
+
 ## Settings:  
-  This UI-theme also features configurable settings, allowing users to select whether they would like to use a light or dark tree-view.  
+  Once selected, you can select the &nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/21959455/1719f490-da7d-11e6-9137-65089a686d52.png" height="18" Title="Settings">&nbsp; icon to access the modular aspects of the theme. This includes the ability to decide whether to use a light or dark tree-view and whether you would prefer to use the default icons or the custom icons included with this theme.  
 
   <!-- <p align="center"> -->
   &nbsp;&nbsp;&nbsp;<img src="https://cloud.githubusercontent.com/assets/16360374/21487851/ca232202-cb8a-11e6-9913-c34b03eec4ea.png" width="275" title="Settings">
@@ -50,6 +52,7 @@ ________________________________________________________________________________
 
 <br>  
 ________________________________________________________________________________
+
 ## Screenshots:  
 
   * **[Java]**
@@ -60,7 +63,7 @@ ________________________________________________________________________________
 <br>  
 ________________________________________________________________________________
 
-## Other Packages:
+## Other Packages:  
 
   * **[Minimap]** - featured in the above screenshot, *Minimap* applies a "*Sublime-esque*" view to the right-side of the frame.
   * **[Project Manager]** - delivers a familiar workflow for navigating projects and project-specific settings.
