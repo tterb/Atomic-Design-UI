@@ -1,13 +1,13 @@
 
-[data-atomic-design-ui-default-file-icons="false"] {
+// [data-atomic-design-ui-default-file-icons="false"] & {
 
 	@font-face {
 		font-family: 'iconFont';
-		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1');
-		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?v0.0.1') format('embedded-opentype'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?v0.0.1') format('woff'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?v0.0.1') format('truetype'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?v0.0.1') format('svg');
+		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?');
+		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?') format('embedded-opentype'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?') format('woff'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?') format('truetype'),
+			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -15,12 +15,12 @@
 	.name.icon.icon-repo {
 	    position: relative;
 	    display: inline-block;
-	    top: -2px;
+	    top: 0px;
 	    &:before {
 		    // font-family: iconFont;
 		    // content: '\e0b5';
 	      	font-size: 20px;
-		  	top: -2px;
+		  	top: 2px;
 	      	left: 0px;
 	      	position: relative;
 		  	display: inline-block;
@@ -30,19 +30,16 @@
 
 	.name.icon.icon-file-directory {
 		background: none;
+		top: 0px;
 		position: relative;
 	  	&:before {
 			font-family: iconFont;
-	    	// content: '3';
-			content: '_';			// good
-			// content: '\e08d';
+			// content: '_';		// good
 			// content: '\e092';   // good
 			content: '\e0ca';	// good
 			font-size: 20px;
-			top: 3px;
+			top: 4px;
 			left: -2px;
-			// content: '\e0b9';
-			// content: '\e0c8';
 			// font-size: 17px;
 	    	display: inline-block;
 	    	position: relative;
@@ -57,7 +54,8 @@
 	// }
 
 	.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
-		.icon-file-text[data-name$=".coffee"]:before, .icon-file-binary[data-name$=".coffee"]:before {
+		.icon-file-text[data-name$=".coffee"]:before,
+		.icon-file-binary[data-name$=".coffee"]:before {
 			font-family: iconFont;
 	        content: '\e069';
 		}
@@ -264,7 +262,10 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e165';
+			// content: 'w';
+			// content: 'V';
+			content: '\e149';
+	        // content: '\e0de';
 	    	font-size: 15px;
 		    position: relative;
 		    top: 4px;
@@ -411,19 +412,32 @@
 		}
 	}
 
-
 	.name.icon[data-name*=".json"] {
 		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e09a';
+			// content: '\e02c';
+			content: '\e04e';
+			font-size: 15px;
+			position: relative;
+			top: 3px;
+			left: -1px;
+			color: #DD70F6;
+		}
+	}
+
+	.name.icon[data-name="package.json"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			content: 'c' !important;
 	    	font-size: 15px;
 		    position: relative;
 		    top: 3px;
 		    left: -1px;
-		    color: #6D60F6;
 		}
 	}
 
@@ -444,12 +458,13 @@
 			font-family: iconFont;
 	        // content: '\e0b6';
 			// content: '\e077';
+			// content: '\e090';
 			content: '\e156';
-	    	font-size: 22px;
+	    	font-size: 23px;
 		    position: relative;
 		    top: 6px;
-		    left: -2px;
-		    color: #268AA4;
+		    left: -4px;
+		    color: #6698AD;//#268AA4;
 		}
 	}
 
@@ -492,9 +507,9 @@
 	        content: 'b';
 	    	font-size: 17px;
 		    position: relative;
-		    top: 4px;
+		    top: 3px;
 		    left: -1px;
-		    color: #767ACA;
+		    color: #737FE7;
 		}
 	}
 
@@ -838,7 +853,7 @@
 		    color: #E752F2;
 		}
 	}
-}
+// }
 
 [data-atomic-design-ui-light-tree-view="true"] {
 	.name.icon[data-name*=".ttf"],
