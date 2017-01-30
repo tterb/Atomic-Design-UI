@@ -18,7 +18,7 @@ atom-text-editor[mini].editor {
 	padding-left: @component-padding/2;
 	&.is-focused, &.is-focused.editor {
 		.selection .region {
-			background-color: desaturate(@background-color-selected, 50%);
+			background-color: mix(desaturate(@text-color-info, 40%), @dark-gray, 65%);
 		}
 	}
 	.cursor {
@@ -52,9 +52,6 @@ atom-text-editor {
 atom-text-editor.editor {
 	.gutter.syntax--drop-shadow {
 		-webkit-box-shadow: -2px 0 10px 2px #111;
-	}
-	.wrap-guide {
-		background: @dark-gray;
 	}
 }
 
