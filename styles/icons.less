@@ -12,6 +12,35 @@
 		font-style: normal;
 	}
 
+	.icon-alert::before {
+		font-family: iconFont;
+		content: '\e059';
+		font-size: 17px;
+	}
+
+	// Time-cop
+	.icon-dashboard::before {
+		font-size: 18px;
+		position: relative;
+		top: 1px;
+		left: -2px;
+	}
+
+	.icon-tools::before {
+		font-family: iconFont;
+		content: '\e001';
+		// content: '\e030';
+		font-size: 18px;
+		position: relative;
+		top: 3.5px;
+		left: -3px;
+	}
+
+	.icon-search::before {
+		font-family: iconFont;
+		content: '\e0A2';
+	}
+
 	.name.icon.icon-repo {
 	    position: relative;
 	    display: inline-block;
@@ -19,7 +48,7 @@
 	    &:before {
 		    // font-family: iconFont;
 		    // content: '\e0b5';
-	      	font-size: 20px;
+	      	font-size: 19px;
 		  	top: 2px;
 	      	left: 0px;
 	      	position: relative;
@@ -49,7 +78,7 @@
 	// .entries.list-tree {
 	// 	// set color of ignored file icons
 	// 	.file.status-ignored .icon {
-	// 	  .icon('ignored', @ignore);
+	// 	  .icon('ignored', @gray);
 	// 	}
 	// }
 
@@ -206,11 +235,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: 'J';
-	    	font-size: 14px;
+	    	font-size: 16px;
 		    position: relative;
 		    top: 1px;
 		    left: 0px;
-		    color: #B27518;
+		    color: #CAC060;
 		}
 	}
 
@@ -256,6 +285,7 @@
 		}
 	}
 
+	// .name.icon[data-name=".npmignore"],
 	.name.icon[data-name=".gitignore"] {
 		position: relative;
 	  	display: inline-block;
@@ -264,9 +294,9 @@
 			font-family: iconFont;
 			// content: 'w';
 			// content: 'V';
-			content: '\e149';
-	        // content: '\e0de';
-	    	font-size: 15px;
+			// content: '\e149';
+	        content: '\e0de';
+	    	font-size: 16px;
 		    position: relative;
 		    top: 4px;
 		    left: 0px;
@@ -301,6 +331,22 @@
 		    top: 3px;
 		    left: 1px;
 		    color: #20B459;
+		}
+	}
+
+	.name.icon[data-name*=".hs"],
+	.name.icon[data-name*=".lhs"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			font-family: iconFont;
+	        content: '\e066';
+	    	font-size: 16px;
+		    position: relative;
+		    top: 3px;
+		    left: 0px;
+		    color: #5F5286;
 		}
 	}
 
@@ -357,7 +403,12 @@
 		    color: #D78A06;
 		}
 	}
-
+	// .tab [data-name$='.java']:before,
+	// .tree-view:not(.nuclide-file-tree) [data-name$='.java']:before {
+	// 	font-family: iconFont;
+	// 	content: '\e0e8';
+	// 	color: #7B54B6;
+	// }
 	.name.icon[data-name*=".java"] {
 		position: relative;
 	  	display: inline-block;
@@ -445,30 +496,33 @@
 		}
 	}
 
-	.name.icon[data-name*=".lua"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			color: #70A0CC
-		}
-	}
-
 	.name.icon[data-name*=".less"] {
 		position: relative;
 	  	display: inline-block;
 	  	top: 1px;
+		left: 4px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        // content: '\e0b6';
 			// content: '\e077';
 			// content: '\e090';
-			content: '\e156';
+			// content: '\e156';
+			content: '\e07D';
 	    	font-size: 23px;
 		    position: relative;
 		    top: 6px;
-		    left: -4px;
-		    color: #6698AD;//#268AA4;
+		    left: -6px;
+		    color: #6698AD;
+		}
+	}
+
+	.name.icon[data-name*=".lua"] {
+		position: relative;
+	  	display: inline-block;
+	  	top: 1px;
+	  	&.icon-file-text:before {
+			content: '\e039';
+			color: #70A0CC;
 		}
 	}
 
@@ -477,7 +531,7 @@
 	  	display: inline-block;
 	  	top: 1px;
 	  	&.icon-file-text:before {
-	    	font-size: 20px;
+	    	font-size: 18px;
 		    position: relative;
 		    top: 1px;
 		    left: 0px;
@@ -531,7 +585,7 @@
 		    top: 3px;
 		    left: 0px;
 		    // color: #56DFB4;
-			color: #DFA302;
+			color: #966ADE;
 		}
 	}
 
@@ -548,7 +602,8 @@
 		    position: relative;
 		    top: 3px;
 		    left: 0px;
-		    color: #863AEC;
+		    // color: #966ADE;
+			color: #D58302;
 		}
 	}
 
@@ -567,8 +622,7 @@
 		}
 	}
 
-	.name.icon[data-name*=".npm"],
-	.name.icon[data-name=".npmignore"] {
+	.name.icon[data-name*=".npm"] {
 		position: relative;
 	  	display: inline-block;
 	  	top: 1px;
@@ -581,6 +635,22 @@
 		    left: -1px;
 			margin-right: 10px;
 		    color: #B74341;
+		}
+	}
+
+	.name.icon[data-name=".npmignore"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			font-family: iconFont;
+			content: '\e02c';
+			font-size: 20px;
+			position: relative;
+			top: 4px;
+			left: -1px;
+			margin-right: 10px;
+			color: #444444;
 		}
 	}
 
@@ -614,6 +684,21 @@
 		}
 	}
 
+	.name.icon[data-name*=".pdf"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			font-family: iconFont;
+			content: '\e08A';
+			font-size: 18px;
+			position: relative;
+			top: 2px;
+			left: 0px;
+			color: #B74341;
+		}
+	}
+
 	.name.icon[data-name*=".pfx"] {
 		position: relative;
 		display: inline-block;
@@ -637,7 +722,8 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        // content: '\e153';
-			content: '\e120';
+			// content: '\e120';
+			content: '\e08C';
 	    	font-size: 20px;
 		    position: relative;
 		    top: 7px;
@@ -728,7 +814,8 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e071';
+	        // content: '\e071';
+			content: '\e08F';
 	    	font-size: 18px;
 		    position: relative;
 		    top: 3px;
@@ -770,11 +857,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0ec';
-	    	font-size: 16px;
+	    	font-size: 17px;
 		    position: relative;
 		    top: 2px;
-		    left: 0px;
-		    color: #8662E4;
+		    left: -1px;
+		    color: #5662D4;
 		}
 	}
 
@@ -840,7 +927,7 @@
 		    position: relative;
 		    top: 4px;
 		    left: -2px;
-		    color: #A702ED;
+		    color: #A702FD;
 		}
 	}
 
@@ -856,6 +943,22 @@
 		    top: -1px;
 		    left: 3px;
 		    color: #E752F2;
+		}
+	}
+
+	.name.icon[data-name*="license"] {
+		position: relative;
+		display: inline-block;
+		top: 1px;
+		&.icon-file-text:before {
+			font-family: iconFont;
+			content: '\e083';
+			font-size: 20px;
+			position: relative;
+			top: 5px;
+			left: -4px;
+			margin-right: 10px;
+			color: #B7B721;
 		}
 	}
 }
