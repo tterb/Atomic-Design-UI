@@ -15,13 +15,15 @@
 </p>
 <br>
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/21959599/c6bb6412-da80-11e6-8cae-831a5b15865b.png" width="950" title="Screenshot">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/22501240/cceae3f4-e81c-11e6-88d2-b50141920552.png" width="950" title="Screenshot">
 </p>
 
 <br>
 
 ## Description:
   **Atomic Design** aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
+  The preview image above features the ***[Atomic Monokai]*** syntax-theme, which I would recommend to anyone that enjoys Monokai syntax-themes.  
+  <!-- If you like this interface but generally prefer lighter syntax-themes, try the new **[Atomic Delight]** UI-theme. -->
 
 
 **In Progress**
