@@ -7,6 +7,7 @@
 @tab-bottom-border-height: 3px;
 @tab-max-width: 130px;
 
+
 .tab-bar {
     height: @tab-height + (@tab-radius) + 1px;
     width: 100%;
@@ -22,7 +23,7 @@
     &:after {
         content: "";
         position: relative;
-        background-color: @tab-background-color-active;
+        // background: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
         border-top: 1px solid @tab-border-color;
         border-bottom: 1px dotted @tab-border-color;
         height: @tab-bottom-border-height;
@@ -33,24 +34,34 @@
     }
 
     .tab {
-        font-size: @theme-font-size - 1px;
         position: relative;
-        color: darken(@text-color, 5%);
+		font-size: @theme-font-size - 1px;
+        color: fade(darken(@text-color, 2%), 70%);
         top: @tab-top-padding;
         height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
         max-width: @tab-max-width;
+		line-height: @tab-height;
         text-align: left;
-        line-height: @tab-height;
-        padding: 0;
-        margin: 0 12px 0 5px;
-        padding-right: 5px !important;
+		margin: 0 12px 0 5px;
+        padding: 0 5px 0 0 !important;
         transition: color @transition-time/4 ease;
+		[data-atomic-design-ui-use-tab-syntax-colors="true"] {
+			background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 12%), darken(@tab-syntax-background-color, 3%)) !important;
+		}
+		[data-atomic-design-ui-use-tab-syntax-colors="false"] {
+			background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%)) !important;
+		}
 
         &,
         &:after,
         &:before {
-            background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
-            height: @tab-height;
+			height: @tab-height;
+			[data-atomic-design-ui-use-tab-syntax-colors="true"] {
+				background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 12.5%), darken(@tab-syntax-background-color, 3%));
+			}
+			[data-atomic-design-ui-use-tab-syntax-colors="false"] {
+				background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
+			}
         }
 
         &:after,
@@ -97,8 +108,8 @@
         }
 
         &:hover {
-            transition-delay: 200ms;
             color: darken(@text-color-highlight, 5%);
+            transition-delay: 200ms;
         }
 
         &.modified:not(:hover) {
@@ -131,17 +142,24 @@
     }
 
     .tab.active {
-        background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
-        color: darken(@text-color-highlight, 5%);
+		top: 9px;
+		height: @tab-height + 4px;
+		color: darken(@text-color-highlight, 10%);
         box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
-        z-index: 1;
+		z-index: 1;
+        [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
+            background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+        }
+        [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
+            background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+        }
 
-        .close-icon {
+    	.close-icon {
             line-height: @tab-height - 1px;
             color: darken(@text-color-highlight, 20%);
         }
 
-        .title {
+    	.title {
             position: relative;
             text-align: center;
             font-size: @theme-font-size + 4px;
@@ -154,9 +172,15 @@
         &,
         &:after,
         &:before {
+			top: 9px;
+			height: @tab-height + 4px;
             line-height: @tab-height + 1px;
-            background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
-            height: @tab-height + 1px;
+		    [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
+		        background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+		    }
+			[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
+				background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+			}
         }
 
         &:before {

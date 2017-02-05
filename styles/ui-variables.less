@@ -23,7 +23,7 @@
 
 @theme-syntax-text-color: @lightest-gray;
 @theme-syntax-selection-color: lighten(@darkest-gray, 10%);
-@theme-syntax-background-color: @darkest-gray;
+@theme-syntax-background-color: @syntax-background-color;
 
 // [data-atomic-design-ui-use-syntax-colors="true"] & {
 // 	@syntax-text-color: @syntax-text-color;
@@ -98,10 +98,11 @@
 // Component colors -----------------------------------------------------------
 
 // Tabs
-@tab-background-color: darken(@theme-background-color-selected, 2%);
-@tab-background-color-active: @theme-background-color;
-@tab-background-color-hover: @base-border-color;
-@tab-border-color: @base-border-color;
+@tab-background-color: darken(desaturate(lighten(@darkest-gray, 6%), 2%), 2%);
+@tab-syntax-background-color: darken(@theme-syntax-background-color, 2%);
+// @tab-background-color-active: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+@tab-background-color-hover: @theme-background-color-dark;
+@tab-border-color: @theme-background-color-dark;
 @tab-bar-background-color: darken(@theme-background-color, 4%);
 @tab-bar-border-color: @base-border-color;
 // Buttons
@@ -138,9 +139,9 @@
 @overlay-background-color: @tool-panel-background-color;
 @overlay-border-color: @base-border-color;
 // Scrollbar
-@scrollbar-color: -webkit-radial-gradient(lighten(@theme-background-color-selected, 2%), darken(@theme-background-color-selected, 2%));
+@scrollbar-color: -webkit-radial-gradient(darken(@theme-background-color-selected, 5%), darken(@theme-background-color-selected, 8%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
-@scrollbar-track-color: fade(@tree-view-background-color, 55%);
+@scrollbar-track-color: fade(@tree-view-background-color, 25%);
 // Status Bar
 @status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
 // Tooltips
@@ -154,8 +155,8 @@
 
 @theme-font-size: 13px;
 @input-font-size: 14px;
-@input-height: 32px;
 @tree-view-font-size: 13px;
+@input-height: 32px;
 
 @component-padding: 10px;
 @component-icon-padding: 8px;
