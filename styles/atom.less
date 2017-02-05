@@ -9,6 +9,7 @@
 
 atom-workspace {
     background-color: @theme-background-color;
+	font-family: @font-family;
 }
 
 background-tips {
@@ -69,5 +70,24 @@ kbd {
 			border: 1px inset lighten(@dark-gray, 5%);
 			padding-top: 15px;
 		}
+	}
+}
+
+.welcome {
+	background: darken(@theme-background-color-selected, 8%);
+}
+
+.welcome-card {
+	background: darken(@theme-background-color-selected, 8%);
+	border-color: transparent;
+}
+
+.welcome-summary {
+	background: lighten(@theme-background-color-selected, 4%);
+	box-shadow: inset -2px 3px 8px rgba(0,0,0,.4);
+	border-radius: 20px;
+	&:before {
+		color: @white;
+		font-size: 19px;
 	}
 }
