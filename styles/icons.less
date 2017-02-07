@@ -12,10 +12,14 @@
 		font-style: normal;
 	}
 
+	// Deprecation-cop
 	.icon-alert::before {
 		font-family: iconFont;
 		content: '\e059';
 		font-size: 17px;
+		position: relative;
+		top: 2px;
+		left: -2px;
 	}
 
 	// Time-cop
@@ -26,6 +30,7 @@
 		left: -2px;
 	}
 
+	// Settings-view
 	.icon-tools::before {
 		font-family: iconFont;
 		content: '\e001';
@@ -36,9 +41,45 @@
 		left: -3px;
 	}
 
+	// Project-find
 	.icon-search::before {
 		font-family: iconFont;
 		content: '\e0A2';
+	}
+
+	// README.md
+	.icon-book::before {
+		font-family: iconFont;
+		// content: 'b';
+		content: '\e081';
+		font-size: 19px;
+		position: relative;
+		top: 4px;
+		left: -2px;
+		color: #637FE7;
+	}
+
+	// Media files
+	.icon-file-media::before {
+		font-family: iconFont;
+		content: '!';
+		font-size: 15px;
+		position: relative;
+		top: 2px;
+		left: -1px;
+		color: #12A012;
+	}
+
+	// Zip files
+	.icon-file-zip::before {
+		font-family: iconFont;
+		// content: '9';
+		content: 'A';
+		// content: '\e0b3';
+		font-size: 17px;
+		position: relative;
+		top: 3px;
+		left: -1px;
 	}
 
 	.name.icon.icon-repo {
@@ -48,12 +89,12 @@
 	    &:before {
 		    // font-family: iconFont;
 		    // content: '\e0b5';
+			// color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
+			position: relative;
+		  	display: inline-block;
 	      	font-size: 19px;
 		  	top: 2px;
 	      	left: 0px;
-	      	position: relative;
-		  	display: inline-block;
-		  	// color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
 	  	}
 	}
 
@@ -67,11 +108,10 @@
 			// content: '\e092';   // good
 			content: '\e0ca';	// good
 			font-size: 20px;
+			display: inline-block;
+	    	position: relative;
 			top: 4px;
 			left: -2px;
-			// font-size: 17px;
-	    	display: inline-block;
-	    	position: relative;
 	  	}
 	}
 
@@ -101,7 +141,7 @@
 	    	font-size: 17px;
 		    position: relative;
 		    top: 3px;
-		    left: -1px;
+		    left: -2px;
 			color: #E57418;
 		}
 	}
@@ -115,9 +155,10 @@
 	        content: '\e0d9';
 	    	font-size: 16px;
 		    position: relative;
-		    top: 3px;
-		    left: 0px;
-			color: #EA6942;
+		    top: 4px;
+		    left: -1px;
+			// color: #DA5952;
+			color: #DA696A;
 		}
 	}
 
@@ -175,9 +216,9 @@
 			font-family: iconFont;
 	        content: '\e069';
 			// content: '@';
-	    	font-size: 19px;
+	    	font-size: 20px;
 		    position: relative;
-		    top: 2px;
+		    top: 3px;
 		    left: -1px;
 		    color: #7B6548;
 		}
@@ -190,11 +231,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0d8';
-	    	font-size: 15px;
+	    	font-size: 16px;
 		    position: relative;
-		    top: 4px;
+		    top: 3.5px;
 		    left: 1px;
-		    color: #369FBA;
+		    color: #16A0AA;
 		}
 	}
 
@@ -205,7 +246,7 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0d5';
-	    	font-size: 15px;
+	    	font-size: 16px;
 		    position: relative;
 		    top: 2px;
 		    left: 1px;
@@ -213,17 +254,19 @@
 		}
 	}
 
-	.name.icon[data-name*=".css"] {
+	.name.icon[data-name*=".css"],
+	.name.icon[data-name*=".min.css"] {
 		position: relative;
 	  	display: inline-block;
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e0b6';
-	    	font-size: 14px;
+			// content: '\e147';
+	    	font-size: 15px;
 		    position: relative;
-		    top: 2px;
-		    left: 0px;
+		    top: 2.5px;
+		    left: -1px;
 		    color: #269BB4;
 		}
 	}
@@ -238,7 +281,7 @@
 	    	font-size: 16px;
 		    position: relative;
 		    top: 1px;
-		    left: 0px;
+		    left: -1px;
 		    color: #CAC060;
 		}
 	}
@@ -261,11 +304,12 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: 'h';
-	    	font-size: 15px;
+			// content: '\e05c';
+	    	font-size: 14px;
 		    position: relative;
-		    top: 2px;
-		    left: 0px;
-		    color: #70809A;
+		    top: 1px;
+		    left: 1px;
+		    color: #708090;
 		}
 	}
 
@@ -311,11 +355,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e167';
-	    	font-size: 14px;
+	    	font-size: 16px;
 		    position: relative;
 		    top: 2px;
-		    left: 0px;
-		    color: #20BFCC;
+		    left: -1px;
+		    color: #50ACAC;
 		}
 	}
 
@@ -328,9 +372,10 @@
 	        content: '\e0d8';
 	    	font-size: 16px;
 		    position: relative;
-		    top: 3px;
+		    top: 3.5px;
 		    left: 1px;
-		    color: #20B459;
+		    // color: #20B459;
+			color: #E57418;
 		}
 	}
 
@@ -356,12 +401,13 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e088';
+	        // content: '\e088';
+			content: '\e13E';
 	    	font-size: 16px;
 		    position: relative;
 		    top: 3px;
-		    left: 1px;
-		    color: #EC8632;
+		    left: -1px;
+		    color: #EF6632;
 		}
 	}
 
@@ -389,8 +435,7 @@
 	    	font-size: 19px;
 		    position: relative;
 		    top: 2px;
-		    left: -1px;
-		    color: #30C015;
+		    left: 0px;
 		}
 	}
 
@@ -419,28 +464,8 @@
 	    	font-size: 20px;
 		    position: relative;
 		    top: 4px;
-		    left: 2px;
+		    left: 0px;
 		    color: #7B54B6;
-		}
-	}
-
-	.name.icon[data-name*=".jpg"],
-	.name.icon[data-name*=".jpeg"],
-	.name.icon[data-name*=".gif"],
-	.name.icon[data-name*=".png"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-		left: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e091';
-			content: '\e066';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 3px;
-		    left: 1px;
-			color: #8D2AD5;
 		}
 	}
 
@@ -459,8 +484,8 @@
 	    	font-size: 20px;
 		    position: relative;
 		    top: 4px;
-		    left: -1px;
-		    color: #F69E19;
+		    left: -2px;
+		    color: #DFBA67;
 		}
 	}
 
@@ -475,8 +500,8 @@
 			font-size: 15px;
 			position: relative;
 			top: 3px;
-			left: -1px;
-			color: #DD70F6;
+			left: -2px;
+			color: #DF70E3;
 		}
 	}
 
@@ -496,23 +521,37 @@
 		}
 	}
 
+	// .name.icon[data-name*=".less"] {
+	// 	position: relative;
+	//   	display: inline-block;
+	//   	top: 1px;
+	// 	left: 4px;
+	//   	&.icon-file-text:before {
+	// 		font-family: iconFont;
+	//         // content: '\e0b6';
+	// 		// content: '\e077';
+	// 		// content: '\e090';
+	// 		content: '\e156';
+	//     	font-size: 23px;
+	// 	    position: relative;
+	// 	    top: 6px;
+	// 	    left: -6px;
+	// 	    color: #6698AD;
+	// 	}
+	// }
+
 	.name.icon[data-name*=".less"] {
 		position: relative;
 	  	display: inline-block;
 	  	top: 1px;
-		left: 4px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        // content: '\e0b6';
-			// content: '\e077';
-			// content: '\e090';
-			// content: '\e156';
 			content: '\e07D';
-	    	font-size: 23px;
+	    	font-size: 14px;
 		    position: relative;
-		    top: 6px;
-		    left: -6px;
-		    color: #6698AD;
+		    top: 2px;
+		    left: 0px;
+		    color: #66A8BA;
 		}
 	}
 
@@ -521,8 +560,13 @@
 	  	display: inline-block;
 	  	top: 1px;
 	  	&.icon-file-text:before {
+			font-family: iconFont;
 			content: '\e039';
-			color: #70A0CC;
+			font-size: 21px;
+			position: relative;
+			top: 4.5px;
+			left: -3px;
+			color: #6087BE;
 		}
 	}
 
@@ -531,11 +575,13 @@
 	  	display: inline-block;
 	  	top: 1px;
 	  	&.icon-file-text:before {
-	    	font-size: 18px;
+			font-family: iconFont;
+			content: '\e1a4';
+	    	font-size: 14px;
 		    position: relative;
-		    top: 1px;
+		    top: 1.5px;
 		    left: 0px;
-		    color: #5E9F4D;
+		    color: #B96F2D;
 		}
 	}
 
@@ -562,12 +608,13 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: 'b';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 3px;
-		    left: -1px;
-		    color: #737FE7;
+	        // content: 'b';
+			content: '\e081';
+			font-size: 19px;
+			position: relative;
+			top: 5px;
+			left: -2px;
+		    color: #637FE7;
 		}
 	}
 
@@ -596,14 +643,13 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        // content: '\e078';
-			content: '\e0bd';
-	    	font-size: 16px;
+			// content: '\e0bd';
+			content: '8';
+	    	font-size: 15px;
 		    position: relative;
-		    top: 3px;
+		    top: 2px;
 		    left: 0px;
-		    // color: #966ADE;
-			color: #D58302;
+			color: #C55F52;
 		}
 	}
 
@@ -617,7 +663,7 @@
 	    	font-size: 20px;
 		    position: relative;
 		    top: 6px;
-		    left: 0px;
+		    left: -1px;
 		    color: #62B860;
 		}
 	}
@@ -645,12 +691,12 @@
 		&.icon-file-text:before {
 			font-family: iconFont;
 			content: '\e02c';
-			font-size: 20px;
+			font-size: 14px;
 			position: relative;
-			top: 4px;
-			left: -1px;
+			top: 2px;
+			left: 1px;
 			margin-right: 10px;
-			color: #444444;
+			color: #9D7D7D;
 		}
 	}
 
@@ -680,7 +726,7 @@
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
-		    // color: #6680BA;
+		    color: #BD405F;
 		}
 	}
 
@@ -724,11 +770,11 @@
 	        // content: '\e153';
 			// content: '\e120';
 			content: '\e08C';
-	    	font-size: 20px;
+	    	font-size: 19px;
 		    position: relative;
-		    top: 7px;
+		    top: 6px;
 		    left: -3px;
-		    color: #8D70BA;
+		    color: #8D80AA;
 		}
 	}
 
@@ -739,11 +785,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e105';
-	    	font-size: 15px;
+	    	font-size: 16px;
 		    position: relative;
-		    top: 3px;
-		    left: 1px;
-		    color: #56AAC4;
+		    top: 4px;
+		    left: -1px;
+		    color: #569AB4;
 		}
 	}
 
@@ -756,8 +802,8 @@
 	        content: '\e12f';
 	    	font-size: 17px;
 		    position: relative;
-		    top: 3px;
-		    left: -1px;
+		    top: 4px;
+		    left: -2px;
 		    color: #2DAAD9;
 		}
 	}
@@ -769,11 +815,11 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e068';
-	    	font-size: 19px;
+	    	font-size: 20px;
 		    position: relative;
 		    top: 4px;
-		    left: -1px;
-			color: #2D8AD9;
+		    left: -3px;
+			color: #5273AD;
 		}
 	}
 
@@ -785,10 +831,10 @@
 			font-family: iconFont;
 	        content: '\e051';
 			// content: 'n';
-	    	font-size: 16px;
+	    	font-size: 17px;
 		    position: relative;
 		    top: 3px;
-		    left: 0px;
+		    left: -1px;
 		    color: #C01850;
 		}
 	}
@@ -800,7 +846,7 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e18b';
-	    	font-size: 15px;
+	    	font-size: 16px;
 		    position: relative;
 		    top: 2px;
 		    left: 0px;
@@ -844,7 +890,7 @@
 	        content: '\e10d';
 	    	font-size: 14px;
 		    position: relative;
-		    top: 4px;
+		    top: 3px;
 		    left: 1px;
 		    color: #366AB4;
 		}
@@ -860,7 +906,7 @@
 	    	font-size: 17px;
 		    position: relative;
 		    top: 2px;
-		    left: -1px;
+		    left: -2px;
 		    color: #5662D4;
 		}
 	}
@@ -873,11 +919,13 @@
 	  	top: 1px;
 	  	&.icon-file-text:before {
 			font-family: iconFont;
-	        content: '\e0ab';
-	    	font-size: 16px;
+	        // content: '\e0ab';
+			// content: '\e05f';
+			content: '\e0c5';
+	    	font-size: 18px;
 		    position: relative;
-		    top: 1px;
-		    left: 0px;
+		    top: 3px;
+		    left: -1px;
 		    // color: #505659;
 		}
 	}
@@ -908,7 +956,7 @@
 	  	&.icon-file-text:before {
 			font-family: iconFont;
 	        content: '\e15a';
-	    	font-size: 19px;
+	    	font-size: 18px;
 		    position: relative;
 		    top: 5px;
 		    left: -2px;
@@ -931,34 +979,416 @@
 		}
 	}
 
-	.name.icon[data-name*=".zip"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 2px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: 'A';
-	    	font-size: 20px;
-		    position: relative;
-		    top: -1px;
-		    left: 3px;
-		    color: #E752F2;
-		}
-	}
-
-	.name.icon[data-name*="license"] {
+	.name.icon[data-name*="license"],
+	.name.icon[data-name*="LICENSE"] {
 		position: relative;
 		display: inline-block;
-		top: 1px;
+		top: 0px;
 		&.icon-file-text:before {
 			font-family: iconFont;
 			content: '\e083';
 			font-size: 20px;
 			position: relative;
-			top: 5px;
-			left: -4px;
+			top: 4px;
+			left: -3px;
 			margin-right: 10px;
-			color: #B7B721;
+			color: #B9B856;
+		}
+	}
+
+	[data-atomic-design-ui-compact-tree-view="true"] {
+		.name.icon.icon-repo {
+			&:before {
+				font-size: 17px;
+			}
+		}
+
+		.name.icon.icon-file-directory {
+			&:before {
+				font-size: 18px;
+			}
+		}
+
+		// .entries.list-tree {
+		// 	// set color of ignored file icons
+		// 	.file.status-ignored .icon {
+		// 	  .icon('ignored', @gray);
+		// 	}
+		// }
+
+		// .file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
+		// 	.icon-file-text[data-name$=".coffee"]:before,
+		// 	.icon-file-binary[data-name$=".coffee"]:before {
+		// 		font-family: iconFont;
+		// 		content: '\e069';
+		// 	}
+		// }
+
+
+		.name.icon[data-name*=".ai"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		.name.icon[data-name*=".bash"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".bin"] {
+			&.icon-file-text:before {
+				font-size: 15px;
+			}
+		}
+
+		.name.icon[data-name*=".c"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".config"] {
+			&.icon-file-text:before, {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".coffee"] {
+			&.icon-file-text:before, {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*=".cpp"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".cs"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".css"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".db"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		// .name.icon[data-name*=".dll"] {
+		// 	position: relative;
+		// 	display: inline-block;
+		// 	&.icon-file-text:before {
+		// 		// font-family: iconFont;
+		// 		// content: '\e030';
+		// 		position: relative;
+		// 		color: #BD7A02;
+		// 	}
+		// }
+
+		.name.icon[data-name=".editorconfig"] {
+			&.icon-file-text:before {
+				font-size: 13px;
+			}
+		}
+
+		// ruby on rails
+		.name.icon[data-name*=".erb"] {
+			&.icon-file-text:before {
+				font-size: 13px;
+			}
+		}
+
+		// .name.icon[data-name=".npmignore"],
+		.name.icon[data-name=".gitignore"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".go"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".h"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".hs"],
+		.name.icon[data-name*=".lhs"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".html"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".ico"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".inc"] {
+			&.icon-file-text:before {
+				font-size: 17px;
+			}
+		}
+
+		// .name.icon[data-name*=".ini"] {
+		// 	position: relative;
+		// 	display: inline-block;
+		// 	&.icon-file-text:before {
+		// 		position: relative;
+		// 		top: 0px;
+		// 		color: #D78A06;
+		// 	}
+		// }
+
+		.name.icon[data-name*=".java"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*=".jpg"],
+		.name.icon[data-name*=".jpeg"],
+		.name.icon[data-name*=".gif"],
+		.name.icon[data-name*=".png"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".js"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*=".json"] {
+			&.icon-file-text:before {
+				font-size: 13px;
+			}
+		}
+
+		.name.icon[data-name="package.json"] {
+			&.icon-file-text:before {
+				font-size: 19px;
+			}
+		}
+
+		.name.icon[data-name*=".less"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".lua"] {
+			&.icon-file-text:before {
+				font-size: 19px;
+			}
+		}
+
+		.name.icon[data-name="Makefile"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".m"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".md"],
+		.name.icon[data-name*=".mdown"],
+		.name.icon[data-name*=".markdown"] {
+			&.icon-file-text:before {
+				font-size: 15px;
+			}
+		}
+
+		.name.icon[data-name*=".mp3"],
+		.name.icon[data-name*=".wav"],
+		.name.icon[data-name*=".tiff"] {
+			&.icon-file-text:before {
+				font-size: 13px;
+			}
+		}
+
+		.name.icon[data-name*=".mp4"],
+		.name.icon[data-name*=".flv"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".node"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*=".npm"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name=".npmignore"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".nupkg"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".out"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".pdf"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		.name.icon[data-name*=".pfx"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		.name.icon[data-name*=".php"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*=".pl"] {
+			&.icon-file-text:before {
+				font-size: 14px;
+			}
+		}
+
+		.name.icon[data-name*=".psd"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		.name.icon[data-name*=".py"] {
+			&.icon-file-text:before {
+				font-size: 17px;
+			}
+		}
+
+		.name.icon[data-name*=".rb"] {
+			&.icon-file-text:before {
+				font-size: 15px;
+			}
+		}
+
+		.name.icon[data-name*=".rmskin"] {
+			&.icon-file-text:before {
+				font-size: 13px;
+			}
+		}
+
+		.name.icon[data-name*=".sass"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		// .name.icon[data-name*=".sln"] {
+		// 	position: relative;
+		// 	display: inline-block;
+		// 	top: 1px;
+		// 	&.icon-file-text:before {
+		// 		position: relative;
+		// 		top: 1px;
+		// 		color: #465AB4;
+		// 	}
+		// }
+
+		.name.icon[data-name*=".sql"] {
+			&.icon-file-text:before {
+				font-size: 12px;
+			}
+		}
+
+		.name.icon[data-name*=".svg"] {
+			&.icon-file-text:before {
+				font-size: 15px;
+			}
+		}
+
+		.name.icon[data-name*=".ttf"],
+		.name.icon[data-name*=".eot"],
+		.name.icon[data-name*=".woff"] {
+			&.icon-file-text:before {
+				font-size: 16px;
+			}
+		}
+
+		.name.icon[data-name*=".txt"],
+		.name.icon[data-name*=".text"] {
+			&.icon-file-text:before {
+				font-size: 15px;
+			}
+		}
+
+
+		//gimp
+		.name.icon[data-name*=".xcf"] {
+			&.icon-file-text:before {
+				font-size: 17px;
+			}
+		}
+
+		.name.icon[data-name*=".xml"] {
+			&.icon-file-text:before {
+				font-size: 17px;
+			}
+		}
+
+		.name.icon[data-name*=".zip"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
+		}
+
+		.name.icon[data-name*="license"] {
+			&.icon-file-text:before {
+				font-size: 18px;
+			}
 		}
 	}
 }
