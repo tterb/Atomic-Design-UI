@@ -13,12 +13,18 @@ status-bar {
     span {
         font-size: @theme-font-size - 1px;
         &.inline-block.icon.icon-color-mode {
+			position: relative;
             color: @theme-purple;
+			top: -1px;
+			left: 1px;
         }
 	}
 
     #aec-status-bar-tile {
-        color: @theme-magenta;
+		position: relative;
+        color: @theme-blue;
+		top: -1px;
+		left: -1px;
     }
 
 }
