@@ -1,8 +1,16 @@
+.tree-view-font-size(@tree-view-font-size);
+
 
 .tree-view {
     padding-top: 10px;
     margin: -5px -15px;
-    font-size: @tree-view-font-size;
+    .tree-view-font-size(font-size);
+	[data-atomic-design-ui-compact-tree-view="false"] & {
+		font-size: @tree-view-font-size;
+	}
+	[data-atomic-design-ui-compact-tree-view="true"] & {
+		font-size: @tree-view-font-size - 2px;
+	}
 	[data-atomic-design-ui-light-tree-view="true"] & {
 		background: @tree-view-background-color-light;
 		color: @tree-view-text-color-light
@@ -48,10 +56,16 @@
         vertical-align: middle;
         font-weight: normal;
         text-transform: capitalize;
-        font-size: @tree-view-font-size + 4px;
 		margin: 0px 0px 2px;
+		font-size: @tree-view-font-size + 4;
+		[data-atomic-design-ui-compact-tree-view="false"] & {
+			font-size: @tree-view-font-size + 5px;
+		}
+		[data-atomic-design-ui-compact-tree-view="true"] & {
+			font-size: @tree-view-font-size + 2px;
+		}
 		[data-atomic-design-ui-light-tree-view="true"] & {
-			background-color: darken(@tree-view-background-color-light, 8%);
+			background-color: darken(@tree-view-background-color-light, 5%);
 			color: @tree-view-text-color-light;
 		}
         [data-atomic-design-ui-light-tree-view="false"] {
@@ -71,11 +85,16 @@
         text-align: left;
         vertical-align: middle;
         font-weight: bold;
-        font-size: @tree-view-font-size + 2px;
         margin: 1px 0px;
-        // margin-bottom: 2px;
         padding-bottom: 1px;
         color: @lightest-gray;
+		font-size: @tree-view-font-size + 2px;
+		[data-atomic-design-ui-compact-tree-view="false"] & {
+			font-size: @tree-view-font-size + 2px;
+		}
+		[data-atomic-design-ui-compact-tree-view="true"] & {
+			font-size: @tree-view-font-size;
+		}
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			color: @tree-view-text-color-light;
 		}
@@ -91,8 +110,14 @@
     .project-root > .entries.list-tree {
         text-align: left;
         vertical-align: middle;
-        font-size: @tree-view-font-size + 2px;
 		margin: 5px 5px;
+        font-size: @tree-view-font-size + 2p;
+		[data-atomic-design-ui-compact-tree-view="false"] & {
+			font-size: @tree-view-font-size + 2px;
+		}
+		[data-atomic-design-ui-compact-tree-view="true"] & {
+			font-size: @tree-view-font-size;
+		}
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			color: @tree-view-text-color-light;
 		}
@@ -295,21 +320,52 @@ li.directory.entry.list-nested-item {
     }
 }
 
-[data-show-on-right-side=true] {
-    .focusable-panel,
-    .tree-view .selected:before {
-        box-shadow: inset 3px 0 0 rgba(0,0,0,.05);
-    }
+.focusable-panel,
+.tree-view .selected:before {
+    box-shadow: inset 3px 0 0 rgba(0,0,0,.05);
 }
 
 span.name.icon ::before {
     &.icon-file-directory {
-        font-size: @theme-font-size + 3px;
+        // font-size: @theme-font-size + 3px;
         font-weight: 600;
+		[data-atomic-design-ui-compact-tree-view="false"] & {
+			font-size: @tree-view-font-size + 3px;
+		}
+		[data-atomic-design-ui-compact-tree-view="true"] & {
+			font-size: @tree-view-font-size + 1px;
+		}
     }
     &.icon-repo {
-        font-size: @theme-font-size + 6px;
+        // font-size: @theme-font-size + 6px;
+		[data-atomic-design-ui-compact-tree-view="false"] & {
+			font-size: @tree-view-font-size + 6px;
+		}
+		[data-atomic-design-ui-compact-tree-view="true"] & {
+			font-size: @tree-view-font-size + 5px;
+		}
         font-weight: 800;
         text-transform: capitalize;
     }
+}
+
+.tree-view-resizer {
+    .tree-view-resize-handle {
+        width: 8px;
+    }
+}
+
+.tree-view-resizer ::-webkit-scrollbar-thumb,
+.atom-text-editor ::-webkit-scrollbar-thumb {
+	background: lighten(@theme-background-color-selected, 25%) !important;
+}
+
+.tree-view-resizer ::-webkit-scrollbar-track,
+.atom-text-editor ::-webkit-scrollbar-track {
+	[data-atomic-design-ui-light-tree-view="true"] & {
+		background: @tree-view-background-color-light !important;
+	}
+	[data-atomic-design-ui-light-tree-view="false"] & {
+		background: @tree-view-background-color !important;
+	}
 }
