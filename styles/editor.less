@@ -53,6 +53,10 @@ atom-text-editor.editor {
 	.gutter.syntax--drop-shadow {
 		-webkit-box-shadow: -2px 0 10px 2px #111;
 	}
+
+	.wrap-guide {
+		background: @dark-gray;
+	}
 }
 
 .editor-contents--private.gutter-container.gutter {
@@ -61,7 +65,7 @@ atom-text-editor.editor {
 	}
 }
 
-body > atom-workspace > atom-panel-container.modal > atom-panel:nth-child(n) > div > ol > li.event.selected > div > kbd {
+body > atom-workspace > atom-panel-container.modal > atom-panel:nth-child(n) >  div > ol > li.event.selected > div > kbd {
 	background: darken(@dark-gray, 5%);
 	color: fade(@text-color-info, 90%);
 	text-shadow: none;
