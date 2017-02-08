@@ -12,6 +12,9 @@
   * Added styling for 'Linter' overlays
   * Added configurable light/dark tree-view settings
   * Improved tree-view readability
+  * Added configurable custom icons to tree view
+  * Improved styling for the find-and-replace panel
+  * Upgraded deprecated selectors for Atom *v1.13.0*
 
 --------------------------------------------------------------------------------
 
