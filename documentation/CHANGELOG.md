@@ -1,7 +1,13 @@
 # Change Log
 <br>  
 
-## Version 1.0.8  
+## Version 1.1.1  
+
+  * Fix issue caused by outdated variables
+
+--------------------------------------------------------------------------------
+
+## Version 1.1.0  
 
   * Improved Settings-view component styling
   * Modified button radius
