@@ -107,7 +107,21 @@ atom-notification {
     &.success {
         border-color: @text-color-success;
         a {
-            color: @text-color-success;
+			background: -webkit-linear-gradient(top, darken(@text-color-success, 4%), desaturate(darken(@text-color-success, 21%), 20%)) !important;
+			color: darken(@white,2%) !important;
+			border: 1px outset darken(@text-color-success, 40%) !important;
+			border-radius: 4px !important;
+			font-size: 13px !important;
+			text-shadow: 2px 2px 5px rgba(0,0,0,.7) !important;
+			&::before {
+				font-size: 13px;
+				padding-left: 0px;
+			}
+			&:hover {
+				background: -webkit-linear-gradient(top, darken(@text-color-success, 6%), desaturate(darken(@text-color-success, 28%), 20%)) !important;
+				color: darken(@white, 10%) !important;
+				text-shadow: 4px 4px 9px rgba(0,0,0,.7) !important;
+			}
         }
     }
     &.error, &.fatal {

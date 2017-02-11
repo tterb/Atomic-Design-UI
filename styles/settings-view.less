@@ -30,18 +30,20 @@
 	}
 
 	.alert-info {
-		color: @text-color-info;
 		background: mix(@text-color-info, @theme-background-color, 32%);
-
+		color: desaturate(lighten(@text-color-info, 15%), 60%);
+		font-size: 15px;
+		padding-top: 18px;
 		button.close:before {
 			color: @text-color-info;
 		}
 	}
 
 	.alert-danger {
-		color: @text-color-error;
 		background: mix(@text-color-error, @theme-background-color, 32%);
-
+		color: desaturate(lighten(@text-color-error, 15%), 60%);
+		font-size: 15px;
+		padding-top: 18px;
 		button.close:before {
 			color: @text-color-error;
 		}
@@ -83,6 +85,14 @@
 				margin: 7px 1px 0px 2px;
 			}
 		}
+		&.btn-info {
+			color: darken(@white, 2%);
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+			&:hover {
+				background: -webkit-linear-gradient(top, darken(@text-color-info, 17%), desaturate(darken(@text-color-info, 36%), 30%)) !important;
+				text-shadow: 2px 3px 5px rgba(0,0,0,0.7);
+			}
+		}
 	}
 
 	button.btn {
@@ -90,7 +100,6 @@
 		margin-right: 2px;
 		// BUTTON FOR THEME SETTINGS
 		&.active-theme-settings.icon-gear {
-			// background: none;
 			&::before {
 				font-size: 20px;
 				margin-top: 6px;
@@ -101,8 +110,24 @@
 				// color: @text-color-info;
 			}
 		}
+		&.success {
+			background: -webkit-linear-gradient(top, darken(@text-color-success, 8%), desaturate(darken(@text-color-info, 21%), 26%));
+			color: darken(@white, 10%);
+			border: 1px outset darken(@text-color-success, 40%);
+			border-radius: 4px;
+			font-size: 13px;
+			text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+			&::before {
+				font-size: 13px;
+				padding-left: 0px;
+			}
+			&:hover {
+				background: -webkit-linear-gradient(top, darken(@text-color-success, 22%), desaturate(darken(@text-color-success, 36%), 20%));
+				text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+			}
+		}
 		&.settings {
-			background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 25%), 26%));
+			background: -webkit-linear-gradient(top, darken(@text-color-info, 15%), desaturate(darken(@text-color-info, 30%), 45%)) !important;
 			color: darken(@white, 10%);
 			border: 1px outset darken(@text-color-info, 40%);
 			border-radius: 4px;
@@ -113,14 +138,14 @@
 				padding-left: 0px;
 			}
 			&:hover {
-				background: -webkit-linear-gradient(top, darken(@text-color-info, 22%), desaturate(darken(@text-color-info, 32%), 20%));
+				background: -webkit-linear-gradient(top, darken(@text-color-info, 20%), desaturate(darken(@text-color-info, 36%), 30%)) !important;
 			}
 		}
 		&.uninstall-button {
 			transition: background 0.3s;
 			border: 1px outset @darkest-gray;
 			&:hover {
-				color: lighten(red, 10%);
+				color: desaturate(lighten(red, 10%), 40%);
 			}
 		}
 		&.install-button {
@@ -249,12 +274,15 @@
 				margin: 3px 7px 0 0;
 			}
 		}
+		&.package-name {
+			color: @white !important;
+		}
 	}
 
 	.package-card:hover,
 	.package-detail .package-card:hover {
 		transition-duration: 300ms;
-		background-image: radial-gradient(darken(@theme-background-color-selected, 3%), darken(@theme-background-color-selected, 7%));
+		background-image: radial-gradient(darken(@theme-background-color-selected, 4%), darken(@theme-background-color-selected, 7%));
 		// border: 2px solid fade(@theme-blue, 40%);
 		transition-duration: 500ms;
 	}
