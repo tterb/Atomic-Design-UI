@@ -1,6 +1,6 @@
 <img src="https://cloud.githubusercontent.com/assets/16360374/22689194/ab4e61f4-ece4-11e6-8732-b613ffaeb2e7.png" height="80"/>
 --------------------------------------------------------------------------------  
-#### A modern and refined interface for any dark syntax-theme.
+#### A responsive modern interface for any dark syntax-theme  
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
 		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;
@@ -36,6 +36,7 @@ ________________________________________________________________________________
 <!-- Features -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630566/57595f88-ebb1-11e6-835d-e84330b188e3.png" width="900" title="Features">  
 
+<br>
 <h3 align="center">Dark Refined Interface</h3>
 <p align="center">
   *Atomic Design* features a carefully selected color-palette and meticulous component styling, <br>
@@ -43,18 +44,23 @@ ________________________________________________________________________________
   <!-- modern, refined, dark, conscious design, carefully designed
   carefully selected palette, meticulous components styling, distinct, familiar, contrast -->
 </p>
+<br>
 
-<h3 align="center">Styling for common packages</h3>
+<h3 align="center">Package Styling</h3>
 <p align="center">
   This UI-theme includes complementary styling for an expanding collection of popular Atom <br>
   packages, bringing the same refined interface to all aspects of the user experience.
 </p>
+<br>
+
 <h3 align="center">Custom Icon Set</h3>
 <p align="center">
 *Atomic Design* also features a custom icon set, which aims to integrate distinct custom icons with <br>
 the best aspects of the most popular icon packages. This addition also prevents any <br>
 alignment issues that plague many icon packages.
 </p>
+<br>
+
 <h3 align="center">Modular Theme-Settings</h3>
 <p align="center">
   This UI-theme includes supplementary settings, which allow users to tweak various aspects <br>
