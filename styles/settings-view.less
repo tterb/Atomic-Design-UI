@@ -207,9 +207,13 @@
 		}
 	}
 
-	.editor-container:last-child {
-		width: 90%;
-		margin: 5px 10px 0 10px !important;
+	.editor-container {
+		// border: 1px inset darken(@input-border-color, 25%);
+		// border-radius: 20px;
+		&:last-child {
+			width: 90%;
+			margin: 5px 10px 0 10px !important;
+		}
 	}
 
 	input[type="checkbox"] {
@@ -390,29 +394,33 @@
 	select {
 		&.form-control {
 			font-size: 15px;
-			padding-top: 3px;
+			padding-top: 4px;
+			padding-left: 10px;
 			width: 90%;
 			margin-left: 15px;
-			background-color: lighten(@tool-panel-background-color, 2%);
+			background: lighten(@tool-panel-background-color, 12%);
+			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 5%);
 		}
 		&.form-control:active {
 			color: lighten(@theme-syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 2%);
+			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 5%);
+			// border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:hover {
 			color: lighten(@theme-syntax-text-color, 5%);
 			background-color: lighten(@tool-panel-background-color, 2%);
+			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			border-color: lighten(@input-border-color, 5%);
+			// border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:not(:hover) {
 			background-color: lighten(@tool-panel-background-color, 2%);
+			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			border-color: darken(@input-border-color, 5%);
+			// border-color: darken(@input-border-color, 5%);
 		}
 	}
 
@@ -480,6 +488,11 @@
 			margin-left: 20px;
 			margin-bottom: 20px;
 		}
+	}
+
+	.settings-panel .control-group .editor-container {
+		border: 1px inset darken(@input-border-color, 18%);
+		border-radius: @component-border-radius + 5px;
 	}
 
 	.sub-section .row div {
