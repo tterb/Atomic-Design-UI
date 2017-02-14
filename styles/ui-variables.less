@@ -137,7 +137,8 @@
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
 @scrollbar-track-color: fade(@tree-view-background-color, 25%);
 // Status Bar
-@status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
+@status-bar-color: -webkit-linear-gradient(top, lighten(@theme-syntax-background-color, 1%), @tab-bar-background-color);
+// @status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
 // Tooltips
 @tooltip-text-color: @theme-background-color;
 @tooltip-background-color: @text-color;
