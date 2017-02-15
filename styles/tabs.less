@@ -36,7 +36,7 @@
     .tab {
         position: relative;
 		font-size: @theme-font-size - 1px;
-        color: fade(darken(@text-color, 2%), 70%);
+        color: fade(darken(@text-color, 2%), 60%);
         top: @tab-top-padding;
         height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
         max-width: @tab-max-width;
@@ -46,7 +46,7 @@
         padding: 0 5px 0 0 !important;
         transition: color @transition-time/4 ease;
 		[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-			background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 12%), darken(@tab-syntax-background-color, 3%));
+			background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 16.5%), lighten(@tab-syntax-background-color, 1%));
 		}
 		[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
 			background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
@@ -66,7 +66,7 @@
             width: 25px;
             height: @tab-height + 1px;
 			[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-				background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 12.5%), darken(@tab-syntax-background-color, 3%));
+				background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 16.5%), lighten(@tab-syntax-background-color, 1%));
 			}
 			[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
 				background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
@@ -145,13 +145,15 @@
 		top: 9px;
 		height: @tab-height + 4px;
 		color: darken(@text-color-highlight, 10%);
-        box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
+        // box-shadow: inset -1px 1px 0 @tab-border-color, 4px -2px 4px rgba(0,0,0,.3);
 		z-index: 1;
         [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-            background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+            // background-image: -webkit-linear-gradient( darken(@theme-syntax-background-color, .5%), @theme-syntax-background-color);
+			background: @theme-syntax-background-color;
         }
         [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
-            background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+            // background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+			background: @theme-syntax-background-color;
         }
 
     	.close-icon {
@@ -176,10 +178,12 @@
 			height: @tab-height + 4px;
             line-height: @tab-height + 1px;
 		    [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-		        background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+		        // background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+				background: @theme-syntax-background-color;
 		    }
 			[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
 				background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+				// background: @theme-syntax-background-color;
 			}
         }
 
