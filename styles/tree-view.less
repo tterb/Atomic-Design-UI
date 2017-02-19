@@ -20,8 +20,11 @@
     }
     .selected:before {
 		[data-atomic-design-ui-light-tree-view="true"] & {
-			background: -webkit-linear-gradient(top, fade(lighten(@tree-view-selection-color-light, 10%), 80%), @tree-view-selection-color-light);
+			background: -webkit-linear-gradient(top, fade(lighten(@tree-view-selection-color-light, 4%), 80%), darken(@tree-view-selection-color-light, 5%));
 			color: @lightest-gray;
+			&::active {
+				background: @darkest-gray;
+			}
 		}
 	    [data-atomic-design-ui-light-tree-view="false"] {
 	        background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 8%), @tree-view-selection-color);
@@ -309,7 +312,7 @@ li.directory.entry.list-nested-item {
 		}
 		.selected:before {
 			[data-atomic-design-ui-light-tree-view="true"] & {
-				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color-light, 12%), @tree-view-selection-color-light);
+				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color-light, 10%), darken(@tree-view-selection-color-light, 5%));
 			}
 			[data-atomic-design-ui-light-tree-view="false"] & {
 				background: -webkit-linear-gradient(top, lighten(@tree-view-selection-color, 9%), @tree-view-selection-color);
