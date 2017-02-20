@@ -1,16 +1,513 @@
+@import "icon-variables";
+@import "icon-font";
+@import "ui-mixins";
+
+
+// - - - - - - - - - - - - - - -
+// ICONS BASED ON FILE EXTENSION
+// - - - - - - - - - - - - - - -
+
+
+// PROJECT / REPO ICON
+// .name.icon.icon-repo {
+//
+//     // TEXT
+//     font-weight: bold;
+//     padding: 0px 0px 0px 5px;
+//     position: relative;
+//     display: inline-block;
+//     top: -1px;
+
+    // // ICON
+    // @{icons-enabled} &:before {
+    //     color: #29A8DE;
+    //     content: '\e601';
+    //     display: inline-block;
+    //     font-family: icomoon;
+    //     font-size: 20px;
+    //     left: -5px;
+    //     position: relative;
+    //     top: 5px;
+    // }
+// }
+
+
+// OPEN/CLOSE SELECTOR FOR FOLDERS
+// @{icons-enabled} .header.list-item:before {
+//     color: @color-default;
+// }
+
+// DIRECTORY ICONS
+// .name.icon.icon-file-directory {
+//
+//     // TEXT
+//     background: none;
+//     border: none;
+//     color: @color-default;
+//     display: inline-block;
+//     font-weight: bold;
+//     padding: 0px 0px 0px 2px;
+//     position: relative;
+//     top: -1px;
+
+    // ICON
+    // @{icons-enabled} &:before {
+    //     color: @color-default;
+    //     content: '\e613';
+    //     display: inline-block;
+    //     font-family: icomoon;
+    //     font-size: 13px;
+    //     left: -2px;
+    //     position: relative;
+    //     top: 1px;
+    // }
+// }
+
+
+// DEFAULT / FALLBACK ICON
+// .name.icon {
+//     position: relative;
+//     display: inline-block;
+//     top: -2px;
+//     padding: 0;
+//
+//     @{icons-enabled} &:before {
+//         font-family: icomoon;
+//         content: @icon-default;
+//         font-size: 15px;
+//         display: inline-block;
+//         position: relative;
+//         top: 2px;
+//         left: -3px;
+//         margin-right: 2px;
+//         color: @color-default;
+//     }
+// }
+
 
 [data-atomic-design-ui-custom-icons="true"] & {
 
-	@font-face {
-		font-family: 'iconFont';
-		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?');
-		src:url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.eot?') format('embedded-opentype'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.woff?') format('woff'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.ttf?') format('truetype'),
-			url('https://raw.githubusercontent.com/JonSn0w/atomic-design-ui/master/styles/fonts/iconFont.svg?') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
+    // DEFAULT TAB ICON
+    tabs-bar tabs-tab .title, .tab-bar .tab .title {
+        position: relative;
+        display: inline-block;
+        top: -2px;
+        padding: 0;
+        width: 100%;
+
+        &:before {
+            font-family: iconFont;
+            content: @icon-default;
+            font-size: 15px;
+            position: relative;
+            top: 2px;
+            left: -4px;
+            /* margin-right: -3px; */
+            color: @color-default;
+        }
+    }
+
+    tabs-bar tabs-tab.active .title, .tab-bar .tab.active .title {
+        top: -2px;
+    }
+}
+
+
+
+// HIDDEN / IGNORED STYLES
+
+// .status-ignored {
+//
+//     @{icons-enabled} .header.list-item:before {
+//         color: @text-color-ignored;
+//     }
+//
+//     .name.icon {
+//         color: @text-color-ignored;
+//
+//         @{icons-enabled} &:before {
+//             color: @text-color-ignored;
+//         }
+//     }
+// }
+
+
+[data-atomic-design-ui-custom-icons="true"] & {
+
+    // Bash
+    .icon-tab('.bash', 'bash', 16px, 3px, 6px, -2px, 0px);
+    .icon-tree('.bash', 'bash', 15px, 3px, 2px, -6px, 0px);
+
+    // Bin
+    .icon-tab('.bin', 'bin', 18px, 3px, 5px, -2px, 0px);
+    .icon-tree('.bin', 'bin', 18px, 3px, 2px, -7px, 0px);
+
+    // C
+    .icon-tab('.c', 'c', 16px, 5px, 2px, -4px, 0px);
+    .icon-tree('.c', 'c', 15px, 4px, 2px, -3px, 0px);
+
+    // Coffescript
+    .icon-tab('.coffee', 'coffee', 19px,  4px, 1px, -5px, 0px);
+    .icon-tree('.coffee', 'coffee', 19px, 4px, 2px, -7px, 0px);
+
+    // ColdFusion
+    .icon-tab('.cfm', 'coldfusion', 19px, 4px, 3px, -2px, 0px);
+    .icon-tree('.cfm', 'coldfusion', 19px, 3px, 2px, -6px, -1px);
+    .icon-tab('.cfc', 'coldfusion', 19px, 4px, 3px, -2px, 0px);
+    .icon-tree('.cfc', 'coldfusion', 19px, 3px, 2px, -6px, -1px);
+
+    // C++
+    .icon-tab('.cpp', 'cpp', 16px, 5px, 5px, -2px, 0px);
+    .icon-tree('.cpp', 'cpp', 15px, 4px, 2px, -3px, -1px);
+
+    // C++ Header
+    .icon-tab('.h', 'cpp-header', 16px, 5px, 5px, -2px, 0px);
+    .icon-tree('.h', 'cpp-header', 15px, 4px, 2px, -3px, -1px);
+
+    // C#
+    .icon-tab('.cs', 'csharp', 16px, 4px, 6px, -2px, -1px);
+    .icon-tree('.cs', 'csharp', 15px, 4px, 2px, -4px, -1px);
+
+    // CSS
+    .icon-tab('.css', 'css', 14px, 2px, 2px, -4px, 0px);
+    .icon-tree('.css', 'css', 15px, 3px, 2px, -5px,-1px);
+
+    // CSON
+    .icon-tab('.cson', 'json', 20px, 6px, -3px, -5px, 0px);
+    .icon-tree('.cson', 'json', 20px, 5px, 2px, -5px, -1px);
+
+    // Database
+    .icon-tab('.db', 'database', 16px, 4px, -3px, -5px, 0px);
+    .icon-tree('.db', 'database', 16px, 3px, 2px, -5px, 0px);
+
+    // DLL
+    .icon-tab('.dll', 'dll', 20px, 6px, -3px, -5px, 0px);
+    .icon-tree('.dll', 'dll', 20px, 5px, 2px, -5px, -1px);
+
+    // EditorConfig
+    .icon-tab('.editorconfig', 'editorconfig', 14px, 2px, 7px, 0px, 1px);
+    .icon-tree('.editorconfig', 'editorconfig', 15px, 3px, 2px, -5px, -1px);
+
+    // EJS
+    .icon-tab('.ejs', 'ejs', 21px, 5px, -3px, -5px, 0px);
+    .icon-tree('.ejs', 'ejs', 21px, 7px, 2px, -7px, 0px);
+
+    // Gimp
+    .icon-tab('.xcf', 'gimp', 19px, 5px, -3px, -6px, 0px);
+    .icon-tree('.xcf', 'gimp', 19px, 5px, 2px, -6px, -1px);
+
+    // Favicon
+    .icon-tab('.ico', 'ico', 18px, 4px, 3px, -4px, 0px);
+    .icon-tree('.ico', 'ico', 18px, 3px, 2px, -6px, -1px);
+
+    // Golang
+    .icon-tab('.go', 'go', 16px, 3px, 3px, -5px, 0px);
+    .icon-tree('.go', 'go', 16px, 4px, 2px, -6px, -1px);
+
+    // Haml
+    .icon-tab('.haml', 'haml', 24px, 5px, -3px, -6px, 0px);
+    .icon-tree('.haml', 'haml', 23px, 6px, 2px, -9px, 0px);
+
+    // Handlebars
+    .icon-tab('.hbs', 'handlebars', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.hbs', 'handlebars', 23px, 7px, 2px, -9px, -1px);
+    .icon-tab('.handlebars', 'handlebars', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.handlebars', 'handlebars', 23px, 7px, 2px, -9px, -1px);
+    .icon-tab('.hjs', 'handlebars', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.hjs', 'handlebars', 23px, 7px, 2px, -9px, -1px);
+
+    // Gitignore
+    .icon-tab('.gitignore', 'gitignore', 20px, 5px, -6px, -12px, 0px);
+    .icon-tree('.gitignore', 'gitignore', 20px, 6px, 2px, -7px, -1px);
+	.icon-tab('.gitmodules', 'git', 16px, 4px, 1px, -5px, 0px);
+    .icon-tree('.gitmodules', 'git', 16px, 5px, 2px, -5px, -1px);
+    // Hidden files
+    .icon-tab('.config', 'hidden', 16px, 4px, -10px, -18px, 0px);
+    .icon-tree('.config', 'hidden', 16px, 4px, 2px, -5px, 0px);
+    .icon-tab('.DS_Store', 'hidden', 16px, 4px, -10px, -18px, 0px);
+    .icon-tree('.DS_Store', 'hidden', 16px, 4px, 2px, -5px, 0px);
+
+    // HTML
+    .icon-tab('.html', 'html', 14px, 2px, 4px, -2px, 0px);
+    .icon-tree('.html', 'html', 15px, 3px, 2px, -5px, -1px);
+
+	// Java
+    .icon-tab('.java', 'java', 20px, 4px, 1px, -2px, 0px);
+    .icon-tree('.java', 'java', 20px, 5px, 2px, -5px, -1px);
+
+    // ript
+    .icon-tab('.js', 'javascript', 16px, 3px, 3px, -4px, -1px);
+    .icon-tree('.js', 'javascript', 16px, 4px, 2px, -8px, 0px);
+    .icon-tab('.es', 'javascript', 16px, 3px, 3px, -4px, -1px);
+    .icon-tree('.es', 'javascript', 16px, 4px, 2px, -8px, 0px);
+    .icon-tab('.es6', 'javascript', 16px, 3px, 3px, -4px, -1px);
+    .icon-tree('.es6', 'javascript', 16px, 4px, 2px, -8px, 0px);
+
+    // JSON
+    .icon-tab('.json', 'json', 16px, 2px, 4px, -4px, 0px);
+    .icon-tree('.json', 'json', 16px, 3px, 2px, -7px, 0px);
+
+    // Julia
+    // .icon-tab('.jl', 'jl', 18px, 4px, 3px, -3px, -1px);
+    // .icon-tree('.jl', 'jl', 18px, 4px, 2px, -3px, -1px);
+
+    // LESS
+    .icon-tab('.less', 'less', 14px, 1px, 4px, -3px, 2px);
+    .icon-tree('.less', 'less', 14px, 2px, 2px, -5px, 0px);
+
+	// Lua
+    .icon-tab('.lua', 'lua', 19px, 4px, 1px, -6px, 0px);
+    .icon-tree('.lua', 'lua', 19px, 4px, 2px, -7px, -1px);
+
+
+	// Makefile
+	.icon-tab('Makefile', 'makefile', 13px, 1px, -3px, -12px, 0px);
+	.icon-tree('Makefile', 'makefile', 13px, 1px, 2px, -5px, -1px);
+
+	// Markdown
+    .icon-tab('.md', 'markdown', 20px, 5px, 5px, -4px, 0px);
+    .icon-tree('.md', 'markdown', 20px, 6px, 2px, -8px, 0px);
+
+    // Override for Markdown package
+    tabs-bar tabs-tab .title.icon-markdown[data-name*=".md"], .tab-bar .tab .title.icon-markdown[data-name*=".md"] {
+        top: 0;
+    }
+
+	// Music
+    .icon-tab('.mp3', 'music', 15px, 2px, 5px, -3px, 0px);
+    .icon-tree('.mp3', 'music', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.wav', 'music', 15px, 2px, 5px, -3px, 0px);
+    .icon-tree('.wav', 'music', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.aiff', 'music', 15px, 2px, 5px, -3px, 0px);
+    .icon-tree('.aiff', 'music', 15px, 3px, 2px, -6px, -1px);
+
+    // MongoDB
+    .icon-tab('.bson', 'mongodb', 19px, 5px, 0px, -6px, 0px);
+    .icon-tree('.bson', 'mongodb', 19px, 5px, 2px, -8px, -1px);
+    .icon-tab('.ns', 'mongodb', 19px, 5px, 0px, -6px, 0px);
+    .icon-tree('.ns', 'mongodb', 19px, 5px, 2px, -8px, -1px);
+
+    // Mustache
+    .icon-tab('.mustache', 'mustache', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.mustache', 'mustache', 23px, 7px, 2px, -9px, -1px);
+    .icon-tab('.mu', 'mustache', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.mu', 'mustache', 23px, 7px, 2px, -9px, -1px);
+    .icon-tab('.stache', 'mustache', 24px, 6px, 0px, -5px, 0px);
+    .icon-tree('.stache', 'mustache', 23px, 7px, 2px, -9px, -1px);
+
+    // NodeJS
+    .icon-tab('.node', 'node', 21px, 7px, 2px, -2px, 0px);
+    .icon-tree('.node', 'node', 21px, 7px, 2px, -6px, -1px);
+
+    // NPM
+    .icon-tab('npm-debug.log', 'npm', 20px, 6px, 0px, -5px, 0px);
+    .icon-tree('npm-debug.log', 'npm', 20px, 6px, 2px, -5px, -1px);
+    .icon-tab('.npmignore', 'npmignore', 13px, 2px, 3px, -4px, 0px);
+    .icon-tree('.npmignore', 'npmignore', 13px, 2px, 2px, -4px, -1px);
+
+    // Nupkg
+    .icon-tab('.nupkg', 'nupkg', 16px, 4px, 1px, -5px, 0px);
+    .icon-tree('.nupkg', 'nupkg', 16px, 4px, 2px, -6px, -1px);
+
+    // Objective C
+    .icon-tab('.m', 'objective', 18px, 6px, 0px, -4px, 0px);
+    .icon-tree('.m', 'objective', 18px, 7px, 2px, -6px, -1px);
+
+    // Out
+    .icon-tab('.out', 'out', 14px, 3px, -9px, -16px, 0px);
+    .icon-tree('.out', 'out', 14px, 2px, 2px, -6px, -1px);
+
+    // Perl
+    .icon-tab('.pl', 'perl', 17px, 6px, 5px, -2px, 0px);
+    .icon-tree('.pl', 'perl', 16px, 4px, 2px, -7px, -1px);
+
+	// PHP
+    .icon-tab('.php', 'php', 19px, 6px, 3px, -3px, 0px);
+    .icon-tree('.php', 'php', 19px, 6px, 2px, -7px, -1px);
+
+    // Powershell
+    .icon-tab('.ps1', 'powershell', 16px, 4px, 2px, -5px, 0px);
+    .icon-tree('.ps1', 'powershell', 16px, 4px, 2px, -6px, -1px);
+    .icon-tab('.psm1', 'powershell', 16px, 4px, 2px, -5px, 0px);
+    .icon-tree('.psm1', 'powershell', 16px, 4px, 2px, -6px, -1px);
+    .icon-tab('.psd1', 'powershell', 16px, 4px, 2px, -5px, 0px);
+    .icon-tree('.psd1', 'powershell', 16px, 4px, 2px, -6px, -1px);
+
+    // Procfile
+    .icon-tab('procfile', 'procfile', 22px, 6px, -20px, -27px, 0px);
+    .icon-tree('procfile', 'procfile', 22px, 7px, 2px, -7px, -1px);
+    .icon-tab('Procfile', 'procfile', 22px, 6px, -20px, -27px, 0px);
+    .icon-tree('Procfile', 'procfile', 22px, 7px, 2px, -7px, -1px);
+    .icon-tab('PROCFILE', 'procfile', 22px, 6px, -20px, -27px, 0px);
+    .icon-tree('PROCFILE', 'procfile', 22px, 7px, 2px, -7px, -1px);
+
+    // Python
+    .icon-tab('.py', 'python', 20px, 6px, 1px, -5px, -1px);
+    .icon-tree('.py', 'python', 20px, 5px, 2px, -8px, -1px);
+
+    // Rails
+    .icon-tab('.erb', 'rails', 15px, 1px, 4px, -5px, 0px);
+    .icon-tree('.erb', 'rails', 14px, 2px, 2px, -4px, -1px);
+
+    // Rainmeter
+    .icon-tab('.rmskin', 'rainmeter', 15px, 2px, 2px, -4px, 0px);
+    .icon-tree('.rmskin', 'rainmeter', 15px, 2px, 2px, -5px, -1px);
+
+    // React
+    .icon-tab('.jsx', 'react', 18px, 4px, 3px, -3px, 0px);
+    .icon-tree('.jsx', 'react', 19px, 6px, 2px, -7px, -1px);
+    .icon-tab('.cjsx', 'react', 18px, 4px, 3px, -3px, 0px);
+    .icon-tree('.cjsx', 'react', 19px, 6px, 2px, -7px, -1px);
+
+    // Ruby
+    .icon-tab('.rb', 'ruby', 17px, 4px, 4px, -3px, 0px);
+    .icon-tree('.rb', 'ruby', 17px, 3px, 2px, -6px, 0px);
+
+    // Sass
+    .icon-tab('.sass', 'sass', 15px, 2px, 3px, -5px, 0px);
+    .icon-tree('.sass', 'sass', 14px, 2px, 2px, -4px, -1px);
+    .icon-tab('.scss', 'sass', 15px, 2px, 3px, -5px, 0px);
+    .icon-tree('.scss', 'sass', 14px, 2px, 2px, -4px, -1px);
+
+    // SQL
+    .icon-tab('.sql', 'sql', 15px, 3px, 3px, -3px, 0px);
+    .icon-tree('.sql', 'sql', 15px, 3px, 2px, -5px, -1px);
+
+    // SVG
+    .icon-tab('.svg', 'svg', 17px, 2px, 4px, -3px, 0px);
+    .icon-tree('.svg', 'svg', 17px, 3px, 2px, -7px, -1px);
+    .icon-tab('.svgx', 'svg', 17px, 2px, 4px, -3px, 0px);
+    .icon-tree('.svgx', 'svg', 17px, 3px, 2px, -7px, -1px);
+
+    // TypeScript
+    .icon-tab('.ts', 'typescript', 26px, 8px, -2px, -3px, -3px);
+    .icon-tree('.ts', 'typescript', 26px, 8px, 2px, -12px, -3px);
+
+    // Fonts
+    .icon-tab('.ttf', 'font', 19px, 5px, -3px, -5px, 0px);
+    .icon-tree('.ttf', 'font', 19px, 5px, 2px, -6px, -1px);
+	.icon-tab('.woff', 'font', 19px, 5px, -3px, -5px, 0px);
+    .icon-tree('.woff', 'font', 19px, 5px, 2px, -6px, -1px);
+	.icon-tab('.eot', 'font', 19px, 5px, -3px, -5px, 0px);
+    .icon-tree('.eot', 'font', 19px, 5px, 2px, -6px, -1px);
+
+	// Txt
+	.icon-tab('.txt', 'text', 19px, 5px, 2px, -5px, 0px);
+    .icon-tree('.txt', 'text', 19px, 5px, 2px, -6px, -1px);
+	.icon-tab('.text', 'text', 19px, 5px, 2px, -5px, 0px);
+    .icon-tree('.text', 'text', 19px, 5px, 2px, -6px, -1px);
+
+    // XML
+    .icon-tab('.xml', 'xml', 21px, 5px, 2px, -3px, 0px);
+    .icon-tree('.xml', 'xml', 21px, 5px, 2px, -9px, 0px);
+
+    // YAML
+    .icon-tab('.yml', 'yml', 18px, 3px, 3px, 0px, 0px);
+    .icon-tree('.yml', 'yml', 20px, 3px, 2px, -5px, -1px);
+    .icon-tab('.yaml', 'yml', 18px, 3px, 3px, 0px, 0px);
+    .icon-tree('.yaml', 'yml', 20px, 3px, 2px, -5px, -1px);
+
+	// Archive
+    .icon-tab('.zip', 'archive', 15px, 2px, 4px, -4px, 0px);
+    .icon-tree('.zip', 'archive', 15px, 2px, 2px, -3px, -1px);
+	.icon-tab('.7z', 'archive', 15px, 2px, 4px, -4px, 0px);
+    .icon-tree('.7z', 'archive', 15px, 2px, 2px, -3px, -1px);
+	.icon-tab('.rar', 'archive', 15px, 2px, 4px, -4px, 0px);
+	.icon-tree('.rar', 'archive', 15px, 2px, 2px, -3px, -1px);
+	.icon-tab('.tar', 'archive', 15px, 2px, 4px, -4px, 0px);
+    .icon-tree('.tar', 'archive', 15px, 2px, 2px, -3px, -1px);
+
+    // IMAGES
+    .icon-tab('.ai', 'illustrator', 16px, 3px, 5px, -3px, 0px);
+    .icon-tree('.ai', 'illustrator', 16px, 3px, 2px, -6px, -1px);
+    .icon-tab('.bpm', 'img', 16px, 3px, 4px, -4px, 0px);
+    .icon-tree('.bpm', 'img', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.gif', 'img', 16px, 3px, 4px, -4px, 0px);
+    .icon-tree('.gif', 'img', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.jpeg', 'img', 16px, 3px, 4px, -4px, 0px);
+    .icon-tree('.jpeg', 'img', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.jpg', 'img', 16px, 3px, 4px, -4px, 0px);
+    .icon-tree('.jpg', 'img', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.png', 'img', 16px, 3px, 4px, -4px, 0px);
+    .icon-tree('.png', 'img', 15px, 3px, 2px, -6px, -1px);
+    .icon-tab('.psd', 'photoshop', 16px, 3px, 5px, -3px, 0px);
+    .icon-tree('.psd', 'photoshop', 16px, 3px, 2px, -6px, -1px);
+
+	// Videos
+	.icon-tab('.mp4', 'video', 15px, 2px, 4px, -2px, 0px);
+	.icon-tree('.mp4', 'video', 15px, 3px, 2px, -6px, -1px);
+	.icon-tab('.flv', 'video', 15px, 2px, 4px, -2px, 0px);
+	.icon-tree('.flv', 'video', 15px, 3px, 2px, -6px, -1px);
+	.icon-tab('.avi', 'video', 15px, 2px, 4px, -2px, 0px);
+	.icon-tree('.avi', 'video', 15px, 3px, 2px, -6px, -1px);
+
+
+    // THESE NEED TO COME AFTER SO THEY DON'T GET OVERRIDDEN!
+
+    // Bower
+    .icon-tab('bower.json', 'bower', 25px, 7px, -1px, -5px, 0px);
+    .icon-tree('bower.json', 'bower', 25px, 7px, 2px, -9px, -1px);
+    .icon-tab('Bower.json', 'bower', 25px, 7px, -1px, -5px, 0px);
+    .icon-tree('Bower.json', 'bower', 25px, 7px, 2px, -9px, -1px);
+    .icon-tab('BOWER.json', 'bower', 25px, 7px, -1px, -5px, 0px);
+    .icon-tree('BOWER.json', 'bower', 25px, 7px, 2px, -9px, -1px);
+    .icon-tab('.bowerrc', 'bower', 25px, 7px, -1px, -5px, 0px);
+    .icon-tree('.bowerrc', 'bower', 25px, 7px, 2px, -9px, -1px);
+
+    // Grunt
+    .icon-tab('gruntfile.js', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('gruntfile.js', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('Gruntfile.js', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('Gruntfile.js', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('GruntFile.js', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('GruntFile.js', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('GRUNTFILE.js', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('GRUNTFILE.js', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('gruntfile.coffee', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('gruntfile.coffee', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('Gruntfile.coffee', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('Gruntfile.coffee', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('GruntFile.coffee', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('GruntFile.coffee', 'grunt', 18px, 4px, 2px, -7px, 0px);
+    .icon-tab('GRUNTFILE.coffee', 'grunt', 16px, 4px, -5px, -11px, 0px);
+    .icon-tree('GRUNTFILE.coffee', 'grunt', 18px, 4px, 2px, -7px, 0px);
+
+    // Gulp
+    .icon-tab('gulpfile.js', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('gulpfile.js', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('Gulpfile.js', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('Gulpfile.js', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('GulpFile.js', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('GulpFile.js', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('GULPFILE.js', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('GULPFILE.js', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('gulpfile.coffee', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('gulpfile.coffee', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('Gulpfile.coffee', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('Gulpfile.coffee', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('GulpFile.coffee', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('GulpFile.coffee', 'gulp', 21px, 6px, 2px, -9px, -1px);
+    .icon-tab('GULPFILE.coffee', 'gulp', 20px, 4px, -13px, -18px, 0px);
+    .icon-tree('GULPFILE.coffee', 'gulp', 21px, 6px, 2px, -9px, -1px);
+
+	// LICENSE
+    .icon-tab('LICENSE', 'license', 17px, 2px, 2px, -3px, 0px);
+    .icon-tree('LICENSE', 'license', 17px, 3px, 2px, -7px, -1px);
+	.icon-tab('LICENSE.md', 'license', 17px, 2px, 2px, -3px, 0px);
+    .icon-tree('LICENSE.md', 'license', 17px, 3px, 2px, -7px, -1px);
+    .icon-tab('License', 'license', 17px, 2px, 2px, -3px, 0px);
+    .icon-tree('License', 'license', 17px, 3px, 2px, -7px, -1px);
+    .icon-tab('license', 'license', 17px, 2px, 2px, -3px, 0px);
+    .icon-tree('license', 'license', 17px, 3px, 2px, -7px, -1px);
+	.icon-tab('license.md', 'license', 17px, 2px, 2px, -3px, 0px);
+    .icon-tree('license.md', 'license', 17px, 3px, 2px, -7px, -1px);
+
+	// NPM Package
+    .icon-tab('package.json', 'npm-package', 22px, 6px, 5px, -3px, -1px);
+    .icon-tree('package.json', 'npm-package', 22px, 7px, 2px, -9px, -1px);
+    .icon-tab('PACKAGE.json', 'npm-package', 22px, 6px, 5px, -3px, -1px);
+    .icon-tree('PACKAGE.json', 'npm-package', 22px, 7px, 2px, -9px, -1px);
+
 
 	// Deprecation-cop
 	.icon-alert::before {
@@ -71,15 +568,19 @@
 	}
 
 	// Zip files
-	.icon-file-zip::before {
-		font-family: iconFont;
-		// content: '9';
-		content: 'A';
-		// content: '\e0b3';
-		font-size: 17px;
-		position: relative;
-		top: 3px;
-		left: -1px;
+	.icon-file-zip {
+		left: -6px;
+		&::before {
+			font-family: iconFont;
+			// content: '9';
+			content: 'A';
+			// content: '\e0b3';
+			font-size: 17px;
+			position: relative;
+			top: 3px;
+			left: -1px;
+			right: 0px;
+		}
 	}
 
 	.name.icon.icon-repo {
@@ -90,10 +591,11 @@
 		    // font-family: iconFont;
 		    // content: '\e0b5';
 			// color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
+			content: 'g';
 			position: relative;
 		  	display: inline-block;
 	      	font-size: 19px;
-		  	top: 2px;
+		  	top: 4px;
 	      	left: 0px;
 	  	}
 	}
@@ -113,1291 +615,5 @@
 			top: 4px;
 			left: -2px;
 	  	}
-	}
-
-	.file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
-		.icon-file-text[data-name$=".coffee"]:before,
-		.icon-file-binary[data-name$=".coffee"]:before {
-			font-family: iconFont;
-	        content: '\e069';
-		}
-	}
-
-
-	.name.icon[data-name*=".ai"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e140';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 3px;
-		    left: -2px;
-			color: #E57418;
-		}
-	}
-
-	.name.icon[data-name*=".bash"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0d9';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 4px;
-		    left: -1px;
-			// color: #DA5952;
-			color: #DA696A;
-		}
-	}
-
-	.name.icon[data-name*=".bin"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: 'x';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 2px;
-		    left: 0px;
-			color: #606060;
-		}
-	}
-
-	.name.icon[data-name*=".c"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0e2';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 3px;
-		    left: 2px;
-			color: #5368C9;
-		}
-	}
-
-	.name.icon[data-name*=".config"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before, {
-			font-family: iconFont;
-	        content: '\e0c0';
-			// content: '@';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 1px;
-		    left: 0px;
-		    color: #888588;
-		}
-	}
-
-	.name.icon[data-name*=".coffee"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before, {
-			font-family: iconFont;
-	        content: '\e069';
-			// content: '@';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 3px;
-		    left: -2px;
-		    color: #7B6548;
-		}
-	}
-
-	.name.icon[data-name*=".cpp"] {
-		position: relative;
-	  	display: inline-block;
-	 	top: 0px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0d8';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 3.5px;
-		    left: 1px;
-		    color: #16A0AA;
-		}
-	}
-
-	.name.icon[data-name*=".cs"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0d5';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 2px;
-		    left: 1px;
-		    color: #268AA4;
-		}
-	}
-
-	.name.icon[data-name*=".css"],
-	.name.icon[data-name*=".min.css"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0b6';
-			// content: '\e147';
-	    	font-size: 15px;
-		    position: relative;
-		    top: 2.5px;
-		    left: -1px;
-		    color: #269BB4;
-		}
-	}
-
-	.name.icon[data-name*=".db"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: 'J';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 1px;
-		    left: -1px;
-		    color: #CAC060;
-		}
-	}
-
-	.name.icon[data-name*=".dll"] {
-		position: relative;
-	  	display: inline-block;
-	  	&.icon-file-text:before {
-			// font-family: iconFont;
-			// content: '\e030';
-		    position: relative;
-		    color: #BD7A02;
-		}
-	}
-
-	.name.icon[data-name=".editorconfig"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: 'h';
-			// content: '\e05c';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 1px;
-		    left: 1px;
-		    color: #708090;
-		}
-	}
-
-	// ruby on rails
-	.name.icon[data-name*=".erb"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e131';
-	    	font-size: 15px;
-		    position: relative;
-		    top: 1px;
-		    left: 0px;
-		    color: #B00830;
-		}
-	}
-
-	// .name.icon[data-name=".npmignore"],
-	.name.icon[data-name=".gitignore"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-			// content: 'w';
-			// content: 'V';
-			// content: '\e149';
-			// content: '\e10a';
-	        content: '\e0de';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 4px;
-		    left: 0px;
-		    color: #777777;
-		}
-	}
-
-	.name.icon[data-name*=".go"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e167';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 2px;
-		    left: -1px;
-		    color: #50ACAC;
-		}
-	}
-
-	.name.icon[data-name*=".h"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0d8';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 3.5px;
-		    left: 1px;
-		    // color: #20B459;
-			color: #E57418;
-		}
-	}
-
-	.name.icon[data-name*=".hs"],
-	.name.icon[data-name*=".lhs"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e066';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 3px;
-		    left: 0px;
-		    color: #5F5286;
-		}
-	}
-
-	.name.icon[data-name*=".html"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e088';
-			content: '\e13E';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 3px;
-		    left: -1px;
-		    color: #EF6632;
-		}
-	}
-
-	.name.icon[data-name*=".ico"] {
-		position: relative;
-	  	display: inline-block;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e067';
-	    	font-size: 16px;
-		    position: relative;
-		    // top: 3px;
-		    // left: 2px;
-		    color: #7830B6;
-		}
-	}
-
-	.name.icon[data-name*=".inc"] {
-		position: relative;
-	  	display: inline-block;
-		//  	top: 0px;
-	  	&.icon-file-text:before {
-			// font-family: iconFont;
-	        // content: '\e037';
-	    	font-size: 19px;
-		    position: relative;
-		    top: 2px;
-		    left: 0px;
-		}
-	}
-
-	.name.icon[data-name*=".ini"] {
-		position: relative;
-	  	display: inline-block;
-	  	&.icon-file-text:before {
-		    position: relative;
-			top: 0px;
-		    color: #D78A06;
-		}
-	}
-	// .tab [data-name$='.java']:before,
-	// .tree-view:not(.nuclide-file-tree) [data-name$='.java']:before {
-	// 	font-family: iconFont;
-	// 	content: '\e0e8';
-	// 	color: #7B54B6;
-	// }
-	.name.icon[data-name*=".java"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0e8';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 4px;
-		    left: 0px;
-		    color: #7B54B6;
-		}
-	}
-
-	.name.icon[data-name*=".js"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-		left: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e0e0';
-			// content: '\e130';
-			content: '\e0d0';
-			// content: '\e0e7';
-			// content: '\e17e';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 4px;
-		    left: -2px;
-		    color: #DFBA67;
-		}
-	}
-
-	.name.icon[data-name*=".json"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			// content: '\e02c';
-			content: '\e04e';
-			font-size: 15px;
-			position: relative;
-			top: 3px;
-			left: -2px;
-			color: #DF70E3;
-		}
-	}
-
-	.name.icon[data-name="package.json"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e1a9';
-			font-size: 24px;
-			position: relative;
-			top: 8px;
-			left: -6px;
-			margin-right: 10px;
-			color: #B74341;
-		}
-	}
-
-	.name.icon[data-name*=".less"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e07D';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 2px;
-		    left: -0.5px;
-		    color: #66A8BA;
-		}
-	}
-
-	.name.icon[data-name*=".lua"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e039';
-			font-size: 21px;
-			position: relative;
-			top: 4.5px;
-			left: -3px;
-			color: #6087BE;
-		}
-	}
-
-	.name.icon[data-name="Makefile"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e1a4';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 1.5px;
-		    left: 0px;
-		    color: #B96F2D;
-		}
-	}
-
-	.name.icon[data-name*=".m"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0cd';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 1px;
-		    left: 2px;
-		    color: #369FBA;
-		}
-	}
-
-	.name.icon[data-name*=".md"],
-	.name.icon[data-name*=".mdown"],
-	.name.icon[data-name*=".markdown"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: 'b';
-			content: '\e081';
-			font-size: 19px;
-			position: relative;
-			top: 5px;
-			left: -2px;
-		    color: #637FE7;
-		}
-	}
-
-	.name.icon[data-name*=".mp3"],
-	.name.icon[data-name*=".wav"],
-	.name.icon[data-name*=".tiff"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0b0';
-	    	font-size: 15px;
-		    position: relative;
-		    top: 3px;
-		    left: 0px;
-		    // color: #56DFB4;
-			color: #966ADE;
-		}
-	}
-
-	.name.icon[data-name*=".mp4"],
-	.name.icon[data-name*=".flv"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-			// content: '\e0bd';
-			content: '8';
-	    	font-size: 15px;
-		    position: relative;
-		    top: 2px;
-		    left: 0px;
-			color: #C55F52;
-		}
-	}
-
-	.name.icon[data-name*=".node"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0e7';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 6px;
-		    left: -1px;
-		    color: #62B860;
-		}
-	}
-
-	.name.icon[data-name*=".npm"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: 'c';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 4px;
-		    left: -1px;
-			margin-right: 10px;
-		    color: #B74341;
-		}
-	}
-
-	.name.icon[data-name=".npmignore"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e02c';
-			font-size: 14px;
-			position: relative;
-			top: 2px;
-			left: 1px;
-			margin-right: 10px;
-			color: #9D7D7D;
-		}
-	}
-
-	.name.icon[data-name*=".nupkg"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\'';
-			font-size: 16px;
-			position: relative;
-			top: 2px;
-			left: 1px;
-			color: #50A323;
-		}
-	}
-
-	.name.icon[data-name*=".out"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e037';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 2px;
-		    left: 0px;
-		    color: #BD405F;
-		}
-	}
-
-	.name.icon[data-name*=".pdf"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e08A';
-			font-size: 18px;
-			position: relative;
-			top: 2px;
-			left: 0px;
-			color: #B74341;
-		}
-	}
-
-	.name.icon[data-name*=".pfx"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e079';
-			// content: '\e077';
-			font-size: 18px;
-			position: relative;
-			top: 2px;
-			left: 0px;
-			color: #A140EC;
-		}
-	}
-
-	.name.icon[data-name*=".php"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e153';
-			// content: '\e120';
-			content: '\e08C';
-	    	font-size: 18px;
-		    position: relative;
-		    top: 5px;
-		    left: -3px;
-		    color: #8D80AA;
-		}
-	}
-
-	.name.icon[data-name*=".pl"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e105';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 4px;
-		    left: -1px;
-		    color: #569AB4;
-		}
-	}
-
-	.name.icon[data-name*=".psd"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e12f';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 4px;
-		    left: -2px;
-		    color: #2DAAD9;
-		}
-	}
-
-	.name.icon[data-name*=".py"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e068';
-	    	font-size: 20px;
-		    position: relative;
-		    top: 4px;
-		    left: -3px;
-			color: #5273AD;
-		}
-	}
-
-	.name.icon[data-name*=".rb"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e051';
-			// content: 'n';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 3px;
-		    left: -1px;
-		    color: #C01850;
-		}
-	}
-
-	.name.icon[data-name*=".rmskin"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e18b';
-	    	font-size: 16px;
-		    position: relative;
-		    top: 2px;
-		    left: 0px;
-		    color: #6ABB28;
-		}
-	}
-
-	.name.icon[data-name*=".sass"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e071';
-			content: '\e08F';
-	    	font-size: 18px;
-		    position: relative;
-		    top: 3px;
-		    left: 0px;
-		    color: #369AB4;
-		}
-	}
-
-	.name.icon[data-name*=".sln"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-		    position: relative;
-			top: 1px;
-		    color: #465AB4;
-		}
-	}
-
-	.name.icon[data-name*=".sql"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e10d';
-	    	font-size: 14px;
-		    position: relative;
-		    top: 3px;
-		    left: 1px;
-		    color: #366AB4;
-		}
-	}
-
-	.name.icon[data-name*=".svg"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e0ec';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 2px;
-		    left: -2px;
-		    color: #5662D4;
-		}
-	}
-
-	.name.icon[data-name*=".ttf"],
-	.name.icon[data-name*=".eot"],
-	.name.icon[data-name*=".woff"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e0ab';
-			// content: '\e05f';
-			content: '\e0c5';
-	    	font-size: 18px;
-		    position: relative;
-		    top: 3px;
-		    left: -1px;
-		    // color: #505659;
-		}
-	}
-
-	.name.icon[data-name*=".txt"],
-	.name.icon[data-name*=".text"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        // content: '\e192';
-			content: '\e02d';
-	    	font-size: 17px;
-		    position: relative;
-		    top: 2px;
-		    left: 1px;
-			// color: @tree-view-text-color-light;
-		}
-	}
-
-
-	//gimp
-	.name.icon[data-name*=".xcf"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e15a';
-	    	font-size: 18px;
-		    position: relative;
-		    top: 5px;
-		    left: -2px;
-		    color: #6F5A3D;
-		}
-	}
-
-	.name.icon[data-name*=".xml"] {
-		position: relative;
-	  	display: inline-block;
-	  	top: 1px;
-	  	&.icon-file-text:before {
-			font-family: iconFont;
-	        content: '\e05d';
-	    	font-size: 19px;
-		    position: relative;
-		    top: 4px;
-		    left: -3px;
-		    color: #A702FD;
-		}
-	}
-
-	.name.icon[data-name*="license"],
-	.name.icon[data-name*="LICENSE"] {
-		position: relative;
-		display: inline-block;
-		top: 1px;
-		&.icon-file-text:before {
-			font-family: iconFont;
-			content: '\e083';
-			font-size: 19px;
-			position: relative;
-			top: 3px;
-			left: -2px;
-			margin-right: 10px;
-			color: #B9B856;
-		}
-	}
-
-	[data-atomic-design-ui-compact-tree-view="true"] {
-		.name.icon.icon-repo {
-			&:before {
-				font-size: 17px;
-			}
-		}
-
-		.name.icon.icon-file-directory {
-			&:before {
-				font-size: 18px;
-			}
-		}
-
-		// .entries.list-tree {
-		// 	// set color of ignored file icons
-		// 	.file.status-ignored .icon {
-		// 	  .icon('ignored', @gray);
-		// 	}
-		// }
-
-		// .file-icons-tab-pane-icon atom-pane .tab-bar .tab .title[data-path]:before {
-		// 	.icon-file-text[data-name$=".coffee"]:before,
-		// 	.icon-file-binary[data-name$=".coffee"]:before {
-		// 		font-family: iconFont;
-		// 		content: '\e069';
-		// 	}
-		// }
-
-
-		.name.icon[data-name*=".ai"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		.name.icon[data-name*=".bash"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".bin"] {
-			&.icon-file-text:before {
-				font-size: 15px;
-			}
-		}
-
-		.name.icon[data-name*=".c"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".config"] {
-			&.icon-file-text:before, {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".coffee"] {
-			&.icon-file-text:before, {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*=".cpp"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".cs"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".css"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".db"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		// .name.icon[data-name*=".dll"] {
-		// 	position: relative;
-		// 	display: inline-block;
-		// 	&.icon-file-text:before {
-		// 		// font-family: iconFont;
-		// 		// content: '\e030';
-		// 		position: relative;
-		// 		color: #BD7A02;
-		// 	}
-		// }
-
-		.name.icon[data-name=".editorconfig"] {
-			&.icon-file-text:before {
-				font-size: 13px;
-			}
-		}
-
-		// ruby on rails
-		.name.icon[data-name*=".erb"] {
-			&.icon-file-text:before {
-				font-size: 13px;
-			}
-		}
-
-		// .name.icon[data-name=".npmignore"],
-		.name.icon[data-name=".gitignore"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".go"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".h"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".hs"],
-		.name.icon[data-name*=".lhs"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".html"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".ico"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".inc"] {
-			&.icon-file-text:before {
-				font-size: 17px;
-			}
-		}
-
-		// .name.icon[data-name*=".ini"] {
-		// 	position: relative;
-		// 	display: inline-block;
-		// 	&.icon-file-text:before {
-		// 		position: relative;
-		// 		top: 0px;
-		// 		color: #D78A06;
-		// 	}
-		// }
-
-		.name.icon[data-name*=".java"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*=".jpg"],
-		.name.icon[data-name*=".jpeg"],
-		.name.icon[data-name*=".gif"],
-		.name.icon[data-name*=".png"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".js"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*=".json"] {
-			&.icon-file-text:before {
-				font-size: 13px;
-			}
-		}
-
-		.name.icon[data-name="package.json"] {
-			&.icon-file-text:before {
-				font-size: 19px;
-			}
-		}
-
-		.name.icon[data-name*=".less"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".lua"] {
-			&.icon-file-text:before {
-				font-size: 19px;
-			}
-		}
-
-		.name.icon[data-name="Makefile"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".m"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".md"],
-		.name.icon[data-name*=".mdown"],
-		.name.icon[data-name*=".markdown"] {
-			&.icon-file-text:before {
-				font-size: 15px;
-			}
-		}
-
-		.name.icon[data-name*=".mp3"],
-		.name.icon[data-name*=".wav"],
-		.name.icon[data-name*=".tiff"] {
-			&.icon-file-text:before {
-				font-size: 13px;
-			}
-		}
-
-		.name.icon[data-name*=".mp4"],
-		.name.icon[data-name*=".flv"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".node"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*=".npm"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name=".npmignore"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".nupkg"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".out"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".pdf"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		.name.icon[data-name*=".pfx"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		.name.icon[data-name*=".php"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*=".pl"] {
-			&.icon-file-text:before {
-				font-size: 14px;
-			}
-		}
-
-		.name.icon[data-name*=".psd"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		.name.icon[data-name*=".py"] {
-			&.icon-file-text:before {
-				font-size: 17px;
-			}
-		}
-
-		.name.icon[data-name*=".rb"] {
-			&.icon-file-text:before {
-				font-size: 15px;
-			}
-		}
-
-		.name.icon[data-name*=".rmskin"] {
-			&.icon-file-text:before {
-				font-size: 13px;
-			}
-		}
-
-		.name.icon[data-name*=".sass"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		// .name.icon[data-name*=".sln"] {
-		// 	position: relative;
-		// 	display: inline-block;
-		// 	top: 1px;
-		// 	&.icon-file-text:before {
-		// 		position: relative;
-		// 		top: 1px;
-		// 		color: #465AB4;
-		// 	}
-		// }
-
-		.name.icon[data-name*=".sql"] {
-			&.icon-file-text:before {
-				font-size: 12px;
-			}
-		}
-
-		.name.icon[data-name*=".svg"] {
-			&.icon-file-text:before {
-				font-size: 15px;
-			}
-		}
-
-		.name.icon[data-name*=".ttf"],
-		.name.icon[data-name*=".eot"],
-		.name.icon[data-name*=".woff"] {
-			&.icon-file-text:before {
-				font-size: 16px;
-			}
-		}
-
-		.name.icon[data-name*=".txt"],
-		.name.icon[data-name*=".text"] {
-			&.icon-file-text:before {
-				font-size: 15px;
-			}
-		}
-
-
-		//gimp
-		.name.icon[data-name*=".xcf"] {
-			&.icon-file-text:before {
-				font-size: 17px;
-			}
-		}
-
-		.name.icon[data-name*=".xml"] {
-			&.icon-file-text:before {
-				font-size: 17px;
-			}
-		}
-
-		.name.icon[data-name*=".zip"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-
-		.name.icon[data-name*="license"] {
-			&.icon-file-text:before {
-				font-size: 18px;
-			}
-		}
-	}
-}
-
-[data-atomic-design-ui-light-tree-view="true"] {
-	.name.icon[data-name*=".ttf"],
-	.name.icon[data-name*=".eot"],
-	.name.icon[data-name*=".woff"] {
-		&.icon-file-text:before {
-			color: @tree-view-text-color-light;
-		}
-	}
-
-	.name.icon[data-name*=".txt"],
-	.name.icon[data-name*=".text"] {
-		&.icon-file-text:before {
-			color: @tree-view-text-color-light;
-		}
-	}
-}
-
-[data-atomic-design-ui-light-tree-view="false"] {
-	.name.icon[data-name*=".ttf"],
-	.name.icon[data-name*=".eot"],
-	.name.icon[data-name*=".woff"] {
-		&.icon-file-text:before {
-			color: lighten(@tree-view-text-color, 15%);
-		}
-	}
-
-	.name.icon[data-name*=".txt"],
-	.name.icon[data-name*=".text"] {
-		&.icon-file-text:before {
-			color: lighten(@tree-view-text-color, 15%);
-		}
 	}
 }
