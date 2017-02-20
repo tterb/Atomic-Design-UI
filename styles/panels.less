@@ -42,6 +42,10 @@ atom-panel {
     atom-panel {}
 }
 
+.overlay, atom-panel.modal {
+	border: 1px outset darken(@input-border-color, 25%);
+}
+
 .panel-heading {
     .text(normal);
     border-bottom: 1px solid @panel-heading-border-color;
