@@ -260,12 +260,6 @@
 .icon-align-left:before {
   content: "\3a";
 }
-.icon-angle-down:before {
-  content: "\3b";
-}
-.icon-angle-right:before {
-  content: "\3c";
-}
 .icon-archive:before {
   content: "\3d";
 }
@@ -1663,4 +1657,61 @@
 }
 .icon-icomoon-18:before {
   content: "\e1bf";
+}
+.icon-icomoont:before {
+  content: "\e1c0";
+}
+.icon-icomoont-1:before {
+  content: "\e1c1";
+}
+.icon-icomoont-2:before {
+  content: "\e1c2";
+}
+.icon-icomoont-3:before {
+  content: "\e1c3";
+}
+.icon-icomoont-4:before {
+  content: "\e1c4";
+}
+.icon-icomoont-5:before {
+  content: "\e1c5";
+}
+.icon-icomoont-6:before {
+  content: "\e1c6";
+}
+.icon-icomoont-7:before {
+  content: "\e1c7";
+}
+.icon-icomoont-8:before {
+  content: "\e1c8";
+}
+.icon-icomoont-9:before {
+  content: "\e1c9";
+}
+.icon-icomoont-10:before {
+  content: "\e1ca";
+}
+.icon-icomoont-11:before {
+  content: "\e1cb";
+}
+.icon-icomoont-12:before {
+  content: "\e1cc";
+}
+.icon-icomoont-13:before {
+  content: "\e1cd";
+}
+.icon-icomoon-19:before {
+  content: "\e1d1";
+}
+.icon-angle-double-down:before {
+  content: "\e1d2";
+}
+.icon-angle-double-right:before {
+  content: "\e1d3";
+}
+.icon-chevron-circle-right:before {
+  content: "\3b";
+}
+.icon-chevron-circle-down:before {
+  content: "\3c";
 }
