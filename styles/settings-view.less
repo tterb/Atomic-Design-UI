@@ -183,12 +183,12 @@
 		}
 
 		.nav > li.active {
-			background: lighten(@theme-background-color-selected, 3%);
+			background: lighten(@theme-background-color-selected, 4%);
 			border: 1.5px inset @theme-background-color-selected;
 			border-top: 1px solid @theme-background-color-dark;
 			box-shadow: inset 2px 0px 6px rgba(0,0,0,.4);
 			border-right: 1.5px outset @theme-blue;
-			text-shadow: 3px 2px 4px rgba(0,0,0,.5);
+			// text-shadow: 3px 2px 4px rgba(0,0,0,.5);
 			transition: color @transition-time ease;
 		}
 
@@ -246,7 +246,9 @@
 		margin-top: 12px;
 		padding-top: 12px;
 		margin-bottom: 16px;
-		width: 500px;
+		// width: 500px;
+		width: 85%;
+		margin-left: 4%;
 		.body {
 			margin-bottom: 10px;
 		}
@@ -425,14 +427,34 @@
 	}
 
 	.section {
-		background-color: lighten(@theme-background-color-selected, 0.25%);
+		background-color: lighten(@theme-background-color-selected, 1.25%);
+		// atom-text-editor[mini] {
+		// 	background-color: lighten(@tool-panel-background-color, 2%);
+		// 	opacity: .85;
+		// 	&::hover {
+		// 		background-color: darken(@tool-panel-background-color, 4%);
+		// 		border-color: darken(@input-border-color, 2%);
+		// 		opacity: 100%;
+		// 	}
+		// }
 		atom-text-editor[mini] {
-			background-color: lighten(@tool-panel-background-color, 2%);
-			opacity: .85;
-			&::hover {
-				background-color: darken(@tool-panel-background-color, 4%);
-				border-color: darken(@input-border-color, 2%);
-				opacity: 100%;
+			background-color: darken(@input-background-color, 7%);
+			color: @text-color-highlight;
+			border: 1px inset darken(@gray, 14%);
+			border-radius: @component-border-radius + 4px;
+			padding-left: @component-padding/2 + 5px;
+			box-shadow: inset 0 -2px 1px rgba(0, 0, 0,.075);
+			.selection .region {
+					background-color: mix(desaturate(@text-color-info, 55%), @dark-gray, 60%);
+				}
+			&.is-focused, &.is-focused.editor {
+				background: darken(@input-background-color, 7%);
+				color: @text-color-highlight;
+				// color: darken(@input-background-color, 7.5%) !important;
+				border: 1px inset darken(@gray, 17%);
+				.selection .region {
+					background-color: mix(desaturate(@text-color-info, 55%), @dark-gray, 60%);
+				}
 			}
 		}
 		.section-heading {
