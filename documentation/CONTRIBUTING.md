@@ -31,6 +31,9 @@ Users provide the best insight for improving a product. So always feel free to s
 
 
 ### Pull Requests  
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 * Provide as much information as possible on the changes made to existing code.
 * Include thoughtfully-worded, well-structured commit messages and comments.
 * Include screenshots and animated GIFs in your pull request whenever possible.
