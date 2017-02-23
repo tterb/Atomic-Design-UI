@@ -1,4 +1,4 @@
-@unchecked-color: darken(@lightest-gray, 5%);
+@unchecked-color: darken(@gray, 5%);
 
 .input-radio {
 	background: @unchecked-color;
@@ -21,7 +21,14 @@
 .input-toggle {
 	background: @unchecked-color;
 	color: gray;
-	&:checked {}
+	box-shadow: inset 0px -1px 10px rgba(0,0,0,0.4);
+	&::before {
+		background-image: -webkit-radial-gradient(lighten(@lightest-gray, 20%), darken(@lightest-gray, 22%)) !important;
+	}
+	&:checked {
+		background: darken(desaturate(@text-color-info, 40%), 10%);
+		box-shadow: inset 0px -1px 10px rgba(0,0,0,0.6);
+	}
 }
 
 .input-range {
