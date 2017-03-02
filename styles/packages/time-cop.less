@@ -1,11 +1,20 @@
 .timecop {
+	background: desaturate(darken(@theme-syntax-background-color, 1%), 25%) !important;
     .inset-panel {
+		background: desaturate(lighten(@theme-syntax-background-color, 6%), 25%);
+		border-radius: 5px;
         .panel-heading {
             color: @text-color-highlight;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
         }
     }
+	.package-panel {
+			background: desaturate(darken(@theme-syntax-background-color, 1%), 25%) !important;
+	}
 	.timecop-panel {
-		background: @theme-background-color;
+		background: darken(@theme-syntax-background-color, 3%) !important;
+		margin: 8px;
 	}
 }
 .text-info {
