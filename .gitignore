@@ -1,4 +1,5 @@
 .DS_Store
+.imdone
 .git
 npm-debug.log
 node_modules
