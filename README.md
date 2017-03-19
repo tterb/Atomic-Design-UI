@@ -22,8 +22,8 @@
 <!-- Description -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630325/e71b3d12-ebac-11e6-864a-de9714611240.png" width="900" title="Description">  
 
-  *Atomic Design* aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience. Similarly, this theme also includes improved integration of some of the most common [Atom packages].  
-  The preview image above features the **[Atomic Monokai]** syntax-theme and Source Code Pro via the [Fonts] package.  
+  *Atomic Design* aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience and adaptability. Similarly, this theme also includes a custom icon set and improved integration of some of the most common [Atom packages].  
+  The screenshot above features the **[Atomic Monokai]** syntax-theme and *Source Code Pro* via the [Fonts] package.  
   <!-- If you like this interface but generally prefer lighter syntax-themes, try the new **[Atomic Delight]** UI-theme. -->
 
 **In Progress**
@@ -37,11 +37,12 @@ ______________________________________________________________________________
 <!-- Features -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630566/57595f88-ebb1-11e6-835d-e84330b188e3.png" width="900" title="Features">  
 
-<br>
+
 <h3 align="center">Dark Refined Interface</h3>
 <p align="center">
-  *Atomic Design* features a carefully selected color-palette and meticulous component styling, <br>
+  <i>Atomic Design</i> features a carefully selected color-palette and meticulously styled components, <br>
   which provides the interface with a sense of depth, receptiveness, and adaptability. <br>
+  Allowing this theme to be wonderfully complimented by any dark syntax theme.
   <!-- modern, refined, dark, conscious design, carefully designed
   carefully selected palette, meticulous components styling, distinct, familiar, contrast -->
 </p>
@@ -49,23 +50,24 @@ ______________________________________________________________________________
 
 <h3 align="center">Package Styling</h3>
 <p align="center">
-  This UI-theme includes complementary styling for an expanding collection of popular Atom <br>
-  packages, bringing the same refined interface to all aspects of the user experience.
+  This UI-theme includes supplementary styling for an expanding collection of popular Atom <br>
+  packages, providing the same refined interface to all aspects of the user experience.
 </p>
 <br>
 
 <h3 align="center">Custom Icon Set</h3>
 <p align="center">
-*Atomic Design* also features a custom icon set, which aims to integrate distinct custom icons with <br>
-the best aspects of the most popular icon packages. This addition also prevents any <br>
-alignment issues that plague many icon packages.
+<i>Atomic Design</i> also features a custom icon set, which aims to integrate distinct custom icons <br>
+with the best aspects of popular icon packages to provide improved
+visual-grepping of <br>
+project files, while also preventing the alignment issues that plague <br> many icon package and theme combinations.
 </p>
 <br>
 
 <h3 align="center">Modular Theme-Settings</h3>
 <p align="center">
-  This UI-theme includes supplementary settings, which allow users to tweak various aspects <br>
-  of the interface to suit their preference. These settings are accessible via <br>
+  This UI-theme includes custom settings, which allow users to fine-tune various aspects of <br>
+  the interface to suit their preference. These settings are accessible via <br>
   the <img src="https://cloud.githubusercontent.com/assets/16360374/22728369/572ca3fc-ed92-11e6-8f35-5f1da6078b4f.png" height="23"> button,
   once the theme is enabled.
 </p>
@@ -105,8 +107,8 @@ ______________________________________________________________________________
   * **[Settings-View]**
 
 <br>
-*For more useful packages, check out my list of* **[Essential Atom Packages]**, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
-<br>
+<!-- *For more useful packages, check out my list of* **[Essential Atom Packages]**, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
+<br> -->
 
 ______________________________________________________________________________  
 <p align="right">
@@ -136,4 +138,4 @@ ______________________________________________________________________________
 [Markdown]: https://cloud.githubusercontent.com/assets/16360374/18231352/9642c068-726c-11e6-857a-7e3d76293f88.png
 [Settings-View]: https://cloud.githubusercontent.com/assets/16360374/18231373/3048eb88-726d-11e6-9ae8-a87e24c11f67.png
 
-[Essential Atom Packages]: https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html
+<!-- [Essential Atom Packages]: https://jonsn0w.github.io/projects/2016/08/22/essential-atom-packages.html -->
