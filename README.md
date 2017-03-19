@@ -32,7 +32,8 @@
   * Improving custom icon integration.  
 
 <br>  
-________________________________________________________________________________  
+
+______________________________________________________________________________  
 <!-- Features -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630566/57595f88-ebb1-11e6-835d-e84330b188e3.png" width="900" title="Features">  
 
@@ -70,7 +71,8 @@ alignment issues that plague many icon packages.
 </p>
 
 <br>  
-________________________________________________________________________________  
+
+______________________________________________________________________________  
 <!-- Install -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630327/e71bd0c4-ebac-11e6-956d-8b1e8da21d1b.png" width="900" title="Install">  
   This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
@@ -92,7 +94,8 @@ ________________________________________________________________________________
   </p> -->
 
 <br>
-________________________________________________________________________________  
+
+______________________________________________________________________________  
 <!-- Screenshots -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630324/e71af8ac-ebac-11e6-9458-fe0301d4c028.png" width="900" title="Screenshot">  
 
@@ -102,9 +105,10 @@ ________________________________________________________________________________
   * **[Settings-View]**
 
 <br>
-*For more useful packages, check out my list of* ***[Essential Atom Packages]***, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
+*For more useful packages, check out my list of* **[Essential Atom Packages]**, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
 <br>
-________________________________________________________________________________  
+
+______________________________________________________________________________  
 <p align="right">
      <span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6RKPR34SH6CU" title="Donate to this project using PayPal">
  <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" height="21" title="Donate"></a></span>&nbsp;&nbsp;
