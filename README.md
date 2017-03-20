@@ -1,6 +1,7 @@
 <img src="https://cloud.githubusercontent.com/assets/16360374/22689194/ab4e61f4-ece4-11e6-8732-b613ffaeb2e7.png" height="80"/>  
 --------------------------------------------------------------------------------  
-#### A responsive modern interface for any dark syntax-theme  
+
+<!-- Badges -->
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
 		<img src="https://img.shields.io/apm/v/atomic-design-ui.svg?" height="21" title="Version">&nbsp;
@@ -78,6 +79,7 @@ ______________________________________________________________________________
 <!-- Install -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630327/e71bd0c4-ebac-11e6-956d-8b1e8da21d1b.png" width="900" title="Install">  
   This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
+<br>
 
 ```
   $ apm install atomic-design-ui
