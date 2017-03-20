@@ -1,5 +1,4 @@
 <img src="https://cloud.githubusercontent.com/assets/16360374/22689194/ab4e61f4-ece4-11e6-8732-b613ffaeb2e7.png" height="80"/>  
---------------------------------------------------------------------------------  
   
 <!-- Badges -->
 <p align="right">
