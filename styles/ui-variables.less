@@ -8,7 +8,7 @@
 @gray: #6C6C6C;
 @dark-gray: #464444;
 @darker-gray: #2B2B2B;
-@darkest-gray: #2D2D2A;
+@darkest-gray: #212121;
 
 @theme-red: #D82323;
 @theme-orange: #FD971F;
@@ -137,7 +137,7 @@
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
 @scrollbar-track-color: fade(@tree-view-background-color, 25%);
 // Status Bar
-@status-bar-color: -webkit-linear-gradient(top, lighten(@theme-syntax-background-color, 1%), @tab-bar-background-color);
+@status-bar-color: -webkit-linear-gradient(top, darken(@theme-syntax-background-color, 2%), darken(@tab-bar-background-color, 5%));
 // @status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
 // Tooltips
 @tooltip-text-color: @theme-background-color;
