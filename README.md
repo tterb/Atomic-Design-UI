@@ -1,5 +1,6 @@
-<img src="https://cloud.githubusercontent.com/assets/16360374/22689194/ab4e61f4-ece4-11e6-8732-b613ffaeb2e7.png" height="80"/>  
-  
+[<img src="https://cloud.githubusercontent.com/assets/16360374/22689194/ab4e61f4-ece4-11e6-8732-b613ffaeb2e7.png" height="80"/>](https://github.com/Atomic-Design-UI)  
+------------------------------------------------------------------------------  
+
 <!-- Badges -->
 <p align="right">
 	<a href="https://atom.io/themes/atomic-design-ui">
@@ -77,7 +78,7 @@ project files, while also preventing the alignment issues that plague <br> many 
 ______________________________________________________________________________  
 <!-- Install -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630327/e71bd0c4-ebac-11e6-956d-8b1e8da21d1b.png" width="900" title="Install">  
-  This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
+This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
 <br>
 
 ```
@@ -111,7 +112,7 @@ ______________________________________________________________________________
 <!-- *For more useful packages, check out my list of* **[Essential Atom Packages]**, *which I'll continue to keep up to date as I explore and familiarize myself with the editor and it's community.*
 <br> -->
 
-______________________________________________________________________________  
+<!-- ______________________________________________________________________________   -->
 <p align="right">
      <span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6RKPR34SH6CU" title="Donate to this project using PayPal">
  <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" height="21" title="Donate"></a></span>&nbsp;&nbsp;
