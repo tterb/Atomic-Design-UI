@@ -46,10 +46,10 @@
         padding: 15px 5px 0 0 !important;
         transition: color @transition-time/4 ease;
 		[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-			background-image: -webkit-linear-gradient(top, lighten(@tab-syntax-background-color, 16.5%), lighten(@tab-syntax-background-color, 1%));
+			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 40%), lighten(@tab-syntax-background-color, 1%));
 		}
 		[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
-			background-image: -webkit-linear-gradient(top, lighten(@tab-background-color, 12.5%), darken(@tab-background-color, 3%));
+			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-background-color, 12.5%), 40%), darken(@tab-background-color, 3%));
 		}
 
         &,
@@ -137,7 +137,7 @@
             z-index: 1;
             margin-top: -@tab-top-padding - 4px;
             padding-top: @tab-top-padding - 10px;
-            padding-right: 18px;
+			padding-left: -5px;
         }
     }
 

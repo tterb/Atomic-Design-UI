@@ -85,7 +85,8 @@ atom-notification {
             box-shadow: none;
             line-height: 23px;
 			&:hover {
-				color: lighten(@theme-red, 8%);
+				color: saturate(lighten(@theme-red, 8%), 18%);
+                transition-duration: 260ms;
 				border-color: transparent;
 	            box-shadow: none;
 			}
