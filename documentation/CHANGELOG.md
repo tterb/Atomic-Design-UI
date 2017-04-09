@@ -1,6 +1,17 @@
 # Change Log
 <br>  
 
+## Version 1.1.2  
+
+  * Improved button styling and responsiveness
+  * Improved styling of form-control, editor-container, and input-field components
+  * Added styling for custom OSX title bar
+  * Improved theme component adaptability
+  * Improved button-form styling
+  * Added styling for 'imdone' and 'project-manager' packages
+
+--------------------------------------------------------------------------------
+
 ## Version 1.1.1  
 
   * Fix issue caused by outdated variables
