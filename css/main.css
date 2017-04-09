@@ -1959,6 +1959,7 @@ svg {
     -ms-flex-pack: start;
     justify-content: flex-start;
     background-color: #252523 !important;
+    height: 8.5%;
 }
 
 .row.center-right {
