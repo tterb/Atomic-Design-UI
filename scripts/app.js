@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // Tabs
-  $(".js-tabs").tabs({ active: 1 });
+  $(".js-tabs").tabs({ active: 0 });
 
   // On Tab Click
   $(".js-tabs").on( "tabsactivate", function( event, ui ) {
