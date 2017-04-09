@@ -179,70 +179,69 @@ import { CompositeDisposable } from &#039;atom&#039;;
 
 export var config = {
 
-	useTabSyntaxColor: {
-		title: &#039;Match Tabs to Syntax Colors&#039;,
-		description: &#039;Use colors from the syntax theme to color tabs (not recommended for light themes)&#039;,
-		type: 'boolean',
-		default: true,
-		order: 1
-	},
-	lightTreeView: {
-		title: &#039;Light Tree View&#039;,
-		description: &#039;Use light tree-view background&#039;,
-		type: &#039;boolean&#039;,
-		default: true,
-		order: 2
-	},
-	compactTreeView: {
-		title: &#039;Compact Tree View&#039;,
-		description: &#039;Decrease tree-view font size and spacing&#039;,
-		type: &#039;boolean&#039;,
-		default: false,
-		order: 3
-	},
-	customIcons: {
-		title: &#039;Custom Icons&#039;,
-		description: &#039;Disable this if you\&#039;re using \&#039;file-icons\&#039; or similar icon packages&#039;,
-		type: &#039;boolean&#039;,
-		default: true,
-		order: 4
-	}
+  useTabSyntaxColor: {
+	title: &#039;Match Tabs to Syntax Colors&#039;,
+	description: &#039;Use colors from the syntax theme to color tabs (not recommended for light themes)&#039;,
+	type: 'boolean',
+	default: true,
+	order: 1
+  },
+  lightTreeView: {
+	title: &#039;Light Tree View&#039;,
+	description: &#039;Use light tree-view background&#039;,
+	type: &#039;boolean&#039;,
+	default: true,
+	order: 2
+  },
+  compactTreeView: {
+	title: &#039;Compact Tree View&#039;,
+	description: &#039;Decrease tree-view font size and spacing&#039;,
+	type: &#039;boolean&#039;,
+	default: false,
+	order: 3
+  },
+  customIcons: {
+	title: &#039;Custom Icons&#039;,
+	description: &#039;Disable this if you\&#039;re using \&#039;file-icons\&#039; or similar icon packages&#039;,
+	type: &#039;boolean&#039;,
+	default: true,
+	order: 4
+  }
 };
 
 var disposable;
 
 export function activate() {
-	disposable = new CompositeDisposable(
-		atom.config.observe(&#039;atomic-design-ui.useTabSyntaxColor&#039;, updateTabColor),
-		atom.config.observe(&#039;atomic-design-ui.lightTreeView&#039;, updateTreeViewTheme),
-		// atom.config.observe(&#039;atomic-design-ui.treeViewFontSize&#039;, updateTreeViewFont),
-		atom.config.observe(&#039;atomic-design-ui.compactTreeView&#039;, updateTreeViewSize),
-		atom.config.observe(&#039;atomic-design-ui.customIcons&#039;, updateIcons)
-	);
+  disposable = new CompositeDisposable(
+	atom.config.observe(&#039;atomic-design-ui.useTabSyntaxColor&#039;, updateTabColor),
+	atom.config.observe(&#039;atomic-design-ui.lightTreeView&#039;, updateTreeViewTheme),
+	// atom.config.observe(&#039;atomic-design-ui.treeViewFontSize&#039;, updateTreeViewFont),
+	atom.config.observe(&#039;atomic-design-ui.compactTreeView&#039;, updateTreeViewSize),
+	atom.config.observe(&#039;atomic-design-ui.customIcons&#039;, updateIcons)
+  );
 }
 
 export function deactivate() {
-	disposable.dispose();
+  disposable.dispose();
 }
 
 var workspaceView = atom.views.getView(atom.workspace);
 
 function updateTabColor(useTabSyntaxColor) {
-	workspaceView.setAttribute(&#039;data-atomic-design-ui-use-tab-syntax-colors&#039;, useTabSyntaxColor);
+  workspaceView.setAttribute(&#039;data-atomic-design-ui-use-tab-syntax-colors&#039;, useTabSyntaxColor);
 }
 
 function updateTreeViewTheme(lightTreeView) {
-	workspaceView.setAttribute(&#039;data-atomic-design-ui-light-tree-view&#039;, lightTreeView);
+  workspaceView.setAttribute(&#039;data-atomic-design-ui-light-tree-view&#039;, lightTreeView);
 }
 
 function updateTreeViewSize(compactTreeView) {
-	workspaceView.setAttribute(&#039;data-atomic-design-ui-compact-tree-view&#039;, compactTreeView);
+  workspaceView.setAttribute(&#039;data-atomic-design-ui-compact-tree-view&#039;, compactTreeView);
 }
 
 function updateIcons(customIcons) {
-	workspaceView.setAttribute(&#039;data-atomic-design-ui-custom-icons&#039;, customIcons);
+  workspaceView.setAttribute(&#039;data-atomic-design-ui-custom-icons&#039;, customIcons);
 }
-
 </code></pre>
   </div>
 </div>
