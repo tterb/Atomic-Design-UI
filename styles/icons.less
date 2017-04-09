@@ -229,7 +229,7 @@
 
     // HTML
     .icon-tab('.html', 'html', 14px, 2px, 4px, -2px, 0px);
-    .icon-tree('.html', 'html', 15px, 3px, 10px, 2px, 0px);
+    .icon-tree('.html', 'html', 15px, 3px, 10px, 4px, 0px);
 
 	// INI
 	.icon-tab('.ini', 'code', 14px, 2px, 4px, -2px, 0px);
@@ -590,15 +590,19 @@
 	}
 
 	// README.md
-	.icon-book::before {
-		font-family: iconFont;
-		// content: 'b';
-		content: '\e081' !important;
-		font-size: 19px;
-		position: relative;
-		top: 4px;
-		left: -2px;
-		color: #637FE7;
+	.icon-book {
+        position: relative;
+        left: 5px;
+        &::before {
+    		font-family: iconFont;
+    		// content: 'b';
+    		content: '\e081' !important;
+    		font-size: 19px;
+    		position: relative;
+    		top: 4px;
+            left: -5px !important;
+    		color: #637FE7;
+        }
 	}
 
 	// Media files
