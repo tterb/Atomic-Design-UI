@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Atomic Design Providing a modern and refined interface for Atom.</title>
+  <meta name="description" content="providing a modern and refined interface for Atom.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="http://JonSn0w.github.io/atomic-design-ui/">
+  <link href="img/favicon.png" rel="shortcut icon">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+  <body class="row fullscreen color-white fadeIn overflow-hidden">
+
+    <div class="status-bar row space-between fixed bottom depth-10 no-pointer-events">
+  <div class="cursor-location">Line 2, Column 51</div>
+  <div>
+    <span class="mr2">Spaces: 2</span>
+    <span id="syntax-label" class="mr2">Markdown</span>
+  </div>
+</div>
+
+
+<nav class="sidebar fixed h100">
+  <div class="share-btn-wrap column bottom-left h100 p2 pb3">
+    <a class="github-button" href="https://github.com/JonSn0w/atomic-design-ui" data-icon="octicon-star" data-count-href="/JonSn0w/atomic-design-ui/stargazers" data-count-api="/repos/JonSn0w/atomic-design-ui#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star JonSn0w/atomic-design-ui on GitHub">Star</a>
+  </div>
+</nav>
+
+<main class="column">
+  <div class="js-tabs">
+  <ul class="tabs row center-left fixed depth-10 scroll-horizontal no-scrollbar">
+    <li class="tab row center-left"><img src="img/markdown.png" id="icon"><a class="nowrap overflow-hidden" href="#tabs-1">README.md</a></li>
+    <li class="tab row center-left"><img src="img/html.png" id="icon"><a class="nowrap overflow-hidden" href="#tabs-2">example.html</a></li>
+    <li class="tab row center-left"><img src="img/sass.png" id="icon"><a class="nowrap overflow-hidden" href="#tabs-3">example.scss</a></li>
+    <li class="tab row center-left"><img src="img/js.png" id="icon"><a class="nowrap overflow-hidden" href="#tabs-4">example.js</a></li>
+  </ul>
+
+  <div class="editor-wrap">
+    <div id="tabs-1" data-syntax="Markdown" class="editor column center mt0 pb0 plr1"><h1 class="logotype mb0">Atomic Design</h1>
+    <h3 class="color-midgrey text-align-center mb4" style="margin-bottom:1.5em;">Providing a modern and refined interface for <a class="no-underline bb1 border-midgrey" href="https://atom.io/themes/atomic-design-ui">Atom</a></h3>
+    <span class="text-align-center fs-small uppercase tracked">
+    Created by <a class="mr1 color-white bb1 border-midgrey" href="http://JonSn0w.github.io">Brett Stevenson</a>
+    </span>
+    </div>
+    <pre id="tabs-2" data-syntax="HTML" class="editor language-markup line-numbers no-indicator"><code>&lt;!--==============================================
+  NOTE: The syntax highlighting shown here might
+  not match exactly what you see in your editor
+===============================================--&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Brett Stevenson - Designer/Developer, Atomic-Design, Atomic-Monokai, and more. Designer/Developer, Atomic-Design, Atomic-Monokai, and more.&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Designer/Developer. Stylesheets Corpus, Predawn, Norwester, and more. Dog-lover and avid reader of the internet&mdash;it&#039;s pretty good so far.&quot;&gt;
+
+  &lt;meta name=&quot;keywords&quot; content=&quot;brett stevenson, bstevenson, BStevensonDev, JonSn0w, JonSn0w.github.io, designer, design, developer, dev, Atomic-Design, Atomic-Monokai, UI, syntax, atom&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+  &lt;meta name=&quot;google-site-verification&quot; content=&quot;xICaRiFseDjdCoawimIDp8J8beVHQcEUr0i5thWv-Ho&quot; /&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/main.css&quot;&gt;
+  &lt;link rel=&quot;canonical&quot; href=&quot;http://JonSn0w.github.io//&quot;&gt;
+  &lt;link href=&#039;https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Alegreya+SC|Alegreya:400italic&#039; rel=&#039;stylesheet&#039; type=&#039;text/css&#039;&gt;
+  &lt;link href=&quot;/img/favicon.png&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;header class=&quot;header column center-left color-white vh50 relative&quot;&gt;
+  &lt;section class=&quot;container w100&quot;&gt;
+    &lt;h1 class=&quot;header-intro&quot;&gt;The Portfolio &lt;span class=&quot;header-intro-italic&quot;&gt;of&lt;/span&gt; Brett Stevenson&lt;/h1&gt;
+    &lt;h2 class=&quot;header-description&quot; data-fitter-happier-text&gt;Designer/Developer&lt;/h2&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;header-contact fs-base ptb1 w100 absolute bottom&quot;&gt;
+    &lt;div class=&quot;container row w100&quot;&gt;
+      &lt;ul class=&quot;row list-style-none&quot;&gt;
+        &lt;li class=&quot;mr1 hide-on-small&quot;&gt;Get in touch:&lt;/li&gt;
+        &lt;li class=&quot;link-separator&quot;&gt;&lt;a href=&quot;http://github.com/JonSn0w&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;link-separator&quot;&gt;&lt;a href=&quot;http://BStevenson.deviantart.com&quot;&gt;DeviantArt&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;link-separator&quot;&gt;&lt;a href=&quot;http://twitter.com/BStevensonDev&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;mailto:BStevensonDev@gmail.com?subject=Hello.&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;span class=&quot;row center-right&quot;&gt;
+        &lt;svg class=&quot;favicon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+          &lt;path class=&quot;step1&quot; d=&quot;M6 0h4v4h-4zM12 6h4v4h-4zM0 12h4v4h-4zM6 12h4v4h-4zM12 12h4v4h-4z&quot;/&gt;
+        &lt;/svg&gt;
+        &lt;/svg&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/header&gt;
+</code></pre>
+    <pre id="tabs-3" data-syntax="SCSS" class="editor language-scss line-numbers no-indicator"><code>//====================================================
+//  NOTE: The syntax highlighting shown here might
+//  not match exactly what you see in your editor
+//====================================================
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: auto;
+  flex-wrap: nowrap;
+  @include small {
+    min-width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex: 1 1 auto;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row &gt; .column {
+  @include small {
+    width: 100% !important;
+  }
+}
+
+//====================================================
+//  Gutters
+//====================================================
+
+// Add .gutters to .row/.column elements
+.gutters { padding: $padding; }
+
+// All direct descendants of .gutters get margin
+.gutters &gt; .column,
+.gutters &gt; .row {
+  margin: $margin;
+  @include small {
+    width: 100% !important;
+    min-width: 0;
+  }
+}
+
+// offset padding/margin to maintain width
+.gutters &gt; {
+  .w5    { width:  calc(5%   -  #{$padding + $margin}); }
+  .w10   { width:  calc(10%  -  #{$padding + $margin}); }
+  .w15   { width:  calc(15%  -  #{$padding + $margin}); }
+  .w20   { width:  calc(20%  -  #{$padding + $margin}); }
+  .w25   { width:  calc(25%  -  #{$padding + $margin}); }
+  .w30   { width:  calc(30%  -  #{$padding + $margin}); }
+  .w35   { width:  calc(35%  -  #{$padding + $margin}); }
+  .w40   { width:  calc(40%  -  #{$padding + $margin}); }
+  .w45   { width:  calc(45%  -  #{$padding + $margin}); }
+  .w50   { width:  calc(50%  -  #{$padding + $margin}); }
+  .w55   { width:  calc(55%  -  #{$padding + $margin}); }
+  .w60   { width:  calc(60%  -  #{$padding + $margin}); }
+  .w65   { width:  calc(65%  -  #{$padding + $margin}); }
+  .w70   { width:  calc(70%  -  #{$padding + $margin}); }
+  .w75   { width:  calc(75%  -  #{$padding + $margin}); }
+  .w80   { width:  calc(80%  -  #{$padding + $margin}); }
+  .w85   { width:  calc(85%  -  #{$padding + $margin}); }
+  .w90   { width:  calc(90%  -  #{$padding + $margin}); }
+  .w95   { width:  calc(95%  -  #{$padding + $margin}); }
+  .w100  { width:  calc(100% -  #{$padding + $margin}); }
+}
+</code></pre>
+    <pre id="tabs-4" data-syntax="JavaScript" class="editor language-javascript line-numbers no-indicator"><code>//====================================================
+//  NOTE: The syntax highlighting shown here might
+//  not match exactly what you see in your editor
+//====================================================
+
+&#039;use babel&#039;;
+&#039;use strict&#039;;
+import { CompositeDisposable } from &#039;atom&#039;;
+
+export var config = {
+
+	useTabSyntaxColor: {
+		title: &#039;Match Tabs to Syntax Colors&#039;,
+		description: &#039;Use colors from the syntax theme to color tabs (not recommended for light themes)&#039;,
+		type: 'boolean',
+		default: true,
+		order: 1
+	},
+	lightTreeView: {
+		title: &#039;Light Tree View&#039;,
+		description: &#039;Use light tree-view background&#039;,
+		type: &#039;boolean&#039;,
+		default: true,
+		order: 2
+	},
+	compactTreeView: {
+		title: &#039;Compact Tree View&#039;,
+		description: &#039;Decrease tree-view font size and spacing&#039;,
+		type: &#039;boolean&#039;,
+		default: false,
+		order: 3
+	},
+	customIcons: {
+		title: &#039;Custom Icons&#039;,
+		description: &#039;Disable this if you\&#039;re using \&#039;file-icons\&#039; or similar icon packages&#039;,
+		type: &#039;boolean&#039;,
+		default: true,
+		order: 4
+	}
+};
+
+var disposable;
+
+export function activate() {
+	disposable = new CompositeDisposable(
+		atom.config.observe(&#039;atomic-design-ui.useTabSyntaxColor&#039;, updateTabColor),
+		atom.config.observe(&#039;atomic-design-ui.lightTreeView&#039;, updateTreeViewTheme),
+		// atom.config.observe(&#039;atomic-design-ui.treeViewFontSize&#039;, updateTreeViewFont),
+		atom.config.observe(&#039;atomic-design-ui.compactTreeView&#039;, updateTreeViewSize),
+		atom.config.observe(&#039;atomic-design-ui.customIcons&#039;, updateIcons)
+	);
+}
+
+export function deactivate() {
+	disposable.dispose();
+}
+
+var workspaceView = atom.views.getView(atom.workspace);
+
+function updateTabColor(useTabSyntaxColor) {
+	workspaceView.setAttribute(&#039;data-atomic-design-ui-use-tab-syntax-colors&#039;, useTabSyntaxColor);
+}
+
+function updateTreeViewTheme(lightTreeView) {
+	workspaceView.setAttribute(&#039;data-atomic-design-ui-light-tree-view&#039;, lightTreeView);
+}
+
+function updateTreeViewSize(compactTreeView) {
+	workspaceView.setAttribute(&#039;data-atomic-design-ui-compact-tree-view&#039;, compactTreeView);
+}
+
+function updateIcons(customIcons) {
+	workspaceView.setAttribute(&#039;data-atomic-design-ui-custom-icons&#039;, customIcons);
+}
+
+</code></pre>
+  </div>
+</div>
+
+</main>
+
+
+  <script src="scripts/prism.js"></script>
+<script src="scripts/app.js"></script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  </body>
+</html>

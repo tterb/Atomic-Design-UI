@@ -1,8 +1,6 @@
-.DS_Store
-.imdone
-.git
-npm-debug.log
-node_modules
-Heading.png
-imgs/*
-TODO.txt
+# OS folder settings
+[Tt]humbs.db
+*.DS_Store
+
+# Sublime Text cache files
+*.cache
