@@ -5,10 +5,11 @@
 
   * Improved button styling and responsiveness
   * Improved styling of form-control, editor-container, and input-field components
-  * Added styling for custom OSX title bar
+  * Added styling for custom OS X title bar
   * Improved theme component adaptability
   * Improved button-form styling
   * Added styling for 'imdone' and 'project-manager' packages
+  * Improved custom icon font implementation
 
 --------------------------------------------------------------------------------
 
