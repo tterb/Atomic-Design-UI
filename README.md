@@ -79,7 +79,7 @@ ______________________________________________________________________________
 <!-- Install -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630327/e71bd0c4-ebac-11e6-956d-8b1e8da21d1b.png" width="900" title="Install">  
 This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
-<br>
+<br>  
 
 ```
   $ apm install atomic-design-ui
