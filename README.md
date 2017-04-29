@@ -40,7 +40,7 @@ ______________________________________________________________________________
 <br>
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/25552099/03236b68-2c46-11e7-804e-6fd40656842f.png" height="36" title="Dark Refined Interface"/>
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552099/03236b68-2c46-11e7-804e-6fd40656842f.png" height="32" title="Dark Refined Interface"/>
 </p>
 <p align="center">
   <i>Atomic Design</i> features a carefully selected color-palette and meticulously styled components, <br>
@@ -52,7 +52,7 @@ ______________________________________________________________________________
 <br>
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/25552101/0adda5da-2c46-11e7-910a-d9aa55395ade.png" height="36" title="Package Styling"/>
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552101/0adda5da-2c46-11e7-910a-d9aa55395ade.png" height="32" title="Package Styling"/>
 </p>
 <p align="center">
   This UI-theme includes supplementary styling for an expanding collection of popular Atom <br>
@@ -61,7 +61,7 @@ ______________________________________________________________________________
 <br>
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/25552100/0704f1ca-2c46-11e7-999b-c4c654bc6193.png" height="36" title="Custom Icon Set"/>
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552100/0704f1ca-2c46-11e7-999b-c4c654bc6193.png" height="32" title="Custom Icon Set"/>
 </p>
 <p align="center">
 <i>Atomic Design</i> also features a custom icon set, which aims to integrate distinct custom icons <br>
@@ -72,7 +72,7 @@ project files, while also preventing the alignment issues that plague <br> many 
 <br>
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16360374/25552096/01712968-2c46-11e7-83b2-cc1ef0157737.png" height="36" title="Modular Theme Settings"/>
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552096/01712968-2c46-11e7-83b2-cc1ef0157737.png" height="32" title="Modular Theme Settings"/>
 </p>
 <p align="center">
   This UI-theme includes custom settings, which allow users to fine-tune various aspects of <br>
@@ -87,10 +87,11 @@ ______________________________________________________________________________
 <!-- Install -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630327/e71bd0c4-ebac-11e6-956d-8b1e8da21d1b.png" width="900" title="Install">  
 This package is distributed via *[apm]*. After [installing apm], you can install the UI-theme with this command.  
+
 <br>  
 
-```
-  $ apm install atomic-design-ui
+```bash
+$ apm install atomic-design-ui
 ```
 
   After installation, the theme can be activated by going to the **Themes** section in the *Settings* view and selecting it from the *UI Theme* drop-down menu.
