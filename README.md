@@ -43,7 +43,7 @@ ______________________________________________________________________________
   <img src="https://cloud.githubusercontent.com/assets/16360374/25552099/03236b68-2c46-11e7-804e-6fd40656842f.png" height="32" title="Dark Refined Interface"/>
 </p>
 <p align="center">
-  <i>Atomic Design</i> features a carefully selected color-palette and meticulously styled components, <br>
+  <i>Atomic Design</i> features a carefully selected color palette and meticulously styled components, <br>
   which provides the interface with a sense of depth, receptiveness, and adaptability. <br>
   Allowing this theme to be wonderfully complimented by any dark syntax theme.
   <!-- modern, refined, dark, conscious design, carefully designed
@@ -67,7 +67,7 @@ ______________________________________________________________________________
 <i>Atomic Design</i> also features a custom icon set, which aims to integrate distinct custom icons <br>
 with the best aspects of popular icon packages to provide improved
 visual-grepping of <br>
-project files, while also preventing the alignment issues that plague <br> many icon package and theme combinations.
+project files, while also preventing the alignment issues that plague <br> many icon packages and theme combinations.
 </p>
 <br>
 
