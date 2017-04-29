@@ -37,9 +37,11 @@
 ______________________________________________________________________________  
 <!-- Features -->
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630566/57595f88-ebb1-11e6-835d-e84330b188e3.png" width="900" title="Features">  
+<br>
 
-
-<h3 align="center">Dark Refined Interface</h3>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552099/03236b68-2c46-11e7-804e-6fd40656842f.png" height="36" title="Dark Refined Interface"/>
+</p>
 <p align="center">
   <i>Atomic Design</i> features a carefully selected color-palette and meticulously styled components, <br>
   which provides the interface with a sense of depth, receptiveness, and adaptability. <br>
@@ -49,14 +51,18 @@ ______________________________________________________________________________
 </p>
 <br>
 
-<h3 align="center">Package Styling</h3>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552101/0adda5da-2c46-11e7-910a-d9aa55395ade.png" height="36" title="Package Styling"/>
+</p>
 <p align="center">
   This UI-theme includes supplementary styling for an expanding collection of popular Atom <br>
   packages, providing the same refined interface to all aspects of the user experience.
 </p>
 <br>
 
-<h3 align="center">Custom Icon Set</h3>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552100/0704f1ca-2c46-11e7-999b-c4c654bc6193.png" height="36" title="Custom Icon Set"/>
+</p>
 <p align="center">
 <i>Atomic Design</i> also features a custom icon set, which aims to integrate distinct custom icons <br>
 with the best aspects of popular icon packages to provide improved
@@ -65,7 +71,9 @@ project files, while also preventing the alignment issues that plague <br> many 
 </p>
 <br>
 
-<h3 align="center">Modular Theme-Settings</h3>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16360374/25552096/01712968-2c46-11e7-83b2-cc1ef0157737.png" height="36" title="Modular Theme Settings"/>
+</p>
 <p align="center">
   This UI-theme includes custom settings, which allow users to fine-tune various aspects of <br>
   the interface to suit their preference. These settings are accessible via <br>
