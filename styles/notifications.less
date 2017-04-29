@@ -18,18 +18,6 @@ atom-notification {
 		}
 	}
 
-    &.success, &.error, &.info, &.warning, &.fatal {
-        .btn {
-            color: #fcfcfc !important;
-            &:hover {
-                color: #fff !important;
-            }
-        }
-        // .content {
-        //     color: #fefefe !important;
-        // }
-    }
-
     .content {
         border-radius: 2px;
         width: 100%;
@@ -87,6 +75,15 @@ atom-notification {
 
     &.success, &.error, &.info, &.warning, &.fatal {
         border-left: 2px solid transparent;
+        .btn {
+            max-width: 252px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #fcfcfc !important;
+            &:hover {
+                color: #fff !important;
+            }
+        }
         .content {
             background-color: @tree-view-background-color;
             color: @text-color;
@@ -108,12 +105,6 @@ atom-notification {
             background-color: darken(@theme-red, 8%);
             color: @white;
             font-size: @theme-font-size - 2px;
-        }
-        .btn {
-            max-width: 252px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: @text-color;
         }
     }
 

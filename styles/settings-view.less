@@ -73,12 +73,12 @@
 	}
 
 	.btn {
-		&.active-theme-settings {
+		&.active-theme-settings, &.active-syntax-settings {
 			background: -webkit-linear-gradient(top, darken(@theme-background-color-selected, 3%), @theme-background-color);
 			border: 1px outset lighten(@theme-background-color-selected, 5%);
 			height: 32px;
 			width: 35px;
-			margin: -1px 5px 0px;
+			margin: -2px 5px 0px;
 			box-shadow: 2px 2px 0px rgba(0,0,0,.3);
 			// border-radius: 50px;
 			&::before {
@@ -99,7 +99,7 @@
 		border: 0;
 		margin-right: 2px;
 		// BUTTON FOR THEME SETTINGS
-		&.active-theme-settings.icon-gear {
+		&.active-theme-settings.icon-gear, &.active-syntax-settings.icon-gear {
 			&::before {
 				font-size: 20px;
 				margin-top: 6px;
@@ -416,29 +416,18 @@
 			background-color: lighten(@tool-panel-background-color, 2%);
 			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			// border-color: lighten(@input-border-color, 5%);
 		}
 		&.form-control:not(:hover) {
 			background-color: lighten(@tool-panel-background-color, 2%);
 			border: 1px inset darken(@input-border-color, 15%);
 			border-radius: @component-border-radius + 5px;
-			// border-color: darken(@input-border-color, 5%);
 		}
 	}
 
 	.section {
 		background-color: lighten(@theme-background-color-selected, 1.25%);
-		// atom-text-editor[mini] {
-		// 	background-color: lighten(@tool-panel-background-color, 2%);
-		// 	opacity: .85;
-		// 	&::hover {
-		// 		background-color: darken(@tool-panel-background-color, 4%);
-		// 		border-color: darken(@input-border-color, 2%);
-		// 		opacity: 100%;
-		// 	}
-		// }
 		atom-text-editor[mini] {
-			background-color: darken(@input-background-color, 7%);
+			background-color: lighten(@tool-panel-background-color, 2%);
 			color: @text-color-highlight;
 			border: 1px inset darken(@gray, 14%);
 			border-radius: @component-border-radius + 4px;
@@ -450,7 +439,6 @@
 			&.is-focused, &.is-focused.editor {
 				background: darken(@input-background-color, 7%);
 				color: @text-color-highlight;
-				// color: darken(@input-background-color, 7.5%) !important;
 				border: 1px inset darken(@gray, 17%);
 				.selection .region {
 					background-color: mix(desaturate(@text-color-info, 55%), @dark-gray, 60%);
