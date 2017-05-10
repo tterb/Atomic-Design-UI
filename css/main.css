@@ -861,7 +861,7 @@ svg {
 }
 
 .mb0 {
-    margin-bottom: 0 !important
+    margin-bottom: 0em !important
 }
 
 .mb1 {
@@ -1116,7 +1116,7 @@ svg {
 }
 
 .sidebar {
-    width: 250px
+    width: 200px
 }
 
 @media screen and (max-width: 800px) {
@@ -2202,23 +2202,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-    font-size: 2.25rem;
+    font-size: 4rem;
     line-height: 1.2
 }
 
 h2, .h2 {
-    font-size: 1.75rem;
-    line-height: 1.3
+    font-size: 2.5rem;
+    line-height: 1.3;
+    color: #dddedb;
+    margin-left: 1%;
+    margin-right: auto
 }
 
 h3, .h3 {
     font-size: 1.5rem;
-    line-height: 1.4
+    line-height: 1.4;
+    letter-spacing: 0.08rem;
+    margin: 0.25em 0 1.25em 0 !important
 }
 
 h4, .h4 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     line-height: 1.5
+    margin-bottom: 0.9rem;
 }
 
 h5, .h5 {
@@ -2255,8 +2261,17 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a {
 }
 
 p {
+    width: 95%;
+    color: #d4d5d2;
+    font-size: 0.9em;
+    letter-spacing: 0.045em;
+    line-height: 1.75em;
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #edeeeb;
 }
 
 li ul, li ol {
@@ -2303,10 +2318,16 @@ pre code {
 }
 
 code {
-    background-color: #E3E9E6;
-    border-radius: 3px;
+    position: relative;
+    background-color: #272925;
+    color: #E3E9E6;
+    font-family: "Source Code Pro", Monaco, Consolas, monospace
     font-size: 0.875rem;
-    padding: 0.15em 0.4em
+    border-radius: 6px;
+    margin: 1.5em 1.75em !important;
+    padding: 0.5em 1.5em 0.55em 0.75em !important;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.5);
+    top: 21px;
 }
 
 .bg-silver code, .bg-grey code {
@@ -3046,11 +3067,11 @@ pre::-webkit-scrollbar-track {
 }
 
 pre::-webkit-scrollbar-thumb:vertical {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="296" viewBox="0 -135 14 296" enable-background="new 0 -135 14 296"><path fill="#5FD9F1" d="M6-129h2v290h-2z"/></svg>') no-repeat
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="296" viewBox="0 -135 14 296" enable-background="new 0 -135 14 296"><path fill="#222321" d="M6-129h2v290h-2z"/></svg>') no-repeat
 }
 
 pre::-webkit-scrollbar-thumb:horizontal {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="14" viewBox="0 0 600 14"><path fill="#5FD9F1" d="M10 6h590v2h-590z"/></svg>') no-repeat
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="14" viewBox="0 0 600 14"><path fill="#222321" d="M10 6h590v2h-590z"/></svg>') no-repeat
 }
 
 pre::-webkit-scrollbar-corner {
@@ -3058,7 +3079,7 @@ pre::-webkit-scrollbar-corner {
 }
 
 pre::-webkit-resizer {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path fill="#5FD9F1" d="M13 13h-13l13-13z"/></svg>') no-repeat;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path fill="#222321" d="M13 13h-13l13-13z"/></svg>') no-repeat;
     background-position: bottom right
 }
 
@@ -3182,7 +3203,7 @@ body {
 .share-btn-wrap {
     opacity: 0;
     background-image: -webkit-linear-gradient(270deg, transparent 50%, #333 100%);
-    background-image: linear-gradient(180deg, transparent 50%, #333 100%);
+    background-image: linear-gradient(180deg, transparent 70%, #272826 100%);
     -webkit-transition: opacity 1s;
     transition: opacity 1s
 }
@@ -3192,7 +3213,7 @@ body {
 }
 
 .sidebar {
-    width: 220px;
+    width: 175px;
     background-color: #333;
     background-image: url("../img/sidebar.png");
     background-repeat: no-repeat;
@@ -3206,7 +3227,7 @@ body {
 }
 
 .sidebar+main {
-    margin-left: 220px
+    margin-left: 175px
 }
 
 @media screen and (max-width: 480px) {
@@ -3241,7 +3262,7 @@ body {
 .tab {
     position: relative;
     max-width: 205px;
-    min-width: 190px;
+    min-width: 175px;
     max-height: 50px;
     min-height: 50px;
     /*border-right: 1px solid #303030;*/
@@ -3300,7 +3321,7 @@ body {
 .editor-wrap {
     overflow-y: auto;
     overflow-x: auto;
-    width: calc(100vw - 220px);
+    width: calc(100vw - 175px);
     height: 100vh
 }
 
@@ -3329,8 +3350,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
+    /*height: 12px;
+    width: 12px;*/
     overflow: visible
 }
 
@@ -3339,8 +3360,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #5FD9F1;
-    border: 5px solid #282828
+    background: #1F201D;
+    width: 5px;
+    border-radius: 25px !important;
+    /*border: 1px solid rgba(95,217,241,0.5);*/
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -3359,8 +3382,9 @@ body {
 
 .logotype {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.75rem;
     letter-spacing: .25rem;
+    margin-top: 220px;
     text-transform: uppercase;
     -webkit-animation: fadeInUp 1s;
     animation: fadeInUp 1s
@@ -3402,4 +3426,27 @@ body {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0)
+}
+
+#tabs-1 {
+    margin-top: 50px;
+    min-height: 100%;
+    padding-bottom: 25vh
+}
+
+#tabs-1 > span {
+    margin-bottom: 25em;
+}
+
+#badges {
+    display: flex;
+    float: right;
+    margin-left: 90%;
+    width: 100%;
+}
+
+#badges img {
+    display: inline-block;
+    float: right;
+    /*width: 20%;*/
 }
