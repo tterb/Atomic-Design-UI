@@ -46,7 +46,7 @@
         padding: 15px 5px 0 0 !important;
         transition: color @transition-time/4 ease;
 		[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 40%), lighten(@tab-syntax-background-color, 1%));
+			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 0%), lighten(@tab-syntax-background-color, 1%));
 		}
 		[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
 			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-background-color, 12.5%), 40%), darken(@tab-background-color, 3%));
@@ -66,7 +66,7 @@
             width: 25px;
             height: @tab-height + 1px;
 			[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-				background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 40%), lighten(@tab-syntax-background-color, 1%));
+				background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 0%), lighten(@tab-syntax-background-color, 1%));
 			}
 			[data-atomic-design-ui-use-tab-syntax-colors="false"] & {
 				background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-background-color, 12.5%), 40%), darken(@tab-background-color, 3%));
