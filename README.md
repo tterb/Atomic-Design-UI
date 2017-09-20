@@ -24,8 +24,7 @@
 <img src="https://cloud.githubusercontent.com/assets/16360374/22630325/e71b3d12-ebac-11e6-864a-de9714611240.png" width="900" title="Description">  
 
   *Atomic Design* aims to provide a modern and refined interface to compliment any dark syntax-theme, featuring modifications that focus on improving the user experience and adaptability. Similarly, this theme also includes a custom icon set and improved integration of some of the most common [Atom packages].  
-  The screenshot above features the **[Atomic Monokai]** syntax-theme and *Source Code Pro* via the [Fonts] package.  
-  <!-- If you like this interface but generally prefer lighter syntax-themes, try the new **[Atomic Delight]** UI-theme. -->
+  The screenshot above features the **[Atomic Monokai]** syntax-theme and *Source Code Pro* via the [Fonts] package.
 
 **In Progress**
   * Experimenting with functionalities to improve adaptability.
