@@ -90,6 +90,18 @@ code {
     }
 }
 
+.highlight-mixin {
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.highlight {
+  .highlight-mixin();
+  font-weight: 700;
+  color: @text-color-highlight;
+  background-color: @theme-background-color-highlight;
+}
+
 .highlight {
     color: @text-color-highlight;
     font-weight: bold;

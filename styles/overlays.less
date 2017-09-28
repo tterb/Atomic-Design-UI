@@ -13,7 +13,7 @@ atom-panel.modal {
     }
 
 	.list-group li:not(.list-nested-item).selected {
-		background: lighten(@tree-view-selection-color, 8%);
+		background: lighten(desaturate(@theme-syntax-background-color, 2%), 12%);
 		color: darken(@lightest-gray, 3%);
 		box-shadow: inset 0px -1px 10px rgba(0,0,0,0.4);
 	}
