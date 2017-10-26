@@ -1,6 +1,16 @@
 # Change Log
 <br>  
 
+## Version 1.1.3  
+
+  * Improved component formatting and type sizing
+  * Improved status-bar linter formatting and styling 
+  * Modified styling of tabs
+  * Added necessary variables for atom-ide compatibility
+  * Improve tab icon formatting
+
+--------------------------------------------------------------------------------
+
 ## Version 1.1.2  
 
   * Improved button styling and responsiveness
