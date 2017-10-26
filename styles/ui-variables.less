@@ -42,7 +42,8 @@
 @background-color-success: @theme-green;
 @background-color-warning: @theme-orange;
 @background-color-error: @theme-red;
-
+@background-color-highlight: lighten(@syntax-background-color, 12%);
+@background-color-selected: @syntax-selection-color;
 
 // Text Colors ----------------------------------------------------------------
 
@@ -148,6 +149,7 @@
 
 // Sizes ----------------------------------------------------------------------
 
+@font-size: 11px;
 @theme-font-size: 11px;
 @input-font-size: 12px;
 @tree-view-font-size: 11px;
