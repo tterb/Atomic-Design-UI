@@ -86,7 +86,7 @@
 [data-atomic-design-ui-custom-icons="true"] & {
 
     // DEFAULT TAB ICON
-    tabs-bar tabs-tab .title, .tab-bar .tab .title {
+    tab-bar tabs-tab .title, .tab-bar .tab .title {
         position: relative;
         display: inline-block;
         // top: -1px;
@@ -106,7 +106,7 @@
         }
     }
 
-    tabs-bar tabs-tab.active .title, .tab-bar .tab.active .title {
+    tab-bar tabs-tab.active .title, .tab-bar .tab.active .title {
         top: -2px;
     }
 }
@@ -226,7 +226,7 @@
   .icon-tree('.hjs', 'handlebars', 23px, 7px, 8px, -1px, 0px);
 
   // Gitignore
-  .icon-tab('.gitignore', 'gitignore', 21px, 6px, 6px, -3px, 0px);
+  .icon-tab('.gitignore', 'gitignore', 20px, 4px, 3px, -3px, 0px);
   .icon-tree('.gitignore', 'gitignore', 20px, 6px, 6px, 1px, 0px);
 	.icon-tab('.gitmodules', 'git', 16px, 4px, 1px, -5px, 0px);
   .icon-tree('.gitmodules', 'git', 16px, 5px, 10px, 2px, 0px);
@@ -272,7 +272,7 @@
   // .icon-tree('.jl', 'jl', 18px, 4px, 2px, -3px, 0px);
 
   // LESS
-  .icon-tab('.less', 'less', 14px, 1px, 6px, -3px, 0px);
+  .icon-tab('.less', 'less', 14px, 2px, 6px, -1px, 0px);
   .icon-tree('.less', 'less', 14px, 2px, 10px, 2px, 0px);
 
 	// Lua
@@ -284,11 +284,11 @@
 	.icon-tree('Makefile', 'makefile', 13px, 1px, 10px, 2px, 0px);
 
   // Markdown
-  .icon-tab('.md', 'markdown', 20px, 5px, 5px, -4px, 0px);
+  .icon-tab('.md', 'markdown', 20px, 2.5px, 5px, -4px, 0px);
   .icon-tree('.md', 'markdown', 20px, 6px, 9px, -1px, 0px);
 
   // Override for Markdown package
-  tabs-bar tabs-tab .title.icon-markdown[data-name*=".md"], .tab-bar .tab .title.icon-markdown[data-name*=".md"] {
+  tab-bar tabs-tab .title.icon-markdown[data-name*=".md"], .tab-bar .tab .title.icon-markdown[data-name*=".md"] {
       top: 0;
   }
 
@@ -321,7 +321,7 @@
   // NPM
   .icon-tab('npm-debug.log', 'npm', 20px, 6px, 0px, -5px, 0px);
   .icon-tree('npm-debug.log', 'npm', 20px, 6px, 10px, 3px, 0px);
-  .icon-tab('.npmignore', 'npmignore', 13px, 2px, 3px, -4px, 0px);
+  .icon-tab('.npmignore', 'npmignore', 13px, 1px, 3px, -1px, 0px);
   .icon-tree('.npmignore', 'npmignore', 13px, 2px, 9px, 4px, 0px);
 
   // Nupkg
@@ -409,9 +409,9 @@
   .icon-tree('.sql', 'sql', 15px, 3px, 10px, 3px, 0px);
 
   // SVG
-  .icon-tab('.svg', 'svg', 17px, 2px, 4px, -3px, 0px);
+  .icon-tab('.svg', 'svg', 17px, 1px, 4px, -3px, 0px);
   .icon-tree('.svg', 'svg', 17px, 2px, 10px, 1px, 0px);
-  .icon-tab('.svgx', 'svg', 17px, 2px, 4px, -3px, 0px);
+  .icon-tab('.svgx', 'svg', 17px, 1px, 4px, -3px, 0px);
   .icon-tree('.svgx', 'svg', 17px, 3px, 10px, 1px, 0px);
 
   // TypeScript
@@ -429,9 +429,9 @@
   .icon-tree('.eot', 'font', 19px, 3px, 0px, 2px, 0px);
 
 	// Txt
-	.icon-tab('.txt', 'text', 17px, 4px, 10px, 3px, 0px);
+	.icon-tab('.txt', 'text', 14px, 2px, 8px, 0px, 0px);
   .icon-tree('.txt', 'text', 17px, 3px, 10px, 1px, 0px);
-	.icon-tab('.text', 'text', 17px, 4px, 10px, 3px, 0px);
+	.icon-tab('.text', 'text', 14px, 2px, 10px, 0px, 0px);
   .icon-tree('.text', 'text', 17px, 3px, 10px, 2px, 0px);
 
   // XML
@@ -457,15 +457,15 @@
   // IMAGES
   .icon-tab('.ai', 'illustrator', 16px, 3px, 5px, -3px, 0px);
   .icon-tree('.ai', 'illustrator', 16px, 3px, 10px, 2px, 0px);
-  .icon-tab('.bpm', 'img', 16px, 3px, 4px, -4px, 0px);
+  .icon-tab('.bpm', 'img', 16px, 3px, 4px, -2px, 0px);
   .icon-tree('.bpm', 'img', 15px, 3px, 13px, 2px, 0px);
-  .icon-tab('.gif', 'img', 16px, 3px, 4px, -4px, 0px);
+  .icon-tab('.gif', 'img', 16px, 3px, 4px, -2px, 0px);
   .icon-tree('.gif', 'img', 15px, 3px, 13px, 2px, 0px);
-  .icon-tab('.jpeg', 'img', 16px, 3px, 4px, -4px, 0px);
+  .icon-tab('.jpeg', 'img', 16px, 3px, 4px, -2px, 0px);
   .icon-tree('.jpeg', 'img', 15px, 3px, 13px, 2px, 0px);
-  .icon-tab('.jpg', 'img', 16px, 3px, 4px, -4px, 0px);
+  .icon-tab('.jpg', 'img', 16px, 3px, 4px, -2px, 0px);
   .icon-tree('.jpg', 'img', 15px, 3px, 13px, 2px, 0px);
-  .icon-tab('.png', 'img', 16px, 3px, 4px, -4px, 0px);
+  .icon-tab('.png', 'img', 16px, 3px, 4px, -2px, 0px);
   .icon-tree('.png', 'img', 15px, 3px, 13px, 2px, 0px);
   .icon-tab('.psd', 'photoshop', 16px, 3px, 5px, -3px, 0px);
   .icon-tree('.psd', 'photoshop', 16px, 3px, 10px, 2px, 0px);
