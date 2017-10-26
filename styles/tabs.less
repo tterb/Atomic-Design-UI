@@ -35,15 +35,16 @@
 
     .tab {
         position: relative;
-		font-size: @theme-font-size - 1px;
+	    font-size: @theme-font-size - 1px;
         color: fade(darken(@text-color, 2%), 60%);
         top: @tab-top-padding;
         height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
         max-width: @tab-max-width;
-		line-height: @tab-height;
+	    line-height: @tab-height;
         text-align: left;
-		margin: 0 12px 0 5px;
+	    margin: 0 12px 0 5px;
         padding: 15px 5px 0 0 !important;
+        box-shadow: inset 1px 1px 0 #303337, -4px -1px 8px rgba(0, 0, 0, 0.3);
         transition: color @transition-time/4 ease;
 		[data-atomic-design-ui-use-tab-syntax-colors="true"] & {
 			background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 0%), lighten(@tab-syntax-background-color, 1%));
@@ -75,9 +76,9 @@
         // left angled edge
         &:before {
             left: -14px;
-            top: -.70px;
+            top: 0px;
             border-top-left-radius: @tab-radius;
-            box-shadow: inset 1px 1px 0 @tab-border-color, -4px -1px 8px rgba(0,0,0,.2);
+            box-shadow: inset 1px 1px 0 @tab-border-color, -4px -1px 6px rgba(0,0,0,.2);
             -webkit-transform: skewX(-@tab-skew - 2deg);
         }
         // right angled edge
