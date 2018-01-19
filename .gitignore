@@ -1,1 +1,10 @@
+
+# Non-minified files
+css/*.css
+!css/*.min.css
+js/*.js
+!js/*.min.js
+
+# Other
 img/unused/*
+TODO.txt
