@@ -1,0 +1,71 @@
+.nuclide-tabbable {
+  background: darken(@tool-panel-background-color, 5%);
+  .nuclide-diagnostics-ui-settings-modal {
+    &.settings-view {
+      background: @tool-panel-background-color;
+      .checkbox {
+        margin: 25px 0;
+        &:first-child {
+          margin-top: 5px;
+        }
+        &:last-child {
+          margin-bottom: 5px;
+        }
+        label .setting-title {
+          font-size: 1.5em !important;
+        }
+        .setting-description {
+          font-size: 1.15em !important;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+.diagnostics-ui {
+  background: lighten(@theme-syntax-background-color, 3%);
+}
+.nuclide-ui-table {
+  &:focus {
+    .nuclide-ui-table-row-selected {
+      background-color: lighten(@tab-syntax-background-color, 3%);
+    }
+  }
+}
+.nuclide-ui-table-row:hover {
+  background: lighten(@theme-syntax-background-color, 8%);
+}
+.nuclide-ui-table-row-alternate {
+  background: lighten(@theme-syntax-background-color, 6%);
+}
+.nuclide-ui-toolbar {
+  background: @theme-syntax-background-color;
+  .nuclide-btn-group button {
+    background: lighten(@tool-panel-background-color, 25%) !important;
+    border-color: lighten(@tool-panel-background-color, 18%);
+    padding: 2.5px 6px;
+    margin: 0 3px;
+  }
+  .input-toggle {
+    background: darken(@theme-syntax-background-color, 2%);
+    border: 1px inset lighten(@tool-panel-background-color, 10%);
+    &::before {
+      top: -1px;
+    }
+    &:checked {
+      &::before {
+        left: -1px;
+      }
+    }
+  }
+}
+.diagnostics-popup {
+  background: @theme-background-color-light;
+}
+div.diagnostics-popup-header {
+  // background: @tool-panel-background-color !important;
+  // color: #333 !important;
+  span.highlight-warning {
+    color: rgba(255,255,255,0.9);
+  }
+}
