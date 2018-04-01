@@ -10,7 +10,7 @@
 @darker-gray: #2B2B2B;
 @darkest-gray: #212121;
 
-@theme-red: #D82323;
+@theme-red: #DD2D2D;
 @theme-orange: #FD971F;
 @theme-yellow: #E6DB74;
 @theme-green: #A6E22E;
@@ -21,15 +21,20 @@
 
 // Syntax Colors --------------------------------------------------------------
 
-@theme-syntax-text-color: @lightest-gray;
-@theme-syntax-selection-color: lighten(@darkest-gray, 10%);
+// @theme-syntax-text-color: @lightest-gray;
+@theme-syntax-text-color: @syntax-text-color;
+// @theme-syntax-selection-color: lighten(@darkest-gray, 10%);
+@theme-syntax-selection-color: @syntax-selection-color;
 @theme-syntax-background-color: @syntax-background-color;
 
 // Theme Colors ---------------------------------------------------------------
-
-@theme-background-color: @theme-syntax-background-color;
-@theme-background-color-dark: desaturate(darken(@theme-syntax-background-color, 4%), 2%);
-@theme-background-color-light: desaturate(lighten(@theme-syntax-background-color, 6%), 2%);
+// [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
+  @theme-background-color: @theme-syntax-background-color;
+  @theme-background-color-dark: desaturate(darken(@theme-syntax-background-color, 4%), 2%);
+  @theme-background-color-light: desaturate(lighten(@theme-syntax-background-color, 6%), 2%);
+  @background-color-highlight: lighten(@syntax-background-color, 12%);
+  @background-color-selected: @syntax-selection-color;
+// } 
 @theme-background-color-highlight: @theme-background-color-light;
 @theme-background-color-selected: @theme-background-color-light;
 
