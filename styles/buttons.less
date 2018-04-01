@@ -1,61 +1,70 @@
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
-    background-image: -webkit-linear-gradient(top, lighten(@color, 0%), darken(@color, 7.5%));
-    color: @theme-syntax-text-color;
+  background-image: -webkit-linear-gradient(top, lighten(@color, 0%), darken(@color, 7.5%));
+  color: @theme-syntax-text-color;
 	border: 1px outset lighten(@color, 4%);
 	border-radius: 6px !important;
-    font-size: @theme-font-size - 1px;
-    font-weight: 400;
-	box-shadow: inset -1px -2px 10px rgba(0,0,0,.3);
-    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
-    transition: all @transition-time ease;
-    &:active {
-        box-shadow: inset 0 0 0 1px darken(@color, 30%),inset 0 0px 26px darken(@color, 30%);
-        &:hover {
-            background: lighten(@color, 1%);
-            box-shadow: inset 0 0 0 1px darken(@color, 30%),inset 0 0px 26px darken(@color, 30%);
-        }
-    }
-    &:focus {
-        color: @button-text-color;
-    }
-
+  font-size: @theme-font-size - 1px;
+  font-weight: 400;
+	box-shadow: inset -1px -2px 10px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  transition: all 200ms ease-in-out !important;
+  &:active {
+    box-shadow: inset 0 0 0 1px darken(@color, 30%),inset 0 0px 26px darken(@color, 30%);
     &:hover {
-        color: @text-color-highlight;
-		border: 1px outset lighten(@color, 6%);
-        text-shadow:4px 3px 4px rgba(0,0,0,.6);
+      background: lighten(@color, 1%);
+      box-shadow: inset 0 0 0 1px darken(@color, 30%),inset 0 0px 26px darken(@color, 30%);
     }
+  }
+  &:focus {
+    color: @button-text-color;
+  }
+  &:hover {
+    color: @text-color-highlight;
+		border: 1px outset lighten(@color, 6%);
+    text-shadow: 1px 3px 4px rgba(0,0,0,0.35);
+  }
 
-    &.selected,
-    &.selected:hover {
+  &.selected,
+  &.selected:hover {
 		border: 1px inset darken(@color, 3%);
 		text-shadow: 2px 3px 4px rgba(0,0,0,0.8);
-        box-shadow: inset 0 0 0 1px darken(@color, 30%),inset 0 5px 30px darken(@color, 40%);
-        &:hover {
-            background-image: -webkit-radial-gradient(mix(lighten(@button-background-color-hover, 10%), @hover-color, 65%), darken(@hover-color, 5%));
-        }
+    box-shadow: inset 0 0 0 1px darken(@color, 20%),inset 0 5px 30px darken(@color, 10%);
+    &:hover, &:active {
+      background-image: -webkit-radial-gradient(mix(lighten(@button-background-color-hover, 10%), @hover-color, 65%), darken(@hover-color, 5%));
     }
+  }
 }
 
 .btn-variant (@color) {
-    @bg: darken(@color, 10%);
-    @hover: @color;
-    @selected: @color;
-    .btn-background(@bg, @hover, @selected, @text-color-highlight);
+  @bg: darken(@color, 10%);
+  @hover: @color;
+  @selected: @color;
+  .btn-background(@bg, @hover, @selected, @text-color-highlight);
 }
 
 .btn {
-    .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
-	&.disabled {
-		background: -webkit-linear-gradient(fade(lighten(@theme-background-color-dark, 0%), 10%), darken(fade(@theme-background-color-dark, 60%), 7%));
-		color: darken(@white, 57%);
+  .btn-background(lighten(@button-background-color, 2%), @button-background-color-hover, @button-background-color-selected, @text-color);
+  border: 1px outset darken(@theme-background-color-dark, 2%);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  transition: all 350ms ease-in-out;
+	&:disabled {
+		background: -webkit-linear-gradient(fade(lighten(@theme-background-color-dark, 0%), 10%), darken(fade(@theme-background-color-dark, 60%), 7%)) !important;
+		color: darken(@white, 60%);
+    border: 1px outset darken(@theme-background-color-dark, 2%) !important;
 		&:hover {
-			color: darken(@white, 57%) !important;
+			color: darken(@white, 16%) !important;
+      border: 1px outset darken(@theme-background-color-dark, 2%) !important;
 		}
 	}
-    &:focus, &:active:focus {
-        outline: transparent !important;
-    }
+  &:hover {
+    .btn-background(lighten(@button-background-color, 4%), @button-background-color-hover, @button-background-color-selected, @text-color);
+    color: rgba(255,255,255,0.8);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
+  }
+  &:focus, &:active:focus {
+    outline: transparent !important;
+  }
 }
 
 .btn.btn-primary { .btn-variant(darken(@background-color-info, 5%)); }
@@ -65,6 +74,6 @@
 .btn.btn-error { .btn-variant(@background-color-error); }
 
 .caret {
-    border-top: 5px solid @white;
-    margin-top: -1px;
+  border-top: 5px solid @white;
+  margin-top: -1px;
 }
