@@ -1,41 +1,40 @@
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    font-size: @theme-font-size + 2px;
+  font-size: @theme-font-size + 2px;
 }
 
 atom-workspace {
-    background-color: @theme-background-color;
+  background-color: @theme-background-color;
 	font-family: @font-family;
 }
 
 background-tips {
-    color: @theme-background-color-selected;
+  color: @theme-background-color-selected;
 }
 
 
 kbd {
-    background: fade(@text-color, 50%);
-    color: desaturate(@text-color-info, 5%);
-    letter-spacing: 2px;
+  background: fade(@text-color, 50%);
+  color: desaturate(@text-color-info, 5%);
+  letter-spacing: 2px;
 
-    .selected & {
-        background: -webkit-linear-gradient(top, @theme-background-color-light ,@theme-background-color);
-        color: @text-color-success;
-		text-shadow: 2px 2px 4px rgba(0,0,0,.5);
-    }
-    + kbd {
-        margin-left: 7px;
-    }
+  .selected & {
+    background: -webkit-linear-gradient(top, @theme-background-color-light ,@theme-background-color);
+    color: @text-color-success;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  + kbd {
+    margin-left: 7px;
+  }
 }
 
 .key-binding {
 	color: desaturate(@text-color-info, 5%);
 }
-
 
 
 /* StyleGuide */
@@ -90,7 +89,7 @@ kbd {
 
 .welcome-summary {
 	background: lighten(@theme-background-color-selected, 4%);
-	box-shadow: inset -2px 3px 8px rgba(0,0,0,.4);
+	box-shadow: inset -2px 3px 8px rgba(0,0,0,0.4);
 	border-radius: 20px;
 	&:before {
 		color: @white;
