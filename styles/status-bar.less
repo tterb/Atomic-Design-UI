@@ -1,34 +1,46 @@
 
 status-bar {
-    .text(subtle);
-    background: @status-bar-color;
-    height: @input-height;
-    line-height: @component-line-height;
-    font-size: @theme-font-size + 1px;
+  .text(subtle);
+  background: @status-bar-color;
+  height: @input-height;
+  line-height: @component-line-height;
+  font-size: @theme-font-size + 1px;
 	border: 1px outset darken(@darker-gray,0%);
-    & > .flexbox-repaint-hack {
-        padding-top: 3px;
-    }
+  & > .flexbox-repaint-hack {
+    padding-top: 3px;
+  }
 
-    span {
-        font-size: @theme-font-size - 1px;
-        &.inline-block.icon.icon-color-mode {
-			position: relative;
-            color: @theme-purple;
-			top: -1px;
-			left: 1px;
-        }
+  span {
+    font-size: @theme-font-size + 1px;
 	}
 
-    busy-signal {
-        margin-top: 0;
-    }
+  busy-signal {
+    margin-top: 0;
+  }
 
-    #aec-status-bar-tile {
+  .deprecation-cop-status .icon {
+    top: 1px;
+    left: -2px;
+    &::before {
+      font-size: 8px;
+      width: 18px;
+    }
+  }
+
+  #aec-status-bar-tile {
 		position: relative;
-        color: @theme-blue;
+    color: @theme-blue;
 		top: -1px;
 		left: -1px;
-    }
+  }
 
+  .inline-block{
+    overflow: visible;
+    &.icon-color-mode {
+      position: relative;
+      color: @theme-green !important;
+      top: -1px;
+      left: 1px;
+    }
+  }
 }

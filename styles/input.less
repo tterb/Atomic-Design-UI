@@ -1,20 +1,26 @@
-@unchecked-color: darken(@gray, 5%);
+@unchecked-color: darken(@gray, 15%);
 
 .input-radio {
 	background: @unchecked-color;
 	&:checked {
 		background: @text-color-success;
-		text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 	}
 }
 
-//TODO:0 How to change check inside checkbox? id:0
+//TODO: How to change check inside checkbox?
 .input-checkbox {
 	background: @unchecked-color;
+	box-shadow: inset 0 0 2px rgba(0,0,0,0.75);
+	border: 1px inset #666;
 	&:checked {
 		background: @text-color-success;
 		color: @theme-background-color;
-		text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.75);
+		border: 1px inset #666;
+		&::before, &::after {
+			text-shadow: 0 1px 3px rgba(0,0,0,0.75);
+		}
 	}
 }
 
