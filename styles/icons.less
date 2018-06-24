@@ -10,29 +10,28 @@
 [data-atomic-design-ui-custom-icons="true"] & {
 
     // DEFAULT TAB ICON
-    tab-bar tabs-tab .title, .tab-bar .tab .title {
-        position: relative;
-        display: inline-block;
-        // top: -1px;
-        // left: -2px;
-        padding: 0;
-        width: 100%;
-        &:before {
-            font-family: iconFont;
-            content: @icon-default;
-            font-size: 14px;
-            position: relative;
-            top: 2px;
-            left: 5px;
+  tab-bar tabs-tab .title,
+  .tab-bar .tab .title {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    &:before {
+      font-family: "IconFont";
+      content: @icon-default;
+      font-size: 14px;
+      position: relative;
+      top: 2px;
+      left: 5px;
 			right: 6px;
 			margin-right: 6px;
-            color: @color-default;
-        }
+      color: @color-default;
     }
+  }
 
-    tab-bar tabs-tab.active .title, .tab-bar .tab.active .title {
-        top: -2px;
-    }
+  tab-bar tabs-tab.active .title, .tab-bar .tab.active .title {
+    top: -2px;
+  }
 }
 
 // HIDDEN / IGNORED STYLES
@@ -499,7 +498,7 @@
 		position: relative;
 		&::before {
 			position: relative;
-			font-family: iconFont;
+			font-family: "IconFont";
 			content: '\e059' !important;
 			font-size: 18px !important;
 			top: 3px !important;
@@ -514,7 +513,7 @@
 		padding-right: 18px !important;
 		&::before {
 			position: relative;
-			font-family: iconFont;
+			font-family: "IconFont";
 			content: '\e1a2' !important;
 			font-size: 18px !important;
 			margin-left: 8px;
@@ -530,15 +529,12 @@
 		left: -2px;
 		&::before {
 			position: relative;
-			font-family: iconFont;
+			font-family: "IconFont";
 			font-size: 18px !important;
-			// content: '\e031' !important;
-			// content: '\e030' !important;
 			content: '\e001' !important;
 			margin-left: 4px;
 			top: 3px !important;
 			left: -4px !important;
-			// right: 10px !important;
 		}
 	}
 
@@ -547,18 +543,18 @@
 		position: relative;
 		left: 2px;
 		&::before {
-			font-family: iconFont;
+			font-family: "IconFont";
 			content: '\e0A2' !important;
 			left: -4px !important;
 		}
 	}
 
     .linter-status-count {
-        .icon-stop::before,
-        .icon-alert::before,
-        .icon-info::before {
-            display: none;
-        }
+      .icon-stop::before,
+      .icon-alert::before,
+      .icon-info::before {
+          display: none;
+      }
     }
 
 	// README.md
@@ -566,20 +562,19 @@
     position: relative;
     left: 5px;
     &::before {
-		font-family: iconFont;
-		// content: 'b';
-		content: '\e081' !important;
-		font-size: 19px;
-		position: relative;
-		top: 4px !important;
-        left: -5px !important;
-		color: #637FE7;
+  		font-family: "IconFont";
+  		content: '\e081' !important;
+  		font-size: 19px;
+  		position: relative;
+  		top: 4px !important;
+      left: -5px !important;
+  		color: #637FE7;
     }
 	}
 
 	// Media files
 	.icon-file-media::before {
-		font-family: iconFont;
+		font-family: "IconFont";
 		content: '!' !important;
 		font-size: 15px;
 		position: relative;
@@ -611,15 +606,11 @@
     display: inline-block;
     top: 0px;
     &:before {
-	    // font-family: iconFont;
-	    // content: '\e0b5' !important;
-		// color: mix(@theme-purple, darken(@theme-blue, 20%), 50%);
-		// content: "g" !important;
-		position: relative;
+  		position: relative;
 	  	display: inline-block;
-      	font-size: 20px;
+    	font-size: 20px;
 	  	top: 2px;
-      	left: 0px;
+    	left: 0px;
   	}
 	}
 
@@ -628,13 +619,13 @@
 		top: 0px;
 		position: relative;
 	  	&:before {
-			font-family: iconFont;
-			content: '\e0ca';
-			font-size: 20px;
-			display: inline-block;
-	    	position: relative;
-			top: 4px;
-			left: -2px;
+        position: relative;
+        display: inline-block;
+  			font-family: "IconFont";
+  			content: '\e0ca';
+  			font-size: 20px;
+  			top: 4px;
+  			left: -2px;
 	  	}
 	}
 
@@ -657,5 +648,4 @@
 	.tab-bar .tab .title[data-name$=".txt"]:before {
 		color: #B0B0B0;
 	}
-
 }
