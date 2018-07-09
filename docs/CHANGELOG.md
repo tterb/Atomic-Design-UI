@@ -1,17 +1,29 @@
 # Change Log
-<br>  
+<br>
 
-## Version 1.1.3  
+## Version 1.2.0
+
+  * Improved component formatting and interface type sizing
+  * Improved settings-view component styling and formatting
+  * Modified button styling
+  * Improved notification styling and formatting
+  * Improved custom icon implementation and formatting
+
+----------------------------------------
+
+
+## Version 1.1.3
 
   * Improved component formatting and type sizing
-  * Improved status-bar linter formatting and styling 
+  * Improved status-bar linter formatting and styling
   * Modified styling of tabs
   * Added necessary variables for atom-ide compatibility
-  * Improve tab icon formatting
+  * Improved tab icon formatting
+  * Updated supplementary styling for atom packages
 
---------------------------------------------------------------------------------
+----------------------------------------
 
-## Version 1.1.2  
+## Version 1.1.2
 
   * Improved button styling and responsiveness
   * Improved styling of form-control, editor-container, and input-field components
@@ -21,15 +33,15 @@
   * Added styling for 'imdone' and 'project-manager' packages
   * Improved custom icon font implementation
 
---------------------------------------------------------------------------------
+----------------------------------------
 
-## Version 1.1.1  
+## Version 1.1.1
 
   * Fix issue caused by outdated variables
 
---------------------------------------------------------------------------------
+----------------------------------------
 
-## Version 1.1.0  
+## Version 1.1.0
 
   * Improved Settings-view component styling
   * Modified button radius
@@ -44,7 +56,7 @@
   * Improved styling for the find-and-replace panel
   * Upgraded deprecated selectors for Atom *v1.13.0*
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 ## Version 1.0.7
 
@@ -53,13 +65,13 @@
   * Improved theme adaptability
   * Added support for 'Todo-show' package
   * Improved Settings-view formatting
-  * Improved key-binding visibility  
+  * Improved key-binding visibility
   * Added input components styling
   * Improved styling for 'Tool-bar' packages
   * Improved 'Markdown Preview' rendering to more closely resemble GitHub's.
   * Minor changes made to component color palette
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 ## Version 1.0.6
 
@@ -78,7 +90,7 @@
   * Added reference import t 'index
   * Removed unnecessary UI-variables
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 ## Version 1.0.5
 
@@ -90,25 +102,25 @@
   * Improved settings-view styling
   * Added Deprecation & Time-Cop styling
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 ## Version 1.0.4
 
-  * Minor modifications to gray palette  
+  * Minor modifications to gray palette
   * Improved theme adaptability with a larger variety of syntax themes
   * Added support for commonly-used packages
   * Improved styling of the tab, tree-view, scrollbar, and settings-view components
   * Added custom styling for badges and notifications
   * Restructured package documentation
-  * Fixed issue within *package.json*   
+  * Fixed issue within *package.json*
 
---------------------------------------------------------------------------------
+----------------------------------------
 ## Version 1.0.3
 
   * Fixed issue with tree-view status
   * Minor modifications to tree-view style
 
---------------------------------------------------------------------------------
+----------------------------------------
 ## Version 1.0.2
 
   * Fixed deprecation errors
@@ -116,7 +128,7 @@
   * Improvements to markdown-preview styling
   * Minor changes to documentation
 
---------------------------------------------------------------------------------
+----------------------------------------
 
 ## Version 1.0.1
 
@@ -124,9 +136,9 @@
   * Modified 'Markdown Preview' style
   * Fixed issue with UI variable
 
---------------------------------------------------------------------------------
+----------------------------------------
 ## Version 1.0.0
 
   * Package published
 
---------------------------------------------------------------------------------
+----------------------------------------
