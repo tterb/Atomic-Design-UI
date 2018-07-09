@@ -8,6 +8,8 @@
   * Modified button styling
   * Improved notification styling and formatting
   * Improved custom icon implementation and formatting
+  * Cleaned-up unnecessary package files
+  * Modified modular theme settings
 
 ----------------------------------------
 
