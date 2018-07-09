@@ -1,6 +1,6 @@
 
 .settings-view {
-	font-size: @theme-font-size+1;
+	font-size: @theme-font-size + 1px;
 	background: @theme-text-color-highlight;
 	.section-body {
 		margin-left: 10px;
@@ -30,7 +30,7 @@
 	.alert-info {
 		background: mix(@text-color-info, @theme-background-color, 45%);
 		color: desaturate(lighten(@text-color-info, 15%), 60%);
-		font-size: 15px;
+		font-size: @theme-font-size + 4px;
 		padding-top: 18px;
 		button.close:before {
 			color: @text-color-info;
@@ -100,6 +100,7 @@
 	}
 
 	.btn {
+		transition: all 300ms ease-in-out;
 		&.active-theme-settings, &.active-syntax-settings {
 			background: -webkit-linear-gradient(top, darken(@theme-background-color-selected, 3%), @theme-background-color);
 			border: 1px outset lighten(@theme-background-color-selected, 5%);
@@ -129,8 +130,9 @@
 	}
 
 	button.btn {
-		font-size: 12px;
+		font-size: @theme-font-size + 1px;
 		border: 1px outset #383838;
+		transition: all 300ms ease-in-out;
 		margin-right: 2px;
 		&::before {
 			vertical-align: text-bottom;
@@ -156,10 +158,10 @@
 			color: darken(@white, 10%);
 			border: 1px outset darken(@text-color-success, 40%);
 			border-radius: 4px;
-			font-size: 13px;
+			font-size: @theme-font-size + 2px;
 			text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 			&::before {
-				font-size: 13px;
+				font-size: @theme-font-size + 2px;
 				padding-left: 0px;
 			}
 			&:hover {
@@ -169,20 +171,20 @@
 		}
 		&.settings {
 			// background: -webkit-linear-gradient(top, darken(@text-color-info, 15%), desaturate(darken(@text-color-info, 30%), 45%)) !important;
-			background: -webkit-linear-gradient(top, darken(@text-color-info, 15%), desaturate(darken(@text-color-info, 32%), 40%)) !important;
+			background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 37%), 20%)) !important;
 			color: darken(@white, 5%);
 			border: 1px outset darken(@text-color-info, 40%);
 			border-radius: 4px;
-			font-size: 13px;
+			font-size: @theme-font-size + 2px;
 			text-shadow: 1px 1px 4px rgba(0,0,0,0.65);
 			transition: background 0.3s;
 			&::before {
-				font-size: 13px;
+				font-size: @theme-font-size + 2px;
 				padding-left: 0px;
 				margin-right: 4px;
 			}
 			&:hover {
-				background: -webkit-linear-gradient(top, darken(@text-color-info, 20%), desaturate(darken(@text-color-info, 36%), 30%)) !important;
+				background: -webkit-linear-gradient(top, darken(@text-color-info, 20%), desaturate(darken(@text-color-info, 40%), 25%)) !important;
 			}
 		}
 		&.uninstall-button {
@@ -193,7 +195,7 @@
 			}
 		}
 		&.install-button {
-			background: -webkit-linear-gradient(top, darken(@text-color-info, 15%), desaturate(darken(@text-color-info, 32%), 40%)) !important;
+			background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 37%), 20%)) !important;
 			transition: background 0.3s;
 			&.is-installing {
 				background: -webkit-linear-gradient(top, darken(@text-color-success, 10%), desaturate(darken(@text-color-success, 26%), 35%)) !important;
@@ -317,7 +319,7 @@
 		&.control-label {
 			.theme-description {
 				padding-left: 5px;
-				font-size: 13px;
+				font-size: @theme-font-size + 2px;
 				min-height: 15px;
 				margin-bottom: 5px;
 			}
