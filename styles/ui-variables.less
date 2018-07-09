@@ -21,26 +21,21 @@
 
 // Syntax Colors --------------------------------------------------------------
 
-// @theme-syntax-text-color: @lightest-gray;
 @theme-syntax-text-color: @syntax-text-color;
-// @theme-syntax-selection-color: lighten(@darkest-gray, 10%);
 @theme-syntax-selection-color: @syntax-selection-color;
 @theme-syntax-background-color: @syntax-background-color;
 
 // Theme Colors ---------------------------------------------------------------
-// [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-  @theme-background-color: @theme-syntax-background-color;
-  @theme-background-color-dark: desaturate(darken(@theme-syntax-background-color, 4%), 2%);
-  @theme-background-color-light: desaturate(lighten(@theme-syntax-background-color, 6%), 2%);
-  @background-color-highlight: lighten(@syntax-background-color, 12%);
-  @background-color-selected: @syntax-selection-color;
-// } 
+
+@theme-background-color: @theme-syntax-background-color;
+@theme-background-color-dark: desaturate(darken(@theme-background-color, 4%), 2%);
+@theme-background-color-light: desaturate(lighten(@theme-background-color, 6%), 2%);
 @theme-background-color-highlight: @theme-background-color-light;
 @theme-background-color-selected: @theme-background-color-light;
 
 @theme-text-color-highlight: @white;
 @theme-text-color-accent: mix(@theme-syntax-text-color, @theme-text-color-highlight, 50%);
-@theme-text-color: mix(@theme-syntax-background-color, @theme-text-color-accent, 32%);
+@theme-text-color: mix(@theme-syntax-background-color, @theme-text-color-accent, 30%);
 @theme-text-color-subtle: fade(@theme-text-color, 45%);
 
 @background-color-info: @theme-blue;
@@ -83,7 +78,7 @@
 @invisibles-color: @syntax-invisible-character-color;
 
 @pane-item-background-color: @theme-background-color-light;
-@pane-item-border-color: darken(@base-border-color, 5%);
+@pane-item-border-color: darken(@theme-background-color-dark, 5%);
 
 
 // Site Colors ----------------------------------------------------------------
@@ -100,35 +95,35 @@
 // Tabs
 @tab-background-color: darken(desaturate(lighten(@darkest-gray, 6%), 2%), 2%);
 @tab-syntax-background-color: darken(@theme-syntax-background-color, 2%);
-// @tab-background-color-active: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
 @tab-background-color-hover: @theme-background-color-dark;
+@tab-text-color: fade(@theme-text-color, 75%);
 @tab-border-color: @theme-background-color-dark;
 @tab-bar-background-color: darken(@theme-background-color, 4%);
-@tab-bar-border-color: @base-border-color;
+@tab-bar-border-color: @theme-background-color-dark;
 // Buttons
 @button-background-color: @darker-gray;
 @button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: @text-color;
-@button-text-color: lighten(@text-color, 7%);
-@button-border-color: @base-border-color;
+@button-background-color-selected: @theme-text-color;
+@button-text-color: lighten(@theme-text-color, 7%);
+@button-border-color: @theme-background-color-dark;
 // Input-fields
 @input-background-color: @theme-background-color-light;
-@input-border-color: darken(@text-color, 21%);
-@input-background-color-active: @text-color;
+@input-border-color: darken(@theme-text-color, 21%);
+@input-background-color-active: @theme-text-color;
 @input-text-color-active: @theme-background-color;
 // Panes
 @pane-item-background-color: @theme-background-color-light;
-@pane-item-border-color: @base-border-color;
+@pane-item-border-color: @theme-background-color-dark;
 // Panels
 @panel-heading-background-color: @theme-background-color-light;
-@panel-heading-border-color: fadein(@base-border-color, 10%);
+@panel-heading-border-color: fadein(@theme-background-color-dark, 10%);
 @inset-panel-background-color: @theme-background-color-light;
-@inset-panel-border-color: @base-border-color;
+@inset-panel-border-color: @theme-background-color-dark;
 @tool-panel-background-color: lighten(@theme-background-color-dark, 2%);
 @tool-panel-border-color: darken(@theme-background-color-light, 2%);
 // Tree-view
 @tree-view-background-color: lighten(#242524, .1%);
-@tree-view-text-color: fade(@text-color, 90%);
+@tree-view-text-color: fade(@theme-text-color, 90%);
 @tree-view-selection-color: darken(#393838, 5%);
 @tree-view-border-color: @theme-background-color-light;
 // Tree-view - (Light)
@@ -137,7 +132,7 @@
 @tree-view-selection-color-light: darken(#696969, 5%);
 // Overlays
 @overlay-background-color: @tool-panel-background-color;
-@overlay-border-color: @base-border-color;
+@overlay-border-color: @theme-background-color-dark;
 // Scrollbar
 @scrollbar-color: -webkit-radial-gradient(darken(@theme-background-color-selected, 5%), darken(@theme-background-color-selected, 8%));
 @scrollbar-color-active: lighten(@theme-background-color-light, 0%);
@@ -147,7 +142,7 @@
 // @status-bar-color: -webkit-linear-gradient(top, mix(@tree-view-background-color, @tree-view-background-color-light, 92%), darken(@tree-view-background-color, 3%));
 // Tooltips
 @tooltip-text-color: @theme-background-color;
-@tooltip-background-color: @text-color;
+@tooltip-background-color: @theme-text-color;
 @tooltip-key-text-color: @background-color-info;
 @tooltip-key-background-color: @theme-background-color;
 
@@ -178,4 +173,4 @@
 
 // Other ----------------------------------------------------------------------
 
-@transition-time: 500ms;
+@transition-time: 400ms;

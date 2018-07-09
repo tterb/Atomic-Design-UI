@@ -22,7 +22,6 @@
 
   &:after {
     position: relative;
-    // background: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
     content: '';
     height: @tab-bottom-border-height;
     left: 0;
@@ -35,7 +34,7 @@
 
   .tab {
     position: relative;
-    color: fade(@text-color, 75%);
+    color: @tab-text-color;
     font-size: @theme-font-size - 1px;
     text-align: left;
     top: @tab-top-padding;
@@ -46,10 +45,10 @@
     padding: 15px 5px 0 0 !important;
     box-shadow: inset 1px 1px 0 #303337, -4px -1px 8px rgba(0, 0, 0, 0.3);
     transition: color @transition-time/4 ease;
-    [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
+    [data-atomic-design-ui-adaptive-tabs="true"] & {
       background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 0%), lighten(@tab-syntax-background-color, 1%));
     }
-    [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
+    [data-atomic-design-ui-adaptive-tabs="false"] & {
       background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-background-color, 12.5%), 40%), darken(@tab-background-color, 3%));
     }
 
@@ -66,10 +65,10 @@
       top: 0;
       width: 25px;
       height: @tab-height + 1px;
-      [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
+      [data-atomic-design-ui-adaptive-tabs="true"] & {
         background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-syntax-background-color, 16.5%), 0%), lighten(@tab-syntax-background-color, 1%));
       }
-      [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
+      [data-atomic-design-ui-adaptive-tabs="false"] & {
         background-image: -webkit-linear-gradient(top, desaturate(lighten(@tab-background-color, 12.5%), 40%), darken(@tab-background-color, 3%));
       }
     }
@@ -148,12 +147,10 @@
     padding-top: 12px !important;
     padding-right: 13px !important;
     z-index: 1;
-    [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-      // background-image: -webkit-linear-gradient( darken(@theme-syntax-background-color, .5%), @theme-syntax-background-color);
+    [data-atomic-design-ui-adaptive-tabs="true"] & {
       background: @theme-syntax-background-color;
     }
-    [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
-      // background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
+    [data-atomic-design-ui-adaptive-tabs="false"] & {
       background: @theme-syntax-background-color;
     }
 
@@ -178,13 +175,11 @@
       top: 9px;
       height: @tab-height + 4px;
       line-height: @tab-height;
-      [data-atomic-design-ui-use-tab-syntax-colors="true"] & {
-        // background-image: -webkit-linear-gradient(top, darken(@theme-syntax-background-color,2%), lighten(@theme-syntax-background-color, 1%));
+      [data-atomic-design-ui-adaptive-tabs="true"] & {
         background: @theme-syntax-background-color;
       }
-      [data-atomic-design-ui-use-tab-syntax-colors="false"] & {
+      [data-atomic-design-ui-adaptive-tabs="false"] & {
         background-image: -webkit-linear-gradient(top, @darkest-gray, @darker-gray);
-        // background: @theme-syntax-background-color;
       }
     }
 
