@@ -4,12 +4,6 @@
   padding-top: 10px;
   margin: -5px -15px;
   font-size: @tree-view-font-size;
-	[data-atomic-design-ui-compact-tree-view="false"] & {
-		font-size: @tree-view-font-size;
-	}
-	[data-atomic-design-ui-compact-tree-view="true"] & {
-		font-size: @tree-view-font-size - 2px;
-	}
 	[data-atomic-design-ui-light-tree-view="true"] & {
 		background: @tree-view-background-color-light;
 		color: @tree-view-text-color-light
@@ -59,13 +53,7 @@
     font-weight: normal;
     text-transform: capitalize;
 		margin: 0px 0px 2px;
-		font-size: @tree-view-font-size + 4;
-		[data-atomic-design-ui-compact-tree-view="false"] & {
-			font-size: @tree-view-font-size + 5px;
-		}
-		[data-atomic-design-ui-compact-tree-view="true"] & {
-			font-size: @tree-view-font-size + 2px;
-		}
+		font-size: @tree-view-font-size + 5px;
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			background-color: darken(@tree-view-background-color-light, 5%);
 			color: @tree-view-text-color-light;
@@ -91,12 +79,6 @@
     padding-bottom: 1px;
     color: @lightest-gray;
 		font-size: @tree-view-font-size + 2px;
-		[data-atomic-design-ui-compact-tree-view="false"] & {
-			font-size: @tree-view-font-size + 2px;
-		}
-		[data-atomic-design-ui-compact-tree-view="true"] & {
-			font-size: @tree-view-font-size;
-		}
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			color: @tree-view-text-color-light;
 		}
@@ -119,13 +101,7 @@
     text-align: left;
     vertical-align: middle;
 		margin: 5px 5px;
-    font-size: @tree-view-font-size + 2p;
-		[data-atomic-design-ui-compact-tree-view="false"] & {
-			font-size: @tree-view-font-size + 2px;
-		}
-		[data-atomic-design-ui-compact-tree-view="true"] & {
-			font-size: @tree-view-font-size;
-		}
+    font-size: @tree-view-font-size + 2px;
 		[data-atomic-design-ui-light-tree-view="true"] & {
 			color: @tree-view-text-color-light;
 		}
@@ -137,22 +113,6 @@
     }
   }
 }
-
-
-// atom-panel-container {
-//     .project-root > .header {
-//         .icon-repo {
-//             &::before {
-//                 background: url('atom://atomic-design-ui/assets/icons.svg') no-repeat;
-//                 content: '';
-//                 height: 30px;
-//                 margin-right: 5px;
-//                 margin-bottom: -10px;
-//                 width: 30px;
-//           }
-//         }
-// 	}
-// }
 
 .list-tree {
 	[data-atomic-design-ui-light-tree-view="true"] & {
@@ -328,7 +288,6 @@ li.directory.entry.list-nested-item {
 
 span.name.icon ::before {
   &.icon-file-directory {
-    // font-size: @theme-font-size + 3px;
     font-weight: 600;
 		[data-atomic-design-ui-compact-tree-view="false"] & {
 			font-size: @tree-view-font-size + 3px;
@@ -338,14 +297,9 @@ span.name.icon ::before {
 		}
   }
   &.icon-repo {
+		font-size: @tree-view-font-size + 6px;
 		font-weight: 800;
 		text-transform: capitalize;
-		[data-atomic-design-ui-compact-tree-view="false"] & {
-			font-size: @tree-view-font-size + 6px;
-		}
-		[data-atomic-design-ui-compact-tree-view="true"] & {
-			font-size: @tree-view-font-size + 5px;
-		}
   }
 }
 
