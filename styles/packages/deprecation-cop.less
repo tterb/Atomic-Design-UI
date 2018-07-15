@@ -1,17 +1,11 @@
 .deprecation-cop {
   background: darken(@theme-background-color, 2%) !important;
-	a {
-		color: @theme-text-color-highlight;
-	}
-
   .panel {
     padding-top: 30px;
   }
-
-	ul + .panel-heading {
-		margin-bottom: 8px;
-	}
-
+  a {
+    color: @theme-text-color-highlight;
+  }
   .deprecation-overview {
     float: right;
     padding-top: 4px;
@@ -19,7 +13,7 @@
 
     // 'Check for Updates' button
     .btn-primary {
-      background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 37%), 20%)) !important;
+      background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 43%), 10%)) !important;
       font-size: @theme-font-size + 1px;
       color: lighten(@text-color-highlight, 5%);
       text-shadow: 0 1px 0.5px rgba(0,0,0,0.55);
@@ -28,9 +22,8 @@
       border-radius: 4px;
       box-shadow: 0.5px 2px 5px rgba(0,0,0,0.65);
       margin: -25px 0 -4px;
-      // padding: 0px 5px 3px;
       &:hover {
-        background: -webkit-linear-gradient(top, darken(@text-color-info, 20%), desaturate(darken(@text-color-info, 40%), 25%)) !important;
+        background: -webkit-linear-gradient(top, darken(@text-color-info, 20%), desaturate(darken(@text-color-info, 45%), 18%)) !important;
         color: lighten(@text-color-highlight, 8%);
 				text-shadow: 0 2px 5px rgba(0,0,0,0.7);
         transition-duration: 300ms;
@@ -43,6 +36,16 @@
       margin: 2px 4px 0px;
     }
   }
+  
+  .has-collapsable-children > .list-item {
+    color: rgba(255,255,255,0.4);
+    line-height: 30px;
+    padding: 3px 26px 0;
+  }
+  
+  .has-collapsable-children .list-item {
+    font-size: 14px;
+  }
 
   .deprecation {
     .panel-heading {
@@ -50,11 +53,14 @@
 			margin-bottom: 8px;
       border: 3px outset rgba(200,200,200,200);
     }
-    .list .button-group .btn {
-      font-size: @theme-font-size + 3px !important;
+    button {
+      font-size: 0.95em;
     }
     .deprecation-info.list-item {
       line-height: 28px;
+      .text-highlight {
+        color: rgba(255,255,255,0.95);
+      }
     }
     > .deprecation-info, > .list-item {
       background: darken(@theme-background-color, 2%);
@@ -80,6 +86,9 @@
       border: 1px inset rgba(0,0,0,0.5);
       &.collapsed {
         border-left: transparent !important;
+        .deprecation-info .text-highlight {
+          color: rgba(255,255,255,0.7);
+        }
       }
       &.deprecation-info.list-item {
         background: -webkit-linear-gradient(bottom, darken(@theme-background-color, 1%), lighten(@theme-background-color, 2%)) !important;
@@ -92,17 +101,27 @@
         padding-top: 10px;
         padding-bottom: 25px;
         .list-item {
+          margin-left: 0;
           &.source-file {
+            margin: 0;
             padding: 6px 15px;
+            .list {
+              padding-top: 0.5em;
+            }
           }
           .source-url {
             margin-bottom: 8px;
             font-size: @theme-font-size + 4px;
           }
           .deprecation-message {
+            margin-top: 0;
+            margin-left: 0;
             vertical-align: middle;
             p {
               line-height: 1.2;
+            }
+            ul {
+              padding-left: 2.5em;
             }
             li {
               white-space: pre-wrap;
@@ -150,12 +169,17 @@
 
   // Report issue button
   .btn-toolbar {
-    float: right;
     padding-right: 10px;
     padding-bottom: 12px;
-    .issue-url:hover {
-      border-radius: 5px;
-      color: @text-color-info;
+    float: right;
+    .issue-url {
+      background: -webkit-linear-gradient(top, darken(@text-color-error, 16%), desaturate(darken(@text-color-error, 28%), 10%));
+      color: rgba(255,255,255,0.8);
+      margin-right: 0.5em;
+      &:hover {
+        background: -webkit-linear-gradient(top, darken(@text-color-error, 12%), desaturate(darken(@text-color-error, 30%), 18%));
+        color: rgba(255,255,255,0.95);
+      }
     }
   }
 
@@ -163,34 +187,24 @@
     .deprecation-message {
       font-size: @theme-font-size + 3px;
       line-height: 30px;
-      margin: 10px 10px 0px 10px;
+      margin: 10px 10px 1em 10px;
       
       ul li {
         line-height: 1;
       }
       
       code {
-        // background: @darkest-gray;
-        background: darken(@theme-background-color, 2%);
+        background: darken(@theme-background-color, 1%);
+        color: rgba(255,255,255,0.9);
         line-height: 2.3;
         border-radius: 6px;
         padding: 4px;
       }
-      
-			// p:last-child {
-			// 	code {
-			// 		// background: @darkest-gray;
-      //     background: @theme-background-color;
-      //     line-height: 2.3;
-      //     border-radius: 6px;
-      //     padding: 4px;
-			// 	}
-			// }
     }
 
     .icon-alert {
       position: relative;
-      left: 1em;
+      left: 0;
       margin-top: 8px;
     }
 
@@ -206,7 +220,6 @@
       padding: 10px 14px;
       > * {
         line-height: 25px;
-        // font-family: monospace;
       }
       .stack-line {
         color: lighten(@text-color, 15%);
@@ -223,6 +236,7 @@
   }
 
   .padded {
+    margin-bottom: 1.5em;
     padding: 6px 10px;
   }
 
@@ -230,7 +244,6 @@
     font-size: @theme-font-size + 7px;
     color: lighten(@text-color, 15%);
     margin-top: 20px;
-    padding: 10px;
-    padding-left: 15px;
+    padding: 9px 15px 11px;
   }
 }

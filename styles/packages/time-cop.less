@@ -1,16 +1,36 @@
 .timecop {
-	background: desaturate(darken(@theme-syntax-background-color, 1%), 25%) !important;
+	background: desaturate(darken(@theme-syntax-background-color, 2%), 15%) !important;
+	.panels {
+		background: desaturate(darken(@theme-syntax-background-color, 2%), 15%) !important;
+	}
   .inset-panel {
 		background: desaturate(lighten(@theme-syntax-background-color, 6%), 25%);
 		border-radius: 5px;
     .panel-heading {
-      color: @text-color-highlight;
+      color: fade(@text-color-highlight, 85%);
+			font-size: 13px;
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px;
+			padding: 9px 10px 12px;
     }
+		.inline-block {
+			&.highlight-info, &.highlight-warning, &.highlight-error {
+				text-align: center;
+				min-width: 15px;
+				height: max-content;
+			}
+			&.highlight-warning {
+				background: #d1a04d;
+				background: rgba(210,160,50,0.8);
+				color: rgba(255,255,255,0.7);
+			}
+		}
+		.list-group .list-item {
+			vertical-align: middle;
+		}
   }
 	.package-panel {
-		background: desaturate(darken(@theme-syntax-background-color, 1%), 25%) !important;
+		background: desaturate(darken(@theme-syntax-background-color, 2%), 15%) !important;
 	}
 	.timecop-panel {
 		background: darken(@theme-syntax-background-color, 3%) !important;
