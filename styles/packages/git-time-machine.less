@@ -1,19 +1,39 @@
 
 .git-time-machine {
+  background: darken(@theme-background-color, 2.5%);
   .close-handle {
+    background: transparent;
+    color: fade(@button-text-color, 90%);
+    font-size: 9px !important;
+    font-weight: bold;
+    text-align: center;
+    top: 6px;
     height: 18px !important;
     width: 18px !important;
+    border: 1px inset fade(white, 35%);
+    border-radius: 100%;
+    margin-right: 1px !important;
     padding-top: 1px !important;
     padding-left: 4px !important;
-    margin-right: 5px !important;
-    background-image: radial-gradient(desaturate(@theme-red, 40%), darken(@theme-red, 18%));
-    color: @button-text-color;
-    text-align: justify;
-    font-size: 11px !important;
-    font-weight: bold;
-    border: 1px outset darken(@theme-red, 20%);
-    &:hover {
-      background-image: radial-gradient(desaturate(lighten(@theme-red, 5%), 20%), darken(@theme-red, 12%));
+    &::before {
+      position: relative;
+      font-size: 12px;
+      top: 0.5px;
+      left: -4px;
     }
+    &:hover {
+      // background-image: radial-gradient(desaturate(lighten(@theme-red, 5%), 20%), darken(@theme-red, 12%));
+      background: fade(white, 20%);
+      color: fade(white, 90%);
+    }
+  }
+  .timeplot {
+    .hover-marker {
+      background-color: fade(@text-color-info, 50%);
+      width: 3px;
+    }
+  }
+  .gtm-zoom-selector {
+    bottom: 0;
   }
 }
