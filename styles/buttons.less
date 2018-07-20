@@ -72,6 +72,15 @@
   }
 }
 
+.btn.disabled, .btn[disabled] {
+  background: -webkit-linear-gradient(fade(lighten(@theme-background-color-dark, 0%), 10%), darken(fade(@theme-background-color-dark, 60%), 7%)) !important;
+  color: #888 !important;
+  border: 1px outset #333 !important;
+  &:hover {
+    border: 1px outset #333 !important;
+  }
+}
+
 .btn.btn-primary { .btn-variant(darken(@background-color-info, 5%)); }
 .btn.btn-info { .btn-variant(@background-color-info); }
 .btn.btn-success { .btn-variant(@background-color-success); }

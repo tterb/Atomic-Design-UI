@@ -2,33 +2,32 @@
 @import "buttons";
 
 .pane-item {
-    .panel {
-        border-color: fadeout(@inset-panel-border-color, 30%);
-    }
+  // background: lighten(@theme-background-color, 2%);
+  .panel {
+    border-color: fadeout(@inset-panel-border-color, 30%);
+  }
 }
 
 atom-pane-container {
-    atom-pane {
-        background-color: lighten(@theme-background-color, 4%);
+  atom-pane {
+    background-color: lighten(@theme-background-color, 4%);
 
-        &:focus {
-            background-color: @theme-background-color;
-        }
+    &:focus {
+      background-color: @theme-background-color;
     }
+  }
 
-    atom-pane-axis.horizontal > * {
-        border-right: 1px solid @pane-item-border-color;
-
-        &:last-child {
-            border-right: none;
-        }
+  atom-pane-axis.horizontal > * {
+    border-right: 1px solid @pane-item-border-color;
+    &:last-child {
+      border-right: none;
     }
+  }
 
-    atom-pane-axis.vertical > * {
-        border-bottom: 1px solid @pane-item-border-color;
-
-        &:last-child {
-            border-bottom: none;
-        }
+  atom-pane-axis.vertical > * {
+    border-bottom: 1px solid @pane-item-border-color;
+    &:last-child {
+      border-bottom: none;
     }
+  }
 }
