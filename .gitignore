@@ -28,3 +28,11 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Other
+assets
+styles/fonts/*.zip
+styles/fonts/*.html
+docs/screenshots
+README/*
+TODO.txt
