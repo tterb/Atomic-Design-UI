@@ -199,7 +199,9 @@
 			&.is-installing {
 				background: -webkit-linear-gradient(top, darken(@text-color-success, 10%), desaturate(darken(@text-color-success, 26%), 35%)) !important;
 				content: "installing" !important;
+				color: @white !important;
 				&::before {
+					color: @white;
 					content: "\f087" !important;
 				}
 			}
