@@ -1,6 +1,15 @@
 # Change Log
 <br>
 
+## Version 1.2.1
+
+  * Improved settings-view, tree-view, and find-and-replace styling
+  * Added styling for 'quick-issues' package
+  * Improved custom icon styling and formatting
+
+----------------------------------------
+
+
 ## Version 1.2.0
 
   * Improved component formatting and interface type sizing
