@@ -1,0 +1,57 @@
+.github-StagingView-group {
+  header {
+    background-image: -webkit-linear-gradient(darken(@theme-syntax-selection-color, 5%), darken(@panel-heading-background-color, 9%));
+    color: darken(@text-color, 3%);
+    border-bottom: 1px solid @panel-heading-border-color;
+    border-top: 1px solid fadein(@theme-background-color-highlight, 10%);
+  }
+}
+
+.github-FilePatchListView-item {
+  line-height: 1.6;
+  padding: 3px 10px;
+  padding-left: 20px;
+}
+
+.github-StagingView:focus {
+  .github-StagingView-group .is-selected {
+    background: @theme-syntax-selection-color !important;
+    color: lighten(@text-color, 15%) !important;
+  }
+}
+
+.github-Accordion-header {
+  background-image: -webkit-linear-gradient(darken(@theme-syntax-selection-color, 5%), darken(@panel-heading-background-color, 9%));
+  color: darken(@text-color, 3%);
+  border-bottom: 1px solid @panel-heading-border-color;
+  border-top: 1px solid fadein(@theme-background-color-highlight, 10%);
+}
+
+.github-Accordion[open] .github-Accordion-header {
+  color: lighten(@text-color, 10%);
+}
+
+.github-Accordion-content {
+  background: @theme-background-color;
+  min-height: 25px;
+  &::before {
+    vertical-align: middle;
+    padding: 5px 0;
+  }
+  button {
+    background: -webkit-linear-gradient(top, darken(@text-color-info, 18%), desaturate(darken(@text-color-info, 35%), 20%)) !important;
+    color: darken(@white, 5%);
+    font-size: 1.01em !important;
+    width: 80%;
+    border: 1px outset #383838 !important;
+  }
+}
+
+.github-Accordion--leftTitle {
+  font-weight: 500;
+}
+
+.github-CreatePullRequestTile-message, 
+.github-CreatePullRequestTile-controls {
+  background: @theme-background-color;
+}
