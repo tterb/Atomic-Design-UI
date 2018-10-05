@@ -1,13 +1,14 @@
 
 .tooltip {
-    @tip-background-color: @white;
-    @tip-text-color: #333;
+    // @tip-background-color: @white;
+    @tip-background-color: darken(@theme-background-color-dark, 1%);
+    @tip-text-color: rgba(255,255,255,0.85);
     white-space: nowrap;
-
+    
     .keystroke {
         font-family: Helvetica, Arial, sans-serif;
         font-size: @theme-font-size;
-        color: #777;
+        color: #7f7f7f;
         padding-left: 2px;
     }
 
@@ -22,6 +23,7 @@
         color: @tip-text-color;
         white-space: nowrap;
         max-width: none;
+        box-shadow: 0 -0.25px 4px rgba(0,0,0,0.35);
     }
 
     &.top .tooltip-arrow {
