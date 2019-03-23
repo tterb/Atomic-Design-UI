@@ -101,6 +101,7 @@
 
 		&.icon-file-text, &.icon-file-media, &.icon-book {
 			&:before {
+				color: ~"@{color-@{type}}";
 				font-family: iconFont;
 				content: "@{icon-@{type}}";
 				font-size: @font;
@@ -108,7 +109,6 @@
 				top: @top;
 				left: @left;
 				margin-right: @right;
-				color: ~"@{color-@{type}}";
 			}
 		}
 	}
