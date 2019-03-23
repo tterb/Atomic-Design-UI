@@ -59,8 +59,11 @@
 	}
 
 	.breadcrumb {
-		.text(light);
+		background: rgba(0,0,0,0.15);
 		font-size: @theme-font-size + 3px;
+		.text(light);
+		// border-bottom: none;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 		.active {
 			font-size: @theme-font-size + 4px;
 			font-weight: normal;
@@ -72,6 +75,13 @@
 		}
 		> li a {
 			color: darken(@white, 18%);
+			&:last-child {
+				padding-left: 2px;
+			}
+			&:hover {
+				color: @theme-blue;
+				text-decoration: none;
+			}
 		}
 	}
 
