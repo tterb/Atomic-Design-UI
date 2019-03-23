@@ -11,7 +11,7 @@
 atom-panel {
   .text(normal);
   position: relative;
-  background-color: @tool-panel-background-color;
+  background: darken(@tool-panel-background-color, 1%);
 
   &.bottom,
   &.footer,
@@ -42,6 +42,13 @@ atom-panel {
   atom-panel {}
 }
 
+atom-panel.padded {
+  // background: 
+  .inset-panel {
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.55);
+  }
+}
+
 .overlay, atom-panel.modal {
 	border: 1px outset darken(@input-border-color, 25%);
 }
@@ -62,4 +69,8 @@ atom-panel {
     @text: lighten(@text-color, 10%);
     .btn-background(@bg, @hover, @selected, @text);
   }
+}
+
+.item-views {
+  background: @theme-syntax-background-color;
 }
