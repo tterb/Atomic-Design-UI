@@ -1,6 +1,18 @@
 # Change Log
 <br>
 
+## Version 1.2.2
+
+  * Improved tree-view formatting and spacing
+  * Improved button styling and group formatting
+  * Improved UI tooltip styling 
+  * Improved icon alignment and formatting
+  * Added styling for git/github package
+  * Modified settings-view breadcrumb to accomodate Atom updates
+  * Improved overlay and panel formatting
+
+----------------------------------------
+
 ## Version 1.2.1
 
   * Improved settings-view, tree-view, and find-and-replace styling
@@ -8,7 +20,6 @@
   * Improved custom icon styling and formatting
 
 ----------------------------------------
-
 
 ## Version 1.2.0
 
