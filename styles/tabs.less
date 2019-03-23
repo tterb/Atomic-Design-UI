@@ -151,7 +151,7 @@
       background: @theme-syntax-background-color;
     }
     [data-atomic-design-ui-adaptive-tabs="false"] & {
-      background: @theme-syntax-background-color;
+      background: @theme-background-color;
     }
 
     .close-icon {
@@ -230,4 +230,11 @@ body > atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-d
 }
 .ul[location="left"] > li {
   background: transparent;
+}
+
+.atom-dock-toggle-button {
+  .atom-dock-toggle-button-inner {
+    background-color: @tab-bar-background-color;
+    border: lighten(@theme-background-color-light, 25%);
+  }
 }

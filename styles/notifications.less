@@ -23,10 +23,12 @@ atom-notification {
 
   .close-all {
     background: -webkit-linear-gradient(top, lighten(@syntax-background-color, 1.5%), @syntax-background-color) !important;
-    color: rgba(255,255,255,0.2) !important;
+    color: rgba(255,255,255,0.8) !important;
     height: 25px;
-    border: 1px outset rgba(255,255,255,0.1) !important;
+    // border: 1px outset rgba(255,255,255,0.05) !important;
+    border: 1px outset lighten(@theme-background-color-light, 1%) !important;
     box-shadow: 0 1px 8px rgba(0,0,0,0.4) !important;
+    transition: all 300ms ease-in-out;
     padding: 0 7px;
     &:hover {
       background: -webkit-linear-gradient(top, lighten(@syntax-background-color, 3.25%), lighten(@syntax-background-color, 1%)) !important;
@@ -103,7 +105,7 @@ atom-notification {
       max-width: 252px;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: #fcfcfc !important;
+      color: #fcfcfc;
       font-size: 11px;
       &:hover {
         color: #fff !important;
@@ -169,6 +171,9 @@ atom-notification {
     border-color: @text-color-error;
     a {
       color: @text-color-error;
+    }
+    code {
+      background-color: desaturate(lighten(@text-color-error, 10%), 10%) !important;
     }
   }
 
