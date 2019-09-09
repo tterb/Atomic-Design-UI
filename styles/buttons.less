@@ -9,7 +9,6 @@
 	box-shadow: inset -1px -2px 10px rgba(0,0,0,0.3);
   text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
   &:active {
-    // background: darken(@color, 4%);
     background-image: -webkit-linear-gradient(top, @color, darken(@color, 5%));
     border-style: inset;
     box-shadow: inset 0 0 0 1px darken(@color, 8%), inset 0 0px 16px darken(@color, 8%);
@@ -97,12 +96,12 @@
   .btn {
     border-radius: 2px;
     &:first-child {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
     }
     &:last-child {
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
   }
   > .btn {
